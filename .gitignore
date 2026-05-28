@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editores
+.vscode/
+.Rproj.user/
+*.Rproj
+
+# Temporários
+*.tmp

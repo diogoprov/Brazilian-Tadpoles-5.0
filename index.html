@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brazilian Tadpoles 5.0 — Banco de dados de girinos do Brasil</title>
+  <meta name="description" content="Banco de dados das descrições de girinos de anuros do Brasil. Versão 5.0." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <h1>Brazilian Tadpoles <span class="v">5.0</span></h1>
+        <p class="tagline">Banco de dados das descrições de girinos de anuros do Brasil</p>
+      </div>
+      <nav class="tabs" aria-label="Navegação principal">
+        <button class="tab is-active" data-view="especies">Espécies</button>
+        <button class="tab" data-view="dashboard">Dados faltantes</button>
+        <button class="tab" data-view="sobre">Sobre</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- ========== VIEW: ESPÉCIES ========== -->
+    <section id="view-especies" class="view is-active">
+      <!-- Hero: search central + cards-resumo -->
+      <div class="hero" id="hero">
+        <div class="search-hero">
+          <input id="search" type="search"
+                 placeholder="Buscar por espécie, gênero ou família…"
+                 autocomplete="off" />
+          <p class="hero-hint" id="hero-hint">Digite para começar ou <button class="link" id="btn-show-all" type="button">explore todas as espécies</button>.</p>
+        </div>
+        <div class="cards summary" id="summary-cards"></div>
+      </div>
+
+      <!-- Bloco da tabela: escondido até a primeira busca/filtro -->
+      <div class="table-block" id="table-block" hidden>
+        <div class="toolbar">
+          <div class="filters">
+            <label>Família
+              <select id="filter-family"><option value="">Todas</option></select>
+            </label>
+            <label>Gênero
+              <select id="filter-genus"><option value="">Todos</option></select>
+            </label>
+            <label>Morf. externa
+              <select id="filter-ext">
+                <option value="">Todas</option>
+                <option value="described">Descrita</option>
+                <option value="not_described">Não descrita</option>
+              </select>
+            </label>
+            <label>Morf. oral
+              <select id="filter-int">
+                <option value="">Todas</option>
+                <option value="described">Descrita</option>
+                <option value="not_described">Não descrita</option>
+              </select>
+            </label>
+            <label>Condrocrânio
+              <select id="filter-cho">
+                <option value="">Todas</option>
+                <option value="described">Descrito</option>
+                <option value="not_described">Não descrito</option>
+              </select>
+            </label>
+            <button class="btn-link" id="btn-clear" type="button">Limpar filtros</button>
+          </div>
+          <p class="result-count" id="result-count"></p>
+        </div>
+
+        <div class="table-wrap">
+          <table id="species-table">
+            <thead>
+              <tr>
+                <th data-sort="species">Espécie</th>
+                <th data-sort="family">Família</th>
+                <th data-sort="ext">Morf. externa</th>
+                <th data-sort="internal_oral">Morf. oral</th>
+                <th data-sort="chondrocranium">Condrocrânio</th>
+              </tr>
+            </thead>
+            <tbody id="species-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== VIEW: DASHBOARD ========== -->
+    <section id="view-dashboard" class="view">
+      <h2>Completude da descrição de girinos</h2>
+      <p class="muted">Proporção de espécies com a respectiva característica descrita, por família. Dados derivados diretamente do <code>species.json</code>.</p>
+
+      <div class="cards" id="stat-cards"></div>
+
+      <div class="charts">
+        <div class="chart-card chart-card--wide">
+          <h3>Completude por família e caráter</h3>
+          <div id="chart-completude"></div>
+        </div>
+        <div class="chart-card">
+          <h3>Espécies por família</h3>
+          <div id="chart-family-count"></div>
+        </div>
+        <div class="chart-card">
+          <h3>Completude global</h3>
+          <div id="chart-global"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== VIEW: SOBRE ========== -->
+    <section id="view-sobre" class="view">
+      <h2>Sobre o Brazilian Tadpoles 5.0</h2>
+      <p>Esta é a versão <strong>5.0</strong> do <em>Brazilian Tadpoles</em>, um banco de dados das descrições de girinos de anuros do Brasil. O site é estático (HTML/CSS/JS puro), consome os dados em JSON e roda inteiramente no navegador.</p>
+      <p>O banco rastreia, para cada espécie, a existência de descrições de três conjuntos de caracteres do girino: <strong>morfologia externa</strong>, <strong>morfologia oral interna</strong> e <strong>condrocrânio</strong>.</p>
+      <p>Famílias do clado Brachycephaloidea (Brachycephalidae, Caligophrynidae, Ceuthomantidae, Craugastoridae, Eleutherodactylidae, Neblinaphrynidae) e Hemiphractidae (rãs marsupiais) ficam fora do escopo porque não têm girino livre-natante.</p>
+      <p class="muted" id="about-meta"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Brazilian Tadpoles 5.0 · dados em <code>assets/data/species.json</code></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
