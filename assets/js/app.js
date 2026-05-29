@@ -327,6 +327,22 @@ function setupEvents() {
     const el = document.getElementById(id);
     if (el) el.hidden = !el.hidden;
   });
+
+  // Copiar BibTeX (aba Sobre)
+  const btnCopy = document.getElementById('btn-copy-bib');
+  if (btnCopy) {
+    btnCopy.addEventListener('click', async () => {
+      const txt = document.getElementById('bib-content').textContent;
+      try {
+        await navigator.clipboard.writeText(txt);
+        const fb = document.getElementById('bib-copy-feedback');
+        fb.hidden = false;
+        setTimeout(() => { fb.hidden = true; }, 2500);
+      } catch (err) {
+        alert('Não foi possível copiar automaticamente. Selecione o texto e copie manualmente.');
+      }
+    });
+  }
 }
 
 setupTabs();

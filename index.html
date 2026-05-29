@@ -106,11 +106,16 @@
       </div>
 
       <div class="phylo-legend">
-        <span class="lg-title">Completude:</span>
-        <span class="lg-item"><span class="lg-dot" style="background:#c0c4cc"></span>0 caracteres</span>
+        <span class="lg-title">Barras de completude:</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#2e6b4f;border-radius:2px;width:14px"></span>Morf. externa</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#7aa44a;border-radius:2px;width:14px"></span>Morf. oral</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#c9881e;border-radius:2px;width:14px"></span>Condrocrânio</span>
+        <span class="lg-sep">·</span>
+        <span class="lg-title">Cor da ponta:</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#c0c4cc"></span>0 caracteres descritos</span>
         <span class="lg-item"><span class="lg-dot" style="background:#e4b15c"></span>1</span>
         <span class="lg-item"><span class="lg-dot" style="background:#8bbd61"></span>2</span>
-        <span class="lg-item"><span class="lg-dot" style="background:#2e6b4f"></span>3 caracteres</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#2e6b4f"></span>3</span>
       </div>
 
       <div id="phylo-container" class="phylo-container"></div>
@@ -153,6 +158,32 @@
       <p>Esta é a versão <strong>5.0</strong> do <em>Brazilian Tadpoles</em>, um banco de dados das descrições de girinos de anuros do Brasil. O site é estático (HTML/CSS/JS puro), consome os dados em JSON e roda inteiramente no navegador.</p>
       <p>O banco rastreia, para cada espécie, a existência de descrições de três conjuntos de caracteres do girino: <strong>morfologia externa</strong>, <strong>morfologia oral interna</strong> e <strong>condrocrânio</strong>.</p>
       <p>Famílias do clado Brachycephaloidea (Brachycephalidae, Caligophrynidae, Ceuthomantidae, Craugastoridae, Eleutherodactylidae, Neblinaphrynidae) e Hemiphractidae (rãs marsupiais) ficam fora do escopo porque não têm girino livre-natante.</p>
+
+      <div class="citation-block">
+        <h3>Como citar</h3>
+        <p>Se você usa o Brazilian Tadpoles no seu trabalho, por favor cite o artigo que originou este banco de dados:</p>
+        <blockquote class="cite">
+          Provete, D.B., Garey, M.V., da Silva, F.R. &amp; Jordani, M.X. (2012). Knowledge gaps and bibliographical revision about descriptions of free-swimming anuran larvae from Brazil. <em>North-Western Journal of Zoology</em>, 8(2), 283&ndash;286.
+        </blockquote>
+        <p>
+          <a href="https://www.researchgate.net/publication/237195947_Knowledge_gaps_and_bibliographical_revision_about_descriptions_of_free-swimming_anuran_larvae_from_Brazil" target="_blank" rel="noopener">PDF no ResearchGate</a>
+        </p>
+        <details class="bibtex">
+          <summary>BibTeX</summary>
+          <pre><code id="bib-content">@article{provete2012knowledge,
+  title   = {Knowledge gaps and bibliographical revision about descriptions of free-swimming anuran larvae from Brazil},
+  author  = {Provete, Diogo Borges and Garey, Michel Varaj{\~a}o and da Silva, Fernando Rodrigues and Jordani, Mainara Xavier},
+  journal = {North-Western Journal of Zoology},
+  volume  = {8},
+  number  = {2},
+  pages   = {283--286},
+  year    = {2012}
+}</code></pre>
+          <button class="btn-link" type="button" id="btn-copy-bib">Copiar BibTeX</button>
+          <span class="muted small" id="bib-copy-feedback" hidden> copiado.</span>
+        </details>
+      </div>
+
       <p class="muted" id="about-meta"></p>
     </section>
   </main>

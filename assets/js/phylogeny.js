@@ -1,266 +1,251 @@
 /* Filogenia interativa — Brazilian Tadpoles 5.0
-   Le assets/data/phylogeny.json (arvore podada) e assets/data/species.json
-   (para metadados das pontas) e renderiza em D3 com colapsar/expandir clados. */
+   Le assets/data/phylogeny.json (arvore podada com MRCAs e counts pre-calculados)
+   e renderiza em D3:
+     - Layout COMPACTO via nodeSize() (canvas cresce sob demanda).
+     - MRCAs de familia/genero etiquetados nos nos internos.
+     - Barras empilhadas de completude (ext / oral / cond) por no, agregando
+       descendentes em clados colapsados.
+     - Inicia colapsado nas MRCAs de familia. */
 
 (function () {
-  // Estado
-  let tree = null;        // hierarquia D3
-  let speciesByTip = {};  // tip_label -> sp data
-  let unmatched = 0;      // contagem de spp sem tip
+  // Cores por caracter
+  const CHARS = [
+    { key: 'ext',  label: 'Morf. externa', color: '#2e6b4f' },
+    { key: 'oral', label: 'Morf. oral',    color: '#7aa44a' },
+    { key: 'cond', label: 'Condrocrânio',  color: '#c9881e' },
+  ];
+
+  // Layout
+  const NODE_H = 16;        // px por leaf
+  const NODE_W = 60;        // px por nivel de profundidade
+  const MARGIN = { top: 18, right: 28, bottom: 18, left: 18 };
+  const LABEL_W = 220;      // espaco reservado pro nome
+  const BAR_W = 18, BAR_GAP = 2, BAR_H = 10;
+  const BAR_BLOCK_W = CHARS.length * BAR_W + (CHARS.length - 1) * BAR_GAP;
+
+  let tree, svg, gRoot, tooltip;
   let initialized = false;
 
-  // Cores por nº de caracteres descritos (0..3)
-  const CHAR_COLORS = ['#c0c4cc', '#e4b15c', '#8bbd61', '#2e6b4f'];
-
-  const NODE_HEIGHT = 14;   // px por leaf
-  const NODE_WIDTH = 130;   // px por nivel de profundidade
-  const MARGIN = { top: 20, right: 220, bottom: 20, left: 20 };
-
-  let svg, gRoot, tooltip;
-
-  function countDescribed(sp) {
-    if (!sp) return 0;
-    return ['ext_morph', 'internal_oral', 'chondrocranium']
-      .filter(c => sp[c] && sp[c].status === 'described').length;
+  // -------- Helpers --------
+  function isLeaf(d) {
+    return !(d.children && d.children.length) &&
+           !(d._children && d._children.length);
+  }
+  function isCollapsed(d) {
+    return d._children && !d.children;
   }
 
-  function isLeaf(node) {
-    return !(node.children && node.children.length) &&
-           !(node._children && node._children.length);
-  }
-
-  function nLeavesVisible(node) {
-    if (isLeaf(node)) return 1;
-    let n = 0;
+  function collapseToFamilies(node) {
+    // Colapsa cada no com mrca_family (nivel familia). Nao recurse abaixo.
+    if (node.data.mrca_family) {
+      if (node.children) {
+        node._children = node.children;
+        node.children = null;
+      }
+      return;
+    }
     if (node.children) {
-      for (const c of node.children) n += nLeavesVisible(c);
+      for (const c of node.children) collapseToFamilies(c);
     }
-    return n || 1;
-  }
-
-  function nLeavesTotal(node) {
-    if (!node.children && !node._children) return 1;
-    let n = 0;
-    const kids = node.children || node._children || [];
-    for (const c of kids) n += nLeavesTotal(c);
-    return n;
-  }
-
-  function collapseAll(node, depthLimit) {
-    // Colapsa todos os internos abaixo de depthLimit
-    if (node.depth >= depthLimit && node.children) {
-      node._children = node.children;
-      node.children = null;
-    }
-    const kids = node.children || node._children || [];
-    for (const c of kids) collapseAll(c, depthLimit);
-  }
-
-  function expandAll(node) {
-    if (node._children) {
-      node.children = node._children;
-      node._children = null;
-    }
-    if (node.children) for (const c of node.children) expandAll(c);
   }
 
   function fullyCollapse(node) {
-    if (node.children) {
-      node._children = node.children;
-      node.children = null;
-    }
-    const kids = node._children || [];
-    for (const c of kids) fullyCollapse(c);
+    if (node.children) { node._children = node.children; node.children = null; }
+    (node._children || []).forEach(fullyCollapse);
   }
-
-  function toggle(node) {
-    if (node.children) {
-      node._children = node.children;
-      node.children = null;
-    } else if (node._children) {
-      node.children = node._children;
-      node._children = null;
-    }
+  function expandAll(node) {
+    if (node._children) { node.children = node._children; node._children = null; }
+    (node.children || []).forEach(expandAll);
+  }
+  function toggle(d) {
+    if (d.children) { d._children = d.children; d.children = null; }
+    else if (d._children) { d.children = d._children; d._children = null; }
     update();
   }
 
-  // ------------- Render -------------
+  // -------- Layout / render --------
   function update() {
-    const visibleLeaves = nLeavesVisible(tree);
-    const width = NODE_WIDTH * (tree.height + 1) + MARGIN.left + MARGIN.right;
-    const height = Math.max(600, NODE_HEIGHT * visibleLeaves + MARGIN.top + MARGIN.bottom);
-
-    svg.attr('width', width).attr('height', height);
-
-    // Layout dendrograma horizontal
-    const layout = d3.tree()
-      .size([height - MARGIN.top - MARGIN.bottom, width - MARGIN.left - MARGIN.right])
-      .separation(() => 1);
+    const layout = d3.tree().nodeSize([NODE_H, NODE_W]);
     layout(tree);
 
-    const all = tree.descendants();
+    let xMin = Infinity, xMax = -Infinity, yMax = 0;
+    tree.each(d => {
+      if (d.x < xMin) xMin = d.x;
+      if (d.x > xMax) xMax = d.x;
+      if (d.y > yMax) yMax = d.y;
+    });
 
-    // -------- Links --------
-    const linkGen = d3.linkHorizontal()
-      .x(d => d.y)
-      .y(d => d.x);
+    const barStartX = yMax + 12 + LABEL_W;
+    const width  = barStartX + BAR_BLOCK_W + 90 /* n= label */ + MARGIN.left + MARGIN.right;
+    const height = (xMax - xMin) + NODE_H + MARGIN.top + MARGIN.bottom;
 
-    const links = gRoot.selectAll('path.phylo-link')
-      .data(tree.links(), d => nodeKey(d.target));
+    svg.attr('width', width).attr('height', height);
+    gRoot.attr('transform', `translate(${MARGIN.left}, ${MARGIN.top - xMin})`);
 
+    // ===== Links =====
+    const linkGen = d3.linkHorizontal().x(d => d.y).y(d => d.x);
+    const links = gRoot.selectAll('path.phylo-link').data(tree.links(), d => key(d.target));
     links.exit().remove();
+    links.enter().append('path').attr('class', 'phylo-link')
+      .merge(links).attr('d', linkGen);
 
-    links.enter()
-      .append('path')
-      .attr('class', 'phylo-link')
-      .merge(links)
-      .attr('d', linkGen);
-
-    // -------- Internal nodes (circulos clicaveis) --------
-    const internalData = all.filter(d => !isLeaf(d));
-
-    const internals = gRoot.selectAll('g.phylo-internal')
-      .data(internalData, nodeKey);
-
+    // ===== Internal nodes (clickable circles + MRCA label) =====
+    const internalData = tree.descendants().filter(d => !isLeaf(d));
+    const internals = gRoot.selectAll('g.phylo-internal').data(internalData, key);
     internals.exit().remove();
-
-    const internalsEnter = internals.enter()
-      .append('g')
-      .attr('class', 'phylo-internal');
-
-    internalsEnter.append('circle').attr('r', 5);
-    internalsEnter.append('text');
-
-    const internalsMerged = internalsEnter.merge(internals)
-      .attr('transform', d => `translate(${d.y},${d.x})`);
-
-    internalsMerged.select('circle')
-      .attr('class', d => 'phylo-internal-circle' + (d._children ? ' collapsed' : ''))
-      .on('click', (event, d) => { toggle(d); event.stopPropagation(); });
-
-    internalsMerged.select('text')
-      .attr('class', 'phylo-internal-count')
-      .attr('x', 8)
-      .attr('y', 3)
-      .text(d => d._children ? `+${nLeavesTotal(d)}` : '');
-
-    // -------- Leaves --------
-    const leafData = all.filter(isLeaf);
-
-    const leaves = gRoot.selectAll('g.phylo-leaf')
-      .data(leafData, nodeKey);
-
-    leaves.exit().remove();
-
-    const leavesEnter = leaves.enter()
-      .append('g')
-      .attr('class', 'phylo-leaf');
-
-    leavesEnter.append('circle')
-      .attr('class', 'phylo-tip-circle')
-      .attr('r', 4);
-
-    leavesEnter.append('text')
-      .attr('class', 'phylo-tip-text')
-      .attr('x', 9)
-      .attr('y', 0);
-
-    const leavesMerged = leavesEnter.merge(leaves)
-      .attr('transform', d => `translate(${d.y},${d.x})`);
-
-    leavesMerged.select('circle')
-      .attr('fill', d => {
-        const sp = speciesByTip[d.data.name];
-        return CHAR_COLORS[countDescribed(sp)];
-      })
-      .on('mouseover', (event, d) => showTooltip(event, d))
+    const ent = internals.enter().append('g').attr('class', 'phylo-internal');
+    ent.append('circle');
+    ent.append('text').attr('class', 'phylo-mrca-label');
+    const merged = ent.merge(internals).attr('transform', d => `translate(${d.y},${d.x})`);
+    merged.select('circle')
+      .attr('r', d => isCollapsed(d) ? 5.5 : 3.5)
+      .attr('class', d => 'phylo-internal-circle' + (isCollapsed(d) ? ' collapsed' : ''))
+      .on('click', (e, d) => { toggle(d); e.stopPropagation(); })
+      .on('mouseover', (e, d) => isCollapsed(d) && showTooltip(e, d))
       .on('mousemove', positionTooltip)
       .on('mouseout', hideTooltip);
+    merged.select('text.phylo-mrca-label')
+      .attr('x', d => isCollapsed(d) ? 10 : -6)
+      .attr('y', d => isCollapsed(d) ? 4 : -4)
+      .attr('text-anchor', d => isCollapsed(d) ? 'start' : 'end')
+      .text(d => mrcaLabel(d, /*forCollapsed*/ isCollapsed(d)));
 
-    leavesMerged.select('text')
-      .text(d => prettySpecies(d.data.name))
-      .attr('class', d => 'phylo-tip-text' + (countDescribed(speciesByTip[d.data.name]) === 0 ? ' dim' : ''));
+    // ===== Tips (leaves) =====
+    const leafData = tree.descendants().filter(isLeaf);
+    const leaves = gRoot.selectAll('g.phylo-leaf').data(leafData, key);
+    leaves.exit().remove();
+    const lent = leaves.enter().append('g').attr('class', 'phylo-leaf');
+    lent.append('circle').attr('class', 'phylo-tip-circle').attr('r', 3);
+    lent.append('text').attr('class', 'phylo-tip-text').attr('x', 7);
+    const lmerged = lent.merge(leaves).attr('transform', d => `translate(${d.y},${d.x})`);
+    lmerged.select('circle')
+      .attr('fill', d => tipColor(d))
+      .on('mouseover', (e, d) => showTooltip(e, d))
+      .on('mousemove', positionTooltip)
+      .on('mouseout', hideTooltip);
+    lmerged.select('text')
+      .text(d => pretty(d.data.name));
+
+    // ===== Barras empilhadas por no (tips + colapsados) =====
+    const barredData = tree.descendants().filter(d => isLeaf(d) || isCollapsed(d));
+    const bars = gRoot.selectAll('g.phylo-bars').data(barredData, key);
+    bars.exit().remove();
+    const bent = bars.enter().append('g').attr('class', 'phylo-bars');
+    bent.append('text').attr('class', 'phylo-bar-n');
+    // CHARS.length pares de retangulos (bg + fg)
+    CHARS.forEach((_, i) => {
+      bent.append('rect').attr('class', `bar-bg bar-bg-${i}`);
+      bent.append('rect').attr('class', `bar-fg bar-fg-${i}`);
+    });
+    const bmerged = bent.merge(bars).attr('transform', d => `translate(${barStartX}, ${d.x})`);
+    CHARS.forEach((ch, i) => {
+      const x = i * (BAR_W + BAR_GAP);
+      bmerged.select(`rect.bar-bg-${i}`)
+        .attr('x', x).attr('y', -BAR_H / 2)
+        .attr('width', BAR_W).attr('height', BAR_H)
+        .attr('rx', 1).attr('fill', '#e8eae3');
+      bmerged.select(`rect.bar-fg-${i}`)
+        .attr('x', x).attr('y', -BAR_H / 2)
+        .attr('height', BAR_H).attr('rx', 1).attr('fill', ch.color)
+        .attr('width', d => {
+          const c = d.data.counts;
+          if (!c || !c.total) return 0;
+          return BAR_W * (c[ch.key] / c.total);
+        });
+    });
+    bmerged.select('text.phylo-bar-n')
+      .attr('x', BAR_BLOCK_W + 8).attr('y', 3)
+      .text(d => `n=${d.data.counts.total}`);
   }
 
-  function nodeKey(d) {
-    // Chave estavel pra d3 data join
-    return d.data.name + '/' + d.depth + '/' + (d.parent ? d.parent.data.name : 'R');
+  function key(d) {
+    return d.data.name + '|' + (d.parent ? d.parent.data.name : 'R') + '|' + d.depth;
   }
 
-  function prettySpecies(tipLabel) {
-    return (tipLabel || '').replace(/_/g, ' ');
-  }
-
-  // ------------- Tooltip -------------
-  function showTooltip(event, d) {
-    const sp = speciesByTip[d.data.name];
-    if (!sp) {
-      tooltip.innerHTML = `<strong>${prettySpecies(d.data.name)}</strong>
-        <div class="tt-sub">não consta no banco</div>`;
-    } else {
-      const status = c => sp[c].status === 'described' ? '✓' : '—';
-      tooltip.innerHTML = `<strong><em>${sp.species}</em></strong>
-        <div class="tt-sub">${sp.family}</div>
-        <div class="tt-sub" style="margin-top:6px">
-          ${status('ext_morph')} Morf. externa<br>
-          ${status('internal_oral')} Morf. oral<br>
-          ${status('chondrocranium')} Condrocrânio
-        </div>`;
+  function mrcaLabel(d, forCollapsed) {
+    const data = d.data;
+    // Pra nos colapsados: mostra MRCA + (+N descendentes)
+    const total = data.counts ? data.counts.total : 0;
+    if (forCollapsed) {
+      const name = data.mrca_genus || data.mrca_family || 'clado';
+      return `${name} (+${total})`;
     }
-    tooltip.classList.add('visible');
-    positionTooltip(event);
+    // Nos expandidos: so mostra MRCA se houver (mais limpo)
+    if (data.mrca_genus) return data.mrca_genus;
+    if (data.mrca_family) return data.mrca_family;
+    return '';
   }
-  function positionTooltip(event) {
+
+  function pretty(s) { return (s || '').replace(/_/g, ' '); }
+
+  function tipColor(d) {
+    const c = d.data.counts || {};
+    const n = (c.ext || 0) + (c.oral || 0) + (c.cond || 0);
+    return ['#c0c4cc', '#e4b15c', '#8bbd61', '#2e6b4f'][n];
+  }
+
+  // -------- Tooltip --------
+  function showTooltip(e, d) {
+    const data = d.data;
+    const c = data.counts || {};
+    const pct = k => c.total ? Math.round(100 * (c[k] || 0) / c.total) : 0;
+    let title;
+    if (isLeaf(d)) {
+      title = `<strong><em>${pretty(data.name)}</em></strong>`;
+      if (data.family) title += `<div class="tt-sub">${data.family}</div>`;
+    } else {
+      const lbl = data.mrca_genus || data.mrca_family || 'Clado';
+      title = `<strong>${lbl}</strong><div class="tt-sub">${c.total} espécies${isCollapsed(d) ? ' (colapsadas)' : ''}</div>`;
+    }
+    const bars = CHARS.map(ch => {
+      const v = c[ch.key] || 0;
+      return `<div class="tt-bar-row">
+        <span class="tt-swatch" style="background:${ch.color}"></span>
+        ${ch.label}: <strong>${v}/${c.total || 0}</strong> (${pct(ch.key)}%)
+      </div>`;
+    }).join('');
+    tooltip.innerHTML = title + `<div class="tt-bars">${bars}</div>`;
+    tooltip.classList.add('visible');
+    positionTooltip(e);
+  }
+  function positionTooltip(e) {
     const pad = 12;
-    let x = event.clientX + pad;
-    let y = event.clientY + pad;
-    // Ajusta pra não estourar a viewport
     const r = tooltip.getBoundingClientRect();
-    if (x + r.width > window.innerWidth - 8) x = event.clientX - r.width - pad;
-    if (y + r.height > window.innerHeight - 8) y = event.clientY - r.height - pad;
+    let x = e.clientX + pad, y = e.clientY + pad;
+    if (x + r.width > window.innerWidth - 8) x = e.clientX - r.width - pad;
+    if (y + r.height > window.innerHeight - 8) y = e.clientY - r.height - pad;
     tooltip.style.left = x + 'px';
     tooltip.style.top = y + 'px';
   }
-  function hideTooltip() {
-    tooltip.classList.remove('visible');
-  }
+  function hideTooltip() { tooltip.classList.remove('visible'); }
 
-  // ------------- Boot -------------
+  // -------- Boot --------
   async function init() {
     if (initialized) return;
     initialized = true;
     try {
-      const [phy, sp] = await Promise.all([
-        fetch('assets/data/phylogeny.json', { cache: 'no-store' }).then(r => r.json()),
-        fetch('assets/data/species.json', { cache: 'no-store' }).then(r => r.json()),
-      ]);
-
-      for (const s of sp.species) speciesByTip[s.tip_label] = s;
-      unmatched = sp.species.length - phy.tip_count;
-
+      const phy = await fetch('assets/data/phylogeny.json', { cache: 'no-store' }).then(r => r.json());
       document.getElementById('phylo-meta').textContent =
-        `${phy.tip_count} pontas (espécies posicionadas) · árvore podada a partir de ${phy.source.split(' podada')[0]} · gerada em ${phy.generated}`;
+        `${phy.tip_count} pontas (espécies posicionadas) · gerada em ${phy.generated}`;
+      const sp = await fetch('assets/data/species.json', { cache: 'no-store' }).then(r => r.json());
+      const unmatched = sp.species.length - phy.tip_count;
       document.getElementById('phylo-unmatched-hint').textContent =
-        unmatched > 0 ? `${unmatched} espécies do banco ainda sem posicionamento na megatree (em geral spp. descritas após a publicação da megatree).` : '';
+        unmatched > 0 ? `${unmatched} espécies do banco ainda sem posicionamento na megatree (em geral spp. descritas após a publicação dela).` : '';
 
       tree = d3.hierarchy(phy.tree);
-      // Colapsa inicialmente até profundidade ~3 (mostra clados grandes)
-      collapseAll(tree, 3);
+      collapseToFamilies(tree);
 
-      // Setup SVG
       const container = document.getElementById('phylo-container');
       tooltip = document.createElement('div');
       tooltip.className = 'phylo-tooltip';
       document.body.appendChild(tooltip);
-
       svg = d3.select(container).append('svg');
-      gRoot = svg.append('g').attr('transform', `translate(${MARGIN.left},${MARGIN.top})`);
+      gRoot = svg.append('g');
 
       update();
 
       document.getElementById('btn-expand-all').addEventListener('click', () => { expandAll(tree); update(); });
       document.getElementById('btn-collapse-all').addEventListener('click', () => {
-        // Mantem a raiz expandida pra nao sumir tudo
         fullyCollapse(tree);
         if (tree._children) { tree.children = tree._children; tree._children = null; }
         update();
@@ -271,10 +256,7 @@
     }
   }
 
-  // Lazy load: só inicializa quando o usuário clicar na aba
   document.querySelectorAll('.tab').forEach(tab => {
-    if (tab.dataset.view === 'filogenia') {
-      tab.addEventListener('click', init, { once: false });
-    }
+    if (tab.dataset.view === 'filogenia') tab.addEventListener('click', init);
   });
 })();

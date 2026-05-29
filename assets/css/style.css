@@ -185,6 +185,7 @@ tbody tr:hover { background: #fafaf7; }
 .lg-title { color: var(--muted); font-weight: 600; }
 .lg-item { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); }
 .lg-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.lg-sep { color: var(--line); margin: 0 4px; }
 
 .phylo-container {
   background: var(--surface); border-radius: var(--radius);
@@ -196,27 +197,31 @@ tbody tr:hover { background: #fafaf7; }
 
 /* SVG da filogenia */
 .phylo-container svg { display: block; }
-.phylo-link {
-  fill: none; stroke: #b9c1bf; stroke-width: 1.2px;
-}
+.phylo-link { fill: none; stroke: #b9c1bf; stroke-width: 1.2px; }
+
 .phylo-internal-circle {
   fill: #fff; stroke: #6b7280; stroke-width: 1.5px;
   cursor: pointer; transition: fill .12s;
 }
 .phylo-internal-circle:hover { fill: var(--accent-soft); }
 .phylo-internal-circle.collapsed { fill: var(--accent); stroke: var(--accent-dark); }
-.phylo-internal-count {
-  font-size: 10px; fill: var(--muted); pointer-events: none;
-  user-select: none;
+
+.phylo-mrca-label {
+  font-size: 10.5px; font-family: var(--sans);
+  fill: var(--ink); font-weight: 600;
+  dominant-baseline: middle; pointer-events: none; user-select: none;
 }
-.phylo-tip-circle {
-  stroke: #fff; stroke-width: 1px;
-}
+.phylo-tip-circle { stroke: #fff; stroke-width: 1px; }
 .phylo-tip-text {
   font-size: 11px; font-family: var(--sans); fill: var(--ink);
   font-style: italic; dominant-baseline: middle; pointer-events: none;
 }
-.phylo-tip-text.dim { fill: var(--muted); }
+.phylo-bars { pointer-events: none; }
+.bar-bg, .bar-fg { stroke: none; }
+.phylo-bar-n {
+  font-size: 9.5px; fill: var(--muted); dominant-baseline: middle;
+  font-family: var(--mono);
+}
 
 .phylo-tooltip {
   position: fixed; pointer-events: none; z-index: 10;
@@ -229,6 +234,14 @@ tbody tr:hover { background: #fafaf7; }
 .phylo-tooltip.visible { opacity: 1; }
 .phylo-tooltip strong { color: #fff; }
 .phylo-tooltip .tt-sub { color: #c7cdd2; font-size: .76rem; margin-top: 4px; }
+.phylo-tooltip .tt-bars { margin-top: 8px; padding-top: 8px; border-top: 1px solid #3a4148; }
+.phylo-tooltip .tt-bar-row {
+  display: flex; align-items: center; gap: 6px;
+  font-size: .76rem; line-height: 1.6;
+}
+.phylo-tooltip .tt-swatch {
+  display: inline-block; width: 10px; height: 10px; border-radius: 2px;
+}
 
 /* Misc */
 h2 { font-size: 1.4rem; margin-top: 0; }
@@ -237,3 +250,58 @@ code { font-family: var(--mono); background: #eceee9; padding: 1px 5px; border-r
 .site-footer { border-top: 1px solid var(--line); margin-top: 20px; }
 .site-footer p { color: var(--muted); font-size: .82rem; padding: 18px 0; margin: 0; }
 #view-sobre p { max-width: 70ch; }
+
+/* Citação na aba Sobre */
+.citation-block {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin: 24px 0;
+  max-width: 76ch;
+}
+.citation-block h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: var(--accent-dark);
+}
+.citation-block p { margin: 8px 0; max-width: none; }
+.citation-block .cite {
+  border-left: 3px solid var(--accent-soft);
+  background: var(--accent-soft);
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: .95rem;
+  line-height: 1.55;
+}
+.citation-block a { color: var(--accent); }
+.citation-block a:hover { color: var(--accent-dark); }
+
+.bibtex {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 12px;
+  background: #fafaf7;
+}
+.bibtex summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: .9rem;
+  padding: 6px 0;
+  color: var(--accent-dark);
+}
+.bibtex summary:hover { color: var(--accent); }
+.bibtex pre {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 14px;
+  overflow-x: auto;
+  font-size: .82rem;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+.bibtex code { background: none; padding: 0; font-size: inherit; }

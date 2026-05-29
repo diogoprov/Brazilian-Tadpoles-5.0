@@ -25,11 +25,18 @@ UNMATCHED_OUT = os.path.join(PROJECT_ROOT, 'assets', 'data', 'phylogeny_unmatche
 
 # ----- Newick parser minimal -----
 class Node:
-    __slots__ = ('name', 'length', 'children')
+    __slots__ = ('name', 'length', 'children',
+                 'counts', 'family', 'genus', 'epithet',
+                 'family_set', 'genus_set',
+                 'mrca_family', 'mrca_genus')
     def __init__(self, name='', length=0.0, children=None):
         self.name = name
         self.length = length
         self.children = children if children is not None else []
+        self.counts = {'total': 0, 'ext': 0, 'oral': 0, 'cond': 0}
+        self.family_set = set()
+        self.genus_set = set()
+        # demais campos populados durante label_mrcas (checados via hasattr)
 
 
 def parse_newick(s):
@@ -102,8 +109,65 @@ def prune(node, keep_set):
     return new
 
 
+def annotate_post(node, species_by_tip):
+    """Pos-ordem. Em cada no anota family_set, genus_set e counts (agregado de descendentes).
+    Em tips, anota family/genus/epithet."""
+    if not node.children:
+        sp = species_by_tip.get(node.name)
+        if sp:
+            node.family = sp['family']
+            node.genus = sp['genus']
+            node.epithet = sp['epithet']
+            node.family_set = {sp['family']}
+            node.genus_set = {sp['genus']}
+            node.counts = {
+                'total': 1,
+                'ext': 1 if sp['ext_morph']['status'] == 'described' else 0,
+                'oral': 1 if sp['internal_oral']['status'] == 'described' else 0,
+                'cond': 1 if sp['chondrocranium']['status'] == 'described' else 0,
+            }
+        return node.family_set, node.genus_set
+    fams, gens = set(), set()
+    agg = {'total': 0, 'ext': 0, 'oral': 0, 'cond': 0}
+    for c in node.children:
+        cf, cg = annotate_post(c, species_by_tip)
+        fams |= cf
+        gens |= cg
+        for k in agg:
+            agg[k] += c.counts[k]
+    node.family_set = fams
+    node.genus_set = gens
+    node.counts = agg
+    return fams, gens
+
+
+def label_mrcas_pre(node, parent_family_set=None, parent_genus_set=None):
+    """Pre-ordem. Marca mrca_family apenas no NO MAIS ALTO de cada familia monofiletica
+    (igual para genero). MRCA = singleton e pai NAO tem mesmo singleton."""
+    if len(node.family_set) == 1:
+        f = next(iter(node.family_set))
+        if parent_family_set is None or parent_family_set != node.family_set:
+            node.mrca_family = f
+    if len(node.genus_set) == 1:
+        g = next(iter(node.genus_set))
+        if parent_genus_set is None or parent_genus_set != node.genus_set:
+            node.mrca_genus = g
+    for c in node.children:
+        label_mrcas_pre(c, node.family_set, node.genus_set)
+
+
 def node_to_dict(node):
-    d = {'name': node.name, 'length': node.length}
+    d = {'name': node.name, 'length': node.length, 'counts': node.counts}
+    if hasattr(node, 'mrca_family'):
+        d['mrca_family'] = node.mrca_family
+    if hasattr(node, 'mrca_genus'):
+        d['mrca_genus'] = node.mrca_genus
+    if hasattr(node, 'family'):
+        d['family'] = node.family
+    if hasattr(node, 'genus'):
+        d['genus'] = node.genus
+    if hasattr(node, 'epithet'):
+        d['epithet'] = node.epithet
     if node.children:
         d['children'] = [node_to_dict(c) for c in node.children]
     return d
@@ -130,6 +194,11 @@ def main():
     print(f'Nao casadas: {len(unmatched)}')
 
     pruned = prune(root, matched)
+    # Pos-ordem: agrega counts/family_set/genus_set
+    annotate_post(pruned, by_tip)
+    # Pre-ordem: marca apenas o no MAIS ALTO de cada familia/genero monofiletico
+    label_mrcas_pre(pruned)
+
     out = {
         'schema_version': '5.0.0',
         'source': 'filogenia_jessyca_newNames.tre podada para as spp do banco',
