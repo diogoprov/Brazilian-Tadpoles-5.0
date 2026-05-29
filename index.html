@@ -7,6 +7,7 @@
   <meta name="description" content="Banco de dados das descrições de girinos de anuros do Brasil. Versão 5.0." />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -17,6 +18,7 @@
       </div>
       <nav class="tabs" aria-label="Navegação principal">
         <button class="tab is-active" data-view="especies">Espécies</button>
+        <button class="tab" data-view="filogenia">Filogenia</button>
         <button class="tab" data-view="dashboard">Dados faltantes</button>
         <button class="tab" data-view="sobre">Sobre</button>
       </nav>
@@ -90,6 +92,38 @@
       </div>
     </section>
 
+    <!-- ========== VIEW: FILOGENIA ========== -->
+    <section id="view-filogenia" class="view">
+      <div class="phylo-header">
+        <div>
+          <h2>Filogenia interativa</h2>
+          <p class="muted" id="phylo-meta">Árvore podada a partir da megatree global de anfíbios para as espécies brasileiras com girino livre-natante.</p>
+        </div>
+        <div class="phylo-controls">
+          <button class="btn-link" id="btn-expand-all" type="button">Expandir tudo</button>
+          <button class="btn-link" id="btn-collapse-all" type="button">Colapsar tudo</button>
+        </div>
+      </div>
+
+      <div class="phylo-legend">
+        <span class="lg-title">Completude:</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#c0c4cc"></span>0 caracteres</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#e4b15c"></span>1</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#8bbd61"></span>2</span>
+        <span class="lg-item"><span class="lg-dot" style="background:#2e6b4f"></span>3 caracteres</span>
+      </div>
+
+      <div id="phylo-container" class="phylo-container"></div>
+
+      <div class="phylo-foot">
+        <p class="muted small">
+          Clique nos círculos cinza dos nós internos para colapsar/expandir clados.
+          Passe o mouse sobre uma ponta para ver os detalhes da espécie.
+        </p>
+        <p class="muted small" id="phylo-unmatched-hint"></p>
+      </div>
+    </section>
+
     <!-- ========== VIEW: DASHBOARD ========== -->
     <section id="view-dashboard" class="view">
       <h2>Completude da descrição de girinos</h2>
@@ -130,5 +164,6 @@
   </footer>
 
   <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/phylogeny.js" defer></script>
 </body>
 </html>

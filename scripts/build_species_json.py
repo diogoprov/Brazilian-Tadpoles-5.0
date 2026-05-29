@@ -66,7 +66,10 @@ def main():
         if family in EXCLUDE_FAMILIES:
             excluded.append((sp_name, family))
             continue
-        genus = sp_name.split()[0] if sp_name else ''
+        parts = sp_name.split()
+        genus = parts[0] if parts else ''
+        epithet = parts[1] if len(parts) >= 2 else ''
+        tip_label = f'{genus}_{epithet}' if epithet else genus
         ext_status, ext_refs = parse_refs(r[2])
         int_status, int_refs = parse_refs(r[3])
         cho_status, cho_refs = parse_refs(r[4])
@@ -74,6 +77,8 @@ def main():
             'id': slug(sp_name),
             'species': sp_name,
             'genus': genus,
+            'epithet': epithet,
+            'tip_label': tip_label,
             'family': family,
             'ext_morph': {'status': ext_status, 'refs': ext_refs},
             'internal_oral': {'status': int_status, 'refs': int_refs},

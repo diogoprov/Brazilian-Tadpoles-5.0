@@ -1,0 +1,2351 @@
+{
+  "generated": "2026-05-29",
+  "count": 331,
+  "by_family": {
+    "Allophrynidae": [
+      "Allophryne resplendens"
+    ],
+    "Aromobatidae": [
+      "Allobates albiventris",
+      "Allobates bacurau",
+      "Allobates caldwellae",
+      "Allobates carajas",
+      "Allobates grillicantus",
+      "Allobates kamilae",
+      "Allobates pacaas",
+      "Allobates paleci",
+      "Allobates ripicolus",
+      "Allobates vanzolinius",
+      "Allobates velocicantus",
+      "Anomaloglossus tepequem",
+      "Dryadobates alagoanus",
+      "Dryadobates bokermanni",
+      "Dryadobates capixaba",
+      "Dryadobates carioca",
+      "Dryadobates erythropus",
+      "Dryadobates lutzi",
+      "Dryadobates olfersioides"
+    ],
+    "Bufonidae": [
+      "Adhaerobufo ceratophrys",
+      "Amazophrynella gardai",
+      "Atelopus manauensis",
+      "Dendrophryniscus cuca",
+      "Dendrophryniscus davori",
+      "Dendrophryniscus haddadi",
+      "Dendrophryniscus imitator",
+      "Dendrophryniscus izecksohni",
+      "Dendrophryniscus jureia",
+      "Dendrophryniscus lauroi",
+      "Dendrophryniscus organensis",
+      "Dendrophryniscus skuki",
+      "Dendrophryniscus stawiarskyi",
+      "Frostius pernambucensis",
+      "Melanophryniscus admirabilis",
+      "Melanophryniscus cambaraensis",
+      "Melanophryniscus dorsalis",
+      "Melanophryniscus formosus",
+      "Melanophryniscus macrogranulosus",
+      "Melanophryniscus montevidensis",
+      "Melanophryniscus peritus",
+      "Melanophryniscus sanmartini",
+      "Melanophryniscus spectabilis",
+      "Rhaebo ecuadoriensis",
+      "Rhinella ceratophrys",
+      "Rhinella fernandezae",
+      "Rhinella martyi",
+      "Rhinella nattereri",
+      "Rhinella parecis",
+      "Rhinella roqueana",
+      "Rhinella sebbeni",
+      "Rhinella teotoniensis"
+    ],
+    "Centrolenidae": [
+      "Hyalinobatrachium muiraquitan",
+      "Vitreorana assuh",
+      "Vitreorana parvula"
+    ],
+    "Cycloramphidae": [
+      "Cycloramphis faustoi",
+      "Cycloramphus catarinensis",
+      "Cycloramphus diringshofeni",
+      "Cycloramphus duseni",
+      "Cycloramphus heyeri",
+      "Cycloramphus parvulus",
+      "Thoropa bryomantis",
+      "Thoropa petropolitana"
+    ],
+    "Dendrobatidae": [
+      "Ameerega berohoka",
+      "Ameerega munduruku",
+      "Ranitomeya aetherea",
+      "Ranitomeya aquamarina",
+      "Ranitomeya cyanovittata",
+      "Ranitomeya hwata",
+      "Ranitomeya walkari"
+    ],
+    "Hylidae": [
+      "Aplastodiscus aulophonus",
+      "Boana claresignata",
+      "Boana clepsydra",
+      "Boana courtoisae",
+      "Boana cymbalum",
+      "Boana eucharis",
+      "Boana guarinimirim",
+      "Boana itajahy",
+      "Boana paranaiba",
+      "Boana quiriri",
+      "Bokermannohyla capra",
+      "Bokermannohyla diamantina",
+      "Bokermannohyla feioi",
+      "Bokermannohyla flavopicta",
+      "Bokermannohyla ibitiguara",
+      "Bokermannohyla ibitipoca",
+      "Bokermannohyla izecksohni",
+      "Bokermannohyla juiju",
+      "Bokermannohyla langei",
+      "Bokermannohyla lucianae",
+      "Bokermannohyla napolii",
+      "Bokermannohyla pseudopseudis",
+      "Bokermannohyla ravida",
+      "Bokermannohyla sagarana",
+      "Bokermannohyla sapiranga",
+      "Bokermannohyla sazimai",
+      "Bokermannohyla vulcaniae",
+      "Corythomantis botoque",
+      "Dendropsophus bilobatus",
+      "Dendropsophus limai",
+      "Dendropsophus minimus",
+      "Dendropsophus tapacurensis",
+      "Dendropsophus tintinnabulum",
+      "Gabohyla pauloalvini",
+      "Julianus camposseabrai",
+      "Julianus fontanarrosai",
+      "Julianus pinimus",
+      "Julianus uruguayus",
+      "Nyctimantis arapapa",
+      "Nyctimantis bokermanni",
+      "Nyctimantis brunoi",
+      "Nyctimantis diadorim",
+      "Nyctimantis pomba",
+      "Ololygon agilis",
+      "Ololygon albicans",
+      "Ololygon alcatraz",
+      "Ololygon angrensis",
+      "Ololygon arduoua",
+      "Ololygon argyreornata",
+      "Ololygon ariadne",
+      "Ololygon aromothyella",
+      "Ololygon atrata",
+      "Ololygon belloni",
+      "Ololygon berthae",
+      "Ololygon brieni",
+      "Ololygon caissara",
+      "Ololygon canastrensis",
+      "Ololygon cardosoi",
+      "Ololygon carnevallii",
+      "Ololygon catharinae",
+      "Ololygon centralis",
+      "Ololygon cosenzai",
+      "Ololygon faivovichi",
+      "Ololygon feioi",
+      "Ololygon flavoguttata",
+      "Ololygon garibaldiae",
+      "Ololygon goya",
+      "Ololygon heyeri",
+      "Ololygon hiemalis",
+      "Ololygon humilis",
+      "Ololygon insperata",
+      "Ololygon jureia",
+      "Ololygon kautskyi",
+      "Ololygon littoralis",
+      "Ololygon littorea",
+      "Ololygon longilinea",
+      "Ololygon luizotavioi",
+      "Ololygon machadoi",
+      "Ololygon melanodactyla",
+      "Ololygon melloi",
+      "Ololygon muriciensis",
+      "Ololygon obtriangulata",
+      "Ololygon paracatu",
+      "Ololygon paulofreirei",
+      "Ololygon peixotoi",
+      "Ololygon perpusilla",
+      "Ololygon pixinguinha",
+      "Ololygon pombali",
+      "Ololygon ranki",
+      "Ololygon rizibilis",
+      "Ololygon skaios",
+      "Ololygon skuki",
+      "Ololygon strigilata",
+      "Ololygon trapicheiroi",
+      "Ololygon tripui",
+      "Ololygon tupinamba",
+      "Ololygon v-signata",
+      "Osteocephalus camufatus",
+      "Phyllodytes iuna",
+      "Pseudis boliviana",
+      "Pseudis caraya",
+      "Pseudis laevis",
+      "Pseudis limellum",
+      "Scinax albertinae",
+      "Scinax baumgardneri",
+      "Scinax cabralensis",
+      "Scinax caldarum",
+      "Scinax coeruleus",
+      "Scinax cretatus",
+      "Scinax cuspidatus",
+      "Scinax dolloi",
+      "Scinax exiguus",
+      "Scinax haddadorum",
+      "Scinax juruena",
+      "Scinax kennedyi",
+      "Scinax lindsayi",
+      "Scinax madeirae",
+      "Scinax maracaya",
+      "Scinax montivagus",
+      "Scinax onca",
+      "Scinax ritaleeae",
+      "Scinax rogerioi",
+      "Scinax rossaferesae",
+      "Scinax ruberoculatus",
+      "Scinax rupestris",
+      "Scinax sateremawe",
+      "Scinax strussmannae",
+      "Scinax tigrinus",
+      "Scinax tropicalia",
+      "Scinax villasboasi",
+      "Sphaenorhynchus bromelicola",
+      "Sphaenorhynchus palustris",
+      "Trachycephalus adenodermus",
+      "Trachycephalus venezolanus",
+      "“Hyla” imitator"
+    ],
+    "Hylodidae": [
+      "Crossodactylus boulengeri",
+      "Crossodactylus cyclospinus",
+      "Crossodactylus dantei",
+      "Crossodactylus dispar",
+      "Crossodactylus franciscanus",
+      "Crossodactylus grandis",
+      "Crossodactylus lutzorum",
+      "Hylodes babax",
+      "Hylodes cardosoi",
+      "Hylodes glaber",
+      "Hylodes mertensi",
+      "Hylodes otavioi",
+      "Hylodes vanzolinii",
+      "Phantasmarana bocainensis"
+    ],
+    "Leptodactylidae": [
+      "Adenomera albarena",
+      "Adenomera amicorum",
+      "Adenomera aurantiaca",
+      "Adenomera cantitata",
+      "Adenomera glauciae",
+      "Adenomera gridipappi",
+      "Adenomera guarani",
+      "Adenomera inopinata",
+      "Adenomera kayapo",
+      "Adenomera phonotriccus",
+      "Adenomera tapajonica",
+      "Adenomera varcena",
+      "Crossodactylodes alairi",
+      "Crossodactylodes pintoi",
+      "Crossodactylodes serranegra",
+      "Crossodactylodes teixeirai",
+      "Leptodactylus brevipes",
+      "Leptodactylus caatingae",
+      "Leptodactylus fremitus",
+      "Leptodactylus gualambensis",
+      "Leptodactylus hylodes",
+      "Leptodactylus intermedius",
+      "Leptodactylus lauramiriamae",
+      "Leptodactylus luctator",
+      "Leptodactylus ochraceus",
+      "Leptodactylus paraensis",
+      "Leptodactylus paranaru",
+      "Leptodactylus payaya",
+      "Leptodactylus sabanensis",
+      "Paratelmatobius lutzii",
+      "Paratelmatobius mantiqueira",
+      "Paratelmatobius stellaris",
+      "Physalaemus angrensis",
+      "Physalaemus araxa",
+      "Physalaemus caete",
+      "Physalaemus carrizorum",
+      "Physalaemus insperatus",
+      "Physalaemus irroratus",
+      "Physalaemus orophilus",
+      "Pseudopaludicola atragula",
+      "Pseudopaludicola ceratophyes",
+      "Pseudopaludicola chimaera",
+      "Pseudopaludicola hyleaustralis",
+      "Pseudopaludicola ibisoroca",
+      "Pseudopaludicola javae",
+      "Pseudopaludicola motorzinho",
+      "Pseudopaludicola parnaiba",
+      "Rupirana kaatinga"
+    ],
+    "Microhylidae": [
+      "Arcovomer moqueca",
+      "Arcovomer ubatuba",
+      "Chiasmocleis alagoana",
+      "Chiasmocleis altomontana",
+      "Chiasmocleis atlantica",
+      "Chiasmocleis bicegoi",
+      "Chiasmocleis centralis",
+      "Chiasmocleis jacki",
+      "Chiasmocleis migueli",
+      "Elachistocleis corumbaensis",
+      "Elachistocleis erythrogaster",
+      "Elachistocleis magna",
+      "Elachistocleis surumu",
+      "Stereocyclops palmipes",
+      "Stereocyclops parkeri",
+      "Synapturanus ajuricaba",
+      "Synapturanus zombie"
+    ],
+    "Odontophrynidae": [
+      "Odontophrynus asper",
+      "Odontophrynus juquinha",
+      "Odontophrynus maisuma",
+      "Odontophrynus monachus",
+      "Odontophrynus reigi",
+      "Odontophrynus toledoi",
+      "Proceratophrys ararype",
+      "Proceratophrys bagnoi",
+      "Proceratophrys branti",
+      "Proceratophrys carranca",
+      "Proceratophrys fryi",
+      "Proceratophrys gladius",
+      "Proceratophrys huntingtoni",
+      "Proceratophrys intermedia",
+      "Proceratophrys itamari",
+      "Proceratophrys izecksohni",
+      "Proceratophrys korekore",
+      "Proceratophrys moehringi",
+      "Proceratophrys palustris",
+      "Proceratophrys phyllostomus",
+      "Proceratophrys pombali",
+      "Proceratophrys rondonae",
+      "Proceratophrys rotundipalpebra",
+      "Proceratophrys sanctaritae",
+      "Proceratophrys subguttata",
+      "Proceratophrys tupinamba",
+      "Proceratophrys velhochico",
+      "Proceratophrys vielliardi"
+    ],
+    "Phyllomedusidae": [
+      "Callimedusa atelopoides",
+      "Callimedusa tomopterna",
+      "Phasmahyla timbo",
+      "Phrynomedusa appendiculata",
+      "Phrynomedusa bokermanni",
+      "Phrynomedusa dryade",
+      "Phrynomedusa fimbriata",
+      "Phrynomedusa vanzolinii",
+      "Pithecopus ayeaye",
+      "Pithecopus azureus",
+      "Pithecopus centralis",
+      "Pithecopus hypochondrialis",
+      "Pithecopus megacephalus",
+      "Pithecopus nordestinus",
+      "Pithecopus oreades",
+      "Pithecopus palliatus",
+      "Pithecopus rohdei",
+      "Pithecopus rusticus"
+    ],
+    "Ranidae": [
+      "Lithobates palmipes"
+    ]
+  },
+  "species": [
+    {
+      "species": "Adenomera albarena",
+      "tip_label": "Adenomera_albarena",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera amicorum",
+      "tip_label": "Adenomera_amicorum",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera aurantiaca",
+      "tip_label": "Adenomera_aurantiaca",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera cantitata",
+      "tip_label": "Adenomera_cantitata",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera glauciae",
+      "tip_label": "Adenomera_glauciae",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera gridipappi",
+      "tip_label": "Adenomera_gridipappi",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera guarani",
+      "tip_label": "Adenomera_guarani",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera inopinata",
+      "tip_label": "Adenomera_inopinata",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera kayapo",
+      "tip_label": "Adenomera_kayapo",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera phonotriccus",
+      "tip_label": "Adenomera_phonotriccus",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera tapajonica",
+      "tip_label": "Adenomera_tapajonica",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adenomera varcena",
+      "tip_label": "Adenomera_varcena",
+      "family": "Leptodactylidae",
+      "genus": "Adenomera"
+    },
+    {
+      "species": "Adhaerobufo ceratophrys",
+      "tip_label": "Adhaerobufo_ceratophrys",
+      "family": "Bufonidae",
+      "genus": "Adhaerobufo"
+    },
+    {
+      "species": "Allobates albiventris",
+      "tip_label": "Allobates_albiventris",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates bacurau",
+      "tip_label": "Allobates_bacurau",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates caldwellae",
+      "tip_label": "Allobates_caldwellae",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates carajas",
+      "tip_label": "Allobates_carajas",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates grillicantus",
+      "tip_label": "Allobates_grillicantus",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates kamilae",
+      "tip_label": "Allobates_kamilae",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates pacaas",
+      "tip_label": "Allobates_pacaas",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates paleci",
+      "tip_label": "Allobates_paleci",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates ripicolus",
+      "tip_label": "Allobates_ripicolus",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates vanzolinius",
+      "tip_label": "Allobates_vanzolinius",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates velocicantus",
+      "tip_label": "Allobates_velocicantus",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allophryne resplendens",
+      "tip_label": "Allophryne_resplendens",
+      "family": "Allophrynidae",
+      "genus": "Allophryne"
+    },
+    {
+      "species": "Amazophrynella gardai",
+      "tip_label": "Amazophrynella_gardai",
+      "family": "Bufonidae",
+      "genus": "Amazophrynella"
+    },
+    {
+      "species": "Ameerega berohoka",
+      "tip_label": "Ameerega_berohoka",
+      "family": "Dendrobatidae",
+      "genus": "Ameerega"
+    },
+    {
+      "species": "Ameerega munduruku",
+      "tip_label": "Ameerega_munduruku",
+      "family": "Dendrobatidae",
+      "genus": "Ameerega"
+    },
+    {
+      "species": "Anomaloglossus tepequem",
+      "tip_label": "Anomaloglossus_tepequem",
+      "family": "Aromobatidae",
+      "genus": "Anomaloglossus"
+    },
+    {
+      "species": "Aplastodiscus aulophonus",
+      "tip_label": "Aplastodiscus_aulophonus",
+      "family": "Hylidae",
+      "genus": "Aplastodiscus"
+    },
+    {
+      "species": "Arcovomer moqueca",
+      "tip_label": "Arcovomer_moqueca",
+      "family": "Microhylidae",
+      "genus": "Arcovomer"
+    },
+    {
+      "species": "Arcovomer ubatuba",
+      "tip_label": "Arcovomer_ubatuba",
+      "family": "Microhylidae",
+      "genus": "Arcovomer"
+    },
+    {
+      "species": "Atelopus manauensis",
+      "tip_label": "Atelopus_manauensis",
+      "family": "Bufonidae",
+      "genus": "Atelopus"
+    },
+    {
+      "species": "Boana claresignata",
+      "tip_label": "Boana_claresignata",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Boana clepsydra",
+      "tip_label": "Boana_clepsydra",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Boana courtoisae",
+      "tip_label": "Boana_courtoisae",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Boana cymbalum",
+      "tip_label": "Boana_cymbalum",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Boana eucharis",
+      "tip_label": "Boana_eucharis",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Boana guarinimirim",
+      "tip_label": "Boana_guarinimirim",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Boana itajahy",
+      "tip_label": "Boana_itajahy",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Boana paranaiba",
+      "tip_label": "Boana_paranaiba",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Boana quiriri",
+      "tip_label": "Boana_quiriri",
+      "family": "Hylidae",
+      "genus": "Boana"
+    },
+    {
+      "species": "Bokermannohyla capra",
+      "tip_label": "Bokermannohyla_capra",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla diamantina",
+      "tip_label": "Bokermannohyla_diamantina",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla feioi",
+      "tip_label": "Bokermannohyla_feioi",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla flavopicta",
+      "tip_label": "Bokermannohyla_flavopicta",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla ibitiguara",
+      "tip_label": "Bokermannohyla_ibitiguara",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla ibitipoca",
+      "tip_label": "Bokermannohyla_ibitipoca",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla izecksohni",
+      "tip_label": "Bokermannohyla_izecksohni",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla juiju",
+      "tip_label": "Bokermannohyla_juiju",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla langei",
+      "tip_label": "Bokermannohyla_langei",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla lucianae",
+      "tip_label": "Bokermannohyla_lucianae",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla napolii",
+      "tip_label": "Bokermannohyla_napolii",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla pseudopseudis",
+      "tip_label": "Bokermannohyla_pseudopseudis",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla ravida",
+      "tip_label": "Bokermannohyla_ravida",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla sagarana",
+      "tip_label": "Bokermannohyla_sagarana",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla sapiranga",
+      "tip_label": "Bokermannohyla_sapiranga",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla sazimai",
+      "tip_label": "Bokermannohyla_sazimai",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Bokermannohyla vulcaniae",
+      "tip_label": "Bokermannohyla_vulcaniae",
+      "family": "Hylidae",
+      "genus": "Bokermannohyla"
+    },
+    {
+      "species": "Callimedusa atelopoides",
+      "tip_label": "Callimedusa_atelopoides",
+      "family": "Phyllomedusidae",
+      "genus": "Callimedusa"
+    },
+    {
+      "species": "Callimedusa tomopterna",
+      "tip_label": "Callimedusa_tomopterna",
+      "family": "Phyllomedusidae",
+      "genus": "Callimedusa"
+    },
+    {
+      "species": "Chiasmocleis alagoana",
+      "tip_label": "Chiasmocleis_alagoana",
+      "family": "Microhylidae",
+      "genus": "Chiasmocleis"
+    },
+    {
+      "species": "Chiasmocleis altomontana",
+      "tip_label": "Chiasmocleis_altomontana",
+      "family": "Microhylidae",
+      "genus": "Chiasmocleis"
+    },
+    {
+      "species": "Chiasmocleis atlantica",
+      "tip_label": "Chiasmocleis_atlantica",
+      "family": "Microhylidae",
+      "genus": "Chiasmocleis"
+    },
+    {
+      "species": "Chiasmocleis bicegoi",
+      "tip_label": "Chiasmocleis_bicegoi",
+      "family": "Microhylidae",
+      "genus": "Chiasmocleis"
+    },
+    {
+      "species": "Chiasmocleis centralis",
+      "tip_label": "Chiasmocleis_centralis",
+      "family": "Microhylidae",
+      "genus": "Chiasmocleis"
+    },
+    {
+      "species": "Chiasmocleis jacki",
+      "tip_label": "Chiasmocleis_jacki",
+      "family": "Microhylidae",
+      "genus": "Chiasmocleis"
+    },
+    {
+      "species": "Chiasmocleis migueli",
+      "tip_label": "Chiasmocleis_migueli",
+      "family": "Microhylidae",
+      "genus": "Chiasmocleis"
+    },
+    {
+      "species": "Corythomantis botoque",
+      "tip_label": "Corythomantis_botoque",
+      "family": "Hylidae",
+      "genus": "Corythomantis"
+    },
+    {
+      "species": "Crossodactylodes alairi",
+      "tip_label": "Crossodactylodes_alairi",
+      "family": "Leptodactylidae",
+      "genus": "Crossodactylodes"
+    },
+    {
+      "species": "Crossodactylodes pintoi",
+      "tip_label": "Crossodactylodes_pintoi",
+      "family": "Leptodactylidae",
+      "genus": "Crossodactylodes"
+    },
+    {
+      "species": "Crossodactylodes serranegra",
+      "tip_label": "Crossodactylodes_serranegra",
+      "family": "Leptodactylidae",
+      "genus": "Crossodactylodes"
+    },
+    {
+      "species": "Crossodactylodes teixeirai",
+      "tip_label": "Crossodactylodes_teixeirai",
+      "family": "Leptodactylidae",
+      "genus": "Crossodactylodes"
+    },
+    {
+      "species": "Crossodactylus boulengeri",
+      "tip_label": "Crossodactylus_boulengeri",
+      "family": "Hylodidae",
+      "genus": "Crossodactylus"
+    },
+    {
+      "species": "Crossodactylus cyclospinus",
+      "tip_label": "Crossodactylus_cyclospinus",
+      "family": "Hylodidae",
+      "genus": "Crossodactylus"
+    },
+    {
+      "species": "Crossodactylus dantei",
+      "tip_label": "Crossodactylus_dantei",
+      "family": "Hylodidae",
+      "genus": "Crossodactylus"
+    },
+    {
+      "species": "Crossodactylus dispar",
+      "tip_label": "Crossodactylus_dispar",
+      "family": "Hylodidae",
+      "genus": "Crossodactylus"
+    },
+    {
+      "species": "Crossodactylus franciscanus",
+      "tip_label": "Crossodactylus_franciscanus",
+      "family": "Hylodidae",
+      "genus": "Crossodactylus"
+    },
+    {
+      "species": "Crossodactylus grandis",
+      "tip_label": "Crossodactylus_grandis",
+      "family": "Hylodidae",
+      "genus": "Crossodactylus"
+    },
+    {
+      "species": "Crossodactylus lutzorum",
+      "tip_label": "Crossodactylus_lutzorum",
+      "family": "Hylodidae",
+      "genus": "Crossodactylus"
+    },
+    {
+      "species": "Cycloramphis faustoi",
+      "tip_label": "Cycloramphis_faustoi",
+      "family": "Cycloramphidae",
+      "genus": "Cycloramphis"
+    },
+    {
+      "species": "Cycloramphus catarinensis",
+      "tip_label": "Cycloramphus_catarinensis",
+      "family": "Cycloramphidae",
+      "genus": "Cycloramphus"
+    },
+    {
+      "species": "Cycloramphus diringshofeni",
+      "tip_label": "Cycloramphus_diringshofeni",
+      "family": "Cycloramphidae",
+      "genus": "Cycloramphus"
+    },
+    {
+      "species": "Cycloramphus duseni",
+      "tip_label": "Cycloramphus_duseni",
+      "family": "Cycloramphidae",
+      "genus": "Cycloramphus"
+    },
+    {
+      "species": "Cycloramphus heyeri",
+      "tip_label": "Cycloramphus_heyeri",
+      "family": "Cycloramphidae",
+      "genus": "Cycloramphus"
+    },
+    {
+      "species": "Cycloramphus parvulus",
+      "tip_label": "Cycloramphus_parvulus",
+      "family": "Cycloramphidae",
+      "genus": "Cycloramphus"
+    },
+    {
+      "species": "Dendrophryniscus cuca",
+      "tip_label": "Dendrophryniscus_cuca",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus davori",
+      "tip_label": "Dendrophryniscus_davori",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus haddadi",
+      "tip_label": "Dendrophryniscus_haddadi",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus imitator",
+      "tip_label": "Dendrophryniscus_imitator",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus izecksohni",
+      "tip_label": "Dendrophryniscus_izecksohni",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus jureia",
+      "tip_label": "Dendrophryniscus_jureia",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus lauroi",
+      "tip_label": "Dendrophryniscus_lauroi",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus organensis",
+      "tip_label": "Dendrophryniscus_organensis",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus skuki",
+      "tip_label": "Dendrophryniscus_skuki",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendrophryniscus stawiarskyi",
+      "tip_label": "Dendrophryniscus_stawiarskyi",
+      "family": "Bufonidae",
+      "genus": "Dendrophryniscus"
+    },
+    {
+      "species": "Dendropsophus bilobatus",
+      "tip_label": "Dendropsophus_bilobatus",
+      "family": "Hylidae",
+      "genus": "Dendropsophus"
+    },
+    {
+      "species": "Dendropsophus limai",
+      "tip_label": "Dendropsophus_limai",
+      "family": "Hylidae",
+      "genus": "Dendropsophus"
+    },
+    {
+      "species": "Dendropsophus minimus",
+      "tip_label": "Dendropsophus_minimus",
+      "family": "Hylidae",
+      "genus": "Dendropsophus"
+    },
+    {
+      "species": "Dendropsophus tapacurensis",
+      "tip_label": "Dendropsophus_tapacurensis",
+      "family": "Hylidae",
+      "genus": "Dendropsophus"
+    },
+    {
+      "species": "Dendropsophus tintinnabulum",
+      "tip_label": "Dendropsophus_tintinnabulum",
+      "family": "Hylidae",
+      "genus": "Dendropsophus"
+    },
+    {
+      "species": "Dryadobates alagoanus",
+      "tip_label": "Dryadobates_alagoanus",
+      "family": "Aromobatidae",
+      "genus": "Dryadobates"
+    },
+    {
+      "species": "Dryadobates bokermanni",
+      "tip_label": "Dryadobates_bokermanni",
+      "family": "Aromobatidae",
+      "genus": "Dryadobates"
+    },
+    {
+      "species": "Dryadobates capixaba",
+      "tip_label": "Dryadobates_capixaba",
+      "family": "Aromobatidae",
+      "genus": "Dryadobates"
+    },
+    {
+      "species": "Dryadobates carioca",
+      "tip_label": "Dryadobates_carioca",
+      "family": "Aromobatidae",
+      "genus": "Dryadobates"
+    },
+    {
+      "species": "Dryadobates erythropus",
+      "tip_label": "Dryadobates_erythropus",
+      "family": "Aromobatidae",
+      "genus": "Dryadobates"
+    },
+    {
+      "species": "Dryadobates lutzi",
+      "tip_label": "Dryadobates_lutzi",
+      "family": "Aromobatidae",
+      "genus": "Dryadobates"
+    },
+    {
+      "species": "Dryadobates olfersioides",
+      "tip_label": "Dryadobates_olfersioides",
+      "family": "Aromobatidae",
+      "genus": "Dryadobates"
+    },
+    {
+      "species": "Elachistocleis corumbaensis",
+      "tip_label": "Elachistocleis_corumbaensis",
+      "family": "Microhylidae",
+      "genus": "Elachistocleis"
+    },
+    {
+      "species": "Elachistocleis erythrogaster",
+      "tip_label": "Elachistocleis_erythrogaster",
+      "family": "Microhylidae",
+      "genus": "Elachistocleis"
+    },
+    {
+      "species": "Elachistocleis magna",
+      "tip_label": "Elachistocleis_magna",
+      "family": "Microhylidae",
+      "genus": "Elachistocleis"
+    },
+    {
+      "species": "Elachistocleis surumu",
+      "tip_label": "Elachistocleis_surumu",
+      "family": "Microhylidae",
+      "genus": "Elachistocleis"
+    },
+    {
+      "species": "Frostius pernambucensis",
+      "tip_label": "Frostius_pernambucensis",
+      "family": "Bufonidae",
+      "genus": "Frostius"
+    },
+    {
+      "species": "Gabohyla pauloalvini",
+      "tip_label": "Gabohyla_pauloalvini",
+      "family": "Hylidae",
+      "genus": "Gabohyla"
+    },
+    {
+      "species": "Hyalinobatrachium muiraquitan",
+      "tip_label": "Hyalinobatrachium_muiraquitan",
+      "family": "Centrolenidae",
+      "genus": "Hyalinobatrachium"
+    },
+    {
+      "species": "Hylodes babax",
+      "tip_label": "Hylodes_babax",
+      "family": "Hylodidae",
+      "genus": "Hylodes"
+    },
+    {
+      "species": "Hylodes cardosoi",
+      "tip_label": "Hylodes_cardosoi",
+      "family": "Hylodidae",
+      "genus": "Hylodes"
+    },
+    {
+      "species": "Hylodes glaber",
+      "tip_label": "Hylodes_glaber",
+      "family": "Hylodidae",
+      "genus": "Hylodes"
+    },
+    {
+      "species": "Hylodes mertensi",
+      "tip_label": "Hylodes_mertensi",
+      "family": "Hylodidae",
+      "genus": "Hylodes"
+    },
+    {
+      "species": "Hylodes otavioi",
+      "tip_label": "Hylodes_otavioi",
+      "family": "Hylodidae",
+      "genus": "Hylodes"
+    },
+    {
+      "species": "Hylodes vanzolinii",
+      "tip_label": "Hylodes_vanzolinii",
+      "family": "Hylodidae",
+      "genus": "Hylodes"
+    },
+    {
+      "species": "Julianus camposseabrai",
+      "tip_label": "Julianus_camposseabrai",
+      "family": "Hylidae",
+      "genus": "Julianus"
+    },
+    {
+      "species": "Julianus fontanarrosai",
+      "tip_label": "Julianus_fontanarrosai",
+      "family": "Hylidae",
+      "genus": "Julianus"
+    },
+    {
+      "species": "Julianus pinimus",
+      "tip_label": "Julianus_pinimus",
+      "family": "Hylidae",
+      "genus": "Julianus"
+    },
+    {
+      "species": "Julianus uruguayus",
+      "tip_label": "Julianus_uruguayus",
+      "family": "Hylidae",
+      "genus": "Julianus"
+    },
+    {
+      "species": "Leptodactylus brevipes",
+      "tip_label": "Leptodactylus_brevipes",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus caatingae",
+      "tip_label": "Leptodactylus_caatingae",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus fremitus",
+      "tip_label": "Leptodactylus_fremitus",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus gualambensis",
+      "tip_label": "Leptodactylus_gualambensis",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus hylodes",
+      "tip_label": "Leptodactylus_hylodes",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus intermedius",
+      "tip_label": "Leptodactylus_intermedius",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus lauramiriamae",
+      "tip_label": "Leptodactylus_lauramiriamae",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus luctator",
+      "tip_label": "Leptodactylus_luctator",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus ochraceus",
+      "tip_label": "Leptodactylus_ochraceus",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus paraensis",
+      "tip_label": "Leptodactylus_paraensis",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus paranaru",
+      "tip_label": "Leptodactylus_paranaru",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus payaya",
+      "tip_label": "Leptodactylus_payaya",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Leptodactylus sabanensis",
+      "tip_label": "Leptodactylus_sabanensis",
+      "family": "Leptodactylidae",
+      "genus": "Leptodactylus"
+    },
+    {
+      "species": "Lithobates palmipes",
+      "tip_label": "Lithobates_palmipes",
+      "family": "Ranidae",
+      "genus": "Lithobates"
+    },
+    {
+      "species": "Melanophryniscus admirabilis",
+      "tip_label": "Melanophryniscus_admirabilis",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Melanophryniscus cambaraensis",
+      "tip_label": "Melanophryniscus_cambaraensis",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Melanophryniscus dorsalis",
+      "tip_label": "Melanophryniscus_dorsalis",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Melanophryniscus formosus",
+      "tip_label": "Melanophryniscus_formosus",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Melanophryniscus macrogranulosus",
+      "tip_label": "Melanophryniscus_macrogranulosus",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Melanophryniscus montevidensis",
+      "tip_label": "Melanophryniscus_montevidensis",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Melanophryniscus peritus",
+      "tip_label": "Melanophryniscus_peritus",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Melanophryniscus sanmartini",
+      "tip_label": "Melanophryniscus_sanmartini",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Melanophryniscus spectabilis",
+      "tip_label": "Melanophryniscus_spectabilis",
+      "family": "Bufonidae",
+      "genus": "Melanophryniscus"
+    },
+    {
+      "species": "Nyctimantis arapapa",
+      "tip_label": "Nyctimantis_arapapa",
+      "family": "Hylidae",
+      "genus": "Nyctimantis"
+    },
+    {
+      "species": "Nyctimantis bokermanni",
+      "tip_label": "Nyctimantis_bokermanni",
+      "family": "Hylidae",
+      "genus": "Nyctimantis"
+    },
+    {
+      "species": "Nyctimantis brunoi",
+      "tip_label": "Nyctimantis_brunoi",
+      "family": "Hylidae",
+      "genus": "Nyctimantis"
+    },
+    {
+      "species": "Nyctimantis diadorim",
+      "tip_label": "Nyctimantis_diadorim",
+      "family": "Hylidae",
+      "genus": "Nyctimantis"
+    },
+    {
+      "species": "Nyctimantis pomba",
+      "tip_label": "Nyctimantis_pomba",
+      "family": "Hylidae",
+      "genus": "Nyctimantis"
+    },
+    {
+      "species": "Odontophrynus asper",
+      "tip_label": "Odontophrynus_asper",
+      "family": "Odontophrynidae",
+      "genus": "Odontophrynus"
+    },
+    {
+      "species": "Odontophrynus juquinha",
+      "tip_label": "Odontophrynus_juquinha",
+      "family": "Odontophrynidae",
+      "genus": "Odontophrynus"
+    },
+    {
+      "species": "Odontophrynus maisuma",
+      "tip_label": "Odontophrynus_maisuma",
+      "family": "Odontophrynidae",
+      "genus": "Odontophrynus"
+    },
+    {
+      "species": "Odontophrynus monachus",
+      "tip_label": "Odontophrynus_monachus",
+      "family": "Odontophrynidae",
+      "genus": "Odontophrynus"
+    },
+    {
+      "species": "Odontophrynus reigi",
+      "tip_label": "Odontophrynus_reigi",
+      "family": "Odontophrynidae",
+      "genus": "Odontophrynus"
+    },
+    {
+      "species": "Odontophrynus toledoi",
+      "tip_label": "Odontophrynus_toledoi",
+      "family": "Odontophrynidae",
+      "genus": "Odontophrynus"
+    },
+    {
+      "species": "Ololygon agilis",
+      "tip_label": "Ololygon_agilis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon albicans",
+      "tip_label": "Ololygon_albicans",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon alcatraz",
+      "tip_label": "Ololygon_alcatraz",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon angrensis",
+      "tip_label": "Ololygon_angrensis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon arduoua",
+      "tip_label": "Ololygon_arduoua",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon argyreornata",
+      "tip_label": "Ololygon_argyreornata",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon ariadne",
+      "tip_label": "Ololygon_ariadne",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon aromothyella",
+      "tip_label": "Ololygon_aromothyella",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon atrata",
+      "tip_label": "Ololygon_atrata",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon belloni",
+      "tip_label": "Ololygon_belloni",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon berthae",
+      "tip_label": "Ololygon_berthae",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon brieni",
+      "tip_label": "Ololygon_brieni",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon caissara",
+      "tip_label": "Ololygon_caissara",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon canastrensis",
+      "tip_label": "Ololygon_canastrensis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon cardosoi",
+      "tip_label": "Ololygon_cardosoi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon carnevallii",
+      "tip_label": "Ololygon_carnevallii",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon catharinae",
+      "tip_label": "Ololygon_catharinae",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon centralis",
+      "tip_label": "Ololygon_centralis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon cosenzai",
+      "tip_label": "Ololygon_cosenzai",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon faivovichi",
+      "tip_label": "Ololygon_faivovichi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon feioi",
+      "tip_label": "Ololygon_feioi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon flavoguttata",
+      "tip_label": "Ololygon_flavoguttata",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon garibaldiae",
+      "tip_label": "Ololygon_garibaldiae",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon goya",
+      "tip_label": "Ololygon_goya",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon heyeri",
+      "tip_label": "Ololygon_heyeri",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon hiemalis",
+      "tip_label": "Ololygon_hiemalis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon humilis",
+      "tip_label": "Ololygon_humilis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon insperata",
+      "tip_label": "Ololygon_insperata",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon jureia",
+      "tip_label": "Ololygon_jureia",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon kautskyi",
+      "tip_label": "Ololygon_kautskyi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon littoralis",
+      "tip_label": "Ololygon_littoralis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon littorea",
+      "tip_label": "Ololygon_littorea",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon longilinea",
+      "tip_label": "Ololygon_longilinea",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon luizotavioi",
+      "tip_label": "Ololygon_luizotavioi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon machadoi",
+      "tip_label": "Ololygon_machadoi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon melanodactyla",
+      "tip_label": "Ololygon_melanodactyla",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon melloi",
+      "tip_label": "Ololygon_melloi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon muriciensis",
+      "tip_label": "Ololygon_muriciensis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon obtriangulata",
+      "tip_label": "Ololygon_obtriangulata",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon paracatu",
+      "tip_label": "Ololygon_paracatu",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon paulofreirei",
+      "tip_label": "Ololygon_paulofreirei",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon peixotoi",
+      "tip_label": "Ololygon_peixotoi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon perpusilla",
+      "tip_label": "Ololygon_perpusilla",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon pixinguinha",
+      "tip_label": "Ololygon_pixinguinha",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon pombali",
+      "tip_label": "Ololygon_pombali",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon ranki",
+      "tip_label": "Ololygon_ranki",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon rizibilis",
+      "tip_label": "Ololygon_rizibilis",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon skaios",
+      "tip_label": "Ololygon_skaios",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon skuki",
+      "tip_label": "Ololygon_skuki",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon strigilata",
+      "tip_label": "Ololygon_strigilata",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon trapicheiroi",
+      "tip_label": "Ololygon_trapicheiroi",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon tripui",
+      "tip_label": "Ololygon_tripui",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon tupinamba",
+      "tip_label": "Ololygon_tupinamba",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Ololygon v-signata",
+      "tip_label": "Ololygon_v-signata",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
+      "species": "Osteocephalus camufatus",
+      "tip_label": "Osteocephalus_camufatus",
+      "family": "Hylidae",
+      "genus": "Osteocephalus"
+    },
+    {
+      "species": "Paratelmatobius lutzii",
+      "tip_label": "Paratelmatobius_lutzii",
+      "family": "Leptodactylidae",
+      "genus": "Paratelmatobius"
+    },
+    {
+      "species": "Paratelmatobius mantiqueira",
+      "tip_label": "Paratelmatobius_mantiqueira",
+      "family": "Leptodactylidae",
+      "genus": "Paratelmatobius"
+    },
+    {
+      "species": "Paratelmatobius stellaris",
+      "tip_label": "Paratelmatobius_stellaris",
+      "family": "Leptodactylidae",
+      "genus": "Paratelmatobius"
+    },
+    {
+      "species": "Phantasmarana bocainensis",
+      "tip_label": "Phantasmarana_bocainensis",
+      "family": "Hylodidae",
+      "genus": "Phantasmarana"
+    },
+    {
+      "species": "Phasmahyla timbo",
+      "tip_label": "Phasmahyla_timbo",
+      "family": "Phyllomedusidae",
+      "genus": "Phasmahyla"
+    },
+    {
+      "species": "Phrynomedusa appendiculata",
+      "tip_label": "Phrynomedusa_appendiculata",
+      "family": "Phyllomedusidae",
+      "genus": "Phrynomedusa"
+    },
+    {
+      "species": "Phrynomedusa bokermanni",
+      "tip_label": "Phrynomedusa_bokermanni",
+      "family": "Phyllomedusidae",
+      "genus": "Phrynomedusa"
+    },
+    {
+      "species": "Phrynomedusa dryade",
+      "tip_label": "Phrynomedusa_dryade",
+      "family": "Phyllomedusidae",
+      "genus": "Phrynomedusa"
+    },
+    {
+      "species": "Phrynomedusa fimbriata",
+      "tip_label": "Phrynomedusa_fimbriata",
+      "family": "Phyllomedusidae",
+      "genus": "Phrynomedusa"
+    },
+    {
+      "species": "Phrynomedusa vanzolinii",
+      "tip_label": "Phrynomedusa_vanzolinii",
+      "family": "Phyllomedusidae",
+      "genus": "Phrynomedusa"
+    },
+    {
+      "species": "Phyllodytes iuna",
+      "tip_label": "Phyllodytes_iuna",
+      "family": "Hylidae",
+      "genus": "Phyllodytes"
+    },
+    {
+      "species": "Physalaemus angrensis",
+      "tip_label": "Physalaemus_angrensis",
+      "family": "Leptodactylidae",
+      "genus": "Physalaemus"
+    },
+    {
+      "species": "Physalaemus araxa",
+      "tip_label": "Physalaemus_araxa",
+      "family": "Leptodactylidae",
+      "genus": "Physalaemus"
+    },
+    {
+      "species": "Physalaemus caete",
+      "tip_label": "Physalaemus_caete",
+      "family": "Leptodactylidae",
+      "genus": "Physalaemus"
+    },
+    {
+      "species": "Physalaemus carrizorum",
+      "tip_label": "Physalaemus_carrizorum",
+      "family": "Leptodactylidae",
+      "genus": "Physalaemus"
+    },
+    {
+      "species": "Physalaemus insperatus",
+      "tip_label": "Physalaemus_insperatus",
+      "family": "Leptodactylidae",
+      "genus": "Physalaemus"
+    },
+    {
+      "species": "Physalaemus irroratus",
+      "tip_label": "Physalaemus_irroratus",
+      "family": "Leptodactylidae",
+      "genus": "Physalaemus"
+    },
+    {
+      "species": "Physalaemus orophilus",
+      "tip_label": "Physalaemus_orophilus",
+      "family": "Leptodactylidae",
+      "genus": "Physalaemus"
+    },
+    {
+      "species": "Pithecopus ayeaye",
+      "tip_label": "Pithecopus_ayeaye",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus azureus",
+      "tip_label": "Pithecopus_azureus",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus centralis",
+      "tip_label": "Pithecopus_centralis",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus hypochondrialis",
+      "tip_label": "Pithecopus_hypochondrialis",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus megacephalus",
+      "tip_label": "Pithecopus_megacephalus",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus nordestinus",
+      "tip_label": "Pithecopus_nordestinus",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus oreades",
+      "tip_label": "Pithecopus_oreades",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus palliatus",
+      "tip_label": "Pithecopus_palliatus",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus rohdei",
+      "tip_label": "Pithecopus_rohdei",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Pithecopus rusticus",
+      "tip_label": "Pithecopus_rusticus",
+      "family": "Phyllomedusidae",
+      "genus": "Pithecopus"
+    },
+    {
+      "species": "Proceratophrys ararype",
+      "tip_label": "Proceratophrys_ararype",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys bagnoi",
+      "tip_label": "Proceratophrys_bagnoi",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys branti",
+      "tip_label": "Proceratophrys_branti",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys carranca",
+      "tip_label": "Proceratophrys_carranca",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys fryi",
+      "tip_label": "Proceratophrys_fryi",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys gladius",
+      "tip_label": "Proceratophrys_gladius",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys huntingtoni",
+      "tip_label": "Proceratophrys_huntingtoni",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys intermedia",
+      "tip_label": "Proceratophrys_intermedia",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys itamari",
+      "tip_label": "Proceratophrys_itamari",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys izecksohni",
+      "tip_label": "Proceratophrys_izecksohni",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys korekore",
+      "tip_label": "Proceratophrys_korekore",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys moehringi",
+      "tip_label": "Proceratophrys_moehringi",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys palustris",
+      "tip_label": "Proceratophrys_palustris",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys phyllostomus",
+      "tip_label": "Proceratophrys_phyllostomus",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys pombali",
+      "tip_label": "Proceratophrys_pombali",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys rondonae",
+      "tip_label": "Proceratophrys_rondonae",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys rotundipalpebra",
+      "tip_label": "Proceratophrys_rotundipalpebra",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys sanctaritae",
+      "tip_label": "Proceratophrys_sanctaritae",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys subguttata",
+      "tip_label": "Proceratophrys_subguttata",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys tupinamba",
+      "tip_label": "Proceratophrys_tupinamba",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys velhochico",
+      "tip_label": "Proceratophrys_velhochico",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Proceratophrys vielliardi",
+      "tip_label": "Proceratophrys_vielliardi",
+      "family": "Odontophrynidae",
+      "genus": "Proceratophrys"
+    },
+    {
+      "species": "Pseudis boliviana",
+      "tip_label": "Pseudis_boliviana",
+      "family": "Hylidae",
+      "genus": "Pseudis"
+    },
+    {
+      "species": "Pseudis caraya",
+      "tip_label": "Pseudis_caraya",
+      "family": "Hylidae",
+      "genus": "Pseudis"
+    },
+    {
+      "species": "Pseudis laevis",
+      "tip_label": "Pseudis_laevis",
+      "family": "Hylidae",
+      "genus": "Pseudis"
+    },
+    {
+      "species": "Pseudis limellum",
+      "tip_label": "Pseudis_limellum",
+      "family": "Hylidae",
+      "genus": "Pseudis"
+    },
+    {
+      "species": "Pseudopaludicola atragula",
+      "tip_label": "Pseudopaludicola_atragula",
+      "family": "Leptodactylidae",
+      "genus": "Pseudopaludicola"
+    },
+    {
+      "species": "Pseudopaludicola ceratophyes",
+      "tip_label": "Pseudopaludicola_ceratophyes",
+      "family": "Leptodactylidae",
+      "genus": "Pseudopaludicola"
+    },
+    {
+      "species": "Pseudopaludicola chimaera",
+      "tip_label": "Pseudopaludicola_chimaera",
+      "family": "Leptodactylidae",
+      "genus": "Pseudopaludicola"
+    },
+    {
+      "species": "Pseudopaludicola hyleaustralis",
+      "tip_label": "Pseudopaludicola_hyleaustralis",
+      "family": "Leptodactylidae",
+      "genus": "Pseudopaludicola"
+    },
+    {
+      "species": "Pseudopaludicola ibisoroca",
+      "tip_label": "Pseudopaludicola_ibisoroca",
+      "family": "Leptodactylidae",
+      "genus": "Pseudopaludicola"
+    },
+    {
+      "species": "Pseudopaludicola javae",
+      "tip_label": "Pseudopaludicola_javae",
+      "family": "Leptodactylidae",
+      "genus": "Pseudopaludicola"
+    },
+    {
+      "species": "Pseudopaludicola motorzinho",
+      "tip_label": "Pseudopaludicola_motorzinho",
+      "family": "Leptodactylidae",
+      "genus": "Pseudopaludicola"
+    },
+    {
+      "species": "Pseudopaludicola parnaiba",
+      "tip_label": "Pseudopaludicola_parnaiba",
+      "family": "Leptodactylidae",
+      "genus": "Pseudopaludicola"
+    },
+    {
+      "species": "Ranitomeya aetherea",
+      "tip_label": "Ranitomeya_aetherea",
+      "family": "Dendrobatidae",
+      "genus": "Ranitomeya"
+    },
+    {
+      "species": "Ranitomeya aquamarina",
+      "tip_label": "Ranitomeya_aquamarina",
+      "family": "Dendrobatidae",
+      "genus": "Ranitomeya"
+    },
+    {
+      "species": "Ranitomeya cyanovittata",
+      "tip_label": "Ranitomeya_cyanovittata",
+      "family": "Dendrobatidae",
+      "genus": "Ranitomeya"
+    },
+    {
+      "species": "Ranitomeya hwata",
+      "tip_label": "Ranitomeya_hwata",
+      "family": "Dendrobatidae",
+      "genus": "Ranitomeya"
+    },
+    {
+      "species": "Ranitomeya walkari",
+      "tip_label": "Ranitomeya_walkari",
+      "family": "Dendrobatidae",
+      "genus": "Ranitomeya"
+    },
+    {
+      "species": "Rhaebo ecuadoriensis",
+      "tip_label": "Rhaebo_ecuadoriensis",
+      "family": "Bufonidae",
+      "genus": "Rhaebo"
+    },
+    {
+      "species": "Rhinella ceratophrys",
+      "tip_label": "Rhinella_ceratophrys",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella fernandezae",
+      "tip_label": "Rhinella_fernandezae",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella martyi",
+      "tip_label": "Rhinella_martyi",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella nattereri",
+      "tip_label": "Rhinella_nattereri",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella parecis",
+      "tip_label": "Rhinella_parecis",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella roqueana",
+      "tip_label": "Rhinella_roqueana",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella sebbeni",
+      "tip_label": "Rhinella_sebbeni",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella teotoniensis",
+      "tip_label": "Rhinella_teotoniensis",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rupirana kaatinga",
+      "tip_label": "Rupirana_kaatinga",
+      "family": "Leptodactylidae",
+      "genus": "Rupirana"
+    },
+    {
+      "species": "Scinax albertinae",
+      "tip_label": "Scinax_albertinae",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax baumgardneri",
+      "tip_label": "Scinax_baumgardneri",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax cabralensis",
+      "tip_label": "Scinax_cabralensis",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax caldarum",
+      "tip_label": "Scinax_caldarum",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax coeruleus",
+      "tip_label": "Scinax_coeruleus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax cretatus",
+      "tip_label": "Scinax_cretatus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax cuspidatus",
+      "tip_label": "Scinax_cuspidatus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax dolloi",
+      "tip_label": "Scinax_dolloi",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax exiguus",
+      "tip_label": "Scinax_exiguus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax haddadorum",
+      "tip_label": "Scinax_haddadorum",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax juruena",
+      "tip_label": "Scinax_juruena",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax kennedyi",
+      "tip_label": "Scinax_kennedyi",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax lindsayi",
+      "tip_label": "Scinax_lindsayi",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax madeirae",
+      "tip_label": "Scinax_madeirae",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax maracaya",
+      "tip_label": "Scinax_maracaya",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax montivagus",
+      "tip_label": "Scinax_montivagus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax onca",
+      "tip_label": "Scinax_onca",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax ritaleeae",
+      "tip_label": "Scinax_ritaleeae",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax rogerioi",
+      "tip_label": "Scinax_rogerioi",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax rossaferesae",
+      "tip_label": "Scinax_rossaferesae",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax ruberoculatus",
+      "tip_label": "Scinax_ruberoculatus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax rupestris",
+      "tip_label": "Scinax_rupestris",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax sateremawe",
+      "tip_label": "Scinax_sateremawe",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax strussmannae",
+      "tip_label": "Scinax_strussmannae",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax tigrinus",
+      "tip_label": "Scinax_tigrinus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax tropicalia",
+      "tip_label": "Scinax_tropicalia",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax villasboasi",
+      "tip_label": "Scinax_villasboasi",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Sphaenorhynchus bromelicola",
+      "tip_label": "Sphaenorhynchus_bromelicola",
+      "family": "Hylidae",
+      "genus": "Sphaenorhynchus"
+    },
+    {
+      "species": "Sphaenorhynchus palustris",
+      "tip_label": "Sphaenorhynchus_palustris",
+      "family": "Hylidae",
+      "genus": "Sphaenorhynchus"
+    },
+    {
+      "species": "Stereocyclops palmipes",
+      "tip_label": "Stereocyclops_palmipes",
+      "family": "Microhylidae",
+      "genus": "Stereocyclops"
+    },
+    {
+      "species": "Stereocyclops parkeri",
+      "tip_label": "Stereocyclops_parkeri",
+      "family": "Microhylidae",
+      "genus": "Stereocyclops"
+    },
+    {
+      "species": "Synapturanus ajuricaba",
+      "tip_label": "Synapturanus_ajuricaba",
+      "family": "Microhylidae",
+      "genus": "Synapturanus"
+    },
+    {
+      "species": "Synapturanus zombie",
+      "tip_label": "Synapturanus_zombie",
+      "family": "Microhylidae",
+      "genus": "Synapturanus"
+    },
+    {
+      "species": "Thoropa bryomantis",
+      "tip_label": "Thoropa_bryomantis",
+      "family": "Cycloramphidae",
+      "genus": "Thoropa"
+    },
+    {
+      "species": "Thoropa petropolitana",
+      "tip_label": "Thoropa_petropolitana",
+      "family": "Cycloramphidae",
+      "genus": "Thoropa"
+    },
+    {
+      "species": "Trachycephalus adenodermus",
+      "tip_label": "Trachycephalus_adenodermus",
+      "family": "Hylidae",
+      "genus": "Trachycephalus"
+    },
+    {
+      "species": "Trachycephalus venezolanus",
+      "tip_label": "Trachycephalus_venezolanus",
+      "family": "Hylidae",
+      "genus": "Trachycephalus"
+    },
+    {
+      "species": "Vitreorana assuh",
+      "tip_label": "Vitreorana_assuh",
+      "family": "Centrolenidae",
+      "genus": "Vitreorana"
+    },
+    {
+      "species": "Vitreorana parvula",
+      "tip_label": "Vitreorana_parvula",
+      "family": "Centrolenidae",
+      "genus": "Vitreorana"
+    },
+    {
+      "species": "“Hyla” imitator",
+      "tip_label": "“Hyla”_imitator",
+      "family": "Hylidae",
+      "genus": "“Hyla”"
+    }
+  ]
+}

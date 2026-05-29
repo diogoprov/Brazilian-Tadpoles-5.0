@@ -170,6 +170,66 @@ tbody tr:hover { background: #fafaf7; }
 }
 .chart-card h3 { margin: 0 0 12px; font-size: 1rem; }
 
+/* --- Filogenia --- */
+.phylo-header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  gap: 16px; flex-wrap: wrap; margin-bottom: 12px;
+}
+.phylo-controls { display: flex; gap: 12px; }
+
+.phylo-legend {
+  display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
+  background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 10px 14px; margin-bottom: 14px; font-size: .82rem;
+}
+.lg-title { color: var(--muted); font-weight: 600; }
+.lg-item { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); }
+.lg-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+.phylo-container {
+  background: var(--surface); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 16px; overflow: auto;
+  min-height: 600px; max-height: 80vh;
+}
+.phylo-foot { margin-top: 12px; }
+.small { font-size: .82rem; }
+
+/* SVG da filogenia */
+.phylo-container svg { display: block; }
+.phylo-link {
+  fill: none; stroke: #b9c1bf; stroke-width: 1.2px;
+}
+.phylo-internal-circle {
+  fill: #fff; stroke: #6b7280; stroke-width: 1.5px;
+  cursor: pointer; transition: fill .12s;
+}
+.phylo-internal-circle:hover { fill: var(--accent-soft); }
+.phylo-internal-circle.collapsed { fill: var(--accent); stroke: var(--accent-dark); }
+.phylo-internal-count {
+  font-size: 10px; fill: var(--muted); pointer-events: none;
+  user-select: none;
+}
+.phylo-tip-circle {
+  stroke: #fff; stroke-width: 1px;
+}
+.phylo-tip-text {
+  font-size: 11px; font-family: var(--sans); fill: var(--ink);
+  font-style: italic; dominant-baseline: middle; pointer-events: none;
+}
+.phylo-tip-text.dim { fill: var(--muted); }
+
+.phylo-tooltip {
+  position: fixed; pointer-events: none; z-index: 10;
+  background: var(--ink); color: #fff;
+  padding: 8px 10px; border-radius: 6px;
+  font-size: .82rem; line-height: 1.4; max-width: 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  opacity: 0; transition: opacity .15s;
+}
+.phylo-tooltip.visible { opacity: 1; }
+.phylo-tooltip strong { color: #fff; }
+.phylo-tooltip .tt-sub { color: #c7cdd2; font-size: .76rem; margin-top: 4px; }
+
 /* Misc */
 h2 { font-size: 1.4rem; margin-top: 0; }
 .muted { color: var(--muted); }
