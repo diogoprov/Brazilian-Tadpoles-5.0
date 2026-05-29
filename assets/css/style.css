@@ -305,3 +305,29 @@ code { font-family: var(--mono); background: #eceee9; padding: 1px 5px; border-r
   margin: 8px 0;
 }
 .bibtex code { background: none; padding: 0; font-size: inherit; }
+
+/* Bloco mantenedor / contribuições / código-fonte */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 24px 0 18px;
+  max-width: 76ch;
+}
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+.about-card h3 {
+  margin: 0 0 8px;
+  font-size: .95rem;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+.about-card p { margin: 6px 0; font-size: .92rem; max-width: none; }
+.about-card a { color: var(--accent); word-break: break-word; }
+.about-card a:hover { color: var(--accent-dark); }
+.about-card code { font-size: .82rem; background: var(--accent-soft); padding: 1px 5px; border-radius: 3px; }
