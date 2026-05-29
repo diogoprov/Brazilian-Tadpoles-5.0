@@ -225,6 +225,14 @@ tbody tr:hover { background: #fafaf7; }
   font-size: .85rem;
 }
 
+/* Reserva altura mínima pro chart Plotly. Sem isso, o container colapsa
+   quando o número de traces/famílias cai (ao desmarcar famílias), o gráfico
+   encolhe pra ~0px de altura e o footer/parágrafo seguinte sobem por cima. */
+#chart-trend {
+  min-height: 480px;
+  width: 100%;
+}
+
 /* --- Filogenia --- */
 .phylo-header {
   display: flex; justify-content: space-between; align-items: flex-end;

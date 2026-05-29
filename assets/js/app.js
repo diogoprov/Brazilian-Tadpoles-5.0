@@ -514,6 +514,8 @@ function renderTrend() {
   }
 
   const layout = {
+    height: 460,                     // altura fixa — evita colapso ao trocar nº de traces
+    autosize: true,
     margin: { t: 10, r: 10, b: 60, l: 60 },
     font: { family: 'system-ui' },
     xaxis: { title: 'Década', tickangle: -35 },
@@ -524,7 +526,8 @@ function renderTrend() {
   };
   Plotly.react('chart-trend', traces, layout,
     { displayModeBar: true, displaylogo: false, responsive: true,
-      modeBarButtonsToRemove: ['lasso2d','select2d','autoScale2d','toggleSpikelines'] });
+      modeBarButtonsToRemove: ['lasso2d','select2d','autoScale2d','toggleSpikelines'] })
+    .then(() => Plotly.Plots.resize('chart-trend'));
 }
 
 function cumulative(arr) {
