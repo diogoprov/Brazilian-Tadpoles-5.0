@@ -16,8 +16,12 @@ import json
 import openpyxl
 import os
 import re
+import sys
 import unicodedata
 from datetime import date
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from parse_refs import parse_cell  # noqa: E402
 
 EXCLUDE_FAMILIES = {
     'Brachycephalidae', 'Caligophrynidae', 'Ceuthomantidae',
@@ -36,14 +40,19 @@ def slug(s):
 
 
 def parse_refs(cell):
-    """Retorna (status, refs[]). status in {described, not_described}.
-    Divide em '/' que o banco usa como separador de multiplas refs."""
+    """Retorna (status, refs[]) onde cada ref é
+    {author, year, title, journal, doi, raw}.
+
+    Status in {described, not_described}. O split é feito por
+    `parse_refs.split_cell`, que reconhece '/' como separador entre
+    citações sem quebrar DOIs (`https://doi.org/10.NNNN/...`).
+    """
     if cell is None:
         return ('not_described', [])
     text = str(cell).strip()
     if not text or text.lower().startswith('not_described'):
         return ('not_described', [])
-    refs = [r.strip() for r in text.split('/') if r.strip()]
+    refs = parse_cell(cell)
     return ('described', refs)
 
 
@@ -88,13 +97,14 @@ def main():
     species.sort(key=lambda s: (s['family'], s['species']))
 
     out = {
-        'schema_version': '5.0.0',
+        'schema_version': '5.1.0',
         'source': 'Brazilian tadpoles database v4.1.0 (Google Sheet, 27 mai 2026)',
         'generated': date.today().isoformat(),
         'excluded_families': sorted(EXCLUDE_FAMILIES),
         'excluded_count': len(excluded),
         'count': len(species),
         'characters': ['ext_morph', 'internal_oral', 'chondrocranium'],
+        'ref_schema': ['author', 'year', 'title', 'journal', 'doi', 'raw'],
         'species': species,
     }
 
@@ -113,6 +123,25 @@ def main():
     for c in ('ext_morph', 'internal_oral', 'chondrocranium'):
         d = sum(1 for s in species if s[c]['status'] == 'described')
         print(f'  {c}: {d}/{len(species)} = {round(d/len(species)*100)}%')
+
+    # Estatisticas de parsing de refs
+    seen = {}
+    for s in species:
+        for c in ('ext_morph', 'internal_oral', 'chondrocranium'):
+            for r in s[c]['refs']:
+                seen[r['raw']] = r
+    total = len(seen)
+    with_year = sum(1 for r in seen.values() if r['year'] is not None)
+    with_doi = sum(1 for r in seen.values() if r['doi'] is not None)
+    with_author = sum(1 for r in seen.values() if r['author'] is not None)
+    with_title = sum(1 for r in seen.values() if r['title'] is not None)
+    with_journal = sum(1 for r in seen.values() if r['journal'] is not None)
+    print(f'\nRefs unicas: {total}')
+    print(f'  com ano:     {with_year} ({round(100*with_year/total)}%)')
+    print(f'  com DOI:     {with_doi} ({round(100*with_doi/total)}%)')
+    print(f'  com author:  {with_author} ({round(100*with_author/total)}%)')
+    print(f'  com title:   {with_title} ({round(100*with_title/total)}%)')
+    print(f'  com journal: {with_journal} ({round(100*with_journal/total)}%)')
 
 
 if __name__ == '__main__':

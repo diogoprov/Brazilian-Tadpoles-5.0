@@ -36,6 +36,9 @@ async function load() {
     populateFilters();
     renderSummary();
     buildDashboard();
+    buildTrendIndex();
+    buildTrendUI();
+    whenPlotly(renderTrend);
   } catch (err) {
     document.getElementById('hero-hint').innerHTML =
       `<span style="color:var(--err)">Não foi possível carregar os dados (${esc(err.message)}). ` +
@@ -180,13 +183,32 @@ function charCell(d, charKey, idx) {
   const refsHtml = c.refs && c.refs.length
     ? `<button class="refs-toggle" type="button" data-row="${idx}" data-char="${charKey}">${c.refs.length} ref${c.refs.length>1?'s':''}</button>
        <div class="refs-details" id="refs-${idx}-${charKey}" hidden>
-         <ol>${c.refs.map(r => `<li>${esc(r)}</li>`).join('')}</ol>
+         <ol>${c.refs.map(formatRef).join('')}</ol>
        </div>`
     : '';
   return `<td><div class="refs-cell">
     <span class="badge ${c.status}">${STATUS_LABELS[c.status]}</span>
     ${refsHtml}
   </div></td>`;
+}
+
+// Renderiza uma ref estruturada como citação curta + link DOI.
+// Aceita também strings (schema antigo) por segurança.
+function formatRef(r) {
+  if (typeof r === 'string') return `<li>${esc(r)}</li>`;
+  if (!r) return '';
+  const parts = [];
+  if (r.author) parts.push(esc(r.author));
+  if (r.year)   parts.push(`(${r.year})`);
+  if (r.title)  parts.push(esc(r.title) + '.');
+  if (r.journal) parts.push(`<em>${esc(r.journal)}</em>.`);
+  let line = parts.join(' ');
+  if (!line) line = esc(r.raw || '');
+  if (r.doi) {
+    const doi = esc(r.doi);
+    line += ` <a href="https://doi.org/${doi}" target="_blank" rel="noopener">doi:${doi}</a>`;
+  }
+  return `<li>${line}</li>`;
 }
 
 function esc(s) {
@@ -288,6 +310,229 @@ function whenPlotly(fn) {
   else window.addEventListener('load', fn, { once: true });
 }
 
+// Normaliza uma ref para o índice de tendências. Aceita o schema
+// estruturado (5.1.0+: objeto com year/doi/raw) e cai pra string solta
+// se aparecer um JSON antigo. Retorna { key, year } ou null.
+function normalizeRef(ref) {
+  if (!ref) return null;
+  if (typeof ref === 'object') {
+    if (ref.year == null) return null;
+    const key = ref.doi ? ('doi:' + ref.doi) : ('raw:' + (ref.raw || ''));
+    return { key, year: ref.year };
+  }
+  // legado: string solta — extrai ano por regex
+  const r = String(ref).trim();
+  if (r.length < 25) return null;
+  const ys = r.match(/\b(18\d{2}|19\d{2}|20\d{2})\b/g);
+  if (!ys) return null;
+  const y = Math.max(...ys.map(Number));
+  if (y < 1850 || y > 2030) return null;
+  return { key: 'raw:' + r, year: y };
+}
+
+// ---------- Tendências (linha por década) ----------
+// Paleta categórica (ColorBrewer Set2 + extras), repete se exceder.
+const TREND_PALETTE = [
+  '#2e6b4f','#c9881e','#3b6fa1','#9c3d75','#7aa44a','#b53c3c',
+  '#5d4a8a','#1f8a8a','#a86b2a','#54607a','#75ad6f','#c4663d',
+  '#8a4a8a','#2e7a7a','#a89540','#8c6d1a','#4a8a4a','#3a5e8c',
+];
+let TREND_REFS = [];   // [{ref, year, decade, family, chars: Set}]
+let TREND_FAMS = [];   // famílias ordenadas por nº de refs (desc)
+let TREND_DECADES = []; // décadas presentes (asc)
+let TREND_FAM_SELECTED = new Set();
+
+// Constrói o índice a partir do novo schema de refs (objeto com `year`).
+// Cada ref única (chave: doi || raw) ganha uma entrada por família em que
+// aparece, para permitir contagem dedup por (família, década).
+function buildTrendIndex() {
+  // map: refKey -> { year, families: Set, chars: Set }
+  const byRef = new Map();
+  for (const sp of DATA) {
+    for (const ch of ['ext_morph','internal_oral','chondrocranium']) {
+      const refs = sp[ch].refs || [];
+      for (const ref of refs) {
+        const r = normalizeRef(ref);
+        if (!r || r.year == null) continue;
+        let entry = byRef.get(r.key);
+        if (!entry) {
+          entry = { year: r.year, families: new Set(), chars: new Set() };
+          byRef.set(r.key, entry);
+        }
+        entry.families.add(sp.family);
+        entry.chars.add(ch);
+      }
+    }
+  }
+  TREND_REFS = [];
+  for (const [key, e] of byRef) {
+    for (const fam of e.families) {
+      TREND_REFS.push({
+        ref: key,
+        year: e.year,
+        decade: Math.floor(e.year / 10) * 10,
+        family: fam,
+        chars: e.chars,
+      });
+    }
+  }
+  // famílias ordenadas por nº de refs únicas
+  const famCounts = new Map();
+  for (const t of TREND_REFS) {
+    famCounts.set(t.family, (famCounts.get(t.family) || 0) + 1);
+  }
+  TREND_FAMS = [...famCounts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([f]) => f);
+  // décadas
+  const decSet = new Set(TREND_REFS.map(t => t.decade));
+  if (decSet.size) {
+    const dmin = Math.min(...decSet), dmax = Math.max(...decSet);
+    TREND_DECADES = [];
+    for (let d = dmin; d <= dmax; d += 10) TREND_DECADES.push(d);
+  } else {
+    TREND_DECADES = [];
+  }
+}
+
+function buildTrendUI() {
+  const list = document.getElementById('trend-fam-list');
+  if (!list) return;
+  // checkbox por família (default: Top 6 marcados)
+  TREND_FAM_SELECTED = new Set(TREND_FAMS.slice(0, 6));
+  list.innerHTML = TREND_FAMS.map(f => `
+    <label><input type="checkbox" class="trend-fam-cb" value="${esc(f)}"
+      ${TREND_FAM_SELECTED.has(f) ? 'checked' : ''}> ${esc(f)}</label>
+  `).join('');
+
+  // listeners
+  document.querySelectorAll('input[name="trend-mode"]').forEach(r =>
+    r.addEventListener('change', onTrendChange));
+  document.querySelectorAll('input[name="trend-char"]').forEach(r =>
+    r.addEventListener('change', renderTrend));
+  document.querySelectorAll('input[name="trend-cum"]').forEach(r =>
+    r.addEventListener('change', renderTrend));
+  list.addEventListener('change', e => {
+    const cb = e.target.closest('.trend-fam-cb');
+    if (!cb) return;
+    if (cb.checked) TREND_FAM_SELECTED.add(cb.value);
+    else TREND_FAM_SELECTED.delete(cb.value);
+    renderTrend();
+  });
+  document.getElementById('trend-fam-top').addEventListener('click', () => {
+    TREND_FAM_SELECTED = new Set(TREND_FAMS.slice(0, 6));
+    syncFamCheckboxes(); renderTrend();
+  });
+  document.getElementById('trend-fam-all').addEventListener('click', () => {
+    TREND_FAM_SELECTED = new Set(TREND_FAMS);
+    syncFamCheckboxes(); renderTrend();
+  });
+  document.getElementById('trend-fam-none').addEventListener('click', () => {
+    TREND_FAM_SELECTED = new Set();
+    syncFamCheckboxes(); renderTrend();
+  });
+
+  onTrendChange();
+}
+
+function syncFamCheckboxes() {
+  document.querySelectorAll('.trend-fam-cb').forEach(cb => {
+    cb.checked = TREND_FAM_SELECTED.has(cb.value);
+  });
+}
+
+function onTrendChange() {
+  const mode = document.querySelector('input[name="trend-mode"]:checked').value;
+  document.getElementById('trend-families-group').hidden = (mode !== 'family');
+  renderTrend();
+}
+
+function renderTrend() {
+  if (!window.Plotly || !TREND_DECADES.length) return;
+  const mode = document.querySelector('input[name="trend-mode"]:checked').value;
+  const cum  = document.querySelector('input[name="trend-cum"]:checked').value === 'cumulative';
+  const charsSel = new Set(
+    [...document.querySelectorAll('input[name="trend-char"]:checked')].map(c => c.value)
+  );
+
+  // filtra por caráter (uma ref entra se interseccionar o subset escolhido)
+  const filtered = TREND_REFS.filter(t => {
+    for (const c of t.chars) if (charsSel.has(c)) return true;
+    return false;
+  });
+
+  const x = TREND_DECADES.map(d => d + 's');
+  let traces = [];
+
+  if (mode === 'all') {
+    // total: refs únicas por década (deduplicar refs entre famílias)
+    const seen = new Map(); // ref -> decade
+    for (const t of filtered) {
+      if (!seen.has(t.ref)) seen.set(t.ref, t.decade);
+    }
+    const counts = new Map(TREND_DECADES.map(d => [d, 0]));
+    for (const d of seen.values()) counts.set(d, counts.get(d) + 1);
+    let y = TREND_DECADES.map(d => counts.get(d));
+    if (cum) y = cumulative(y);
+    traces.push({
+      x, y,
+      mode: 'lines+markers',
+      type: 'scatter',
+      name: 'Todas as famílias',
+      line: { color: COLORS.accent, width: 2.5 },
+      marker: { size: 7, color: COLORS.accent },
+      hovertemplate: '%{x}: <b>%{y}</b> artigos<extra></extra>',
+    });
+  } else {
+    // por família: refs únicas por (família, década)
+    const sel = [...TREND_FAM_SELECTED].filter(f => TREND_FAMS.includes(f));
+    sel.sort((a, b) => TREND_FAMS.indexOf(a) - TREND_FAMS.indexOf(b));
+    sel.forEach((fam, i) => {
+      const refsFam = filtered.filter(t => t.family === fam);
+      // refs únicas por década dentro da família
+      const seen = new Map();
+      for (const t of refsFam) if (!seen.has(t.ref)) seen.set(t.ref, t.decade);
+      const counts = new Map(TREND_DECADES.map(d => [d, 0]));
+      for (const d of seen.values()) counts.set(d, counts.get(d) + 1);
+      let y = TREND_DECADES.map(d => counts.get(d));
+      if (cum) y = cumulative(y);
+      const color = TREND_PALETTE[i % TREND_PALETTE.length];
+      traces.push({
+        x, y,
+        mode: 'lines+markers',
+        type: 'scatter',
+        name: fam,
+        line: { color, width: 2 },
+        marker: { size: 6, color },
+        hovertemplate: `<b>${esc(fam)}</b><br>%{x}: %{y} artigos<extra></extra>`,
+      });
+    });
+    if (!traces.length) {
+      traces.push({ x, y: TREND_DECADES.map(() => 0), type: 'scatter',
+        mode: 'lines', line: { color: '#ccc' }, name: '(nenhuma família)' });
+    }
+  }
+
+  const layout = {
+    margin: { t: 10, r: 10, b: 60, l: 60 },
+    font: { family: 'system-ui' },
+    xaxis: { title: 'Década', tickangle: -35 },
+    yaxis: { title: cum ? 'Artigos acumulados' : 'Artigos por década', rangemode: 'tozero' },
+    legend: { orientation: 'h', y: -0.2 },
+    hovermode: 'closest',
+    paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
+  };
+  Plotly.react('chart-trend', traces, layout,
+    { displayModeBar: true, displaylogo: false, responsive: true,
+      modeBarButtonsToRemove: ['lasso2d','select2d','autoScale2d','toggleSpikelines'] });
+}
+
+function cumulative(arr) {
+  let s = 0;
+  return arr.map(v => (s += v));
+}
+
+
 // ---------- Tabs ----------
 function setupTabs() {
   document.querySelectorAll('.tab').forEach(tab => {
@@ -302,6 +547,10 @@ function setupTabs() {
           const el = document.getElementById(id);
           if (el && window.Plotly) Plotly.Plots.resize(el);
         });
+      }
+      if (tab.dataset.view === 'tendencias') {
+        const el = document.getElementById('chart-trend');
+        if (el && window.Plotly) Plotly.Plots.resize(el);
       }
     });
   });
@@ -390,6 +639,10 @@ function switchTab(view) {
       const el = document.getElementById(id);
       if (el && window.Plotly) Plotly.Plots.resize(el);
     });
+  }
+  if (view === 'tendencias') {
+    const el = document.getElementById('chart-trend');
+    if (el && window.Plotly) Plotly.Plots.resize(el);
   }
   // Filogenia: pede inicialização se ainda não foi
   if (view === 'filogenia' && window.PhyloView) window.PhyloView.ensureInit();

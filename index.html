@@ -20,6 +20,7 @@
         <button class="tab is-active" data-view="especies">Espécies</button>
         <button class="tab" data-view="filogenia">Filogenia</button>
         <button class="tab" data-view="dashboard">Dados faltantes</button>
+        <button class="tab" data-view="tendencias">Tendências</button>
         <button class="tab" data-view="sobre">Sobre</button>
       </nav>
     </div>
@@ -152,6 +153,57 @@
           <div id="chart-global"></div>
         </div>
       </div>
+    </section>
+
+    <!-- ========== VIEW: TENDÊNCIAS ========== -->
+    <section id="view-tendencias" class="view">
+      <div class="trend-header">
+        <div>
+          <h2>Tendência temporal das descrições</h2>
+          <p class="muted" id="trend-meta">Número de artigos publicados por década descrevendo girinos. Atualização da Fig. 2 de Provete et al. (2012).</p>
+        </div>
+      </div>
+
+      <div class="trend-controls">
+        <fieldset class="trend-group">
+          <legend>Visualização</legend>
+          <label><input type="radio" name="trend-mode" value="all" checked> Conjunto completo</label>
+          <label><input type="radio" name="trend-mode" value="family"> Por família</label>
+        </fieldset>
+
+        <fieldset class="trend-group">
+          <legend>Caráter</legend>
+          <label><input type="checkbox" name="trend-char" value="ext_morph" checked> Morf. externa</label>
+          <label><input type="checkbox" name="trend-char" value="internal_oral" checked> Morf. oral</label>
+          <label><input type="checkbox" name="trend-char" value="chondrocranium" checked> Condrocrânio</label>
+        </fieldset>
+
+        <fieldset class="trend-group">
+          <legend>Escala</legend>
+          <label><input type="radio" name="trend-cum" value="decade" checked> Por década</label>
+          <label><input type="radio" name="trend-cum" value="cumulative"> Cumulativa</label>
+        </fieldset>
+
+        <fieldset class="trend-group trend-families" id="trend-families-group" hidden>
+          <legend>Famílias (selecione)</legend>
+          <div class="trend-fam-actions">
+            <button class="btn-link" type="button" id="trend-fam-top">Top 6</button>
+            <button class="btn-link" type="button" id="trend-fam-all">Todas</button>
+            <button class="btn-link" type="button" id="trend-fam-none">Nenhuma</button>
+          </div>
+          <div class="trend-fam-list" id="trend-fam-list"></div>
+        </fieldset>
+      </div>
+
+      <div class="chart-card chart-card--wide">
+        <div id="chart-trend"></div>
+      </div>
+
+      <p class="muted small" id="trend-note">
+        Cada referência é contada uma vez por década (uma única vez no modo
+        “conjunto completo”; uma vez por família no modo “por família”).
+        Refs sem ano (≈ 1%) são descartadas; a década atual está incompleta.
+      </p>
     </section>
 
     <!-- ========== VIEW: SOBRE ========== -->
