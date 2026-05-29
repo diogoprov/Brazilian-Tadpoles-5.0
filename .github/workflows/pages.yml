@@ -10,6 +10,11 @@ permissions:
   pages: write
   id-token: write
 
+# Antecipa migração obrigatória do Node 20 → 24 (deprecação anunciada em 19/09/2025;
+# forçada em 02/06/2026; Node 20 removido em 16/09/2026).
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 concurrency:
   group: pages
   cancel-in-progress: false
