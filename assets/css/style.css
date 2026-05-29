@@ -176,6 +176,55 @@ tbody tr:hover { background: #fafaf7; }
 }
 .chart-card h3 { margin: 0 0 12px; font-size: 1rem; }
 
+/* --- Tendências --- */
+.trend-header { margin-bottom: 12px; }
+.trend-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.trend-group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px 14px 12px;
+  margin: 0;
+}
+.trend-group legend {
+  font-size: .78rem; color: var(--muted);
+  font-weight: 600; text-transform: uppercase; letter-spacing: .03em;
+  padding: 0 6px;
+}
+.trend-group label {
+  display: block;
+  font-size: .9rem;
+  padding: 3px 0;
+  cursor: pointer;
+}
+.trend-group input { margin-right: 6px; vertical-align: -2px; }
+.trend-families { grid-column: span 2; }
+@media (max-width: 600px) {
+  .trend-families { grid-column: auto; }
+}
+.trend-fam-actions {
+  display: flex; gap: 12px; margin: 4px 0 8px;
+  border-bottom: 1px solid var(--line); padding-bottom: 8px;
+}
+.trend-fam-actions .btn-link { padding: 2px 0; font-size: .82rem; }
+.trend-fam-list {
+  max-height: 180px;
+  overflow-y: auto;
+  columns: 2;
+  column-gap: 14px;
+  font-size: .85rem;
+}
+.trend-fam-list label {
+  break-inside: avoid;
+  padding: 2px 0;
+  font-size: .85rem;
+}
+
 /* --- Filogenia --- */
 .phylo-header {
   display: flex; justify-content: space-between; align-items: flex-end;
@@ -196,7 +245,8 @@ tbody tr:hover { background: #fafaf7; }
 .phylo-container {
   background: var(--surface); border-radius: var(--radius);
   box-shadow: var(--shadow); padding: 16px; overflow: auto;
-  min-height: 600px; max-height: 80vh;
+  /* sem min-height: container acompanha a altura do SVG. */
+  max-height: 80vh;
 }
 .phylo-foot { margin-top: 12px; }
 .small { font-size: .82rem; }

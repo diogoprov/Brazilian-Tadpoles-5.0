@@ -69,7 +69,11 @@
 
   // -------- Layout / render --------
   function update() {
-    const layout = d3.tree().nodeSize([NODE_H, NODE_W]);
+    // d3.cluster (dendrograma) em vez de d3.tree: alinha TODAS as folhas no
+    // mesmo x (profundidade max), o que mantém os rótulos colados nas barras
+    // mesmo com clados colapsados em profundidades diferentes. Espaçamento
+    // vertical fica uniforme (NODE_H por folha), sem clumping cousin/cousin.
+    const layout = d3.cluster().nodeSize([NODE_H, NODE_W]);
     layout(tree);
 
     let xMin = Infinity, xMax = -Infinity, yMax = 0;
