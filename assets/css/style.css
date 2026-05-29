@@ -225,12 +225,18 @@ tbody tr:hover { background: #fafaf7; }
   font-size: .85rem;
 }
 
-/* Reserva altura mínima pro chart Plotly. Sem isso, o container colapsa
-   quando o número de traces/famílias cai (ao desmarcar famílias), o gráfico
-   encolhe pra ~0px de altura e o footer/parágrafo seguinte sobem por cima. */
+/* Chart-card que envolve o gráfico de tendências: position:relative +
+   overflow:hidden contêm o SVG absoluto do Plotly caso ele escape do
+   container (acontecia quando trocávamos nº de traces e o autosize/
+   responsive do Plotly entrava em conflito com o min-height do div). */
+.chart-card:has(#chart-trend) {
+  position: relative;
+  overflow: hidden;
+}
 #chart-trend {
-  min-height: 480px;
+  height: 480px;
   width: 100%;
+  display: block;
 }
 
 /* --- Filogenia --- */

@@ -513,21 +513,33 @@ function renderTrend() {
     }
   }
 
+  // Tamanho controlado UMA FONTE SÓ: pega a largura real do container.
+  // Não usamos autosize/responsive porque conflitavam com height fixo —
+  // após Plotly.react, o gráfico encolhia/expandia de forma imprevisível
+  // dependendo do número de traces, deixando o footer subir por cima.
+  const el = document.getElementById('chart-trend');
   const layout = {
-    height: 460,                     // altura fixa — evita colapso ao trocar nº de traces
-    autosize: true,
-    margin: { t: 10, r: 10, b: 60, l: 60 },
+    width: el.clientWidth || 800,
+    height: 480,
+    margin: { t: 10, r: 10, b: 70, l: 60 },
     font: { family: 'system-ui' },
     xaxis: { title: 'Década', tickangle: -35 },
     yaxis: { title: cum ? 'Artigos acumulados' : 'Artigos por década', rangemode: 'tozero' },
-    legend: { orientation: 'h', y: -0.2 },
+    legend: { orientation: 'h', y: -0.22 },
     hovermode: 'closest',
     paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)',
   };
   Plotly.react('chart-trend', traces, layout,
-    { displayModeBar: true, displaylogo: false, responsive: true,
-      modeBarButtonsToRemove: ['lasso2d','select2d','autoScale2d','toggleSpikelines'] })
-    .then(() => Plotly.Plots.resize('chart-trend'));
+    { displayModeBar: true, displaylogo: false, responsive: false,
+      modeBarButtonsToRemove: ['lasso2d','select2d','autoScale2d','toggleSpikelines'] });
+}
+
+// Atualiza só a largura do gráfico quando a janela muda de tamanho
+// (substitui o autosize do Plotly, que era a fonte do bug).
+function fitTrendWidth() {
+  const el = document.getElementById('chart-trend');
+  if (!el || !window.Plotly) return;
+  Plotly.relayout(el, { width: el.clientWidth, height: 480 });
 }
 
 function cumulative(arr) {
@@ -551,10 +563,7 @@ function setupTabs() {
           if (el && window.Plotly) Plotly.Plots.resize(el);
         });
       }
-      if (tab.dataset.view === 'tendencias') {
-        const el = document.getElementById('chart-trend');
-        if (el && window.Plotly) Plotly.Plots.resize(el);
-      }
+      if (tab.dataset.view === 'tendencias') fitTrendWidth();
     });
   });
 }
@@ -643,10 +652,7 @@ function switchTab(view) {
       if (el && window.Plotly) Plotly.Plots.resize(el);
     });
   }
-  if (view === 'tendencias') {
-    const el = document.getElementById('chart-trend');
-    if (el && window.Plotly) Plotly.Plots.resize(el);
-  }
+  if (view === 'tendencias') fitTrendWidth();
   // Filogenia: pede inicialização se ainda não foi
   if (view === 'filogenia' && window.PhyloView) window.PhyloView.ensureInit();
 }
@@ -703,3 +709,10 @@ window.SpeciesView = {
 setupTabs();
 setupEvents();
 load();
+
+// Resize debounced — só ajusta o trend chart quando a janela muda.
+let _trendResizeT;
+window.addEventListener('resize', () => {
+  clearTimeout(_trendResizeT);
+  _trendResizeT = setTimeout(fitTrendWidth, 120);
+});
