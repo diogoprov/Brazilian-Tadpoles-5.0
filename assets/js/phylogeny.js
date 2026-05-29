@@ -19,7 +19,8 @@
   const NODE_H = 16;        // px por leaf
   const NODE_W = 60;        // px por nivel de profundidade
   const MARGIN = { top: 18, right: 28, bottom: 18, left: 18 };
-  const LABEL_W = 220;      // espaco reservado pro nome
+  const LABEL_PAD = 14;     // espaço entre fim do nome e início das barras
+  const CHAR_PX = 6.3;      // estimativa de largura média de char (italic 11px)
   const BAR_W = 18, BAR_GAP = 2, BAR_H = 10;
   const BAR_BLOCK_W = CHARS.length * BAR_W + (CHARS.length - 1) * BAR_GAP;
 
@@ -69,14 +70,23 @@
     layout(tree);
 
     let xMin = Infinity, xMax = -Infinity, yMax = 0;
+    let maxLabelW = 0;
     tree.each(d => {
       if (d.x < xMin) xMin = d.x;
       if (d.x > xMax) xMax = d.x;
       if (d.y > yMax) yMax = d.y;
+      // Largura estimada do texto da ponta ou do label MRCA (com offset do círculo)
+      if (isLeaf(d)) {
+        const w = pretty(d.data.name).length * CHAR_PX + 9;
+        if (w > maxLabelW) maxLabelW = w;
+      } else if (isCollapsed(d)) {
+        const w = mrcaLabel(d, true).length * CHAR_PX + 12;
+        if (w > maxLabelW) maxLabelW = w;
+      }
     });
 
-    const barStartX = yMax + 12 + LABEL_W;
-    const width  = barStartX + BAR_BLOCK_W + 90 /* n= label */ + MARGIN.left + MARGIN.right;
+    const barStartX = yMax + maxLabelW + LABEL_PAD;
+    const width  = barStartX + BAR_BLOCK_W + 70 /* n= label */ + MARGIN.left + MARGIN.right;
     const height = (xMax - xMin) + NODE_H + MARGIN.top + MARGIN.bottom;
 
     svg.attr('width', width).attr('height', height);
@@ -155,22 +165,35 @@
     });
     bmerged.select('text.phylo-bar-n')
       .attr('x', BAR_BLOCK_W + 8).attr('y', 3)
-      .text(d => `n=${d.data.counts.total}`);
+      .text(d => {
+        const n = d.data.counts.total;
+        // Esconde o label em tips (sempre n=1) — fica visual mais limpo
+        return n > 1 ? `n=${n}` : '';
+      });
   }
 
   function key(d) {
     return d.data.name + '|' + (d.parent ? d.parent.data.name : 'R') + '|' + d.depth;
   }
 
+  function familiesLabel(fams) {
+    if (!fams || !fams.length) return 'clado';
+    if (fams.length === 1) return fams[0];
+    if (fams.length <= 3) return fams.join(' + ');
+    return `${fams.slice(0, 2).join(' + ')} + ${fams.length - 2} outras`;
+  }
+
   function mrcaLabel(d, forCollapsed) {
     const data = d.data;
-    // Pra nos colapsados: mostra MRCA + (+N descendentes)
     const total = data.counts ? data.counts.total : 0;
     if (forCollapsed) {
-      const name = data.mrca_genus || data.mrca_family || 'clado';
+      // ordem de preferencia: gênero MRCA > família MRCA > lista de famílias aninhadas
+      let name;
+      if (data.mrca_genus) name = data.mrca_genus;
+      else if (data.mrca_family) name = data.mrca_family;
+      else name = familiesLabel(data.families);
       return `${name} (+${total})`;
     }
-    // Nos expandidos: so mostra MRCA se houver (mais limpo)
     if (data.mrca_genus) return data.mrca_genus;
     if (data.mrca_family) return data.mrca_family;
     return '';

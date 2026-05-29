@@ -168,6 +168,9 @@ def node_to_dict(node):
         d['genus'] = node.genus
     if hasattr(node, 'epithet'):
         d['epithet'] = node.epithet
+    # Lista de familias aninhadas (usada como label quando nao ha MRCA monofiletico)
+    if node.children and node.family_set:
+        d['families'] = sorted(node.family_set)
     if node.children:
         d['children'] = [node_to_dict(c) for c in node.children]
     return d
