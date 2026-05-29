@@ -89,6 +89,24 @@ function hideTable() {
   document.getElementById('table-block').hidden = true;
 }
 
+// Mostra "Ver na filogenia" só quando o filtro de família ou gênero está ativo.
+// Mostra texto adaptado (família ou gênero alvo).
+function updatePhyloJumpBtn() {
+  const btn = document.getElementById('btn-phylo-link');
+  if (!btn) return;
+  const fam = document.getElementById('filter-family').value;
+  const gen = document.getElementById('filter-genus').value;
+  if (gen) {
+    btn.hidden = false;
+    btn.textContent = `Ver ${gen} na filogenia →`;
+  } else if (fam) {
+    btn.hidden = false;
+    btn.textContent = `Ver ${fam} na filogenia →`;
+  } else {
+    btn.hidden = true;
+  }
+}
+
 function hasActiveQueryOrFilter() {
   const q = document.getElementById('search').value.trim();
   const f = ['filter-family','filter-genus','filter-ext','filter-int','filter-cho']
@@ -97,6 +115,7 @@ function hasActiveQueryOrFilter() {
 }
 
 function applyFilters() {
+  updatePhyloJumpBtn();
   if (!hasActiveQueryOrFilter()) {
     hideTable();
     return;
@@ -328,6 +347,18 @@ function setupEvents() {
     if (el) el.hidden = !el.hidden;
   });
 
+  // "Ver na filogenia" — vai pra aba e focaliza o clado MRCA
+  const btnPhylo = document.getElementById('btn-phylo-link');
+  if (btnPhylo) {
+    btnPhylo.addEventListener('click', () => {
+      const fam = document.getElementById('filter-family').value;
+      const gen = document.getElementById('filter-genus').value;
+      const target = gen ? { genus: gen } : fam ? { family: fam } : null;
+      if (!target) return;
+      jumpToPhylo(target);
+    });
+  }
+
   // Copiar BibTeX (aba Sobre)
   const btnCopy = document.getElementById('btn-copy-bib');
   if (btnCopy) {
@@ -344,6 +375,74 @@ function setupEvents() {
     });
   }
 }
+
+// ---------- Cross-filter (Espécies ↔ Filogenia) ----------
+function switchTab(view) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('is-active'));
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('is-active'));
+  const tab = document.querySelector(`.tab[data-view="${view}"]`);
+  const sec = document.getElementById('view-' + view);
+  if (tab) tab.classList.add('is-active');
+  if (sec) sec.classList.add('is-active');
+  // Plotly precisa redimensionar se a aba alvo é o dashboard
+  if (view === 'dashboard') {
+    ['chart-completude','chart-family-count','chart-global'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.Plotly) Plotly.Plots.resize(el);
+    });
+  }
+  // Filogenia: pede inicialização se ainda não foi
+  if (view === 'filogenia' && window.PhyloView) window.PhyloView.ensureInit();
+}
+
+async function jumpToPhylo(target) {
+  switchTab('filogenia');
+  if (!window.PhyloView) return;
+  try {
+    const ok = await window.PhyloView.focus(target);
+    const msg = document.getElementById('phylo-focus-msg');
+    if (!ok && msg) {
+      const what = target.species || target.genus || target.family;
+      msg.textContent = `"${what}" não está presente na árvore podada (provavelmente espécie descrita após a publicação da megatree).`;
+      msg.hidden = false;
+      setTimeout(() => { msg.hidden = true; }, 5000);
+    } else if (msg) {
+      msg.hidden = true;
+    }
+  } catch (err) {
+    console.warn('PhyloView.focus falhou:', err);
+  }
+}
+
+// Expostos pra phylogeny.js disparar filtro de volta na aba Espécies
+window.SpeciesView = {
+  filterBy(target) {
+    // target = {family} | {genus} | {species}
+    const searchEl = document.getElementById('search');
+    const famEl = document.getElementById('filter-family');
+    const genEl = document.getElementById('filter-genus');
+    // Limpa filtros restritivos antes de aplicar — evita zerar acidentalmente
+    searchEl.value = '';
+    famEl.value = '';
+    genEl.value = '';
+    ['filter-ext','filter-int','filter-cho'].forEach(id => { document.getElementById(id).value = ''; });
+    if (target.species) {
+      searchEl.value = target.species;
+    } else if (target.genus) {
+      // Se gênero estiver na lista, usa o filtro; senão cai pra busca textual
+      if ([...genEl.options].some(o => o.value === target.genus)) genEl.value = target.genus;
+      else searchEl.value = target.genus;
+    } else if (target.family) {
+      if ([...famEl.options].some(o => o.value === target.family)) famEl.value = target.family;
+      else searchEl.value = target.family;
+    }
+    switchTab('especies');
+    applyFilters();
+    // Rola pro topo da tabela
+    const tb = document.getElementById('table-block');
+    if (tb && !tb.hidden) tb.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
 
 setupTabs();
 setupEvents();

@@ -111,6 +111,12 @@ body {
   text-decoration: underline; align-self: flex-end;
 }
 .btn-link:hover { color: var(--accent-dark); }
+.btn-phylo-jump {
+  background: var(--accent-soft);
+  padding: 6px 12px; border-radius: 6px;
+  text-decoration: none; font-weight: 600;
+}
+.btn-phylo-jump:hover { background: #d3e5d9; }
 
 .result-count { color: var(--muted); font-size: .85rem; margin: 0; }
 
@@ -211,10 +217,37 @@ tbody tr:hover { background: #fafaf7; }
   fill: var(--ink); font-weight: 600;
   dominant-baseline: middle; pointer-events: none; user-select: none;
 }
+.phylo-mrca-label.clickable {
+  pointer-events: auto; cursor: pointer;
+}
+.phylo-mrca-label.clickable:hover { fill: var(--accent); text-decoration: underline; }
 .phylo-tip-circle { stroke: #fff; stroke-width: 1px; }
 .phylo-tip-text {
   font-size: 11px; font-family: var(--sans); fill: var(--ink);
   font-style: italic; dominant-baseline: middle; pointer-events: none;
+}
+.phylo-tip-text.clickable {
+  pointer-events: auto; cursor: pointer;
+}
+.phylo-tip-text.clickable:hover { fill: var(--accent); text-decoration: underline; }
+
+/* Pulso amarelo no clado/ponta alvo do "Ver na filogenia" */
+@keyframes phylo-flash {
+  0%   { filter: drop-shadow(0 0 0 transparent); }
+  30%  { filter: drop-shadow(0 0 6px var(--warn)); }
+  60%  { filter: drop-shadow(0 0 10px var(--warn)); }
+  100% { filter: drop-shadow(0 0 0 transparent); }
+}
+.phylo-highlight { animation: phylo-flash 1.2s ease-in-out 2; }
+.phylo-highlight .phylo-mrca-label,
+.phylo-highlight .phylo-tip-text { fill: var(--accent-dark); font-weight: 700; }
+
+.phylo-focus-msg {
+  margin-top: 8px;
+  padding: 8px 12px; border-radius: 6px;
+  background: var(--warn-bg); color: var(--ink);
+  border-left: 3px solid var(--warn);
+  font-size: .85rem;
 }
 .phylo-bars { pointer-events: none; }
 .bar-bg, .bar-fg { stroke: none; }

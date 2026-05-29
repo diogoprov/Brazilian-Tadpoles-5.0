@@ -27,6 +27,8 @@
 
   let tree, svg, gRoot, tooltip;
   let initialized = false;
+  let _initPromise = null;
+  const HIGHLIGHT_MS = 2400;
 
   // -------- Helpers --------
   function isLeaf(d) {
@@ -119,7 +121,17 @@
       .attr('x', d => isCollapsed(d) ? 10 : -6)
       .attr('y', d => isCollapsed(d) ? 4 : -4)
       .attr('text-anchor', d => isCollapsed(d) ? 'start' : 'end')
-      .text(d => mrcaLabel(d, /*forCollapsed*/ isCollapsed(d)));
+      .text(d => mrcaLabel(d, /*forCollapsed*/ isCollapsed(d)))
+      .classed('clickable', d => isCollapsed(d) && (d.data.mrca_family || d.data.mrca_genus))
+      .on('click', (e, d) => {
+        // Só dispara filtro pra MRCAs monofiléticos (family ou genus singleton)
+        if (!(isCollapsed(d) && (d.data.mrca_family || d.data.mrca_genus))) return;
+        const tgt = d.data.mrca_genus
+          ? { genus: d.data.mrca_genus }
+          : { family: d.data.mrca_family };
+        if (window.SpeciesView) window.SpeciesView.filterBy(tgt);
+        e.stopPropagation();
+      });
 
     // ===== Tips (leaves) =====
     const leafData = tree.descendants().filter(isLeaf);
@@ -135,7 +147,12 @@
       .on('mousemove', positionTooltip)
       .on('mouseout', hideTooltip);
     lmerged.select('text')
-      .text(d => pretty(d.data.name));
+      .text(d => pretty(d.data.name))
+      .classed('clickable', true)
+      .on('click', (e, d) => {
+        if (window.SpeciesView) window.SpeciesView.filterBy({ species: pretty(d.data.name) });
+        e.stopPropagation();
+      });
 
     // ===== Barras empilhadas por no (tips + colapsados) =====
     const barredData = tree.descendants().filter(d => isLeaf(d) || isCollapsed(d));
@@ -250,10 +267,92 @@
   }
   function hideTooltip() { tooltip.classList.remove('visible'); }
 
+  // -------- Cross-filter: focar um clado/espécie --------
+  // Caminha pela árvore inteira, INCLUSIVE os filhos colapsados (_children),
+  // pra achar tips que estão "escondidos" dentro de uma MRCA colapsada.
+  function walkAll(d, out) {
+    out.push(d);
+    (d.children || []).forEach(c => walkAll(c, out));
+    (d._children || []).forEach(c => walkAll(c, out));
+  }
+
+  function expandAncestors(d) {
+    let cur = d.parent;
+    while (cur) {
+      if (cur._children && !cur.children) { cur.children = cur._children; cur._children = null; }
+      cur = cur.parent;
+    }
+  }
+
+  function collapseSubtree(d) {
+    // Mantém o nó como colapsado pra que o label MRCA fique visível
+    if (d.children) { d._children = d.children; d.children = null; }
+  }
+
+  async function focus(target) {
+    await ensureInit();
+    if (!tree) return false;
+
+    const all = [];
+    walkAll(tree, all);
+
+    let found = null;
+    let needCollapse = false; // true pra MRCAs (queremos ver o label do clado)
+
+    if (target.species) {
+      const sp = target.species.toLowerCase();
+      found = all.find(d => !(d.children || d._children) &&
+                            pretty(d.data.name).toLowerCase() === sp);
+    } else if (target.genus) {
+      found = all.find(d => d.data.mrca_genus === target.genus);
+      needCollapse = true;
+    } else if (target.family) {
+      found = all.find(d => d.data.mrca_family === target.family);
+      needCollapse = true;
+    }
+
+    if (!found) return false;
+
+    expandAncestors(found);
+    if (needCollapse) collapseSubtree(found);
+
+    update();
+
+    // Acha o elemento DOM correspondente e aplica highlight + scroll
+    const k = key(found);
+    const allG = gRoot.selectAll('g.phylo-leaf, g.phylo-internal').nodes();
+    const gNode = allG.find(g => g.__data__ && key(g.__data__) === k);
+    if (gNode) {
+      gNode.classList.add('phylo-highlight');
+      setTimeout(() => gNode.classList.remove('phylo-highlight'), HIGHLIGHT_MS);
+
+      // Centra na viewport do container — usa requestAnimationFrame pra esperar
+      // o DOM acomodar o resize do SVG após update()
+      requestAnimationFrame(() => {
+        const cont = document.getElementById('phylo-container');
+        if (!cont) return;
+        const cRect = cont.getBoundingClientRect();
+        const gRect = gNode.getBoundingClientRect();
+        const dx = (gRect.left - cRect.left) - (cont.clientWidth - gRect.width) / 2;
+        const dy = (gRect.top  - cRect.top)  - (cont.clientHeight - gRect.height) / 2;
+        cont.scrollTo({
+          left: cont.scrollLeft + dx,
+          top:  cont.scrollTop + dy,
+          behavior: 'smooth'
+        });
+      });
+    }
+    return true;
+  }
+
+  function ensureInit() {
+    if (!_initPromise) _initPromise = init();
+    return _initPromise;
+  }
+
   // -------- Boot --------
   async function init() {
     if (initialized) return;
-    initialized = true;
     try {
       const phy = await fetch('assets/data/phylogeny.json', { cache: 'no-store' }).then(r => r.json());
       document.getElementById('phylo-meta').textContent =
@@ -281,13 +380,18 @@
         if (tree._children) { tree.children = tree._children; tree._children = null; }
         update();
       });
+      initialized = true;
     } catch (err) {
       document.getElementById('phylo-container').innerHTML =
         `<p style="color:var(--err);padding:24px">Não foi possível carregar a filogenia (${err.message}). Rode via servidor local.</p>`;
+      throw err;
     }
   }
 
   document.querySelectorAll('.tab').forEach(tab => {
-    if (tab.dataset.view === 'filogenia') tab.addEventListener('click', init);
+    if (tab.dataset.view === 'filogenia') tab.addEventListener('click', () => { ensureInit(); });
   });
+
+  // API pública pra cross-filter com a aba Espécies
+  window.PhyloView = { ensureInit, focus };
 })();
