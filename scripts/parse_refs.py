@@ -20,7 +20,7 @@ import unicodedata
 URL_RE = re.compile(r'https?://[^\s,;]+', re.IGNORECASE)
 DOI_BARE_RE = re.compile(r'\b10\.\d{4,9}/[^\s,;]+', re.IGNORECASE)
 DOI_NORMALIZE_RE = re.compile(r'^(?:https?://)?(?:dx\.)?doi\.org/', re.IGNORECASE)
-YEAR_RE = re.compile(r'\b(18\d{2}|19\d{2}|20\d{2})\b')
+YEAR_RE = re.compile(r'\b(17[5-9]\d|18\d{2}|19\d{2}|20\d{2})\b')
 
 # Regex de split: '/' seguido de espaço opcional e letra maiúscula
 # (ou de início de uma URL — ou seja, evitamos quebrar `https://` que
@@ -117,7 +117,7 @@ def extract_year(text):
     if not text:
         return None
     years = [int(y) for y in YEAR_RE.findall(text)]
-    years = [y for y in years if 1850 <= y <= 2030]
+    years = [y for y in years if 1750 <= y <= 2030]
     return max(years) if years else None
 
 
@@ -135,16 +135,20 @@ def _strip_url(text):
 #   "Autor1, X. (YYYY) Título. Journal V, P"
 #   "AUTOR1, X.; AUTOR2, Y. Título... Journal, v. N, n. M, p. P-Q, YYYY."
 
-# Captura: tudo antes do ano (com ou sem parênteses) -> author block
+# Captura: tudo antes do ano (com ou sem parênteses) -> author block.
+# Cobre tanto "Autor YYYY." quanto "Autor (YYYY)" — APA-style.
 _AUTHOR_YEAR_RE = re.compile(
-    r'^(?P<author>.+?)[\s\.\(]+(?P<year>18\d{2}|19\d{2}|20\d{2})[\)\.\s]'
+    r'^(?P<author>.+?)[\s\.\(]+(?P<year>17[5-9]\d|18\d{2}|19\d{2}|20\d{2})[\)\.\s]'
 )
 
-# Captura no padrão "Journal, v. N, n. M, p. P-Q, YYYY"
+# Captura no padrão "Journal, v. N | vol. N, ..., YYYY" (ABNT/MLA).
+# Aceita `v.`, `vol.`, `Vol.`, etc., e ano em qualquer lugar à direita.
 _TRAILING_YEAR_RE = re.compile(
-    r'(?P<journal>[^,.]+?),\s*v\.\s*\d+.*?(?P<year>18\d{2}|19\d{2}|20\d{2})\b',
+    r'(?P<journal>[^,.“”"]+?),\s*(?:vol|v)\.\s*\d+.*?'
+    r'(?P<year>17[5-9]\d|18\d{2}|19\d{2}|20\d{2})\b',
     re.IGNORECASE
 )
+
 
 
 def _clean_author(s):
@@ -152,6 +156,32 @@ def _clean_author(s):
     # remove trailing " et al"
     s = re.sub(r'\s+et\s+al\.?$', ' et al.', s, flags=re.IGNORECASE)
     return s or None
+
+
+def _split_author_title(pre):
+    """No padrão "Journal, vol. N, …, YYYY", o `pre` contém autor + título.
+    Heurísticas (em ordem):
+    1. Aspas curvas ou retas em volta do título → split na 1ª aspa.
+    2. ``et al.`` indica fim do autor → split aí.
+    3. Se nenhuma marca clara, autor=None, title=pre (não fabrica).
+    """
+    pre = pre.strip(' .,;')
+    if not pre:
+        return None, None
+    # 1) aspas curvas ou retas que cercam o título
+    m = re.search(r'[“"](.+?)[”"]', pre, re.DOTALL)
+    if m:
+        author = _clean_author(pre[:m.start()].rstrip(' .,;'))
+        title = m.group(1).strip(' .,;') or None
+        return author, title
+    # 2) "et al." marca fim do bloco de autores
+    m = re.search(r'\bet\s+al\.?', pre, re.IGNORECASE)
+    if m:
+        author = _clean_author(pre[:m.end()])
+        title = pre[m.end():].strip(' .,;') or None
+        if title:
+            return author, title
+    return None, (pre or None)
 
 
 def _split_title_journal(rest):
@@ -213,30 +243,25 @@ def parse_citation(text):
     title = None
     journal = None
 
-    # Caso A: padrão "Autor YYYY. Resto" no INÍCIO do texto, e o YYYY
-    # capturado é exatamente o maior ano da string. Isso é seguro mesmo
-    # com datas de autoria taxonômica no meio do texto (porque o ano
-    # de publicação fica na frente; autoria taxonômica viria depois).
-    m = _AUTHOR_YEAR_RE.match(body)
-    if m and year is not None and int(m.group('year')) == year:
-        author = _clean_author(m.group('author'))
-        rest = body[m.end():].strip(' .')
-        title, journal = _split_title_journal(rest)
+    # Caso A: padrão "Journal, vol. N | v. N, ..., YYYY" (ABNT/MLA com
+    # ano no final). Tem PRIORIDADE porque é específico — se bate,
+    # `journal` é confiável. Funciona pra refs estilo PeerJ/Zootaxa/
+    # Biota Neotropica/ABNT.
+    m2 = _TRAILING_YEAR_RE.search(body)
+    if m2 and year is not None and int(m2.group('year')) == year:
+        jstart = m2.start('journal')
+        pre = body[:jstart].rstrip(' ,.;')
+        author, title = _split_author_title(pre)
+        journal = m2.group('journal').strip(' .,;') or None
     else:
-        # Caso B: estilo ABNT/Brasileiro com o ano no final
-        # ("..., Journal, v. N, ..., YYYY."). Tenta achar journal +
-        # título, mas NÃO tenta separar autor — em ABNT os autores são
-        # separados por ";" e a regra de "primeiro '. ' = fim do autor"
-        # quebra com iniciais ("SANTOS, D. L.; ..."). Preferimos None.
-        m2 = _TRAILING_YEAR_RE.search(body)
-        if m2 and year is not None and int(m2.group('year')) == year:
-            jstart = m2.start('journal')
-            pre = body[:jstart].rstrip(' ,.;')
-            # mantém autor=None (parsing arriscado em ABNT) e usa o
-            # bloco anterior como título — pode incluir autores, mas é
-            # honesto e o usuário pode curar depois lendo `raw`.
-            title = pre or None
-            journal = m2.group('journal').strip(' .,;') or None
+        # Caso B: padrão "Autor YYYY. Resto" no INÍCIO do texto. Só
+        # válido se o YYYY capturado é o maior ano da string (evita
+        # contaminação por datas de autoria taxonômica).
+        m = _AUTHOR_YEAR_RE.match(body)
+        if m and year is not None and int(m.group('year')) == year:
+            author = _clean_author(m.group('author'))
+            rest = body[m.end():].strip(' .')
+            title, journal = _split_title_journal(rest)
         # se nenhum padrão bate, autor/título/journal ficam None.
 
     return {
@@ -266,6 +291,10 @@ if __name__ == '__main__':
         'Bokermann, W. C. A. 1966. A new Phyllomedusa from southeastern Brasil. Herpetologica 22:293-297.',
         'SANTOS, D. L.; ANDRADE, S. P.; CEZAR FILHO R., NATAN M. Redescription of the tadpole of Odontophrynus carvalhoi Savage and Cei, 1965 (Anura, Odontophrynidae). Zootaxa, v. 4323, n. 3, p. 419-422, 2017.',
         'Faivovich, J. (1996) La larva de Hyla semiguttata A. Lutz, 1925 (Anura, Hylidae). Cuadernos de Herpetología, 9, 61-67.',
+        # PeerJ-style com vol. + aspas curvas
+        'Ferrão, Miquéias, et al. “A New Nurse Frog of the Allobates Tapajos Species Complex (Anura: Aromobatidae) from the Upper Madeira River”. PeerJ, vol. 10, agosto de 2022, p. e13751. https://doi.org/10.7717/peerj.13751.',
+        # Pre-1850 (Hutchinson 1796)
+        'Hutchinson, T  1796  The natural history of the frog fish of Surinam  8 p, G. Peacock, York',
     ]
     for s in samples:
         print('---')
