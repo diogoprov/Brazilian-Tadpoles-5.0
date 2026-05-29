@@ -16,11 +16,12 @@
   ];
 
   // Layout
-  const NODE_H = 16;        // px por leaf
+  const NODE_H = 20;        // px por leaf (era 16; aumentado pra evitar colisão)
   const NODE_W = 60;        // px por nivel de profundidade
   const MARGIN = { top: 18, right: 28, bottom: 18, left: 18 };
   const LABEL_PAD = 14;     // espaço entre fim do nome e início das barras
   const CHAR_PX = 6.3;      // estimativa de largura média de char (italic 11px)
+  const MAX_LABEL_CHARS = 38; // truncamento em ... para clados muito largos
   const BAR_W = 18, BAR_GAP = 2, BAR_H = 10;
   const BAR_BLOCK_W = CHARS.length * BAR_W + (CHARS.length - 1) * BAR_GAP;
 
@@ -111,7 +112,7 @@
       .attr('r', d => isCollapsed(d) ? 5.5 : 3.5)
       .attr('class', d => 'phylo-internal-circle' + (isCollapsed(d) ? ' collapsed' : ''))
       .on('click', (e, d) => { toggle(d); e.stopPropagation(); })
-      .on('mouseover', (e, d) => isCollapsed(d) && showTooltip(e, d))
+      .on('mouseover', (e, d) => showTooltip(e, d))
       .on('mousemove', positionTooltip)
       .on('mouseout', hideTooltip);
     merged.select('text.phylo-mrca-label')
@@ -183,6 +184,11 @@
     return `${fams.slice(0, 2).join(' + ')} + ${fams.length - 2} outras`;
   }
 
+  function truncate(s, max) {
+    if (s.length <= max) return s;
+    return s.slice(0, max - 1).trimEnd() + '…';
+  }
+
   function mrcaLabel(d, forCollapsed) {
     const data = d.data;
     const total = data.counts ? data.counts.total : 0;
@@ -192,10 +198,12 @@
       if (data.mrca_genus) name = data.mrca_genus;
       else if (data.mrca_family) name = data.mrca_family;
       else name = familiesLabel(data.families);
-      return `${name} (+${total})`;
+      // reserva espaço pro sufixo "(+N)" no truncamento
+      const suffix = ` (+${total})`;
+      return truncate(name, MAX_LABEL_CHARS - suffix.length) + suffix;
     }
-    if (data.mrca_genus) return data.mrca_genus;
-    if (data.mrca_family) return data.mrca_family;
+    // Nós internos EXPANDIDOS: sem label persistente (a topologia ja mostra a
+    // estrutura). Detalhes via tooltip ao passar o mouse no círculo cinza.
     return '';
   }
 
