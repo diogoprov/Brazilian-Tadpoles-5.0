@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.0/cytoscape.min.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -21,6 +22,7 @@
         <button class="tab" data-view="filogenia">Filogenia</button>
         <button class="tab" data-view="dashboard">Dados faltantes</button>
         <button class="tab" data-view="tendencias">Tendências</button>
+        <button class="tab" data-view="colaboracoes">Colaborações</button>
         <button class="tab" data-view="sobre">Sobre</button>
       </nav>
     </div>
@@ -216,6 +218,61 @@
       </p>
     </section>
 
+    <!-- ========== VIEW: COLABORAÇÕES ========== -->
+    <section id="view-colaboracoes" class="view">
+      <div class="coa-header">
+        <div>
+          <h2>Rede de coautoria</h2>
+          <p class="muted" id="coa-meta">Cada nó é um autor; cada aresta indica papers coassinados. Tamanho do nó = nº de papers no banco; cor = comunidade (Louvain).</p>
+        </div>
+      </div>
+
+      <div class="coa-controls">
+        <label>Buscar autor
+          <input id="coa-search" type="search" placeholder="Ex.: Haddad, Provete…" autocomplete="off" />
+        </label>
+        <label>Métrica do nó (tamanho)
+          <select id="coa-metric">
+            <option value="papers" selected>Nº de papers</option>
+            <option value="degree">Degree (nº de coautores)</option>
+            <option value="betweenness">Betweenness (pontes)</option>
+            <option value="eigenvector">Eigenvector</option>
+            <option value="pagerank">PageRank</option>
+          </select>
+        </label>
+        <label>Mín. papers/autor
+          <input id="coa-minpapers" type="number" min="1" max="40" value="2" step="1" />
+        </label>
+        <button class="btn-link" id="coa-reset" type="button">Resetar zoom</button>
+        <span class="coa-stats muted small" id="coa-stats"></span>
+      </div>
+
+      <div class="coa-layout">
+        <div id="coa-graph" class="coa-graph"></div>
+        <aside class="coa-side">
+          <div class="coa-side-block">
+            <h3>Top 10</h3>
+            <select id="coa-top-metric" class="coa-top-select">
+              <option value="papers" selected>por nº de papers</option>
+              <option value="degree">por degree</option>
+              <option value="betweenness">por betweenness</option>
+              <option value="eigenvector">por eigenvector</option>
+              <option value="pagerank">por PageRank</option>
+            </select>
+            <ol id="coa-top-list" class="coa-top-list"></ol>
+          </div>
+          <div class="coa-side-block" id="coa-detail" hidden>
+            <h3>Autor selecionado</h3>
+            <div id="coa-detail-body"></div>
+          </div>
+        </aside>
+      </div>
+
+      <p class="muted small" id="coa-foot">
+        Construída a partir das <span id="coa-n-refs">…</span> referências únicas do banco com autoria parseada. Algumas refs com formatos atípicos ficam fora — ajuste em <code>scripts/build_coauthor_network.py</code>.
+      </p>
+    </section>
+
     <!-- ========== VIEW: SOBRE ========== -->
     <section id="view-sobre" class="view">
       <h2>Sobre o Brazilian Tadpoles 5.0</h2>
@@ -281,5 +338,6 @@
 
   <script src="assets/js/app.js" defer></script>
   <script src="assets/js/phylogeny.js" defer></script>
+  <script src="assets/js/coauthor.js" defer></script>
 </body>
 </html>

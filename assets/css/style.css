@@ -271,6 +271,90 @@ tbody tr:hover { background: #fafaf7; }
   display: block;
 }
 
+/* --- Colaborações (rede de coautoria) --- */
+.coa-header { margin-bottom: 12px; }
+
+.coa-controls {
+  display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px 14px; margin-bottom: 12px;
+}
+.coa-controls label {
+  display: flex; flex-direction: column; gap: 4px;
+  font-size: .78rem; color: var(--muted);
+}
+.coa-controls input[type="search"],
+.coa-controls input[type="number"],
+.coa-controls select {
+  padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px;
+  background: var(--surface); font-size: .9rem; color: var(--ink);
+}
+.coa-controls input[type="search"] { min-width: 220px; }
+.coa-controls input[type="number"] { width: 70px; }
+.coa-stats { margin-left: auto; }
+
+.coa-layout {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+  align-items: stretch;
+}
+@media (max-width: 880px) {
+  .coa-layout { grid-template-columns: 1fr; }
+}
+
+.coa-graph {
+  background: var(--surface); border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  height: 640px;
+  position: relative;
+}
+
+.coa-side {
+  display: flex; flex-direction: column; gap: 12px;
+  min-height: 640px;
+}
+.coa-side-block {
+  background: var(--surface); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: 12px 14px;
+}
+.coa-side-block h3 {
+  margin: 0 0 8px; font-size: .9rem;
+  color: var(--accent-dark);
+  text-transform: uppercase; letter-spacing: .04em;
+}
+.coa-top-select {
+  width: 100%; padding: 6px 8px; font-size: .82rem;
+  border: 1px solid var(--line); border-radius: 6px;
+  background: var(--surface); margin-bottom: 8px;
+}
+.coa-top-list {
+  margin: 0; padding-left: 22px; font-size: .85rem;
+  line-height: 1.5;
+}
+.coa-top-list li { margin-bottom: 2px; cursor: pointer; }
+.coa-top-list li:hover { color: var(--accent); }
+.coa-top-list .val {
+  color: var(--muted); font-family: var(--mono);
+  font-size: .78rem; margin-left: 4px;
+}
+
+#coa-detail-body { font-size: .85rem; line-height: 1.5; }
+#coa-detail-body .da-name {
+  font-weight: 600; color: var(--accent-dark); font-size: .95rem;
+}
+#coa-detail-body .da-metric {
+  display: flex; justify-content: space-between;
+  padding: 2px 0; border-bottom: 1px dotted var(--line);
+  font-size: .82rem;
+}
+#coa-detail-body .da-metric span:last-child {
+  font-family: var(--mono); color: var(--ink);
+}
+
+.coa-foot { margin-top: 10px; }
+
 /* --- Filogenia --- */
 .phylo-header {
   display: flex; justify-content: space-between; align-items: flex-end;
