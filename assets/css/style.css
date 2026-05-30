@@ -123,7 +123,11 @@ body {
   padding: 6px 12px; border-radius: 6px;
   text-decoration: none; font-weight: 600;
 }
-.btn-bibtex:hover { background: #d3e5d9; }
+.btn-bibtex:hover:not(:disabled) { background: #d3e5d9; }
+.btn-bibtex:disabled {
+  opacity: .5; cursor: not-allowed;
+  background: var(--neutral-bg); color: var(--muted);
+}
 
 /* Filtro de range de anos */
 .filter-year .year-range {

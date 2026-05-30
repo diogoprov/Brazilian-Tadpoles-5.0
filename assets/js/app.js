@@ -147,13 +147,14 @@ function speciesHasRefInYearRange(d, yMin, yMax) {
 
 function applyFilters() {
   updatePhyloJumpBtn();
+  const btnBib = document.getElementById('btn-export-bibtex');
   if (!hasActiveQueryOrFilter()) {
     hideTable();
-    const btnBib = document.getElementById('btn-export-bibtex');
     if (btnBib) btnBib.hidden = true;
     return;
   }
   showTable();
+  if (btnBib) btnBib.hidden = false;   // visível assim que a tabela aparece
 
   const q = document.getElementById('search').value.trim().toLowerCase();
   const fam = document.getElementById('filter-family').value;
@@ -180,9 +181,17 @@ function applyFilters() {
   sortView();
   render();
 
-  // Mostra botão BibTeX quando há resultado a exportar
-  const btnBib = document.getElementById('btn-export-bibtex');
-  if (btnBib) btnBib.hidden = view.length === 0;
+  // Atualiza estado do botão BibTeX (desabilita se não há refs exportáveis)
+  if (btnBib) {
+    const exportable = collectRefsForExport().length;
+    btnBib.disabled = exportable === 0;
+    btnBib.textContent = exportable
+      ? `↓ Exportar BibTeX (${exportable})`
+      : '↓ Exportar BibTeX';
+    btnBib.title = exportable
+      ? `Baixa ${exportable} ref${exportable>1?'s':''} únicas das ${view.length} spp filtradas`
+      : 'Nenhuma ref para exportar nos filtros atuais';
+  }
 }
 
 function sortView() {
@@ -296,12 +305,12 @@ function makeCiteKey(ref, fallback) {
   const author = ref.author || '';
   // primeiro sobrenome (antes de vírgula ou espaço)
   let surname = author.split(/[,;]/)[0].split(/\s+/).filter(Boolean).pop() || '';
-  surname = surname.normalize('NFD').replace(/[̀-ͯ]/g, '')
+  surname = surname.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
                    .replace(/[^A-Za-z]/g, '').toLowerCase();
   const yr = ref.year ? String(ref.year) : '';
   let titleTok = '';
   if (ref.title) {
-    const w = ref.title.normalize('NFD').replace(/[̀-ͯ]/g, '')
+    const w = ref.title.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
                        .toLowerCase().match(/[a-z]+/g) || [];
     titleTok = (w.find(t => t.length >= 4) || w[0] || '').slice(0, 8);
   }
