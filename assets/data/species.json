@@ -1,6 +1,6 @@
 {
   "schema_version": "5.1.0",
-  "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 27 mai 2026)",
+  "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
   "generated": "2026-05-30",
   "excluded_families": [
     "Brachycephalidae",
@@ -78,7 +78,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "dos Santos Dias, P.H., Delia, J., Taboada, C. et al.",
+            "author": "dos Santos Dias, P.H., Delia, J., Taboada, C. et al",
             "year": 2024,
             "title": "A hundred-year-old mystery—the reproductive mode and larval morphology of the enigmatic frog genus Allophryne (Amphibia; Anura; Allophrynidae)",
             "journal": "Sci Nat",
@@ -91,7 +91,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "dos Santos Dias, P.H., Delia, J., Taboada, C. et al.",
+            "author": "dos Santos Dias, P.H., Delia, J., Taboada, C. et al",
             "year": 2024,
             "title": "A hundred-year-old mystery—the reproductive mode and larval morphology of the enigmatic frog genus Allophryne (Amphibia; Anura; Allophrynidae)",
             "journal": "Sci Nat",
@@ -104,7 +104,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "dos Santos Dias, P.H., Delia, J., Taboada, C. et al.",
+            "author": "dos Santos Dias, P.H., Delia, J., Taboada, C. et al",
             "year": 2024,
             "title": "A hundred-year-old mystery—the reproductive mode and larval morphology of the enigmatic frog genus Allophryne (Amphibia; Anura; Allophrynidae)",
             "journal": "Sci Nat",
@@ -484,7 +484,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Ferreira, A.S., Ferrão, M., Cunha-Machado, A.S. et al.",
+            "author": "Ferreira, A.S., Ferrão, M., Cunha-Machado, A.S. et al",
             "year": 2024,
             "title": "Phylogenetic position of the Amazonian nurse frog Allobates gasconi (Morales 2002) revealed by topotypical data",
             "journal": "Org Divers Evol",
@@ -640,7 +640,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Ferrão, Miquéias, et al.",
+            "author": "Ferrão, Miquéias, et al",
             "year": 2022,
             "title": "A New Nurse Frog of the Allobates Tapajos Species Complex (Anura: Aromobatidae) from the Upper Madeira River, Brazilian Amazonia",
             "journal": "PeerJ",
@@ -1116,7 +1116,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Fouquet, Antoine, et al.",
+            "author": "Fouquet, Antoine, et al",
             "year": 2020,
             "title": "Two New Species of Anomaloglossus (Anura: Aromobatidae) of the stepheni Group from Suriname",
             "journal": "Zootaxa, vol",
@@ -3191,7 +3191,7 @@
             "raw": "Maciel, N. M., Brandão, R. A., Campos, L. A. and Sebben, A. 2007. A large new species of Rhinella (Anura: Bufonidae) from Cerrado of Brazil. Zootaxa 1627:23-39."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -3310,7 +3310,7 @@
             "raw": "Rossa-Feres, D. C. and Nomura, F. 2006. Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil. Biota Neotropica 6:1-26."
           },
           {
-            "author": "Mercês, E. D. A., Juncá, F. A. et al.",
+            "author": "Mercês, E. D. A., Juncá, F. A. et al",
             "year": 2009,
             "title": "Girinos de três espécies do gênero Rhinella Fitzinger, 1826 (Anura: Bufonidae) ocorrentes no estado da Bahia, Brasil",
             "journal": "Sitientibus",
@@ -3334,7 +3334,7 @@
             "raw": "Dubeux, M. J. M., Nascimento, F. A. C. D., Lima, L. R., Magalhães, F. D. M., Silva, I. R. S. D., Gonçalves, U., ... & Mott, T. (2020). Morphological characterization and taxonomic key of tadpoles (Amphibia: Anura) from the northern region of the Atlantic Forest. Biota Neotropica, 20, e20180718."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -3540,7 +3540,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Mercês, E. D. A., Juncá, F. A. et al.",
+            "author": "Mercês, E. D. A., Juncá, F. A. et al",
             "year": 2009,
             "title": "Girinos de três espécies do gênero Rhinella Fitzinger, 1826 (Anura: Bufonidae) ocorrentes no estado da Bahia, Brasil",
             "journal": "Sitientibus",
@@ -3632,7 +3632,7 @@
             "raw": "Caramaschi, U. and Pombal, J. P. 2007. A new species of Rhinella Fitzinger, 1826 from the Atlantic Rain Forest, eastern Brazil (Amphibia, Anura, Bufonidae). Papéis Avulsos de Zoologia 46:251-259."
           },
           {
-            "author": "Mercês, E. D. A., Juncá, F. A. et al.",
+            "author": "Mercês, E. D. A., Juncá, F. A. et al",
             "year": 2009,
             "title": "Girinos de três espécies do gênero Rhinella Fitzinger, 1826 (Anura: Bufonidae) ocorrentes no estado da Bahia, Brasil",
             "journal": "Sitientibus",
@@ -4823,7 +4823,7 @@
             "author": "Dias PHdS, Anganoy-Criollo M, Rada MA, Grant T",
             "year": 2020,
             "title": "Comparative larval buccopharyngeal morphology of two glass frog species (Anura: Centrolenidae: Vitreorana)",
-            "journal": "Zoologischer Anzeiger. doi:",
+            "journal": "Zoologischer Anzeiger",
             "doi": "10.1016/j.jcz.2020.10.007",
             "raw": "Dias PHdS, Anganoy-Criollo M, Rada MA, Grant T (2020) Comparative larval buccopharyngeal morphology of two glass frog species (Anura: Centrolenidae: Vitreorana). Zoologischer Anzeiger. doi:10.1016/j.jcz.2020.10.007."
           }
@@ -4873,7 +4873,7 @@
             "raw": "Heyer, W. R. 1985. Taxonomic and natural history notes on frogs of the genus Centrolenella (Amphibia: Centrolenidae) from southeastern Brazil and adjacent Argentina. Papéis Avulsos de Zoologia 36:1-21."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -4889,7 +4889,7 @@
             "author": "Dias PHdS, Anganoy-Criollo M, Rada MA, Grant T",
             "year": 2020,
             "title": "Comparative larval buccopharyngeal morphology of two glass frog species (Anura: Centrolenidae: Vitreorana)",
-            "journal": "Zoologischer Anzeiger. doi:",
+            "journal": "Zoologischer Anzeiger",
             "doi": "10.1016/j.jcz.2020.10.007",
             "raw": "Dias PHdS, Anganoy-Criollo M, Rada MA, Grant T (2020) Comparative larval buccopharyngeal morphology of two glass frog species (Anura: Centrolenidae: Vitreorana). Zoologischer Anzeiger. doi:10.1016/j.jcz.2020.10.007."
           }
@@ -5356,7 +5356,7 @@
             "raw": "Heyer, W. R. 1983. Variation and systematics of frogs of the genus Cycloramphus (Amphibia, Leptodactylidae). Arquivos de Zoologia 30:235 – 339."
           },
           {
-            "author": "Colaço, Gustavo, et al.",
+            "author": "Colaço, Gustavo, et al",
             "year": 2021,
             "title": "The Tadpole of an Insular Population of Cycloramphus Boraceiensis Heyer, 1983 (Anura: Cycloramphidae) with a Review of Larval Descriptions for Species in the Genus",
             "journal": "Papéis Avulsos de Zoologia, vol",
@@ -6085,7 +6085,7 @@
             "raw": "Caramaschi, U. and Sazima I. 1984. Uma nova espécie de Thoropa da Serra do Cipó, Minas Gerais, Brasil (Amphibia, Leptodactylidae). Revista Brasileira de Zoologia 2:139-146."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -6093,7 +6093,7 @@
             "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -6146,7 +6146,7 @@
             "raw": "FATORELLI, P., NOGUEIRA-COSTA, P. and ROCHA, C. F. D. 2018. Characterization of tadpoles of the southward portion (oceanic face) of Ilha Grande, Rio de Janeiro, Brazil, with a proposal for identification key. NORTH-WESTERN JOURNAL OF ZOOLOGY 14 (2): 171-184"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -6159,18 +6159,26 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
-            "year": 2021,
-            "title": null,
-            "journal": null,
+            "author": "Wassersug, R. J. and Heyer, W. R",
+            "year": 1983,
+            "title": "Morphological correlates of subaerial existence in leptodactylid tadpoles associated with flowing water",
+            "journal": "Canadian Journal of Zoology",
             "doi": null,
-            "raw": "Wassersug, R. J. and Heyer, W. R. 1983. Morphological correlates of subaerial existence in leptodactylid tadpoles associated with flowing water. Canadian Journal of Zoology 61:761-769./dos Santos Dias, P. H., Vera Candioti, F., Sabbag, A. F., Colaço, G., Da Silva, H. R., Haddad, C. F. B., ... & Grant, T. (2021). Life on the edge: tadpoles of Cycloramphidae (Amphibia; Anura), anatomy, systematics, functional morphology, and comments on the evolution of semiterrestrial tadpoles. Journal of Zoological Systematics and Evolutionary Research, 59(6), 1297-1321."
+            "raw": "Wassersug, R. J. and Heyer, W. R. 1983. Morphological correlates of subaerial existence in leptodactylid tadpoles associated with flowing water. Canadian Journal of Zoology 61:761-769."
+          },
+          {
+            "author": "dos Santos Dias, P. H., Vera Candioti, F., Sabbag, A. F., Colaço, G., Da Silva, H. R., Haddad, C. F. B., ... & Grant, T",
+            "year": 2021,
+            "title": "Life on the edge: tadpoles of Cycloramphidae (Amphibia; Anura), anatomy, systematics, functional morphology, and comments on the evolution of semiterrestrial tadpoles",
+            "journal": "Journal of Zoological Systematics and Evolutionary Research",
+            "doi": null,
+            "raw": "dos Santos Dias, P. H., Vera Candioti, F., Sabbag, A. F., Colaço, G., Da Silva, H. R., Haddad, C. F. B., ... & Grant, T. (2021). Life on the edge: tadpoles of Cycloramphidae (Amphibia; Anura), anatomy, systematics, functional morphology, and comments on the evolution of semiterrestrial tadpoles. Journal of Zoological Systematics and Evolutionary Research, 59(6), 1297-1321."
           },
           {
             "author": "Colaço G, Baêta M, Limp G, Batista M, da Silva HR",
             "year": 2024,
             "title": "Development of buccopharyngeal features in Thoropa miliaris (Spix, 1824) tadpoles (Anura: Cycloramphidae): implications to character coding in systematics studies",
-            "journal": "Zoologischer Anzeiger. DOI:",
+            "journal": "Zoologischer Anzeiger",
             "doi": "10.1016/j.jcz.2024.07.007",
             "raw": "Colaço G, Baêta M, Limp G, Batista M, da Silva HR. 2024. Development of buccopharyngeal features in Thoropa miliaris (Spix, 1824) tadpoles (Anura: Cycloramphidae): implications to character coding in systematics studies. Zoologischer Anzeiger. DOI: 10.1016/j.jcz.2024.07.007."
           }
@@ -6387,12 +6395,12 @@
             "author": "Santos, D.L. Dantas, S.P., Nomura, F",
             "year": 2018,
             "title": "The tadpole of Adelphobates galactonotus (Steindachner, 1864) (Amphibia, Anura, Dendrobatidae)",
-            "journal": "Zootaxa",
+            "journal": "Zootaxa4422(2): 287-90",
             "doi": null,
             "raw": "Santos, D.L. Dantas, S.P., Nomura, F. 2018. The tadpole of Adelphobates galactonotus (Steindachner, 1864) (Amphibia, Anura, Dendrobatidae). Zootaxa4422(2): 287-90"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -6523,7 +6531,7 @@
             "raw": "Pedro Henrique dos Santos Dias, Ana Paula Brandão, Taran Grant. 2018. The Buccopharyngeal Morphology of the Tadpole of Ameerega flavopicta (Anura: Dendrobatidae: Colostethinae), with a Redescription of its External Morphology. Herpetologica 74 (4): 323–328. doi: https://doi.org/10.1655/Herpetologica-D-17-00055.1"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -6728,7 +6736,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pezzuti, Tiago Leite, et al.",
+            "author": "Pezzuti, Tiago Leite, et al",
             "year": 2022,
             "title": "The tadpole of the endemic poison frog Ameerega pulchripecta (Silverstone, 1976) with the description of its chondrocranium (Anura: Dendrobatidae: Colostethinae)",
             "journal": "Zootaxa, vol",
@@ -6745,7 +6753,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pezzuti, Tiago Leite, et al.",
+            "author": "Pezzuti, Tiago Leite, et al",
             "year": 2022,
             "title": "The tadpole of the endemic poison frog Ameerega pulchripecta (Silverstone, 1976) with the description of its chondrocranium (Anura: Dendrobatidae: Colostethinae)",
             "journal": "Zootaxa",
@@ -6806,7 +6814,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Ferrão, Miquéias, et al.",
+            "author": "Ferrão, Miquéias, et al",
             "year": 2024,
             "title": "Tadpoles of the Dyeing Poison Dart Frog Dendrobates tinctorius (Cuvier, 1797) from Eastern Amazonia",
             "journal": "Zootaxa, vol",
@@ -6873,7 +6881,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Koch ED, Mônico AT, Dayrell JS, Ferreira AS, Dantas SP, Moravec J, et al.",
+            "author": "Koch ED, Mônico AT, Dayrell JS, Ferreira AS, Dantas SP, Moravec J, et al",
             "year": 2025,
             "title": "A remarkable new blue Ranitomeya species (Anura: Dendrobatidae) with copper metallic legs from open forests of Juruá River Basin, Amazonia",
             "journal": "PLoS One",
@@ -7161,7 +7169,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Regnet, R.A., Lukas, P., Rödder, D. et al.",
+            "author": "Regnet, R.A., Lukas, P., Rödder, D. et al",
             "year": 2023,
             "title": "Tadpole morphological characterization of Ranitomeya variabilis (Zimmermann & Zimmermann, 1988) (Anura: Dendrobatidae), with skeleton, muscle system and inner organs",
             "journal": "Zoomorphology",
@@ -7186,7 +7194,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Regnet, R.A., Lukas, P., Rödder, D. et al.",
+            "author": "Regnet, R.A., Lukas, P., Rödder, D. et al",
             "year": 2023,
             "title": "Tadpole morphological characterization of Ranitomeya variabilis (Zimmermann & Zimmermann, 1988) (Anura: Dendrobatidae), with skeleton, muscle system and inner organs",
             "journal": "Zoomorphology",
@@ -7333,8 +7341,8 @@
           {
             "author": "Carvalho-e-Silva, A. M. P. T",
             "year": 1997,
-            "title": "Espécies de Hyla do grupo “albofrenata” (Amphibia, Anura, Hylidae)",
-            "journal": "Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo",
+            "title": "albofrenata",
+            "journal": "(Amphibia, Anura, Hylidae). Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo",
             "doi": null,
             "raw": "Carvalho-e-Silva, A. M. P. T. 1997. Espécies de Hyla do grupo “albofrenata” (Amphibia, Anura, Hylidae). Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo."
           },
@@ -7347,7 +7355,7 @@
             "raw": "Leite, F. S. F. 2007. Descrição do girino de Aplastodiscus arildae (Cruz and Peixoto, 1985) (Amphibia, Anura, Hylidae). Arquivos do Museu Nacional 65:211-216."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -7412,7 +7420,7 @@
             "raw": "Pezzuti, T.L.; Leite, F.S.F.; Pirea, M.R.S.; Garcia, P.C.A. 2010. The tadpole of Aplastodiscus cavicola (Cruz & Peixoto, 1985) (Amphibia, Anura, Hylidae). Zootaxa 2636: 65-68."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -7481,8 +7489,8 @@
           {
             "author": "Carvalho-e-Silva, A. M. P. T",
             "year": 1997,
-            "title": "Espécies de Hyla do grupo “albofrenata” (Amphibia, Anura, Hylidae)",
-            "journal": "Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo",
+            "title": "albofrenata",
+            "journal": "(Amphibia, Anura, Hylidae). Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo",
             "doi": null,
             "raw": "Carvalho-e-Silva, A. M. P. T. 1997. Espécies de Hyla do grupo “albofrenata” (Amphibia, Anura, Hylidae). Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo."
           }
@@ -7692,8 +7700,8 @@
           {
             "author": "Carvalho-e-Silva, A. M. P. T",
             "year": 1997,
-            "title": "Espécies de Hyla do grupo “albofrenata” (Amphibia, Anura, Hylidae)",
-            "journal": "Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo",
+            "title": "albofrenata",
+            "journal": "(Amphibia, Anura, Hylidae). Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo",
             "doi": null,
             "raw": "Carvalho-e-Silva, A. M. P. T. 1997. Espécies de Hyla do grupo “albofrenata” (Amphibia, Anura, Hylidae). Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo."
           }
@@ -7796,8 +7804,8 @@
           {
             "author": "Carvalho-e-Silva, A. M. P. T",
             "year": 1997,
-            "title": "Espécies de Hyla do grupo “albofrenata” (Amphibia, Anura, Hylidae)",
-            "journal": "Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo",
+            "title": "albofrenata",
+            "journal": "(Amphibia, Anura, Hylidae). Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo",
             "doi": null,
             "raw": "Carvalho-e-Silva, A. M. P. T. 1997. Espécies de Hyla do grupo “albofrenata” (Amphibia, Anura, Hylidae). Tese de Doutorado, Instituto de Biociências, Universidade de São Paulo, São Paulo."
           }
@@ -7893,7 +7901,7 @@
             "raw": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A. (2021). The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology, 22(sp1), 1-107."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -7976,7 +7984,7 @@
             "raw": "Nascimento, F. A. C., Lima, M. G., Skuk, G. O. and de Sá, R. O. 2009. The tadpole of Hypsiboas atlanticus (Anura, Hylidae) from northeastern Brazil. Iheringia 99:431-436."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -8018,7 +8026,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Luna-Dias, Cyro, et al.",
+            "author": "Luna-Dias, Cyro, et al",
             "year": 2019,
             "title": "Oral Cavity of the Tadpoles of Boana Bandeirantes (Caramaschi and Cruz, 2013) and B. polytaenia (Cope, 1870), with a New State Record for B. bandeirantes (Amphibia, Anura, Hylidae)",
             "journal": "Herpetology Notes, vol",
@@ -8092,7 +8100,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "HEYER, W. R., A. S. Rand, et al.",
+            "author": "HEYER, W. R., A. S. Rand, et al",
             "year": 1990,
             "title": "Frogs of Boracéia",
             "journal": "Arquivos de Zoologia",
@@ -8242,7 +8250,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "KOLENC, F., C. BORTEIRO, et al.",
+            "author": "KOLENC, F., C. BORTEIRO, et al",
             "year": 2008,
             "title": "Comparative larval morphology of eight species of Hypsiboas Wagler (Amphibia, Anura, Hylidae) from Argentina and Uruguay, with a review of the larvae of this genus",
             "journal": "ZOOTAXA",
@@ -8255,7 +8263,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "KOLENC, F., C. BORTEIRO, et al.",
+            "author": "KOLENC, F., C. BORTEIRO, et al",
             "year": 2008,
             "title": "Comparative larval morphology of eight species of Hypsiboas Wagler (Amphibia, Anura, Hylidae) from Argentina and Uruguay, with a review of the larvae of this genus",
             "journal": "ZOOTAXA",
@@ -8445,7 +8453,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Eterovick, P. C., I. S. Barros, et al.",
+            "author": "Eterovick, P. C., I. S. Barros, et al",
             "year": 2002,
             "title": "Tadpoles of Two Species in the Hyla polytaenia Species Group and Comparison with Other Tadpoles of Hyla polytaenia and Hyla pulchella Groups (Anura, Hylidae)",
             "journal": "Journal of Herpetology",
@@ -8576,7 +8584,7 @@
             "raw": "Lynch, J.D. 2006. The tadpoles of frogs and toads found in the lowlands of northern Colombia. Revista de la Academia Colombiana de Ciencias 30(116):443-457."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -8584,7 +8592,7 @@
             "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -8781,7 +8789,7 @@
             "author": "Filipe Augusto C. Do Nascimento, Larissa Lima Correia, Tiago Pezzuti, Marcos J. Matias Dubeux, Barnagleison S. Lisboa & Tamí Mott",
             "year": 2022,
             "title": "Larval morphology and phylogenetic placement of Boana exastis (Anura, Hylidae): a comparison with B. pardalis and B. lundii",
-            "journal": "Studies on Neotropical Fauna and Environment, DOI:",
+            "journal": "Studies on Neotropical Fauna and Environment",
             "doi": "10.1080/01650521.2022.2147435",
             "raw": "Filipe Augusto C. Do Nascimento, Larissa Lima Correia, Tiago Pezzuti, Marcos J. Matias Dubeux, Barnagleison S. Lisboa & Tamí Mott. (2022). Larval morphology and phylogenetic placement of Boana exastis (Anura, Hylidae): a comparison with B. pardalis and B. lundii. Studies on Neotropical Fauna and Environment, DOI: 10.1080/01650521.2022.2147435"
           }
@@ -8794,7 +8802,7 @@
             "author": "Filipe Augusto C. Do Nascimento, Larissa Lima Correia, Tiago Pezzuti, Marcos J. Matias Dubeux, Barnagleison S. Lisboa & Tamí Mott",
             "year": 2022,
             "title": "Larval morphology and phylogenetic placement of Boana exastis (Anura, Hylidae): a comparison with B. pardalis and B. lundii",
-            "journal": "Studies on Neotropical Fauna and Environment, DOI:",
+            "journal": "Studies on Neotropical Fauna and Environment",
             "doi": "10.1080/01650521.2022.2147435",
             "raw": "Filipe Augusto C. Do Nascimento, Larissa Lima Correia, Tiago Pezzuti, Marcos J. Matias Dubeux, Barnagleison S. Lisboa & Tamí Mott. (2022). Larval morphology and phylogenetic placement of Boana exastis (Anura, Hylidae): a comparison with B. pardalis and B. lundii. Studies on Neotropical Fauna and Environment, DOI: 10.1080/01650521.2022.2147435"
           }
@@ -8806,7 +8814,7 @@
           {
             "author": "Filipe Augusto C. Do Nascimento, Larissa Lima Correia, Tiago Pezzuti, Marcos J. Matias Dubeux, Barnagleison S. Lisboa & Tamí Mott",
             "year": 2022,
-            "title": "Larval morphology and phylogenetic placement of Boana exastis (Anura, Hylidae): a comparison with B. pardalis and B. lundii, Studies on Neotropical Fauna and Environment, DOI:",
+            "title": "Larval morphology and phylogenetic placement of Boana exastis (Anura, Hylidae): a comparison with B. pardalis and B. lundii, Studies on Neotropical Fauna and Environment,",
             "journal": null,
             "doi": "10.1080/01650521.2022.2147435",
             "raw": "Filipe Augusto C. Do Nascimento, Larissa Lima Correia, Tiago Pezzuti, Marcos J. Matias Dubeux, Barnagleison S. Lisboa & Tamí Mott (2022) Larval morphology and phylogenetic placement of Boana exastis (Anura, Hylidae): a comparison with B. pardalis and B. lundii, Studies on Neotropical Fauna and Environment, DOI: 10.1080/01650521.2022.2147435"
@@ -8841,7 +8849,7 @@
             "raw": "Kolenc, F., Borteiro, C., Alcalde, L., Baldo, D., Cardozo, D. and Faivovich, J. 2008. Comparative larval morphology of eight species of Hypsiboas Wagler (Amphibia, Anura, Hylidae) from Argentina and Uruguay, with a review of the larvae of this genus. Zootaxa 1927:1–66."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -8849,7 +8857,7 @@
             "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -9352,7 +9360,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "ORRICO, V. G. D., M. M. MONGIN, et al.",
+            "author": "ORRICO, V. G. D., M. M. MONGIN, et al",
             "year": 2007,
             "title": "The tadpole of Hypsiboas latistriatus (Caramaschi & Cruz, 2004), a species of the Hypsiboas polytaenius (Cope, 1870) clade (Amphibia, Anura, Hylidae)",
             "journal": "ZOOTAXA",
@@ -9381,7 +9389,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Both, C., A. Kwet, et al.",
+            "author": "Both, C., A. Kwet, et al",
             "year": 2007,
             "title": "The tadpole of Hypsiboas leptolineatus (Braun and Braun, 1977), a species in the Hypsiboas polytaenius clade (Anura; Hylidae)",
             "journal": "Brazilian Journal of Biology",
@@ -9394,7 +9402,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Both, C., A. Kwet, et al.",
+            "author": "Both, C., A. Kwet, et al",
             "year": 2007,
             "title": "The tadpole of Hypsiboas leptolineatus (Braun and Braun, 1977), a species in the Hypsiboas polytaenius clade (Anura; Hylidae)",
             "journal": "Brazilian Journal of Biology",
@@ -9455,7 +9463,7 @@
             "raw": "Rossa-Feres, D. C. and Nomura, F. 2006. Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil. Biota Neotropica 6:1-26"
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -9463,7 +9471,7 @@
             "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -9521,7 +9529,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Garcia, P. C. A., G. Vinciprova, et al.",
+            "author": "Garcia, P. C. A., G. Vinciprova, et al",
             "year": 2001,
             "title": "Vocalização, girino, distribuição geográfica e comentários sobre Hyla marginata (Boulenger, 1887) (Anura, Hylidae, Hylinae)",
             "journal": "Boletim do Museu Nacional, 1-19",
@@ -9683,7 +9691,7 @@
             "raw": "Heyer, W. R., Rand, A. S., Cruz, C. A. G., Peixoto, O. L. and Nelson, C. E. 1990. Frogs of Boracéia.  Arquivos de Zoologia 31: 231-410."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -9848,7 +9856,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "KOLENC, F., C. BORTEIRO, et al.",
+            "author": "KOLENC, F., C. BORTEIRO, et al",
             "year": 2008,
             "title": "Comparative larval morphology of eight species of Hypsiboas Wagler (Amphibia, Anura, Hylidae) from Argentina and Uruguay, with a review of the larvae of this genus",
             "journal": "ZOOTAXA",
@@ -9861,7 +9869,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "KOLENC, F., C. BORTEIRO, et al.",
+            "author": "KOLENC, F., C. BORTEIRO, et al",
             "year": 2008,
             "title": "Comparative larval morphology of eight species of Hypsiboas Wagler (Amphibia, Anura, Hylidae) from Argentina and Uruguay, with a review of the larvae of this genus",
             "journal": "ZOOTAXA",
@@ -9939,7 +9947,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "KOLENC, F., C. BORTEIRO, et al.",
+            "author": "KOLENC, F., C. BORTEIRO, et al",
             "year": 2008,
             "title": "Comparative larval morphology of eight species of Hypsiboas Wagler (Amphibia, Anura, Hylidae) from Argentina and Uruguay, with a review of the larvae of this genus",
             "journal": "ZOOTAXA",
@@ -9984,7 +9992,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "KOLENC, F., C. BORTEIRO, et al.",
+            "author": "KOLENC, F., C. BORTEIRO, et al",
             "year": 2008,
             "title": "Comparative larval morphology of eight species of Hypsiboas Wagler (Amphibia, Anura, Hylidae) from Argentina and Uruguay, with a review of the larvae of this genus",
             "journal": "ZOOTAXA",
@@ -10016,7 +10024,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -10032,7 +10040,7 @@
             "raw": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W. (2022). Tadpoles of Central Amazonia (Amphibia: Anura). Zootaxa, 5223(1), 1-149"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -10168,7 +10176,7 @@
             "raw": "Bokermann, W. C. A. 1963. Girinos de anfíbios brasileiros - I (Amphibia, Salientia). Anais da Academis Brasileira de Ciências 35:465-474."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -10176,7 +10184,7 @@
             "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -10444,7 +10452,7 @@
             "raw": "Sazima, I. and Bokermann, W. C. A. 1977. Anfíbios da Serra do Cipó, Minas Gerais, Brasil. Observações sobre a biologia de Hyla alvarengai Bok. (Anura, Hylidae). Revista Brasileira de Biologia 37:413-417."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -10452,7 +10460,7 @@
             "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -10490,7 +10498,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Malagoli LR, Pezzuti TL, Bang DL, Faivovich J, Lyra ML, et al.",
+            "author": "Malagoli LR, Pezzuti TL, Bang DL, Faivovich J, Lyra ML, et al",
             "year": 2021,
             "title": "A new reproductive mode in anurans: Natural history of Bokermannohyla astartea (Anura: Hylidae) with the description of its tadpole and vocal repertoire",
             "journal": "PLOS ONE",
@@ -11046,7 +11054,7 @@
             "raw": "Leite, F. S. F. and Eterovick, P. C. 2010. Description of the tadpole of Bokermannohyla martinsi (Anura: Hylidae), morphological and ecological comparison with related Bokermannohyla tadpoles. Journal of Herpetology 44(3):431-440."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -11195,7 +11203,7 @@
             "raw": "LINS, A. C.  R., MAGALHÃES, R. F., COSTA, R. N., BRANDÃO,  R. A., PY-DANIEL,  T. R., MIRANDA, N E. O., MACIEL, N. M., NOMURA, F. & PEZZUTI, T. L. 2018. The larvae of two species of Bokermannohyla (Anura, Hylidae, Cophomantini) endemic to the highlands of central Brazil. Zootaxa 4527 (4): 501–520"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -11290,7 +11298,7 @@
             "raw": "LINS, A. C.  R., MAGALHÃES, R. F., COSTA, R. N., BRANDÃO,  R. A., PY-DANIEL,  T. R., MIRANDA, N E. O., MACIEL, N. M., NOMURA, F. & PEZZUTI, T. L. 2018. The larvae of two species of Bokermannohyla (Anura, Hylidae, Cophomantini) endemic to the highlands of central Brazil. Zootaxa 4527 (4): 501–520"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -11345,7 +11353,7 @@
             "raw": "Eterovick, P. C. and Brandão, R. A. 2001. A description of the tadpoles and advertisement calls of members of the Hyla pseudopseudis Group. Journal of Herpetology 35:442-450."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -11785,7 +11793,7 @@
             "raw": "ABREU, R. O., JUNCÁ, F. A., SOUZA, I. C. A. & NAPOLI, M. F. 2015. The tadpole of Dendropsophus branneri (Cochran, 1948) (Amphibia, Anura, Hylidae). Zootaxa 3946 (2): 296–300."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -11984,7 +11992,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pugliese, A., A. C. R. Alves, et al.",
+            "author": "Pugliese, A., A. C. R. Alves, et al",
             "year": 2000,
             "title": "The tadpole of Hyla oliveirai and Hyla decipiens with notes on the Hyla microcephala group (Anura, Hylidae)",
             "journal": "Alytes",
@@ -11992,7 +12000,7 @@
             "raw": "Pugliese, A., A. C. R. Alves, et al. (2000). The tadpole of Hyla oliveirai and Hyla decipiens with notes on the Hyla microcephala group (Anura, Hylidae). Alytes, 18, 73-80."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -12067,7 +12075,7 @@
             "raw": "Gomes, M. d. R. and O. L. Peixoto (1991). Larvas de Hyla do grupo leucophyllata com a descrição da de H. elegans Wied, 1824 e notas sobre a variação do pradrão de colorido do adulto nesta espécie (Anura, Hylidae). Revista Brasileira de Biologia, 51, 257-262."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -12075,7 +12083,7 @@
             "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -12172,7 +12180,7 @@
             "raw": "Santos, C. S., Alves, A. C. R. and Silva, S. P. C. 1998. Description of the  tadpoles of Hyla giesleri and Hyla microps from Southeastern Brazil. Journal of Herpetology 32(1):61-66."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -12229,7 +12237,7 @@
             "raw": "Lourenço-de-Morais, R. Campos, F.S. Toledo, F. 2012. The tadpole of Dendropsophus haddadi (Bastos & Pombal, 1996) (Hylidae: Hylinae). Zootaxa 3476:86-88."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -12841,7 +12849,7 @@
             "raw": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W. (2022). Tadpoles of Central Amazonia (Amphibia: Anura). Zootaxa, 5223(1), 1-149"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -12977,7 +12985,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -13138,7 +13146,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pugliese, A., A. C. R. Alves, et al.",
+            "author": "Pugliese, A., A. C. R. Alves, et al",
             "year": 2000,
             "title": "The tadpole of Hyla oliveirai and Hyla decipiens with notes on the Hyla microcephala group (Anura, Hylidae)",
             "journal": "Alytes",
@@ -13146,7 +13154,7 @@
             "raw": "Pugliese, A., A. C. R. Alves, et al. (2000). The tadpole of Hyla oliveirai and Hyla decipiens with notes on the Hyla microcephala group (Anura, Hylidae). Alytes, 18, 73-80."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -13284,7 +13292,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Cruz, C. A. G., U. Caramaschi, et al.",
+            "author": "Cruz, C. A. G., U. Caramaschi, et al",
             "year": 2000,
             "title": "Espécie nova de Hyla Laurent, 1768 do estado do Rio de Janeiro, Brasil (Amphibia, Anura, Hylidae)",
             "journal": "Boletim do Museu Nacional, 1-8",
@@ -13439,7 +13447,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pugliese, A., A. C. R. Alves, et al.",
+            "author": "Pugliese, A., A. C. R. Alves, et al",
             "year": 2001,
             "title": "The tadpole of Hyla rubicundula (Anura, Hylidae)",
             "journal": "Journal of Herpetology",
@@ -13447,7 +13455,7 @@
             "raw": "Pugliese, A., A. C. R. Alves, et al. (2001). The tadpole of Hyla rubicundula (Anura, Hylidae). Journal of Herpetology, 35, 686-688."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -13695,7 +13703,7 @@
             "raw": "Gomes, M. d. R. and O. L. Peixoto (1991). Considerações sobre os girinos de Hyla senicula (Cope, 1868) e Hyla soaresi (Caramaschi e Jim, 1983) (Amphibia, Anura, Hylidae). Acta Biologica Leopoldensia, 13, 5-18."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2021,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica, vol",
@@ -13703,7 +13711,7 @@
             "raw": "Dubeux, Marcos Jorge Matias, et al. 2021. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718.  https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -13774,7 +13782,7 @@
             "raw": "Carvalho-e-Silva, S. P., Carvalho-e-Silva, A. M. P. T. and Izecksohn, E. 2003. Nova espécie de Hyla Laurenti do grupo de H. microcephala Cope (Amphibia, Anura, Hylidae) do nordeste do Brasil. Revista Brasileira de Zoologia 20:553-558."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -14048,12 +14056,20 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
-            "year": 2022,
-            "title": null,
-            "journal": null,
+            "author": "Bokermann, W. C. A",
+            "year": 1966,
+            "title": "Notas sobre Hylidae do Espírito Santo (Amphibia, Salientia)",
+            "journal": "Revista Brasileira de Biologia",
             "doi": null,
-            "raw": "Bokermann, W. C. A. 1966. Notas sobre Hylidae do Espírito Santo (Amphibia, Salientia). Revista Brasileira de Biologia 26:29-37./da Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V. (2022). Redescription of the Tadpoles of Gabohyla pauloalvini and Sphaenorhynchus prasinus (Hylidae: Sphaenorhynchini). Journal of Herpetology, 56(4), 422-433."
+            "raw": "Bokermann, W. C. A. 1966. Notas sobre Hylidae do Espírito Santo (Amphibia, Salientia). Revista Brasileira de Biologia 26:29-37."
+          },
+          {
+            "author": "da Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V",
+            "year": 2022,
+            "title": "Redescription of the Tadpoles of Gabohyla pauloalvini and Sphaenorhynchus prasinus (Hylidae: Sphaenorhynchini)",
+            "journal": "Journal of Herpetology",
+            "doi": null,
+            "raw": "da Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V. (2022). Redescription of the Tadpoles of Gabohyla pauloalvini and Sphaenorhynchus prasinus (Hylidae: Sphaenorhynchini). Journal of Herpetology, 56(4), 422-433."
           }
         ]
       },
@@ -14151,7 +14167,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Baldo D, Araujo-Vieira K, Cardozo D, Borteiro C, Leal F, Pereyra MO, et al.",
+            "author": "Baldo D, Araujo-Vieira K, Cardozo D, Borteiro C, Leal F, Pereyra MO, et al",
             "year": 2019,
             "title": "A review of the elusive bicolored iris Snouted Treefrogs (Anura: Hylidae:Scinax uruguayus group)",
             "journal": "PLoS ONE",
@@ -14727,7 +14743,7 @@
             "raw": "de Sá, R. O., Wassersug, R. and Kehr, A.I. 1997. Description of tadpoles of three species of Scinax (Anura: Hylidae). Herpetological Journal 7:13-17."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -15370,7 +15386,7 @@
             "raw": "Andrade, G. V. and Cardoso, A. J. 1991. Descrição de larvas e biologia de quatro espécies de Hyla (Amphibia, Anura). Revista Brasileira de Biologia 51:391-402."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -15378,7 +15394,7 @@
             "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -15415,7 +15431,7 @@
             "raw": "Bertoluci, J. A., Leite, F. S., Eisemberg, C. C. and Canelas, M. A. S. 2007. Description of the tadpole of Scinax luizotavioi from the Atlantic rainforest of southeastern Brazil. Herpetological Journal 17:14-18."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -15481,7 +15497,7 @@
             "raw": "De Abreu, R. O., Napoli, M. F., Trevisan, C. C., Camardelli, M., DÓRIA, T. A. F., & Silva, L. M. (2015). The tadpole of Scinax melanodactylus (Lourenço, Luna & Pombal Jr, 2014)(Amphibia, Anura, Hylidae). Zootaxa, 3981(3), 430-436."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -15539,7 +15555,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "DUBEUX, M. J. M. et al.",
+            "author": "DUBEUX, M. J. M. et al",
             "year": 2025,
             "title": "Tadpole morphology, advertisement call and natural history notes of Ololygon muriciensis (Anura: Hylidae: Scinaxini)",
             "journal": "Journal of Natural History, v",
@@ -15552,7 +15568,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "DUBEUX, M. J. M. et al.",
+            "author": "DUBEUX, M. J. M. et al",
             "year": 2025,
             "title": "Tadpole morphology, advertisement call and natural history notes of Ololygon muriciensis (Anura: Hylidae: Scinaxini)",
             "journal": "Journal of Natural History, v",
@@ -15565,7 +15581,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "DUBEUX, M. J. M. et al.",
+            "author": "DUBEUX, M. J. M. et al",
             "year": 2025,
             "title": "Tadpole morphology, advertisement call and natural history notes of Ololygon muriciensis (Anura: Hylidae: Scinaxini)",
             "journal": "Journal of Natural History, v",
@@ -15732,7 +15748,7 @@
             "raw": "Lourenco ACC, de Carvalho ALG, aeta D, Pezzuti TL, Leite FSF 2013 A new species of the Scinax catherinae group (Anura, Hylidae) from Serra de Canastra, southwestern state of Minas Gerais, Brazil. Zootaxa 3613: 573-588"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -15866,7 +15882,7 @@
           {
             "author": "Giovana Duarte Viana Rodrigues, Filipe Augusto Cavalcanti do Nascimento, João Paulo Felix Augusto de Almeida & TamíMott",
             "year": 2017,
-            "title": "The tadpole of Scinax skuki (Anura: Hylidae) from the type locality, with a description of its larval skeleton,Studies on Neotropical Fauna and Environment, 52:3, 204-215, DOI:",
+            "title": "The tadpole of Scinax skuki (Anura: Hylidae) from the type locality, with a description of its larval skeleton,Studies on Neotropical Fauna and Environment, 52:3, 204-215,",
             "journal": null,
             "doi": "10.1080/01650521.2017.1342485",
             "raw": "Giovana Duarte Viana Rodrigues, Filipe Augusto Cavalcanti do Nascimento, João Paulo Felix Augusto de Almeida & TamíMott (2017) The tadpole of Scinax skuki (Anura: Hylidae) from the type locality, with a description of its larval skeleton,Studies on Neotropical Fauna and Environment, 52:3, 204-215, DOI: 10.1080/01650521.2017.1342485"
@@ -15959,7 +15975,7 @@
             "raw": "Lourenço, A. C. C., Nascimento, L. B. and Pires, M. R. S. 2009. A new species of the Scinax catharinae species group (Anura: Hylidae) from Minas Gerais, southeastern Brazil. Herpetologica 65(4):468-479."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -16530,7 +16546,7 @@
             "raw": "CAMPOS, T. F., LIMA, M. G., NASCIMENTO, F. A. C. & SANTOS, E. M. 2014. Larval morphology and advertisement call of Phyllodytes acuminatus Bokermann, 1966 (Anura: Hylidae) from Northeastern Brazil. Zootaxa 3779 (1): 093–100."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -16605,7 +16621,7 @@
             "raw": "Vieira, W. L. S., Santana, G. G., Nóbrega, S. C., Santos, C., Alves, R. R. N. and Pereira-Filho, G. A. 2009. Description of the tadpoles of Phyllodytes brevirostris (Anura: Hylidae). Zootaxa 2119:66-68."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -16651,7 +16667,7 @@
             "raw": "Peixoto, O. L., Caramaschi, U. and Freire, E. M. X. 2003. Two new species of Phylodytes (Anura: Hylidae) from the state of Alagoas, northeastern Brasil. Herpetologica 59:235–246"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -16697,7 +16713,7 @@
             "raw": "Peixoto, O. L., Caramaschi, U. and Freire, E. M. X. 2003. Two new species of Phylodytes (Anura: Hylidae) from the state of Alagoas, northeastern Brasil. Herpetologica 59:235–246"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -17731,20 +17747,12 @@
             "raw": "Alves, A. C. R., Gomes, M. R. and Carvalho-e-Silva, S. P. 2004. Description of the tadpole of Scinax auratus (Weid-Neuwied) (Anura, Hylidae). Revista Brasileira de Zoologia 21:315-317"
           },
           {
-            "author": "Dubeux, M. J. M., et al.",
-            "year": 2020,
-            "title": "2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
-            "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, M. J. M., et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
-          },
-          {
-            "author": "Santos, D. F. dos, Pezzuti, T. L., Oswald, C. B., Quirino, C. de F., Lacerda, T., Santos, G. C., … Magalhães, R. F",
+            "author": "Dubeux, M. J. M., et al",
             "year": 2025,
-            "title": "The tadpoles of the Iron Quadrangle, Southeastern Brazil: an update with characterizations of four Scinax Wagler, 1830 (Anura, Hylidae) species",
-            "journal": "Studies on Neotropical Fauna and Environment, 1–21",
-            "doi": "10.1080/01650521.2025.2550405",
-            "raw": "Santos, D. F. dos, Pezzuti, T. L., Oswald, C. B., Quirino, C. de F., Lacerda, T., Santos, G. C., … Magalhães, R. F. (2025). The tadpoles of the Iron Quadrangle, Southeastern Brazil: an update with characterizations of four Scinax Wagler, 1830 (Anura, Hylidae) species. Studies on Neotropical Fauna and Environment, 1–21. https://doi.org/10.1080/01650521.2025.2550405"
+            "title": "2020",
+            "journal": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol",
+            "doi": "10.1590/1676-0611-BN-2018-0718./",
+            "raw": "Dubeux, M. J. M., et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718./ Santos, D. F. dos, Pezzuti, T. L., Oswald, C. B., Quirino, C. de F., Lacerda, T., Santos, G. C., … Magalhães, R. F. (2025). The tadpoles of the Iron Quadrangle, Southeastern Brazil: an update with characterizations of four Scinax Wagler, 1830 (Anura, Hylidae) species. Studies on Neotropical Fauna and Environment, 1–21. https://doi.org/10.1080/01650521.2025.2550405"
           }
         ]
       },
@@ -17952,7 +17960,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pinheiro Campos, Y. P. et al.",
+            "author": "Pinheiro Campos, Y. P. et al",
             "year": 2025,
             "title": "The Tadpole of Scinax cretatus (Hylidae: Scinaxini)",
             "journal": "Journal of Herpetology, vol",
@@ -17965,7 +17973,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pinheiro Campos, Y. P. et al.",
+            "author": "Pinheiro Campos, Y. P. et al",
             "year": 2025,
             "title": "The Tadpole of Scinax cretatus (Hylidae: Scinaxini)",
             "journal": "Journal of Herpetology, vol",
@@ -17978,7 +17986,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pinheiro Campos, Y. P. et al.",
+            "author": "Pinheiro Campos, Y. P. et al",
             "year": 2025,
             "title": "The Tadpole of Scinax cretatus (Hylidae: Scinaxini)",
             "journal": "Journal of Herpetology, vol",
@@ -18081,7 +18089,7 @@
             "raw": "Pugliese, A., Pombal Jr., J. P. and Sazima, I. 2004. A new species of Scinax (Anura: Hylidae) from rocky montane fields of the Serra do Cipó, Southeastern Brazil. Zootaxa 688:1-15."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -18205,7 +18213,7 @@
             "raw": "Wogel, H., Abrunhosa, P. A. and Pombal Jr., J. P. 2000. Girinos de cinco espécies de anuros do sudeste do Brasil (Amphibia: Hylidae, Leptodactylidae, Microhylidae). Boletim do Museu Nacional 427:1-16."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -18291,7 +18299,7 @@
             "raw": "Rossa-Feres, D. C. and Nomura, F. 2006. Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil. Biota Neotropica 6:1-26/, Vizotto, L. D. 1967. Desenvolvimento de anuros da região norte-ocidental de Estado de São Paulo. Tipografia Rio Preto, São José do Rio Preto."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -18299,7 +18307,7 @@
             "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -18307,7 +18315,7 @@
             "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -18386,7 +18394,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -18394,7 +18402,7 @@
             "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -18409,8 +18417,8 @@
           {
             "author": "Echeverría, D. D. and Montanelli, S. B",
             "year": 1992,
-            "title": "Estereomorfología del aparato bucal y de la cavidade oral de las larvas de Olygon fuscovaria (Lutz, 1925) (Anura, Hylidae)",
-            "journal": "Revista del Museo Argentino de Ciencias Naturales “Bernardino Rivadavia”, Zoología",
+            "title": "Bernardino Rivadavia",
+            "journal": "Zoología",
             "doi": null,
             "raw": "Echeverría, D. D. and Montanelli, S. B. 1992. Estereomorfología del aparato bucal y de la cavidade oral de las larvas de Olygon fuscovaria (Lutz, 1925) (Anura, Hylidae). Revista del Museo Argentino de Ciencias Naturales “Bernardino Rivadavia”, Zoología 16:1-13."
           },
@@ -18772,7 +18780,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Ferrão M, Hanken J, Oda FH, Campião KM, Penhacek M, et al.",
+            "author": "Ferrão M, Hanken J, Oda FH, Campião KM, Penhacek M, et al",
             "year": 2024,
             "title": "A new snouted treefrog (Anura, Hylidae, Scinax) from fluvial islands of the Juruena River, southern Brazilian Amazonia",
             "journal": "PLOS ONE",
@@ -18869,7 +18877,7 @@
             "raw": "Cardoso, A. J. and Sazima, I. 1980. Nova espécie de Hyla do sudeste brasileiro (Amphibia, Anura, Hylidae). Revista Brasileira de Biologia 40:75-79."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -19038,7 +19046,7 @@
             "raw": "Gomes, M. D. R., Alves, A. C. R., & Peixoto, O. L. (2014). The tadpole of Scinax nebulosus (Amphibia, Anura, Hylidae). Iheringia. Série Zoologia, 104(2), 184-188."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -19104,7 +19112,7 @@
             "raw": "Carneiro, M. C. L., Magalhães, P. S. and Junca, F. A. 2004. Descrição do girino e vocalização de Scinax pachycrus (Miranda-Ribeiro, 1937) (Amphibia, Anura, Hylidae). Arquivos do Museu Nacional 62:241-246."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -19231,7 +19239,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -19415,7 +19423,7 @@
             "raw": "Araujo-Vieira, K., Brandao, R.A. & Faria, D.C. (2015) A new species of Rock-Dwelling Scinax Wagler (Anura: Hylidae) from Chapada dos Veadeiros, Central Brazil. Zootaxa 3915: 52-66."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -19466,13 +19474,13 @@
           {
             "author": "ALVES, A.C.R. & CARVALHO-E-SILVA, S.P",
             "year": 1999,
-            "title": "Descrição da larva de Scinax similis (Cochran) com notas comparativas sobre o grupo “ruber” no sudeste do Brasil (Amphibia, Anura, Hylidae)",
-            "journal": "Rev. Bras. Zool",
+            "title": "ruber",
+            "journal": "no sudeste do Brasil (Amphibia, Anura, Hylidae). Rev. Bras. Zool",
             "doi": null,
             "raw": "ALVES, A.C.R. & CARVALHO-E-SILVA, S.P. 1999. Descrição da larva de Scinax similis (Cochran) com notas comparativas sobre o grupo “ruber” no sudeste do Brasil (Amphibia, Anura, Hylidae). Rev. Bras. Zool. 16(2):507-512."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -19535,7 +19543,7 @@
             "raw": "Bokermann, W. C. A. (1967). Girinos de anfíbios brasileiros - 4. Revista Brasileira de Biologia, 27, 363-367."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -19706,7 +19714,7 @@
             "raw": "Lynch, J.D. 2006. The tadpoles of frogs and toads found in the lowlands of northern Colombia. Revista de la Academia Colombiana de Ciencias 30(116):443-457."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica, vol",
@@ -19820,7 +19828,7 @@
             "raw": "Araujo-Vieira, K., J. V. A. Lacerda, T. L. Pezzuti, F. S. F. Leite, C. L. D. Assis, and C. A. G. Cruz. 2015. A new species of Hatchet-faced Treefrog Sphaenorhynchus Tschudi (Anura: Hylidae) from Quadrilátero Ferrífero, Minas Gerais, southeastern Brazil. Zootaxa 4059:96."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -20120,12 +20128,20 @@
             "raw": "Bokermann, W. C. A. 1966. Notas sobre Hylidae do Espírito Santo (Amphibia, Salientia). Revista Brasileira de Biologia 26:29-37."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
+            "year": 2020,
+            "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
+            "journal": "Biota Neotropica",
+            "doi": "10.1590/1676-0611-BN-2018-0718",
+            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+          },
+          {
+            "author": "da Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V",
             "year": 2022,
             "title": "Redescription of the Tadpoles of Gabohyla pauloalvini and Sphaenorhynchus prasinus (Hylidae: Sphaenorhynchini)",
             "journal": "Journal of Herpetology",
-            "doi": "10.1590/1676-0611-BN-2018-0718./da",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718./da Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V. (2022). Redescription of the Tadpoles of Gabohyla pauloalvini and Sphaenorhynchus prasinus (Hylidae: Sphaenorhynchini). Journal of Herpetology, 56(4), 422-433."
+            "doi": null,
+            "raw": "da Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V. (2022). Redescription of the Tadpoles of Gabohyla pauloalvini and Sphaenorhynchus prasinus (Hylidae: Sphaenorhynchini). Journal of Herpetology, 56(4), 422-433."
           }
         ]
       },
@@ -20573,7 +20589,7 @@
             "raw": "Prado, G.M., Borgo, J.H., Abrunhosa, P.A. & Wogel, H. (2003) Comportamento reprodutivo, vocalização e redescrição do girino de Phrynohyas mesophaea (Hensel, 1867) do Sudeste do Brasil (Amphibia, Anura, Hylidae). Boletim do Museu Nacional, Nova Série – Zoologia, 510: 1–11."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -20586,7 +20602,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "UCHÔA, L. R. et al.",
+            "author": "UCHÔA, L. R. et al",
             "year": 2025,
             "title": "Buccopharyngeal and skeletal morphology of tadpoles of Trachycephalus mesophaeus (Anura; Hylidae)",
             "journal": "Zootaxa, v",
@@ -20599,7 +20615,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "UCHÔA, L. R. et al.",
+            "author": "UCHÔA, L. R. et al",
             "year": 2025,
             "title": "Buccopharyngeal and skeletal morphology of tadpoles of Trachycephalus mesophaeus (Anura; Hylidae)",
             "journal": "Zootaxa, v",
@@ -20766,7 +20782,7 @@
             "raw": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W. (2022). Tadpoles of Central Amazonia (Amphibia: Anura). Zootaxa, 5223(1), 1-149"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -20819,7 +20835,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -20877,12 +20893,20 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Izecksohn, E",
+            "year": 1996,
+            "title": "Novo gênero de Hylidae brasileiro (Amphibia, Anura)",
+            "journal": "Revista de Universidade Rural, Serie Ciências da Vida",
+            "doi": null,
+            "raw": "Izecksohn, E. (1996). Novo gênero de Hylidae brasileiro (Amphibia, Anura). Revista de Universidade Rural, Serie Ciências da Vida, 18, 47-52."
+          },
+          {
+            "author": "dos Santos Dias, P.H., Marcondes, B.C., Pezzuti, T.L. et al",
             "year": 2022,
-            "title": null,
-            "journal": null,
+            "title": "The missing piece of the puzzle: larval morphology of Xenohyla truncata (Anura: Hylidae: Dendropsophini) and its implication to the evolution of Dendropsophini tadpoles",
+            "journal": "Zoomorphology",
             "doi": "10.1007/s00435-022-00575-3",
-            "raw": "Izecksohn, E. (1996). Novo gênero de Hylidae brasileiro (Amphibia, Anura). Revista de Universidade Rural, Serie Ciências da Vida, 18, 47-52./dos Santos Dias, P.H., Marcondes, B.C., Pezzuti, T.L. et al. 2022. The missing piece of the puzzle: larval morphology of Xenohyla truncata (Anura: Hylidae: Dendropsophini) and its implication to the evolution of Dendropsophini tadpoles. Zoomorphology. https://doi.org/10.1007/s00435-022-00575-3"
+            "raw": "dos Santos Dias, P.H., Marcondes, B.C., Pezzuti, T.L. et al. 2022. The missing piece of the puzzle: larval morphology of Xenohyla truncata (Anura: Hylidae: Dendropsophini) and its implication to the evolution of Dendropsophini tadpoles. Zoomorphology. https://doi.org/10.1007/s00435-022-00575-3"
           }
         ]
       },
@@ -20890,7 +20914,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "dos Santos Dias, P.H., Marcondes, B.C., Pezzuti, T.L. et al.",
+            "author": "dos Santos Dias, P.H., Marcondes, B.C., Pezzuti, T.L. et al",
             "year": 2022,
             "title": "The missing piece of the puzzle: larval morphology of Xenohyla truncata (Anura: Hylidae: Dendropsophini) and its implication to the evolution of Dendropsophini tadpoles",
             "journal": "Zoomorphology",
@@ -20903,7 +20927,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "dos Santos Dias, P.H., Marcondes, B.C., Pezzuti, T.L. et al.",
+            "author": "dos Santos Dias, P.H., Marcondes, B.C., Pezzuti, T.L. et al",
             "year": 2022,
             "title": "The missing piece of the puzzle: larval morphology of Xenohyla truncata (Anura: Hylidae: Dendropsophini) and its implication to the evolution of Dendropsophini tadpoles",
             "journal": "Zoomorphology",
@@ -21379,7 +21403,7 @@
             "raw": "Caramaschi, U. and Sazima, I. 1985. Uma nova espécie de Crossodactylus da Serra do Cipó, Minas Gerais, Brasil (Amphibia, Leptodactylidae). Revista Brasileira de Zoologia 3:43-49."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -21512,7 +21536,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pirani, et al.",
+            "author": "Pirani, et al",
             "year": 2011,
             "title": "The tadpole of Hylodes babax",
             "journal": "Zootaxa",
@@ -22216,7 +22240,7 @@
             "raw": "Nascimento, L. B., Pombal Jr. J. P. and Haddad, C. F. B. 2001. A new frog of the genus Hylodes (Amphibia: Leptodactylidae) from Minas Gerais, Brazil. Journal of Zoology 254:421-428."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -22572,7 +22596,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Martins, Bryan Da Cunha, et al.",
+            "author": "Martins, Bryan Da Cunha, et al",
             "year": 2024,
             "title": "A new species of terrestrial foam-nesting frog of the Adenomera simonstuarti complex (Anura, Leptodactylidae) from white-sand forests of central Amazonia, Brazil",
             "journal": "Zoosystematics and Evolution, vol",
@@ -23259,7 +23283,7 @@
             "raw": "Almeida, A. P. and Angulo, A. 2006. A new species of Leptodactylus (Anura: Leptodactylidae) from the state of Espírito Santo, Brazil, with remarks on the systematics of associated populations. Zootaxa 1334:1-25."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -23495,12 +23519,20 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
-            "year": 2021,
-            "title": null,
-            "journal": null,
+            "author": "Schlüter, A",
+            "year": 1990,
+            "title": "Reproduction and tadpole of Edalorhina perezi (Amphibia, Leptodactylidae)",
+            "journal": "Studies on Neotropical Fauna and Environment",
             "doi": null,
-            "raw": "Schlüter, A. 1990. Reproduction and tadpole of Edalorhina perezi (Amphibia, Leptodactylidae). Studies on Neotropical Fauna and Environment 25:49-56./do Nascimento, F. A., de Sá, R. O., & de A. Garcia, P. C. (2021). Tadpole of the Amazonia frog Edalorhina perezi (Anura: Leptodactylidae) with description of oral internal and chondrocranial morphology. Journal of Morphology 282(1), 115-126."
+            "raw": "Schlüter, A. 1990. Reproduction and tadpole of Edalorhina perezi (Amphibia, Leptodactylidae). Studies on Neotropical Fauna and Environment 25:49-56."
+          },
+          {
+            "author": "do Nascimento, F. A., de Sá, R. O., & de A. Garcia, P. C",
+            "year": 2021,
+            "title": "Tadpole of the Amazonia frog Edalorhina perezi (Anura: Leptodactylidae) with description of oral internal and chondrocranial morphology",
+            "journal": "Journal of Morphology",
+            "doi": null,
+            "raw": "do Nascimento, F. A., de Sá, R. O., & de A. Garcia, P. C. (2021). Tadpole of the Amazonia frog Edalorhina perezi (Anura: Leptodactylidae) with description of oral internal and chondrocranial morphology. Journal of Morphology 282(1), 115-126."
           }
         ]
       },
@@ -23858,19 +23890,11 @@
             "year": 2013,
             "title": "The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history",
             "journal": "South American Journal of Herpetology",
-            "doi": null,
-            "raw": "Magalhães F.M., Garda A.A., Amado T.F., de Sá, R.O. 2013. The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history. South American Journal of Herpetology 8:203–210. doi:10.2994"
+            "doi": "10.2994/SAJH-D-13-00033.1",
+            "raw": "Magalhães F.M., Garda A.A., Amado T.F., de Sá, R.O. 2013. The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history. South American Journal of Herpetology 8:203–210. doi:10.2994/SAJH-D-13-00033.1"
           },
           {
-            "author": null,
-            "year": null,
-            "title": null,
-            "journal": null,
-            "doi": null,
-            "raw": "SAJH-D-13-00033.1"
-          },
-          {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -23887,16 +23911,8 @@
             "year": 2013,
             "title": "The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history",
             "journal": "South American Journal of Herpetology",
-            "doi": null,
-            "raw": "Magalhães F.M., Garda A.A., Amado T.F., de Sá, R.O. 2013. The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history. South American Journal of Herpetology 8:203–210. doi:10.2994"
-          },
-          {
-            "author": null,
-            "year": null,
-            "title": null,
-            "journal": null,
-            "doi": null,
-            "raw": "SAJH-D-13-00033.1"
+            "doi": "10.2994/SAJH-D-13-00033.1",
+            "raw": "Magalhães F.M., Garda A.A., Amado T.F., de Sá, R.O. 2013. The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history. South American Journal of Herpetology 8:203–210. doi:10.2994/SAJH-D-13-00033.1"
           }
         ]
       },
@@ -23908,16 +23924,8 @@
             "year": 2013,
             "title": "The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history",
             "journal": "South American Journal of Herpetology",
-            "doi": null,
-            "raw": "Magalhães F.M., Garda A.A., Amado T.F., de Sá, R.O. 2013. The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history. South American Journal of Herpetology 8:203–210. doi:10.2994"
-          },
-          {
-            "author": null,
-            "year": null,
-            "title": null,
-            "journal": null,
-            "doi": null,
-            "raw": "SAJH-D-13-00033.1"
+            "doi": "10.2994/SAJH-D-13-00033.1",
+            "raw": "Magalhães F.M., Garda A.A., Amado T.F., de Sá, R.O. 2013. The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history. South American Journal of Herpetology 8:203–210. doi:10.2994/SAJH-D-13-00033.1"
           }
         ]
       }
@@ -23941,7 +23949,7 @@
             "raw": "Sazima, I. and Bokermann, W. C. A. 1978. Cinco novas espécies de Leptodactylus do centro e sudeste brasileiro (Amphibia, Anura, Leptodactylidae). Revista Brasileira de Biologia 38:899-912."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -23987,7 +23995,7 @@
             "raw": "Sazima, I. and Bokermann, W. C. A. 1978. Cinco novas espécies de Leptodactylus do centro e sudeste brasileiro (Amphibia, Anura, Leptodactylidae). Revista Brasileira de Biologia 38:899-912."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -24292,7 +24300,7 @@
             "raw": "Sazima, I. and Bokermann, W. C. A. 1978. Cinco novas espécies de Leptodactylus do centro e sudeste brasileiro (Amphibia, Anura, Leptodactylidae). Revista Brasileira de Biologia 38:899-912."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -24451,7 +24459,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           },
@@ -24472,7 +24480,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           },
@@ -24657,7 +24665,7 @@
             "raw": "Sazima, I. and Bokermann, W. C. A. 1978. Cinco novas espécies de Leptodactylus do centro e sudeste brasileiro (Amphibia, Anura, Leptodactylidae). Revista Brasileira de Biologia 38:899-912."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -24809,7 +24817,7 @@
             "raw": "Rossa-Feres, D. C. and Nomura, F. 2006. Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil. Biota Neotropica 6:1-26/, Vizotto, L. D. 1967. Desenvolvimento de anuros da região norte-ocidental de Estado de São Paulo. Tipografia Rio Preto, São José do Rio Preto."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -24817,7 +24825,7 @@
             "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -24841,7 +24849,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -24862,7 +24870,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -25147,7 +25155,7 @@
             "raw": "Rossa-Feres, D. C. and Nomura, F. 2006. Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil. Biota Neotropica 6:1-26"
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -25163,7 +25171,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -25176,7 +25184,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -25202,7 +25210,7 @@
             "raw": "Dixon, J. R. and Staton, M. A. 1976. Some aspects of the biology of Leptodactylus macrosternum Miranda-Ribeiro (Anura: Leptodactylidae) of the Venezuelen Llanos. Herpetology 32:227-232."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica, vol",
@@ -25426,7 +25434,7 @@
             "raw": "Heyer, W. R. 1978. Systematics of the fuscus group of the frog genus Leptodactylus (Amphibia, Leptodactylidae). Science Bulletin of the Museum of Natural History of Los Angeles County 29:1-85."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica, vol",
@@ -25503,7 +25511,7 @@
             "raw": "Wogel, H., Abrunhosa, P. A. and Pombal Jr., J. P. 2000. Girinos de cinco espécies de anuros do sudeste do Brasil (Amphibia: Hylidae, Leptodactylidae, Microhylidae). Boletim do Museu Nacional 427:1-16."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -25582,7 +25590,7 @@
             "raw": "Dubeux, M. J., da Silva, T. D., Mott, T., & do Nascimento, F. A. (2020). Redescription of the tadpole of Leptodactylus natalensis Lutz (Anura: Leptodactylidae), an inhabitant of the Brazilian Atlantic Forest. Zootaxa, 4732(2), 346-350."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -26053,7 +26061,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -26077,7 +26085,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -26098,7 +26106,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -26512,7 +26520,7 @@
             "raw": "Kokubum, M. N. C., Maciel, N. M., Matsushita, R. H., Queiróz-Júnior, A. T., Sebben, A. 2009. Reproductive biology of the Brazilian sibilator frog Leptodactylus troglodytes. The Herpetological Journal 19(3):119-126."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica, vol. 20 p. e20180718. SciELO",
@@ -26520,7 +26528,7 @@
             "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20 p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -26620,7 +26628,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica, vol",
@@ -27057,7 +27065,7 @@
             "raw": "Oliveria, M. I. R. R., Weber, L. N. and Ruggeri, J. 2010. The tadpole of Physalaemus albifrons (Spix, 1824) (Anura, Leiuperidae). South American Journal of Herpetology 5(3): 249-254."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -27179,7 +27187,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Leal, Fernando, et al.",
+            "author": "Leal, Fernando, et al",
             "year": 2021,
             "title": "Head in the clouds: a new dwarf frog species of the Physalaemus signifer clade (Leptodactylidae, Leiuperinae) from the top of the Brazilian Atlantic Forest",
             "journal": "European Journal of Taxonomy, vol",
@@ -27477,7 +27485,7 @@
             "raw": "Pombal Jr., J. P. and Madureira, C. A. 1997. A new species of Physalaemus (Anura, Leptodactylidae) from the Atlantic rain forest of northeastern Brazil. Alytes 15:105-112."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -27596,7 +27604,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -27620,7 +27628,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -27633,7 +27641,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -27717,7 +27725,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -27787,7 +27795,7 @@
             "raw": "Rossa-Feres, D. C. and Nomura, F. 2006. Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil. Biota Neotropica 6:1-26"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -27795,7 +27803,7 @@
             "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -27827,7 +27835,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -27840,7 +27848,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -27976,7 +27984,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Fraga, Letícia Soares, et al.",
+            "author": "Fraga, Letícia Soares, et al",
             "year": 2022,
             "title": "The tadpole of Physalaemus feioi (Anura: Leptodactylidae)",
             "journal": "Zootaxa",
@@ -28349,7 +28357,7 @@
             "raw": "Rossa-Feres, D. C. and Nomura, F. 2006. Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil. Biota Neotropica 6:1-26"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -28373,7 +28381,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -28386,7 +28394,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -28524,7 +28532,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -28556,7 +28564,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -28569,7 +28577,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -28773,7 +28781,7 @@
             "raw": "FATORELLI, P., NOGUEIRA-COSTA, P. and ROCHA, C. F. D. 2018. Characterization of tadpoles of the southward portion (oceanic face) of Ilha Grande, Rio de Janeiro, Brazil, with a proposal for identification key. NORTH-WESTERN JOURNAL OF ZOOLOGY 14 (2): 171-184"
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -29001,10 +29009,10 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Ferreira, J.L.P., Costa, C.A., Uchôa, L.R. et al",
             "year": 2023,
-            "title": null,
-            "journal": null,
+            "title": "Chondrocranium and internal oral anatomy of the tadpole of Pleurodema diplolister (Peters, 1870) (Anura: Leptodactylidae)",
+            "journal": "Zoomorphology",
             "doi": "10.1007/s00435-023-00612-9",
             "raw": "Ferreira, J.L.P., Costa, C.A., Uchôa, L.R. et al. Chondrocranium and internal oral anatomy of the tadpole of Pleurodema diplolister (Peters, 1870) (Anura: Leptodactylidae). Zoomorphology (2023). https://doi.org/10.1007/s00435-023-00612-9"
           }
@@ -29014,10 +29022,10 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Ferreira, J.L.P., Costa, C.A., Uchôa, L.R. et al",
             "year": 2023,
-            "title": null,
-            "journal": null,
+            "title": "Chondrocranium and internal oral anatomy of the tadpole of Pleurodema diplolister (Peters, 1870) (Anura: Leptodactylidae)",
+            "journal": "Zoomorphology",
             "doi": "10.1007/s00435-023-00612-9",
             "raw": "Ferreira, J.L.P., Costa, C.A., Uchôa, L.R. et al. Chondrocranium and internal oral anatomy of the tadpole of Pleurodema diplolister (Peters, 1870) (Anura: Leptodactylidae). Zoomorphology (2023). https://doi.org/10.1007/s00435-023-00612-9"
           }
@@ -29527,7 +29535,7 @@
             "raw": "Toledo, L.F., Siqueira, S, Duarte, T.C., Veiga-Menoncello, A.C.P., Recco-Pimentel, S.M. and Haddad, C.F.B. 2010. Description of a new species of Pseudopaludicola Miranda-Ribeiro, 1926 from the state of São Paulo, Southeastern Brazil (Anura, Leiuperidae). Zootaxa 2496: 38-48."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -29572,7 +29580,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -29621,7 +29629,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -29893,7 +29901,7 @@
             "raw": "Nascimento, F. A. C. and Skuk, G. O. 2006. O girino de Chiasmocleis alagoanus Cruz, Caramaschi and Freire, 1999 (Anura: Microhylidae). Biota Neotropica 6:1-5."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -29938,7 +29946,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -30298,7 +30306,7 @@
             "raw": "Wogel H, Abrunhosa PA, Prado GM. 2004. The tadpole of Chiasmocleis carvalhoi and the advertisement calls of three species of Chiasmocleis (Anura, MIcrohylidae) from the Atlantic rainforest of southeastern Brazil. Phyllomedusa 3(2):133-140."
           },
           {
-            "author": "Cordioli, Laura Acerb, et al.",
+            "author": "Cordioli, Laura Acerb, et al",
             "year": 2019,
             "title": "Ontogeny and Reproductive Aspects of Chiasmocleis Lacrimae in an Unspoiled Atlantic Forest Area in the State of Rio de Janeiro, Brazil (Anura, Microhylidae, Gastrophryninae)",
             "journal": "Herpetology Notes, vol",
@@ -30377,12 +30385,12 @@
             "author": "Santana, D.J., MOTTA, A.P., Pirani, R.M., SILVA, E.T.; FEIO, R.N",
             "year": 2012,
             "title": "Advertisement call and tadpole of Chiasmocleis mantiqueira Cruz, Feio and Cassini, 2007 (Anura, Microhylidae)",
-            "journal": "J. Herpet",
+            "journal": "J. Herpet. 46",
             "doi": null,
             "raw": "Santana, D.J., MOTTA, A.P., Pirani, R.M., SILVA, E.T.; FEIO, R.N. 2012. Advertisement call and tadpole of Chiasmocleis mantiqueira Cruz, Feio and Cassini, 2007 (Anura, Microhylidae). J. Herpet. 46:"
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -30825,7 +30833,7 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica, vol",
@@ -30833,7 +30841,7 @@
             "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -31023,7 +31031,7 @@
             "raw": "MAGALHÃES, F. D. M., D. J. SANTANA, A. M. NETO, and A. A. GARDA. 2012. The tadpole of Elachistocleis cesarii Miranda-Ribeiro, 1920 (Anura, Microhylidae). Zootaxa 3187:54–56."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica, vol",
@@ -31063,7 +31071,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -31084,7 +31092,7 @@
             "author": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "year": 2006,
             "title": "151 f",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006",
+            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
@@ -31266,7 +31274,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -31474,7 +31482,7 @@
         "status": "described",
         "refs": [
           {
-            "author": "Mira-Mendes, Caio Vinicius De, et al.",
+            "author": "Mira-Mendes, Caio Vinicius De, et al",
             "year": 2025,
             "title": "The Tadpole of Stereocyclops histrio (Carvalho, 1954) (Anura: Microhylidae), a Poorly Known Amphibian from Northeastern Brazil",
             "journal": "Zootaxa, vol",
@@ -31719,7 +31727,7 @@
             "raw": "LISBOA, B.S.,  NASCIMENTO, F. A. C. &  SKUK, G. O.. 2011. Redescription of the tadpole of Macrogenioglottus alipioi (Anura: Cycloramphidae), a rare and endemic species of the Brazilian Atlantic Forest. Zootaxa 3046: 67–68"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -31879,7 +31887,7 @@
             "raw": "Santos, D. L.; Andrade, S. P.; Cezar Filho R., Maciel, N. 2017. Redescription of the tadpole of Odontophrynus carvalhoi Savage and Cei, 1965 (Anura, Odontophrynidae) with comments on the geographical distribution of the species. Zootaxa, v. 4323, n. 3, p. 419-422."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica, vol",
@@ -31934,7 +31942,7 @@
             "raw": "Savage, J. M. and Cei, J. M. 1965. A review of the leptodactylid frog genus Odontophrynus. Herpetologica  21:178-195."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -31942,7 +31950,7 @@
             "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -32439,7 +32447,7 @@
             "raw": "Miranda-Ribeiro, A. 1923. Observações sobre algumas phases evolutivas de Ceratophrys e Stombus. Arquivos do Museu Nacional 24:201-205."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -32447,7 +32455,7 @@
             "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -32618,7 +32626,7 @@
             "raw": "Vieira, W. L. S., Vieira, K. S. and Santana, G. G. 2007. Description of the tadpoles of Proceratophrys cristiceps (Anura: Cycloramphidae, Odontophrynini). Zootaxa 1397:17-24."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -32673,7 +32681,7 @@
             "raw": "Eterovick, P. C. and Sazima I. 1998. A new Proceratophrys (Anura: Leptodactylidae) from southeastern Brazil. Copeia 1998:159-164."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -32719,7 +32727,7 @@
             "raw": "Santos, D. L., Feio, R. N., and Nomura, F. 2017. The Tadpole of Proceratophrys dibernardoi (Brandão, Caramaschi, Vaz-Silva, and Campos, 2013) (Anura, Odontophrynidae). Journal of Herpetology 51(1), 114-118"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -32796,7 +32804,7 @@
             "raw": "Brandão, R. A. and Batista, C. G. 2000. Descrição do girino de Odontophrynus salvatori (Anura, Leptodactylidae). Iheríngia 89:165-170."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -33091,7 +33099,15 @@
             "title": "A new species of Proceratophrys Miranda-Ribeiro (Amphibia: Anura: Cycloramphidae) from the Chapada Diamantina, State of Bahia, northeastern Brazil",
             "journal": "Zootaxa",
             "doi": null,
-            "raw": "Napoli, M. F., C. A. G. Cruz, R. O. D. Abreu, and M. L. Del-Grande. 2011. A new species of Proceratophrys Miranda-Ribeiro (Amphibia: Anura: Cycloramphidae) from the Chapada Diamantina, State of Bahia, northeastern Brazil. Zootaxa 3133:37–49./dos Santos Dias, P. H. The remarkable larval anatomy of Proceratophrys minuta Napoli, Cruz, Abreu and Del‐Grande, 2011 (Amphibia: Anura: Odontophrynidae). Journal of Morphology."
+            "raw": "Napoli, M. F., C. A. G. Cruz, R. O. D. Abreu, and M. L. Del-Grande. 2011. A new species of Proceratophrys Miranda-Ribeiro (Amphibia: Anura: Cycloramphidae) from the Chapada Diamantina, State of Bahia, northeastern Brazil. Zootaxa 3133:37–49."
+          },
+          {
+            "author": "dos Santos Dias, P. H. The remarkable larval anatomy of Proceratophrys minuta Napoli, Cruz, Abreu and Del‐Grande",
+            "year": 2011,
+            "title": "(Amphibia: Anura: Odontophrynidae)",
+            "journal": "Journal of Morphology",
+            "doi": null,
+            "raw": "dos Santos Dias, P. H. The remarkable larval anatomy of Proceratophrys minuta Napoli, Cruz, Abreu and Del‐Grande, 2011 (Amphibia: Anura: Odontophrynidae). Journal of Morphology."
           }
         ]
       },
@@ -33317,7 +33333,7 @@
             "raw": "Nascimento, F. A. C., Lisboa, B. S., Skuk, G. O. and de Sá, R. O. 2010. Description of the tadpole of Proceratophrys renalis (Miranda-Ribeiro, 1920) (Anura: Cycloramphidae). South American Journal of Herpetology 5(3):241-248."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -33403,7 +33419,7 @@
             "raw": "Brandão, R. A. and Batista, C. G. 2000. Descrição do girino de Odontophrynus salvatori (Anura, Leptodactylidae). Iheríngia 89:165-170."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -33780,7 +33796,7 @@
             "raw": "NASCIMENTO, F.A.C & GABRIEL OMAR SKUK (2007) Description of the tadpole of Hylomantis granulosa (Anura: Hylidae). Zootaxa 1663: 59-65"
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -33879,7 +33895,7 @@
             "author": "Dias, P.H.S., Mongin-Aquino, M., Vera Candioti, F., Carvalho-e-Silva, A. M. P. T. and Baêta, D",
             "year": 2018,
             "title": "Internal Larval Morphology of Two Species of Shining Leaf Frogs (Anura: Hylidae: Phasmahyla)",
-            "journal": "South American Journal of Herpetology 2018",
+            "journal": "South American Journal of Herpetology",
             "doi": null,
             "raw": "Dias, P.H.S., Mongin-Aquino, M., Vera Candioti, F., Carvalho-e-Silva, A. M. P. T. and Baêta, D. 2018. Internal Larval Morphology of Two Species of Shining Leaf Frogs (Anura: Hylidae: Phasmahyla). South American Journal of Herpetology 2018 13 (1), 44-53"
           }
@@ -33962,7 +33978,7 @@
             "author": "Dias, P.H.S., Mongin-Aquino, M., Vera Candioti, F., Carvalho-e-Silva, A. M. P. T. and Baêta, D",
             "year": 2018,
             "title": "Internal Larval Morphology of Two Species of Shining Leaf Frogs (Anura: Hylidae: Phasmahyla)",
-            "journal": "South American Journal of Herpetology 2018",
+            "journal": "South American Journal of Herpetology",
             "doi": null,
             "raw": "Dias, P.H.S., Mongin-Aquino, M., Vera Candioti, F., Carvalho-e-Silva, A. M. P. T. and Baêta, D. 2018. Internal Larval Morphology of Two Species of Shining Leaf Frogs (Anura: Hylidae: Phasmahyla). South American Journal of Herpetology 2018 13 (1), 44-53"
           }
@@ -34000,7 +34016,7 @@
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -34432,7 +34448,7 @@
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -34823,7 +34839,7 @@
             "raw": "Pezzuti, T.L., Leite, F. S. F. and Nomura, F. 2009. The tadpole of Phyllomedusa itacolomi (Anura, Hylidae), with a description of the internal oral morphology. South American Journal of Herpetology 4:117-124."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": null,
             "year": 2021,
             "title": null,
             "journal": null,
@@ -34893,7 +34909,7 @@
             "raw": "Santos, D. L., Morais, A. R., Signorelli, L., Bastos, R. P., Feio, R., and Nomura, F. 2018. Description of the Tadpole of Phyllomedusa azurea from the Brazilian Cerrado, with a Description of the Internal Oral Morphology of Phyllomedusa oreades. Herpetologica 74 (1), 50-57"
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -35072,7 +35088,7 @@
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
@@ -35117,7 +35133,7 @@
             "raw": "Giaretta, A. A., Oliveira-Filho, J. C. and Kokubum, M. N. C. 2007. A new Phyllomedusa Wagler (Anura, Hylidae) with reticulated pattern on flanks from Southeastern Brazil. Zootaxa 1614:31-41."
           },
           {
-            "author": "Santos, Danusy Lopes, et al.",
+            "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
             "journal": "Biota Neotropica",
@@ -35335,7 +35351,7 @@
           {
             "author": "Luana Rodrigues Lima, Daniel Pacheco Bruschi, Filipe Augusto Cavalcanti Do Nascimento, Paulo Victor Scherrer De Araújo, Leonora Pires Costa, Maria Tereza Chiarioni Thomé, Adrian Antonio Garda, Michelle Louise Zattera & Tamí Mott",
             "year": 2020,
-            "title": "Below the waterline: cryptic diversity of aquatic pipid frogs (Pipa carvalhoi) unveiled through an integrative taxonomy approach, Systematics and Biodiversity, DOI:",
+            "title": "Below the waterline: cryptic diversity of aquatic pipid frogs (Pipa carvalhoi) unveiled through an integrative taxonomy approach, Systematics and Biodiversity,",
             "journal": null,
             "doi": "10.1080/14772000.2020.1795742",
             "raw": "Luana Rodrigues Lima, Daniel Pacheco Bruschi, Filipe Augusto Cavalcanti Do Nascimento, Paulo Victor Scherrer De Araújo, Leonora Pires Costa, Maria Tereza Chiarioni Thomé, Adrian Antonio Garda, Michelle Louise Zattera & Tamí Mott (2020) Below the waterline: cryptic diversity of aquatic pipid frogs (Pipa carvalhoi) unveiled through an integrative taxonomy approach, Systematics and Biodiversity, DOI: 10.1080/14772000.2020.1795742"
@@ -35452,7 +35468,7 @@
             "raw": "Rada de Martínez, D. 1990. Contribución al conocimiento de las larvas de anfibios de Venezuela. Memoria de la Sociedad de Ciencias Naturales La Salle 49:391-403."
           },
           {
-            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",

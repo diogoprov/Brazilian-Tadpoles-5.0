@@ -96,9 +96,33 @@ def main():
 
     species.sort(key=lambda s: (s['family'], s['species']))
 
+    # Deduplica espécies por id (merge refs quando há linhas duplicadas
+    # na planilha, ex.: typo corrigido que gerou duas linhas iguais)
+    seen = {}
+    deduped = []
+    dup_count = 0
+    for s in species:
+        sid = s['id']
+        if sid in seen:
+            existing = seen[sid]
+            dup_count += 1
+            for c in ('ext_morph', 'internal_oral', 'chondrocranium'):
+                existing_raws = set(r['raw'] for r in existing[c]['refs'])
+                for r in s[c]['refs']:
+                    if r['raw'] not in existing_raws:
+                        existing[c]['refs'].append(r)
+                if s[c]['status'] == 'described':
+                    existing[c]['status'] = 'described'
+        else:
+            seen[sid] = s
+            deduped.append(s)
+    if dup_count:
+        print(f'Deduplicadas {dup_count} linhas duplicadas na planilha')
+    species = deduped
+
     out = {
         'schema_version': '5.1.0',
-        'source': 'Brazilian tadpoles database v4.1.0 (Google Sheet, 27 mai 2026)',
+        'source': 'Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)',
         'generated': date.today().isoformat(),
         'excluded_families': sorted(EXCLUDE_FAMILIES),
         'excluded_count': len(excluded),
