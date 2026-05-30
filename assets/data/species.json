@@ -1,6 +1,6 @@
 {
   "schema_version": "5.1.0",
-  "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
+  "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 27 mai 2026)",
   "generated": "2026-05-30",
   "excluded_families": [
     "Brachycephalidae",
@@ -484,12 +484,12 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Ferreira, A.S., Ferrão, M., Cunha-Machado, A.S. et al.",
             "year": 2024,
-            "title": null,
-            "journal": null,
+            "title": "Phylogenetic position of the Amazonian nurse frog Allobates gasconi (Morales 2002) revealed by topotypical data",
+            "journal": "Org Divers Evol",
             "doi": "10.1007/s13127-023-00630-x",
-            "raw": "Ferreira, A.S., Ferrão, M., Cunha-Machado, A.S. et al. Phylogenetic position of the Amazonian nurse frog Allobates gasconi (Morales 2002) revealed by topotypical data. Org Divers Evol (2023). Ferreira, A.S., Ferrão, M., Cunha-Machado, A.S. et al. Phylogenetic position of the Amazonian nurse frog Allobates gasconi (Morales 2002) revealed by topotypical data. Org Divers Evol 24, 99–118 (2024). https://doi.org/10.1007/s13127-023-00630-x"
+            "raw": "Ferreira, A.S., Ferrão, M., Cunha-Machado, A.S. et al. (2024)Phylogenetic position of the Amazonian nurse frog Allobates gasconi (Morales 2002) revealed by topotypical data. Org Divers Evol 24, 99–118. https://doi.org/10.1007/s13127-023-00630-x"
           }
         ]
       },
@@ -4807,12 +4807,12 @@
             "raw": "Heyer, W. R. 1985. Taxonomic and natural history notes on frogs of the genus Centrolenella (Amphibia: Centrolenidae) from southeastern Brazil and adjacent Argentina. Papéis Avulsos de Zoologia 36:1-21."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia",
             "year": 2021,
-            "title": null,
-            "journal": null,
+            "title": "The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region",
+            "journal": "South American Journal of Herpetology",
             "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
+            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia. 2021. The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region. South American Journal of Herpetology, 22(sp1), 1-107"
           }
         ]
       },
@@ -13695,20 +13695,20 @@
             "raw": "Gomes, M. d. R. and O. L. Peixoto (1991). Considerações sobre os girinos de Hyla senicula (Cope, 1868) e Hyla soaresi (Caramaschi e Jim, 1983) (Amphibia, Anura, Hylidae). Acta Biologica Leopoldensia, 13, 5-18."
           },
           {
-            "author": null,
-            "year": 2018,
-            "title": null,
-            "journal": null,
+            "author": "Dubeux, Marcos Jorge Matias, et al.",
+            "year": 2021,
+            "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2021. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718.  https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
             "author": "Santos, Danusy Lopes, et al.",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, nº 3, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
             "author": "Costa, C. A., Santos, A. J. S., Silva, R. A., Sena, F. P., Uchôa, L. R., Andrade, E. B",
@@ -14053,7 +14053,7 @@
             "title": null,
             "journal": null,
             "doi": null,
-            "raw": "Bokermann, W. C. A. 1966. Notas sobre Hylidae do Espírito Santo (Amphibia, Salientia). Revista Brasileira de Biologia 26:29-37/da Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V. (2022). Redescription of the Tadpoles of Gabohyla pauloalvini and Sphaenorhynchus prasinus (Hylidae: Sphaenorhynchini). Journal of Herpetology, 56(4), 422-433."
+            "raw": "Bokermann, W. C. A. 1966. Notas sobre Hylidae do Espírito Santo (Amphibia, Salientia). Revista Brasileira de Biologia 26:29-37./da Silva Neto, E. M., Araujo-Vieira, K., Dias, I. R., Batista, C. S., Pareja-Mejía, D., Solé, M., & de Mira-Mendes, C. V. (2022). Redescription of the Tadpoles of Gabohyla pauloalvini and Sphaenorhynchus prasinus (Hylidae: Sphaenorhynchini). Journal of Herpetology, 56(4), 422-433."
           }
         ]
       },
@@ -31487,12 +31487,12 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Brito, M. C. B. ; Weber, L. N",
             "year": 2023,
-            "title": null,
-            "journal": null,
+            "title": "Descrição da morfologia oral interna das larvas de Stereocyclops histrio (Carvalho, 1954) e Stereocyclops incrassatus Cope, 1870 (Amphibia, Anura, Microhylidae)",
+            "journal": "In: X Congresso Brasileiro de Herpetologia",
             "doi": null,
-            "raw": "BRITO, M. C. B. ; WEBER, LUIZ NORBERTO . Descrição da morfologia oral interna das larvas de Stereocyclops histrio (Carvalho, 1954) e Stereocyclops incrassatus Cope, 1870 (Amphibia, Anura, Microhylidae). In: X Congresso Brasileiro de Herpetologia, 2023, Porto Seguro. Anais do X Congresso Brasileiro de Herpetologia, 2023. disponivel em https://zenodo.org/records/7011222#.ZFGzM3bMLrdl"
+            "raw": "Brito, M. C. B. ; Weber, L. N. 2023. Descrição da morfologia oral interna das larvas de Stereocyclops histrio (Carvalho, 1954) e Stereocyclops incrassatus Cope, 1870 (Amphibia, Anura, Microhylidae). In: X Congresso Brasileiro de Herpetologia, 2023, Porto Seguro. Anais do X Congresso Brasileiro de Herpetologia. disponivel em https://zenodo.org/records/7011222#.ZFGzM3bMLrdl"
           }
         ]
       },
@@ -31871,20 +31871,20 @@
             "raw": "Caramaschi, U. 1979. O girino de Odontophrynus carvalhoi Savage and Cei, 1965 (Amphibia, Anura, Ceratophrydidae). Revista Brasileira de Biologia 39:169-171"
           },
           {
-            "author": null,
+            "author": "Santos, D. L.; Andrade, S. P.; Cezar Filho R., Maciel, N",
             "year": 2017,
-            "title": "SANTOS, D. L.; ANDRADE, S. P.; CEZAR FILHO R., NATAN M. Redescription of the tadpole of Odontophrynus carvalhoi Savage and Cei, 1965 (Anura, Odontophrynidae) with comments on the geographical distribution of the species",
-            "journal": "Zootaxa",
+            "title": "Redescription of the tadpole of Odontophrynus carvalhoi Savage and Cei, 1965 (Anura, Odontophrynidae) with comments on the geographical distribution of the species",
+            "journal": "Zootaxa, v",
             "doi": null,
-            "raw": "SANTOS, D. L.; ANDRADE, S. P.; CEZAR FILHO R., NATAN M. Redescription of the tadpole of Odontophrynus carvalhoi Savage and Cei, 1965 (Anura, Odontophrynidae) with comments on the geographical distribution of the species. Zootaxa, v. 4323, n. 3, p. 419-422, 2017."
+            "raw": "Santos, D. L.; Andrade, S. P.; Cezar Filho R., Maciel, N. 2017. Redescription of the tadpole of Odontophrynus carvalhoi Savage and Cei, 1965 (Anura, Odontophrynidae) with comments on the geographical distribution of the species. Zootaxa, v. 4323, n. 3, p. 419-422."
           },
           {
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
           }
         ]
       },
@@ -32306,12 +32306,12 @@
         "status": "described",
         "refs": [
           {
-            "author": "Pedro H. S. Dias, Katyuscia Araujo-Vieira, Raquel F. Santos, Camila Both",
+            "author": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C",
             "year": 2019,
             "title": "Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001",
             "journal": "Copeia",
             "doi": "10.1643/CH-18-138",
-            "raw": "Pedro H. S. Dias, Katyuscia Araujo-Vieira, Raquel F. Santos, Camila Both. 2019. Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
+            "raw": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C. 2019. Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
           }
         ]
       }
@@ -32402,12 +32402,12 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C",
             "year": 2019,
-            "title": null,
-            "journal": null,
+            "title": "Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001",
+            "journal": "Copeia",
             "doi": "10.1643/CH-18-138",
-            "raw": "Pedro H. S. Dias, Katyuscia Araujo-Vieira, Raquel F. Santos, Camila Both; Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 1 September 2019; 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
+            "raw": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C. 2019. Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
           }
         ]
       }
@@ -32514,12 +32514,12 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C",
             "year": 2019,
-            "title": null,
-            "journal": null,
+            "title": "Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001",
+            "journal": "Copeia",
             "doi": "10.1643/CH-18-138",
-            "raw": "Pedro H. S. Dias, Katyuscia Araujo-Vieira, Raquel F. Santos, Camila Both; Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 1 September 2019; 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
+            "raw": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C. 2019. Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
           }
         ]
       },
@@ -32527,12 +32527,12 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C",
             "year": 2019,
-            "title": null,
-            "journal": null,
+            "title": "Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001",
+            "journal": "Copeia",
             "doi": "10.1643/CH-18-138",
-            "raw": "Pedro H. S. Dias, Katyuscia Araujo-Vieira, Raquel F. Santos, Camila Both; Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 1 September 2019; 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
+            "raw": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C. 2019. Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
           }
         ]
       },
@@ -32540,12 +32540,12 @@
         "status": "described",
         "refs": [
           {
-            "author": null,
+            "author": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C",
             "year": 2019,
-            "title": null,
-            "journal": null,
+            "title": "Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001",
+            "journal": "Copeia",
             "doi": "10.1643/CH-18-138",
-            "raw": "Pedro H. S. Dias, Katyuscia Araujo-Vieira, Raquel F. Santos, Camila Both; Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 1 September 2019; 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
+            "raw": "Dias, P. H. S., Araujo-Vieira, K., Santos, R. F., Both, C. 2019. Review of the Internal Larval Anatomy of the Proceratophrys bigibbosa Species Group (Anura: Odontophrynidae), with Description of the Tadpole of P. brauni Kwet and Faivovich, 2001. Copeia 107 (3): 417–429. doi: https://doi.org/10.1643/CH-18-138"
           }
         ]
       }
@@ -32649,7 +32649,7 @@
             "title": "Larval chondrocranium morphology of five species of Proceratophrys Miranda-Ribeiro (Amphibia; Anura; Odontophrynidae)",
             "journal": "Zootaxa",
             "doi": null,
-            "raw": "DIAS, P.H.S., CARVALHO-E-SILVA, ANA M. P. T. & CARVALHO-E-SILVA, S.P..  2013. Larval chondrocranium morphology of five species of Proceratophrys Miranda-Ribeiro (Amphibia; Anura; Odontophrynidae). Zootaxa 3683 (4): 427–438."
+            "raw": "DIAS, P.H.S., CARVALHO-E-SILVA, ANA M. P. T. & CARVALHO-E-SILVA, S.P. 2013. Larval chondrocranium morphology of five species of Proceratophrys Miranda-Ribeiro (Amphibia; Anura; Odontophrynidae). Zootaxa 3683 (4): 427–438."
           }
         ]
       }
