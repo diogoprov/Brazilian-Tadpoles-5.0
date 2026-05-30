@@ -118,6 +118,34 @@ body {
 }
 .btn-phylo-jump:hover { background: #d3e5d9; }
 
+.btn-bibtex {
+  background: var(--accent-soft);
+  padding: 6px 12px; border-radius: 6px;
+  text-decoration: none; font-weight: 600;
+}
+.btn-bibtex:hover { background: #d3e5d9; }
+
+/* Filtro de range de anos */
+.filter-year .year-range {
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.filter-year input[type="number"] {
+  width: 70px;
+  padding: 8px 6px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: .9rem;
+  color: var(--ink);
+  font-family: var(--mono);
+  -moz-appearance: textfield;
+}
+.filter-year input[type="number"]::-webkit-outer-spin-button,
+.filter-year input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; margin: 0;
+}
+.filter-year .dash { color: var(--muted); font-size: .9rem; }
+
 .result-count { color: var(--muted); font-size: .85rem; margin: 0; }
 
 /* Table */

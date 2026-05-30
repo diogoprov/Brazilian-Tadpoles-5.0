@@ -71,8 +71,18 @@
                 <option value="not_described">Não descrito</option>
               </select>
             </label>
+            <label class="filter-year">Ano da ref
+              <span class="year-range">
+                <input id="filter-year-min" type="number" inputmode="numeric"
+                       min="1750" max="2030" step="1" placeholder="de" />
+                <span class="dash">–</span>
+                <input id="filter-year-max" type="number" inputmode="numeric"
+                       min="1750" max="2030" step="1" placeholder="até" />
+              </span>
+            </label>
             <button class="btn-link" id="btn-clear" type="button">Limpar filtros</button>
             <button class="btn-link btn-phylo-jump" id="btn-phylo-link" type="button" hidden>Ver na filogenia &rarr;</button>
+            <button class="btn-link btn-bibtex" id="btn-export-bibtex" type="button" hidden>↓ Exportar BibTeX</button>
           </div>
           <p class="result-count" id="result-count"></p>
         </div>

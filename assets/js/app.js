@@ -112,15 +112,45 @@ function updatePhyloJumpBtn() {
 
 function hasActiveQueryOrFilter() {
   const q = document.getElementById('search').value.trim();
-  const f = ['filter-family','filter-genus','filter-ext','filter-int','filter-cho']
+  const f = ['filter-family','filter-genus','filter-ext','filter-int','filter-cho',
+             'filter-year-min','filter-year-max']
     .some(id => document.getElementById(id).value);
   return q.length > 0 || f;
+}
+
+// Lê os campos do filtro de ano e retorna [minYear, maxYear] ou null
+// para qualquer lado vazio. Valores fora do range válido viram null.
+function readYearFilter() {
+  const rawMin = document.getElementById('filter-year-min').value.trim();
+  const rawMax = document.getElementById('filter-year-max').value.trim();
+  const parse = v => {
+    const n = parseInt(v, 10);
+    return (Number.isFinite(n) && n >= 1750 && n <= 2030) ? n : null;
+  };
+  return { min: parse(rawMin), max: parse(rawMax) };
+}
+
+// True se a spp tem ao menos uma ref cujo ano cai no [min, max] dado.
+function speciesHasRefInYearRange(d, yMin, yMax) {
+  for (const ch of ['ext_morph','internal_oral','chondrocranium']) {
+    const refs = d[ch].refs || [];
+    for (const ref of refs) {
+      const y = (typeof ref === 'object') ? ref.year : null;
+      if (y == null) continue;
+      if (yMin != null && y < yMin) continue;
+      if (yMax != null && y > yMax) continue;
+      return true;
+    }
+  }
+  return false;
 }
 
 function applyFilters() {
   updatePhyloJumpBtn();
   if (!hasActiveQueryOrFilter()) {
     hideTable();
+    const btnBib = document.getElementById('btn-export-bibtex');
+    if (btnBib) btnBib.hidden = true;
     return;
   }
   showTable();
@@ -131,6 +161,8 @@ function applyFilters() {
   const ext = document.getElementById('filter-ext').value;
   const int_ = document.getElementById('filter-int').value;
   const cho = document.getElementById('filter-cho').value;
+  const yr = readYearFilter();
+  const useYr = (yr.min != null || yr.max != null);
 
   view = DATA.filter(d => {
     if (fam && d.family !== fam) return false;
@@ -138,6 +170,7 @@ function applyFilters() {
     if (ext && d.ext_morph.status !== ext) return false;
     if (int_ && d.internal_oral.status !== int_) return false;
     if (cho && d.chondrocranium.status !== cho) return false;
+    if (useYr && !speciesHasRefInYearRange(d, yr.min, yr.max)) return false;
     if (q) {
       const hay = (d.species + ' ' + d.family + ' ' + d.genus).toLowerCase();
       if (!hay.includes(q)) return false;
@@ -146,6 +179,10 @@ function applyFilters() {
   });
   sortView();
   render();
+
+  // Mostra botão BibTeX quando há resultado a exportar
+  const btnBib = document.getElementById('btn-export-bibtex');
+  if (btnBib) btnBib.hidden = view.length === 0;
 }
 
 function sortView() {
@@ -213,6 +250,117 @@ function formatRef(r) {
 
 function esc(s) {
   return String(s ?? '').replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c]));
+}
+
+// ---------- Exportação BibTeX ----------
+// Gera um .bib das refs ÚNICAS encontradas nas espécies da view atual,
+// também respeitando o filtro de ano (se houver). Cite-key derivada do
+// primeiro autor + ano + 3 primeiras letras do título, com tratamento
+// para colisões. Refs sem autor/título usam fallback de `raw`.
+function collectRefsForExport() {
+  const yr = readYearFilter();
+  const useYr = (yr.min != null || yr.max != null);
+  const seen = new Map();  // chave -> ref
+  for (const d of view) {
+    for (const ch of ['ext_morph','internal_oral','chondrocranium']) {
+      const refs = d[ch].refs || [];
+      for (const ref of refs) {
+        if (typeof ref !== 'object' || !ref) continue;
+        if (useYr) {
+          if (ref.year == null) continue;
+          if (yr.min != null && ref.year < yr.min) continue;
+          if (yr.max != null && ref.year > yr.max) continue;
+        }
+        const key = ref.doi ? ('doi:' + ref.doi) : ('raw:' + (ref.raw || ''));
+        if (!seen.has(key)) seen.set(key, ref);
+      }
+    }
+  }
+  return [...seen.values()];
+}
+
+// Sanitiza texto para uso DENTRO de um campo BibTeX (envolto em {...}).
+// Escapa caracteres especiais do TeX e mantém UTF-8 (BibLaTeX/biber lidam).
+function bibEscape(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/\\/g, '\\textbackslash{}')
+    .replace(/([&%$#_{}])/g, '\\$1')
+    .replace(/~/g, '\\textasciitilde{}')
+    .replace(/\^/g, '\\textasciicircum{}');
+}
+
+// Gera cite-key estilo "lastname2024title" a partir do ref.
+// Apenas ASCII alfanumérico, sem espaços.
+function makeCiteKey(ref, fallback) {
+  const author = ref.author || '';
+  // primeiro sobrenome (antes de vírgula ou espaço)
+  let surname = author.split(/[,;]/)[0].split(/\s+/).filter(Boolean).pop() || '';
+  surname = surname.normalize('NFD').replace(/[̀-ͯ]/g, '')
+                   .replace(/[^A-Za-z]/g, '').toLowerCase();
+  const yr = ref.year ? String(ref.year) : '';
+  let titleTok = '';
+  if (ref.title) {
+    const w = ref.title.normalize('NFD').replace(/[̀-ͯ]/g, '')
+                       .toLowerCase().match(/[a-z]+/g) || [];
+    titleTok = (w.find(t => t.length >= 4) || w[0] || '').slice(0, 8);
+  }
+  const base = (surname + yr + titleTok) || fallback;
+  return base.slice(0, 64);
+}
+
+function refToBibtex(ref, key) {
+  const fields = [];
+  if (ref.author)  fields.push(`  author  = {${bibEscape(ref.author)}}`);
+  if (ref.year)    fields.push(`  year    = {${ref.year}}`);
+  if (ref.title)   fields.push(`  title   = {${bibEscape(ref.title)}}`);
+  if (ref.journal) fields.push(`  journal = {${bibEscape(ref.journal)}}`);
+  if (ref.doi)     fields.push(`  doi     = {${bibEscape(ref.doi)}}`);
+  // sempre inclui o `raw` como nota — permite curadoria manual
+  if (ref.raw) fields.push(`  note    = {${bibEscape(ref.raw)}}`);
+  const type = ref.journal ? 'article' : 'misc';
+  return `@${type}{${key},\n${fields.join(',\n')}\n}`;
+}
+
+function buildBibtexString(refs) {
+  // resolve colisões de cite-key adicionando sufixos a, b, c, ...
+  const used = new Map();
+  const entries = [];
+  for (let i = 0; i < refs.length; i++) {
+    const r = refs[i];
+    let base = makeCiteKey(r, 'ref' + (i + 1));
+    if (!base) base = 'ref' + (i + 1);
+    const n = used.get(base) || 0;
+    used.set(base, n + 1);
+    const key = n === 0 ? base : (base + String.fromCharCode(97 + n));   // a, b, c...
+    entries.push(refToBibtex(r, key));
+  }
+  const header = `% Brazilian Tadpoles 5.0 — references export
+% Exported on: ${new Date().toISOString()}
+% Filtered species: ${view.length} of ${DATA.length}
+% Unique references: ${refs.length}
+% Source: ${location.href}
+
+`;
+  return header + entries.join('\n\n') + '\n';
+}
+
+function downloadBibtex() {
+  const refs = collectRefsForExport();
+  if (!refs.length) {
+    alert('Nenhuma referência para exportar nos filtros atuais.');
+    return;
+  }
+  const bib = buildBibtexString(refs);
+  const blob = new Blob([bib], { type: 'application/x-bibtex;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `brazilian-tadpoles_refs_${new Date().toISOString().slice(0,10)}.bib`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 // ---------- Dashboard ----------
@@ -573,6 +721,14 @@ function setupEvents() {
   document.getElementById('search').addEventListener('input', applyFilters);
   ['filter-family','filter-genus','filter-ext','filter-int','filter-cho'].forEach(
     id => document.getElementById(id).addEventListener('change', applyFilters));
+  // Filtro de ano: aplica enquanto digita (com debounce leve)
+  let yearDebounce;
+  ['filter-year-min','filter-year-max'].forEach(id => {
+    document.getElementById(id).addEventListener('input', () => {
+      clearTimeout(yearDebounce);
+      yearDebounce = setTimeout(applyFilters, 250);
+    });
+  });
 
   document.querySelectorAll('th[data-sort]').forEach(th => {
     th.addEventListener('click', () => {
@@ -593,11 +749,16 @@ function setupEvents() {
 
   document.getElementById('btn-clear').addEventListener('click', () => {
     document.getElementById('search').value = '';
-    ['filter-family','filter-genus','filter-ext','filter-int','filter-cho']
+    ['filter-family','filter-genus','filter-ext','filter-int','filter-cho',
+     'filter-year-min','filter-year-max']
       .forEach(id => document.getElementById(id).value = '');
     applyFilters();
     document.getElementById('hero').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
+
+  // Exportar BibTeX das refs das spp filtradas
+  const btnBib = document.getElementById('btn-export-bibtex');
+  if (btnBib) btnBib.addEventListener('click', downloadBibtex);
 
   // Delegação: toggle de refs
   document.getElementById('species-body').addEventListener('click', e => {
@@ -687,7 +848,8 @@ window.SpeciesView = {
     searchEl.value = '';
     famEl.value = '';
     genEl.value = '';
-    ['filter-ext','filter-int','filter-cho'].forEach(id => { document.getElementById(id).value = ''; });
+    ['filter-ext','filter-int','filter-cho','filter-year-min','filter-year-max']
+      .forEach(id => { document.getElementById(id).value = ''; });
     if (target.species) {
       searchEl.value = target.species;
     } else if (target.genus) {
