@@ -1,7 +1,7 @@
 {
   "schema_version": "5.1.0",
-  "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 27 mai 2026)",
-  "generated": "2026-05-29",
+  "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
+  "generated": "2026-05-30",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -12,7 +12,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1058,
+  "count": 1057,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -3348,6 +3348,14 @@
             "journal": "South American Journal of Herpetology",
             "doi": null,
             "raw": "Pezzuti, T. L., F. S. F. Leite, D. de C. Rossa-Feres, and P. C. de A. Garcia. 2021. The tadpoles of the Iron Quadrangle, southeastern Brazil: A baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology 22 (Special Issue): 1–107"
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -4040,6 +4048,14 @@
             "journal": "South American Journal of Herpetology",
             "doi": null,
             "raw": "Grosso, J. R., Pereyra, M. O., Candioti, F. V., Maciel, N. M., & Baldo, D. (2020). Tadpoles of Three Species of the Rhinella granulosa Group with a Reinterpretation of Larval Characters. South American Journal of Herpetology, 2020(15), 75-84."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -5219,26 +5235,6 @@
       "epithet": "laevis",
       "tip_label": "Lepidobatrachus_laevis",
       "family": "Ceratophryidae",
-      "ext_morph": {
-        "status": "not_described",
-        "refs": []
-      },
-      "internal_oral": {
-        "status": "not_described",
-        "refs": []
-      },
-      "chondrocranium": {
-        "status": "not_described",
-        "refs": []
-      }
-    },
-    {
-      "id": "cycloramphis_faustoi",
-      "species": "Cycloramphis faustoi",
-      "genus": "Cycloramphis",
-      "epithet": "faustoi",
-      "tip_label": "Cycloramphis_faustoi",
-      "family": "Cycloramphidae",
       "ext_morph": {
         "status": "not_described",
         "refs": []
@@ -9580,6 +9576,14 @@
             "journal": "Catalogue of American amphibians and reptiles",
             "doi": null,
             "raw": "De Sá, R. O. (1995). Hyla multifasciata. Catalogue of American amphibians and reptiles, 624, 1-4."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -10034,6 +10038,14 @@
             "journal": "Biota Neotropica",
             "doi": "10.1590/1676-0611-bn-2023-1486",
             "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -13705,6 +13717,14 @@
             "journal": "South American Journal of Herpetology",
             "doi": null,
             "raw": "Costa, C. A., Santos, A. J. S., Silva, R. A., Sena, F. P., Uchôa, L. R., Andrade, E. B. 2024. Description of Internal Oral Anatomy and Chondrocranium of Dendropsophus soaresi Tadpole (Anura: Hylidae) with Comments on its External Morphology. South American Journal of Herpetology, 30(1), 52-62"
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -16413,6 +16433,14 @@
             "journal": "Zootaxa",
             "doi": null,
             "raw": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W. (2022). Tadpoles of Central Amazonia (Amphibia: Anura). Zootaxa, 5223(1), 1-149"
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -18285,6 +18313,14 @@
             "journal": null,
             "doi": null,
             "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -19673,9 +19709,17 @@
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -20725,9 +20769,17 @@
             "author": "Santos, Danusy Lopes, et al.",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, p. e20231486.  https://doi.org/10.1590/1676-0611-bn-2023-1486."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -24343,12 +24395,20 @@
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia",
             "year": 2021,
-            "title": null,
+            "title": "The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107",
             "journal": null,
             "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
+            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia. 2021. The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107"
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -25145,9 +25205,9 @@
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
             "author": "Hero, J. M",
@@ -25188,6 +25248,14 @@
             "journal": "Zootaxa",
             "doi": null,
             "raw": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W. (2022). Tadpoles of Central Amazonia (Amphibia: Anura). Zootaxa, 5223(1), 1-149"
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -25361,9 +25429,9 @@
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
             "author": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W",
@@ -25372,6 +25440,14 @@
             "journal": "Zootaxa",
             "doi": null,
             "raw": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W. (2022). Tadpoles of Central Amazonia (Amphibia: Anura). Zootaxa, 5223(1), 1-149"
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -25508,10 +25584,18 @@
           {
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
-            "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
+            "title": "2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -26038,6 +26122,14 @@
             "journal": "Zootaxa",
             "doi": null,
             "raw": "de Sá, R. O., Brandão, R. and Guimarães, L. D. 2007. Description of the tadpole of Leptodactylus pustulatus Peters, 1870 (Anura: Leptodactylidae). Zootaxa 1523:49-58."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -26423,17 +26515,25 @@
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol. 20 p. e20180718. SciELO",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20 p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
             "author": "Santos, Danusy Lopes, et al.",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -26523,9 +26623,17 @@
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -27681,18 +27789,26 @@
           {
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
-            "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
+            "title": "2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
             "journal": "Biota Neotropica",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
             "author": "Santos, Danusy Lopes, et al.",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, no 3, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -28411,9 +28527,17 @@
             "author": "Santos, Danusy Lopes, et al.",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, no 3, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -30704,17 +30828,25 @@
             "author": "Dubeux, Marcos Jorge Matias, et al.",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
             "author": "Santos, Danusy Lopes, et al.",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, no 3, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
@@ -30894,17 +31026,25 @@
             "author": "Santos, Danusy Lopes, et al.",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, no 3, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December",
+            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia",
             "year": 2021,
-            "title": null,
+            "title": "The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107",
             "journal": null,
             "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
+            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia. 2021. The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107"
+          },
+          {
+            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
+            "year": 2023,
+            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
+            "journal": "PeerJ",
+            "doi": "10.7717/peerj.16640",
+            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
           }
         ]
       },
