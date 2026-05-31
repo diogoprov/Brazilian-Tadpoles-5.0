@@ -32,6 +32,13 @@ JSON_OUT = os.path.join(PROJECT_ROOT, 'assets', 'data', 'coauthor_network.json')
 
 # Partículas comuns em sobrenomes compostos
 PARTICLES = r'(?:de|da|do|dos|das|von|van|del|du|la|le|di|del|y)'
+# Sufixos pós-sobrenome a remover antes de parse.
+# - Só removemos sufixos PRECEDIDOS de espaço (não dentro de hifenizados como
+#   "Silva-Filho", que é nome composto legítimo).
+# - Não removemos F./N./Filho/Neto soltos pois colidem com iniciais reais
+#   (ex.: a inicial "F." de Fernando, ou "N." de Nathália).
+SUFFIX_RE = re.compile(r'(?<=\s)(?:Jr\.?|Sr\.?|II|III|IV)(?=\b|,|\s)',
+                       re.IGNORECASE)
 
 # Pattern 1: "Lastname, F.M." (formato dominante)
 RE_LASTNAME_FIRST = re.compile(
@@ -40,17 +47,18 @@ RE_LASTNAME_FIRST = re.compile(
     r"\s*,\s*"
     r"((?:[A-Z]\.?\s*)+)"
 )
-# Pattern 2: "F.M. Lastname" (fallback)
+# Pattern 2: "F.M. Lastname" (fallback) — exige iniciais COM ponto
 RE_FIRST_LAST = re.compile(
     r"((?:[A-Z]\.\s*){1,5})\s*"
     r"([A-ZÀ-Ý][a-zA-ZÀ-ÿ\-'’]+"
     r"(?:\s+(?:" + PARTICLES + r")\s+[A-ZÀ-Ý][a-zA-ZÀ-ÿ\-'’]+)*)"
 )
-# Pattern 3: "Lastname FM" (no comma between surname and initials)
+# Pattern 3: "Lastname FM" sem vírgula. Aceita iniciais COM ou SEM ponto
+# (variantes: "Heyer WR", "Heyer W.R", "Heyer W. R.")
 RE_LASTNAME_NOCOMMA = re.compile(
     r"\b([A-ZÀ-Ý][a-zA-ZÀ-ÿ\-']+"
     r"(?:\s+(?:" + PARTICLES + r")\s+[A-ZÀ-Ý][a-zA-ZÀ-ÿ\-']+)*)"
-    r"\s+([A-Z]{1,4})\b(?!\.)"
+    r"\s+([A-Z](?:\.?\s*[A-Z]){0,3})\.?\b"
 )
 
 
@@ -60,16 +68,19 @@ def strip_accents(s):
 
 
 def canonical_author(surname, initials):
-    """Forma canônica: 'Lastname F' (sem acento, só primeira inicial)."""
+    """Forma canônica: 'Lastname F' (sem acento, só primeira inicial).
+    Trata: caixa alta (SILVA→Silva), hífens (silva-filho→Silva-Filho),
+    e partículas (da, de, von, etc. ficam minúsculas)."""
+    PARTS = {'de','da','do','dos','das','von','van','del','du','la','le','di','y'}
+    def cap_word(w):
+        # Hifenizado: capitaliza cada parte (Silva-Filho)
+        if '-' in w:
+            return '-'.join(cap_word(p) for p in w.split('-'))
+        if w.lower() in PARTS:
+            return w.lower()
+        return w.capitalize()
     surname = strip_accents(surname).strip()
-    # title case do sobrenome (ex.: SILVA -> Silva)
-    parts = []
-    for tok in surname.split():
-        if tok.lower() in {'de','da','do','dos','das','von','van','del','du','la','le','di','y'}:
-            parts.append(tok.lower())
-        else:
-            parts.append(tok.capitalize())
-    surname = ' '.join(parts)
+    surname = ' '.join(cap_word(tok) for tok in surname.split())
     initials = strip_accents(initials).replace('.', '').replace(' ', '').upper()
     first_initial = initials[:1] if initials else ''
     if not first_initial:
@@ -78,53 +89,54 @@ def canonical_author(surname, initials):
 
 
 def parse_authors(author_str):
-    """Parsea string de autores em lista de formas canônicas."""
+    """Parsea string de autores em lista de formas canônicas.
+
+    Estratégia (v2):
+    1. Normaliza separadores e remove 'et al.' / sufixos (Jr., Sr., etc.)
+    2. Aplica os 3 padrões EM PARALELO e UNE os matches por posição no
+       string — refs com formato MISTO (ex.: "Garcia, P. C. A., G.
+       Vinciprova") agora pegam todos os autores.
+    3. Se ainda assim nada bate, tenta P3 de novo (último recurso).
+    """
     if not author_str:
         return []
     s = author_str.strip()
-    # Normaliza separadores: & -> and; ', and ' / ' AND ' -> ' and '
     s = re.sub(r'\s*&\s*', ' and ', s)
     s = re.sub(r'\s+AND\s+', ' and ', s)
     s = re.sub(r'\s+And\s+', ' and ', s)
-    # Drop "et al."
     s = re.sub(r'\bet\s*al\.?\b', '', s, flags=re.IGNORECASE).strip(' ,.')
+    # remove sufixos pós-sobrenome (Jr., Sr., Filho, etc.) — deixa só nome
+    s = SUFFIX_RE.sub('', s)
+    s = re.sub(r'\s{2,}', ' ', s).strip(' ,.')
     if not s:
         return []
 
-    # Tenta padrão 1 (dominante: 'Lastname, F.M.')
-    matches = RE_LASTNAME_FIRST.findall(s)
-    if matches:
-        out = []
-        for sur, ini in matches:
-            ca = canonical_author(sur, ini)
-            if ca and ca not in out:
-                out.append(ca)
-        if out:
-            return out
+    # Coleta ALL matches dos 3 padrões com posição no string
+    candidates = []  # (start, surname, initials, pattern_priority)
+    for m in RE_LASTNAME_FIRST.finditer(s):
+        candidates.append((m.start(), m.end(), m.group(1), m.group(2), 1))
+    for m in RE_FIRST_LAST.finditer(s):
+        # nesse pattern, group 1 = iniciais, group 2 = sobrenome
+        candidates.append((m.start(), m.end(), m.group(2), m.group(1), 2))
+    for m in RE_LASTNAME_NOCOMMA.finditer(s):
+        candidates.append((m.start(), m.end(), m.group(1), m.group(2), 3))
 
-    # Padrão 2: 'F.M. Lastname'
-    matches = RE_FIRST_LAST.findall(s)
-    if matches:
-        out = []
-        for ini, sur in matches:
-            ca = canonical_author(sur, ini)
-            if ca and ca not in out:
-                out.append(ca)
-        if out:
-            return out
+    if not candidates:
+        return []
 
-    # Padrão 3: 'Lastname FM' (sem ponto, sem vírgula)
-    matches = RE_LASTNAME_NOCOMMA.findall(s)
-    if matches:
-        out = []
-        for sur, ini in matches:
-            ca = canonical_author(sur, ini)
-            if ca and ca not in out:
-                out.append(ca)
-        if out:
-            return out
+    # Ordena por posição no string, e em empate prioriza P1 > P2 > P3
+    candidates.sort(key=lambda c: (c[0], c[4]))
 
-    return []
+    # Greedy non-overlapping selection
+    out, last_end = [], -1
+    for start, end, sur, ini, prio in candidates:
+        if start < last_end:  # sobrepõe a anterior — pula
+            continue
+        ca = canonical_author(sur, ini)
+        if ca and ca not in out:
+            out.append(ca)
+        last_end = end
+    return out
 
 
 def build_graph(species_data):
