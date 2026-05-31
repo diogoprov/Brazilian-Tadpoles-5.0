@@ -1,7 +1,7 @@
 {
   "schema_version": "5.1.0",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-05-30",
+  "generated": "2026-05-31",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -3337,17 +3337,9 @@
             "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
-          },
-          {
-            "author": "Pezzuti, T. L., F. S. F. Leite, D. de C. Rossa-Feres, and P. C. de A. Garcia",
-            "year": 2021,
-            "title": "The tadpoles of the Iron Quadrangle, southeastern Brazil: A baseline for larval knowledge and anuran conservation in a diverse and threatened region",
-            "journal": "South American Journal of Herpetology",
-            "doi": null,
-            "raw": "Pezzuti, T. L., F. S. F. Leite, D. de C. Rossa-Feres, and P. C. de A. Garcia. 2021. The tadpoles of the Iron Quadrangle, southeastern Brazil: A baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology 22 (Special Issue): 1–107"
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, nº 3, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
             "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
@@ -4333,12 +4325,12 @@
             "raw": "Eterovick, P. C. and Sazima, I. 1999. Description of the tadpole of Bufo rufus with notes on its aggregative behavior. Journal of Herpetology 23:711-713."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia",
+            "author": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A",
             "year": 2021,
-            "title": "The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region",
+            "title": "The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region",
             "journal": "South American Journal of Herpetology",
             "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia. 2021. The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region. South American Journal of Herpetology, 22(sp1), 1-107."
+            "raw": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A. (2021). The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology, 22(sp1), 1-107."
           }
         ]
       },
@@ -4807,12 +4799,12 @@
             "raw": "Heyer, W. R. 1985. Taxonomic and natural history notes on frogs of the genus Centrolenella (Amphibia: Centrolenidae) from southeastern Brazil and adjacent Argentina. Papéis Avulsos de Zoologia 36:1-21."
           },
           {
-            "author": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia",
+            "author": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A",
             "year": 2021,
-            "title": "The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region",
+            "title": "The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region",
             "journal": "South American Journal of Herpetology",
             "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia. 2021. The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region. South American Journal of Herpetology, 22(sp1), 1-107"
+            "raw": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A. (2021). The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology, 22(sp1), 1-107."
           }
         ]
       },
@@ -4873,12 +4865,12 @@
             "raw": "Heyer, W. R. 1985. Taxonomic and natural history notes on frogs of the genus Centrolenella (Amphibia: Centrolenidae) from southeastern Brazil and adjacent Argentina. Papéis Avulsos de Zoologia 36:1-21."
           },
           {
-            "author": null,
+            "author": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A",
             "year": 2021,
-            "title": null,
-            "journal": null,
+            "title": "The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region",
+            "journal": "South American Journal of Herpetology",
             "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
+            "raw": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A. (2021). The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology, 22(sp1), 1-107."
           }
         ]
       },
@@ -15751,9 +15743,9 @@
             "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, nº 3p. e20231486, https://doi.org/10.1590/1676-0611-bn-2023-1486."
           }
         ]
       },
@@ -17748,11 +17740,19 @@
           },
           {
             "author": "Dubeux, M. J. M., et al",
+            "year": 2020,
+            "title": "2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
+            "journal": "Biota Neotropica",
+            "doi": "10.1590/1676-0611-BN-2018-0718",
+            "raw": "Dubeux, M. J. M., et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+          },
+          {
+            "author": "Santos, D. F. dos, Pezzuti, T. L., Oswald, C. B., Quirino, C. de F., Lacerda, T., Santos, G. C., … Magalhães, R. F",
             "year": 2025,
-            "title": "2020",
-            "journal": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol",
-            "doi": "10.1590/1676-0611-BN-2018-0718./",
-            "raw": "Dubeux, M. J. M., et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718./ Santos, D. F. dos, Pezzuti, T. L., Oswald, C. B., Quirino, C. de F., Lacerda, T., Santos, G. C., … Magalhães, R. F. (2025). The tadpoles of the Iron Quadrangle, Southeastern Brazil: an update with characterizations of four Scinax Wagler, 1830 (Anura, Hylidae) species. Studies on Neotropical Fauna and Environment, 1–21. https://doi.org/10.1080/01650521.2025.2550405"
+            "title": "The tadpoles of the Iron Quadrangle, Southeastern Brazil: an update with characterizations of four Scinax Wagler, 1830 (Anura, Hylidae) species",
+            "journal": "Studies on Neotropical Fauna and Environment, 1–21",
+            "doi": "10.1080/01650521.2025.2550405",
+            "raw": "Santos, D. F. dos, Pezzuti, T. L., Oswald, C. B., Quirino, C. de F., Lacerda, T., Santos, G. C., … Magalhães, R. F. (2025). The tadpoles of the Iron Quadrangle, Southeastern Brazil: an update with characterizations of four Scinax Wagler, 1830 (Anura, Hylidae) species. Studies on Neotropical Fauna and Environment, 1–21. https://doi.org/10.1080/01650521.2025.2550405"
           }
         ]
       },
@@ -18089,12 +18089,12 @@
             "raw": "Pugliese, A., Pombal Jr., J. P. and Sazima, I. 2004. A new species of Scinax (Anura: Hylidae) from rocky montane fields of the Serra do Cipó, Southeastern Brazil. Zootaxa 688:1-15."
           },
           {
-            "author": null,
+            "author": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A",
             "year": 2021,
-            "title": null,
-            "journal": null,
+            "title": "The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region",
+            "journal": "South American Journal of Herpetology",
             "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
+            "raw": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A. (2021). The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology, 22(sp1), 1-107."
           }
         ]
       },
@@ -18302,25 +18302,25 @@
             "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718.  https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
             "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
             "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, nº 3, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
           },
           {
-            "author": null,
+            "author": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A",
             "year": 2021,
-            "title": null,
-            "journal": null,
+            "title": "The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region",
+            "journal": "South American Journal of Herpetology",
             "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
+            "raw": "Pezzuti, T. L., Leite, F. S. F., Rossa-Feres, D. D. C., & Garcia, P. C. A. (2021). The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology, 22(sp1), 1-107."
           },
           {
             "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
@@ -18397,17 +18397,17 @@
             "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718."
           },
           {
             "author": "Santos, Danusy Lopes, et al",
             "year": 2023,
-            "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
+            "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, nº 3, p. e20231486. https://doi.org/10.1590/1676-0611-bn-2023-1486."
           }
         ]
       },
@@ -23890,16 +23890,16 @@
             "year": 2013,
             "title": "The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history",
             "journal": "South American Journal of Herpetology",
-            "doi": "10.2994/SAJH-D-13-00033.1",
-            "raw": "Magalhães F.M., Garda A.A., Amado T.F., de Sá, R.O. 2013. The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history. South American Journal of Herpetology 8:203–210. doi:10.2994/SAJH-D-13-00033.1"
+            "doi": "10.2994/sajh-d-13-00033.1",
+            "raw": "Magalhães F.M., Garda A.A., Amado T.F., de Sá, R.O. 2013. The tadpole of Leptodactylus caatingae Heyer & Juncá, 2003 (Anura: Leptodactylidae): External morphology, internal anatomy, and natural history. South American Journal of Herpetology 8:203–210, http://dx.doi.org/10.2994/sajh-d-13-00033.1"
           },
           {
             "author": "Dubeux, Marcos Jorge Matias, et al",
             "year": 2020,
             "title": "Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest",
-            "journal": "Biota Neotropica",
+            "journal": "Biota Neotropica, vol",
             "doi": "10.1590/1676-0611-BN-2018-0718",
-            "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
+            "raw": "Dubeux, Marcos Jorge Matias, et al. 2020. Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest. Biota Neotropica, vol. 20, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
           }
         ]
       },
