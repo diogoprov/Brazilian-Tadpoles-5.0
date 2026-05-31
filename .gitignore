@@ -1,15 +1,80 @@
-# macOS
+# =====================================================================
+# Brazilian Tadpoles 5.0 — .gitignore
+# =====================================================================
+
+# ---- Sistemas operacionais ----
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-# Python
+# ---- Python ----
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
 .venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
 
-# Editores
-.vscode/
+# ---- R ----
+.Rhistory
+.Rapp.history
+.RData
+.RDataTmp
+.Renviron
 .Rproj.user/
 *.Rproj
+*.Rcheck/
+*-Ex.R
 
-# Temporários
+# ---- Quarto / RMarkdown / Jupyter ----
+# Cache automatico de renders (cada .qmd gera <nome>_files/ e <nome>_cache/)
+*_files/
+*_cache/
+.quarto/
+_book/
+_site/
+_freeze/
+.ipynb_checkpoints/
+# Renders HTML/PDF dentro de scripts/ ou data-raw/ são intermediários;
+# o "oficial" deve viver em notebooks/ ou figures/.
+scripts/*.html
+scripts/*.pdf
+data-raw/*.html
+data-raw/*.pdf
+
+# ---- Editores / IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.\#*
+\#*\#
+
+# ---- Node (caso virem build do JS ou ferramentas npm) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# ---- Temporários / backups ----
 *.tmp
+*.bak
+*.old
+*.orig
+*.rej

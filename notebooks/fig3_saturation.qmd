@@ -1,0 +1,303 @@
+---
+title: "Fig 3 — Saturação das descrições de girinos brasileiros"
+subtitle: "iNEXT + projeção dinâmica considerando crescimento do pool de espécies"
+author: "Provete et al. (2026)"
+date: today
+format:
+  html:
+    toc: true
+    code-fold: false
+    fig-width: 8
+    fig-height: 5
+  pdf:
+    fig-width: 6.5
+    fig-height: 4.5
+execute:
+  warning: false
+  message: false
+---
+
+## Setup
+
+```{r setup}
+# Pacotes necessários — instale se faltar:
+# install.packages(c("iNEXT","jsonlite","ggplot2","dplyr","tidyr","patchwork","scales"))
+
+library(iNEXT)      # Hsieh, Ma & Chao 2016
+library(jsonlite)
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+library(patchwork)
+library(scales)
+
+theme_set(theme_minimal(base_size = 10) +
+          theme(panel.grid.minor = element_blank(),
+                panel.grid.major.x = element_blank()))
+
+# Caminho do projeto — ajuste se rodar de outro lugar
+PROJECT <- here::here()  # ou: "."
+JSON    <- file.path(PROJECT, "assets/data/species.json")
+```
+
+## 1) Carregar dados e montar matrizes de incidência
+
+Cada caráter (`ext_morph`, `internal_oral`, `chondrocranium`) vira uma matriz binária
+**espécie × referência**, onde `1` = aquela ref descreve aquele caráter daquela spp.
+Esse é o formato `incidence_raw` esperado pelo iNEXT (Colwell et al. 2012;
+Hsieh, Ma & Chao 2016).
+
+```{r data}
+d <- fromJSON(JSON, simplifyVector = FALSE)
+spp <- d$species
+
+# Função: extrai chave única de uma ref (DOI quando existe, senão raw)
+ref_key <- function(r) {
+  if (!is.null(r$doi)  && nzchar(r$doi))  return(paste0("doi:",  r$doi))
+  if (!is.null(r$raw)  && nzchar(r$raw))  return(paste0("raw:",  r$raw))
+  return(NA_character_)
+}
+
+# Para cada caráter: lista de (sp_id, ref_key) onde a ref descreve o caráter
+chars      <- c("ext_morph","internal_oral","chondrocranium")
+char_label <- c(ext_morph = "External morphology",
+                internal_oral = "Internal oral",
+                chondrocranium = "Chondrocranium")
+
+build_incidence <- function(ch) {
+  rows <- list()
+  for (s in spp) {
+    refs <- s[[ch]]$refs
+    for (r in refs) {
+      k <- ref_key(r)
+      if (!is.na(k))
+        rows[[length(rows)+1]] <- data.frame(sp = s$id, ref = k,
+                                             stringsAsFactors = FALSE)
+    }
+  }
+  long <- do.call(rbind, rows)
+  if (is.null(long) || nrow(long) == 0) return(NULL)
+  # matriz spp × refs (1/0)
+  tab <- table(long$sp, long$ref)
+  m   <- as.matrix((tab > 0) + 0)
+  m
+}
+
+inc_list <- setNames(lapply(chars, build_incidence), chars)
+
+# Resumo
+sapply(inc_list, function(m) c(spp = nrow(m), refs = ncol(m),
+                               incidences = sum(m)))
+```
+
+## 2) iNEXT: rarefação + extrapolação com bootstrap CI
+
+```{r inext, fig.height=4.5}
+# iNEXT espera, para incidence_raw, uma matriz onde a PRIMEIRA linha é
+# o número total de amostras (T = nº de refs únicas) e as demais são
+# as incidências por spp. Construímos no formato esperado:
+to_inext_raw <- function(m) {
+  # cada coluna é uma amostra; cada linha uma spp; valores 0/1
+  t(m)  # aqui as colunas são spp; o iNEXT aceita assim com `datatype = "incidence_raw"`
+        # via lista. Mas para simplicidade vamos usar incidence_freq:
+}
+
+# Versão mais simples: incidence_freq = c(T, Q1, Q2, ...) onde Q_i = nº de
+# spp que aparecem em exatamente i amostras (refs). É o que o iNEXT usa
+# internamente e tem o mesmo poder estatístico.
+to_inext_freq <- function(m) {
+  Ti  <- ncol(m)                       # nº de "amostras" (refs)
+  yi  <- rowSums(m)                    # nº de refs em que cada spp aparece
+  yi  <- yi[yi > 0]
+  c(Ti, sort(yi, decreasing = TRUE))
+}
+
+inc_freq <- lapply(inc_list, to_inext_freq)
+
+# Executa iNEXT (q = 0 = species richness)
+# size argument: até onde extrapolar (default = 2 * T)
+out <- iNEXT(inc_freq, q = 0, datatype = "incidence_freq",
+             endpoint = NULL,    # default = 2*T
+             nboot    = 200)     # bootstrap CI (default 50; aumente p/ paper)
+
+# Resumo: observado + assintótico estimado por Chao2
+out$AsyEst
+```
+
+```{r inext-plot, fig.height=5}
+# Curvas com bandas de CI 95% (bootstrap)
+p_inext <- ggiNEXT(out, type = 1, color.var = "Assemblage") +
+  scale_color_manual(values = c(ext_morph = "#2e6b4f",
+                                internal_oral = "#7aa44a",
+                                chondrocranium = "#c9881e"),
+                     labels = char_label) +
+  scale_fill_manual(values = c(ext_morph = "#2e6b4f",
+                               internal_oral = "#7aa44a",
+                               chondrocranium = "#c9881e"),
+                    labels = char_label) +
+  labs(x = "Number of unique references (sampling units)",
+       y = "Species described",
+       color = "Character set", fill = "Character set", shape = "Character set") +
+  theme(legend.position = "bottom")
+p_inext
+```
+
+## 3) Modelo dinâmico: o pool de espécies cresce
+
+A análise acima estima quando o ritmo *atual* satura. Mas o número de spp brasileiras
+não é fixo. Provete et al. (2012) reportou 738 spp com girino livre-natante; o banco
+2026 traz **1057** spp (mesma definição, taxonomia atualizada). Entre 2012 e 2026
+foram **+23 spp/ano** em média.
+
+Vamos projetar três cenários e calcular **a cobertura percentual** = nº descrito / N(t)
+ao longo do tempo.
+
+```{r dynamic-N}
+# --- Parâmetros — ajuste à vontade ----------------------------------------
+N_now            <- length(spp)         # 1057 (julho 2026, banco 5.1.0)
+year_now         <- 2026
+
+# Taxa de descrição de NOVAS spp brasileiras (free-swimming) por ano
+# Cenário 1: estagnação (rate = 0) — what-if hipotético
+# Cenário 2: ritmo histórico 2012-2026 = (1057-738)/(2026-2012) ≈ 22.8 spp/ano
+# Cenário 3: ritmo "boom 2010s" — global ~150 spp/ano,
+#            BR é ~10-15% do total → ~20 spp/ano (similar ao histórico)
+new_spp_rates <- c(`Static N (1057)`             = 0,
+                   `Historical rate (~23/year)`  = 22.8,
+                   `Conservative (~10/year)`     = 10)
+
+# Cenário de descrições futuras por caráter — ritmo recente (refs/ano nos
+# últimos 10 anos, derivado dos dados):
+recent_yrs <- 2015:2026
+ext_recent <- 0
+oral_recent <- 0
+cho_recent  <- 0
+for (s in spp) {
+  for (ch in chars) {
+    yrs <- vapply(s[[ch]]$refs,
+                  function(r) ifelse(is.null(r$year), NA_integer_, r$year),
+                  integer(1))
+    yrs <- yrs[!is.na(yrs)]
+    if (any(yrs >= min(recent_yrs))) {
+      first_recent <- min(yrs[yrs >= min(recent_yrs)])
+      if (ch == "ext_morph")      ext_recent  <- ext_recent  + 1
+      if (ch == "internal_oral")  oral_recent <- oral_recent + 1
+      if (ch == "chondrocranium") cho_recent  <- cho_recent  + 1
+    }
+  }
+}
+n_recent_years <- length(recent_yrs)
+descr_rate <- c(ext_morph      = ext_recent  / n_recent_years,
+                internal_oral  = oral_recent / n_recent_years,
+                chondrocranium = cho_recent  / n_recent_years)
+descr_rate
+
+# --- Atual número de spp descritas por caráter ----------------------------
+described_now <- sapply(chars, function(ch)
+  sum(sapply(spp, function(s) s[[ch]]$status == "described")))
+described_now
+
+# --- Projeção forward até 2150 -------------------------------------------
+years_proj <- year_now:2150
+make_proj <- function(N_rate_per_yr) {
+  N_t <- N_now + N_rate_per_yr * (years_proj - year_now)
+  out <- expand.grid(year = years_proj, character = chars,
+                     stringsAsFactors = FALSE)
+  out$N_t <- rep(N_t, times = length(chars))
+  out$described <- pmin(out$N_t,
+    described_now[out$character] +
+    descr_rate[out$character] * (out$year - year_now))
+  out$coverage_pct <- 100 * out$described / out$N_t
+  out
+}
+
+scen <- lapply(new_spp_rates, make_proj)
+scen <- bind_rows(scen, .id = "scenario")
+scen$scenario <- factor(scen$scenario, levels = names(new_spp_rates))
+scen$character <- factor(scen$character, levels = chars,
+                         labels = char_label[chars])
+
+p_dyn <- ggplot(scen, aes(year, coverage_pct,
+                           color = character, linetype = scenario,
+                           linewidth = scenario)) +
+  geom_line() +
+  geom_hline(yintercept = 80, color = "grey60", linetype = "dotted") +
+  geom_hline(yintercept = 95, color = "grey60", linetype = "dotted") +
+  scale_y_continuous(limits = c(0, 100),
+                     breaks = c(0, 25, 50, 75, 80, 95, 100),
+                     labels = paste0(c(0, 25, 50, 75, 80, 95, 100), "%")) +
+  scale_color_manual(values = c(`External morphology` = "#2e6b4f",
+                                `Internal oral`       = "#7aa44a",
+                                `Chondrocranium`      = "#c9881e")) +
+  scale_linetype_manual(values = c("Static N (1057)"             = "solid",
+                                   "Historical rate (~23/year)"  = "longdash",
+                                   "Conservative (~10/year)"     = "dotted")) +
+  scale_linewidth_manual(values = c("Static N (1057)"             = 1.2,
+                                    "Historical rate (~23/year)"  = 0.9,
+                                    "Conservative (~10/year)"     = 0.7),
+                         guide = "none") +
+  labs(x = "Year", y = "Coverage (described / total spp)",
+       color = "Character", linetype = "Species pool scenario") +
+  theme(legend.position = "bottom", legend.box = "vertical")
+p_dyn
+```
+
+## 4) Figura combinada para o paper
+
+```{r combined, fig.width=7.2, fig.height=8}
+final <- p_inext / p_dyn +
+  plot_annotation(tag_levels = "A",
+                  tag_suffix = "")
+final
+ggsave(file.path(PROJECT, "fig3_saturation.png"),
+       final, width = 7.2, height = 8, dpi = 300, bg = "white")
+ggsave(file.path(PROJECT, "fig3_saturation.tif"),
+       final, width = 7.2, height = 8, dpi = 300, bg = "white",
+       compression = "lzw")
+```
+
+## 5) Marcos numéricos para citar no texto
+
+```{r milestones}
+# Para cada cenário × caráter: quando atinge 80% e 95%?
+ms <- scen %>%
+  group_by(scenario, character) %>%
+  summarise(
+    yr_80 = ifelse(any(coverage_pct >= 80),
+                   min(year[coverage_pct >= 80]), NA_integer_),
+    yr_95 = ifelse(any(coverage_pct >= 95),
+                   min(year[coverage_pct >= 95]), NA_integer_),
+    cov_2050 = approx(year, coverage_pct, xout = 2050)$y,
+    cov_2100 = approx(year, coverage_pct, xout = 2100)$y,
+    .groups = "drop"
+  )
+print(ms, n = Inf)
+```
+
+## Notas metodológicas
+
+- **iNEXT**: Hsieh, Ma & Chao (2016) doi:10.1111/2041-210X.12613.
+  Aqui usei `q = 0` (richness, q-Hill número 0). Para diversidade taxonômica
+  ponderada por abundância de descrições, pode-se rodar também `q = c(0,1,2)`
+  e comparar perfis de Hill.
+- **Bootstrap CI**: padrão do iNEXT é 50 replicações; subi para 200 aqui.
+  Para publicação, considere `nboot = 1000`.
+- **Cenários de N(t)**: a fórmula `N(t) = N_now + r·(t − t_now)` assume
+  crescimento linear do pool. Mais sofisticado: ajustar logístico aos
+  totais SBH 2010 / 2014 / 2018 / 2022 / 2026 (se a série estiver disponível).
+- **Limitação**: a taxa de descrições futuras `descr_rate` é estimada
+  do período 2015–2026 e assumida constante. Variações realistas
+  (mais autores entrando, programas de pós-grad, etc.) requerem
+  modelo Bayesiano hierárquico — out of scope para a *short note*.
+
+## Bibliografia mínima
+
+- Hsieh T.C., Ma K.H. & Chao A. 2016. iNEXT: an R package for rarefaction
+  and extrapolation of species diversity (Hill numbers).
+  *Methods in Ecology and Evolution* 7: 1451–1456.
+  http://dx.doi.org/10.1111/2041-210X.12613
+- Colwell R.K. et al. 2012. Models and estimators linking individual-based
+  and sample-based rarefaction, extrapolation and comparison of
+  assemblages. *Journal of Plant Ecology* 5: 3–21.
+- Chao A. 1987. Estimating the population size for capture-recapture data
+  with unequal catchability. *Biometrics* 43: 783–791.

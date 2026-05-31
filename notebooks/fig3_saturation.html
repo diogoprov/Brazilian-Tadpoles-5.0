@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Provete et al.&nbsp;(2026)">
+<meta name="dcterms.date" content="2026-05-30">
+
+<title>Fig 3 — Saturação das descrições de girinos brasileiros</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="fig3_saturation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="fig3_saturation_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="fig3_saturation_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="fig3_saturation_files/libs/quarto-html/popper.min.js"></script>
+<script src="fig3_saturation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="fig3_saturation_files/libs/quarto-html/anchor.min.js"></script>
+<link href="fig3_saturation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="fig3_saturation_files/libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="fig3_saturation_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="fig3_saturation_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="fig3_saturation_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a></li>
+  <li><a href="#carregar-dados-e-montar-matrizes-de-incidência" id="toc-carregar-dados-e-montar-matrizes-de-incidência" class="nav-link" data-scroll-target="#carregar-dados-e-montar-matrizes-de-incidência">1) Carregar dados e montar matrizes de incidência</a></li>
+  <li><a href="#inext-rarefação-extrapolação-com-bootstrap-ci" id="toc-inext-rarefação-extrapolação-com-bootstrap-ci" class="nav-link" data-scroll-target="#inext-rarefação-extrapolação-com-bootstrap-ci">2) iNEXT: rarefação + extrapolação com bootstrap CI</a></li>
+  <li><a href="#modelo-dinâmico-o-pool-de-espécies-cresce" id="toc-modelo-dinâmico-o-pool-de-espécies-cresce" class="nav-link" data-scroll-target="#modelo-dinâmico-o-pool-de-espécies-cresce">3) Modelo dinâmico: o pool de espécies cresce</a></li>
+  <li><a href="#figura-combinada-para-o-paper" id="toc-figura-combinada-para-o-paper" class="nav-link" data-scroll-target="#figura-combinada-para-o-paper">4) Figura combinada para o paper</a></li>
+  <li><a href="#marcos-numéricos-para-citar-no-texto" id="toc-marcos-numéricos-para-citar-no-texto" class="nav-link" data-scroll-target="#marcos-numéricos-para-citar-no-texto">5) Marcos numéricos para citar no texto</a></li>
+  <li><a href="#notas-metodológicas" id="toc-notas-metodológicas" class="nav-link" data-scroll-target="#notas-metodológicas">Notas metodológicas</a></li>
+  <li><a href="#bibliografia-mínima" id="toc-bibliografia-mínima" class="nav-link" data-scroll-target="#bibliografia-mínima">Bibliografia mínima</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="fig3_saturation.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Fig 3 — Saturação das descrições de girinos brasileiros</h1>
+<p class="subtitle lead">iNEXT + projeção dinâmica considerando crescimento do pool de espécies</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Provete et al.&nbsp;(2026) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 30, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pacotes necessários — instale se faltar:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(c("iNEXT","jsonlite","ggplot2","dplyr","tidyr","patchwork","scales"))</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(iNEXT)      <span class="co"># Hsieh, Ma &amp; Chao 2016</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyr)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">10</span>) <span class="sc">+</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>          <span class="fu">theme</span>(<span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">panel.grid.major.x =</span> <span class="fu">element_blank</span>()))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Caminho do projeto — ajuste se rodar de outro lugar</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>PROJECT <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>()  <span class="co"># ou: "."</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>JSON    <span class="ot">&lt;-</span> <span class="fu">file.path</span>(PROJECT, <span class="st">"assets/data/species.json"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="carregar-dados-e-montar-matrizes-de-incidência" class="level2">
+<h2 class="anchored" data-anchor-id="carregar-dados-e-montar-matrizes-de-incidência">1) Carregar dados e montar matrizes de incidência</h2>
+<p>Cada caráter (<code>ext_morph</code>, <code>internal_oral</code>, <code>chondrocranium</code>) vira uma matriz binária <strong>espécie × referência</strong>, onde <code>1</code> = aquela ref descreve aquele caráter daquela spp. Esse é o formato <code>incidence_raw</code> esperado pelo iNEXT (Colwell et al.&nbsp;2012; Hsieh, Ma &amp; Chao 2016).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(JSON, <span class="at">simplifyVector =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>spp <span class="ot">&lt;-</span> d<span class="sc">$</span>species</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Função: extrai chave única de uma ref (DOI quando existe, senão raw)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>ref_key <span class="ot">&lt;-</span> <span class="cf">function</span>(r) {</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(r<span class="sc">$</span>doi)  <span class="sc">&amp;&amp;</span> <span class="fu">nzchar</span>(r<span class="sc">$</span>doi))  <span class="fu">return</span>(<span class="fu">paste0</span>(<span class="st">"doi:"</span>,  r<span class="sc">$</span>doi))</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.null</span>(r<span class="sc">$</span>raw)  <span class="sc">&amp;&amp;</span> <span class="fu">nzchar</span>(r<span class="sc">$</span>raw))  <span class="fu">return</span>(<span class="fu">paste0</span>(<span class="st">"raw:"</span>,  r<span class="sc">$</span>raw))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="cn">NA_character_</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Para cada caráter: lista de (sp_id, ref_key) onde a ref descreve o caráter</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>chars      <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"ext_morph"</span>,<span class="st">"internal_oral"</span>,<span class="st">"chondrocranium"</span>)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>char_label <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">ext_morph =</span> <span class="st">"External morphology"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">internal_oral =</span> <span class="st">"Internal oral"</span>,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>                <span class="at">chondrocranium =</span> <span class="st">"Chondrocranium"</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>build_incidence <span class="ot">&lt;-</span> <span class="cf">function</span>(ch) {</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  rows <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (s <span class="cf">in</span> spp) {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    refs <span class="ot">&lt;-</span> s[[ch]]<span class="sc">$</span>refs</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (r <span class="cf">in</span> refs) {</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>      k <span class="ot">&lt;-</span> <span class="fu">ref_key</span>(r)</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.na</span>(k))</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>        rows[[<span class="fu">length</span>(rows)<span class="sc">+</span><span class="dv">1</span>]] <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">sp =</span> s<span class="sc">$</span>id, <span class="at">ref =</span> k,</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>                                             <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  long <span class="ot">&lt;-</span> <span class="fu">do.call</span>(rbind, rows)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.null</span>(long) <span class="sc">||</span> <span class="fu">nrow</span>(long) <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="cn">NULL</span>)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># matriz spp × refs (1/0)</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  tab <span class="ot">&lt;-</span> <span class="fu">table</span>(long<span class="sc">$</span>sp, long<span class="sc">$</span>ref)</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  m   <span class="ot">&lt;-</span> <span class="fu">as.matrix</span>((tab <span class="sc">&gt;</span> <span class="dv">0</span>) <span class="sc">+</span> <span class="dv">0</span>)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  m</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>inc_list <span class="ot">&lt;-</span> <span class="fu">setNames</span>(<span class="fu">lapply</span>(chars, build_incidence), chars)</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Resumo</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(inc_list, <span class="cf">function</span>(m) <span class="fu">c</span>(<span class="at">spp =</span> <span class="fu">nrow</span>(m), <span class="at">refs =</span> <span class="fu">ncol</span>(m),</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>                               <span class="at">incidences =</span> <span class="fu">sum</span>(m)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           ext_morph internal_oral chondrocranium
+spp              638           197            140
+refs             638           144             85
+incidences      1200           284            184</code></pre>
+</div>
+</div>
+</section>
+<section id="inext-rarefação-extrapolação-com-bootstrap-ci" class="level2">
+<h2 class="anchored" data-anchor-id="inext-rarefação-extrapolação-com-bootstrap-ci">2) iNEXT: rarefação + extrapolação com bootstrap CI</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># iNEXT espera, para incidence_raw, uma matriz onde a PRIMEIRA linha é</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># o número total de amostras (T = nº de refs únicas) e as demais são</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># as incidências por spp. Construímos no formato esperado:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>to_inext_raw <span class="ot">&lt;-</span> <span class="cf">function</span>(m) {</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># cada coluna é uma amostra; cada linha uma spp; valores 0/1</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">t</span>(m)  <span class="co"># aqui as colunas são spp; o iNEXT aceita assim com `datatype = "incidence_raw"`</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># via lista. Mas para simplicidade vamos usar incidence_freq:</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Versão mais simples: incidence_freq = c(T, Q1, Q2, ...) onde Q_i = nº de</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># spp que aparecem em exatamente i amostras (refs). É o que o iNEXT usa</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># internamente e tem o mesmo poder estatístico.</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>to_inext_freq <span class="ot">&lt;-</span> <span class="cf">function</span>(m) {</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  Ti  <span class="ot">&lt;-</span> <span class="fu">ncol</span>(m)                       <span class="co"># nº de "amostras" (refs)</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  yi  <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(m)                    <span class="co"># nº de refs em que cada spp aparece</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  yi  <span class="ot">&lt;-</span> yi[yi <span class="sc">&gt;</span> <span class="dv">0</span>]</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">c</span>(Ti, <span class="fu">sort</span>(yi, <span class="at">decreasing =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>inc_freq <span class="ot">&lt;-</span> <span class="fu">lapply</span>(inc_list, to_inext_freq)</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Executa iNEXT (q = 0 = species richness)</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co"># size argument: até onde extrapolar (default = 2 * T)</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>out <span class="ot">&lt;-</span> <span class="fu">iNEXT</span>(inc_freq, <span class="at">q =</span> <span class="dv">0</span>, <span class="at">datatype =</span> <span class="st">"incidence_freq"</span>,</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>             <span class="at">endpoint =</span> <span class="cn">NULL</span>,    <span class="co"># default = 2*T</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>             <span class="at">nboot    =</span> <span class="dv">200</span>)     <span class="co"># bootstrap CI (default 50; aumente p/ paper)</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Resumo: observado + assintótico estimado por Chao2</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>out<span class="sc">$</span>AsyEst</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      Assemblage         Diversity Observed Estimator     s.e.      LCL
+1 chondrocranium  Species richness 140.0000  534.3368 90.22816 357.4928
+2 chondrocranium Shannon diversity 124.1214  411.0193 55.34626 302.5426
+3 chondrocranium Simpson diversity 105.1429  242.4457 42.16074 159.8122
+4      ext_morph  Species richness 638.0000 1094.8141 51.36404 994.1425
+5      ext_morph Shannon diversity 509.9571  845.6552 28.11866 790.5436
+6      ext_morph Simpson diversity 394.7368  587.3142 28.58764 531.2835
+7  internal_oral  Species richness 197.0000  491.1714 56.40100 380.6275
+8  internal_oral Shannon diversity 170.2650  403.7023 33.60353 337.8406
+9  internal_oral Simpson diversity 141.5018  280.0558 26.67384 227.7760
+        UCL
+1  711.1807
+2  519.4959
+3  325.0792
+4 1195.4858
+5  900.7667
+6  643.3450
+7  601.7154
+8  469.5640
+9  332.3356</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Curvas com bandas de CI 95% (bootstrap)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>p_inext <span class="ot">&lt;-</span> <span class="fu">ggiNEXT</span>(out, <span class="at">type =</span> <span class="dv">1</span>, <span class="at">color.var =</span> <span class="st">"Assemblage"</span>) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="at">ext_morph =</span> <span class="st">"#2e6b4f"</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>                                <span class="at">internal_oral =</span> <span class="st">"#7aa44a"</span>,</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>                                <span class="at">chondrocranium =</span> <span class="st">"#c9881e"</span>),</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>                     <span class="at">labels =</span> char_label) <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="at">ext_morph =</span> <span class="st">"#2e6b4f"</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>                               <span class="at">internal_oral =</span> <span class="st">"#7aa44a"</span>,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>                               <span class="at">chondrocranium =</span> <span class="st">"#c9881e"</span>),</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>                    <span class="at">labels =</span> char_label) <span class="sc">+</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Number of unique references (sampling units)"</span>,</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Species described"</span>,</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Character set"</span>, <span class="at">fill =</span> <span class="st">"Character set"</span>, <span class="at">shape =</span> <span class="st">"Character set"</span>) <span class="sc">+</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>p_inext</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="fig3_saturation_files/figure-html/inext-plot-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="modelo-dinâmico-o-pool-de-espécies-cresce" class="level2">
+<h2 class="anchored" data-anchor-id="modelo-dinâmico-o-pool-de-espécies-cresce">3) Modelo dinâmico: o pool de espécies cresce</h2>
+<p>A análise acima estima quando o ritmo <em>atual</em> satura. Mas o número de spp brasileiras não é fixo. Provete et al.&nbsp;(2012) reportou 738 spp com girino livre-natante; o banco 2026 traz <strong>1057</strong> spp (mesma definição, taxonomia atualizada). Entre 2012 e 2026 foram <strong>+23 spp/ano</strong> em média.</p>
+<p>Vamos projetar três cenários e calcular <strong>a cobertura percentual</strong> = nº descrito / N(t) ao longo do tempo.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Parâmetros — ajuste à vontade ----------------------------------------</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>N_now            <span class="ot">&lt;-</span> <span class="fu">length</span>(spp)         <span class="co"># 1057 (julho 2026, banco 5.1.0)</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>year_now         <span class="ot">&lt;-</span> <span class="dv">2026</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Taxa de descrição de NOVAS spp brasileiras (free-swimming) por ano</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Cenário 1: estagnação (rate = 0) — what-if hipotético</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Cenário 2: ritmo histórico 2012-2026 = (1057-738)/(2026-2012) ≈ 22.8 spp/ano</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Cenário 3: ritmo "boom 2010s" — global ~150 spp/ano,</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#            BR é ~10-15% do total → ~20 spp/ano (similar ao histórico)</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>new_spp_rates <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">Static N (1057)</span><span class="st">`</span>             <span class="ot">=</span> <span class="dv">0</span>,</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>                   <span class="st">`</span><span class="at">Historical rate (~23/year)</span><span class="st">`</span>  <span class="ot">=</span> <span class="fl">22.8</span>,</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>                   <span class="st">`</span><span class="at">Conservative (~10/year)</span><span class="st">`</span>     <span class="ot">=</span> <span class="dv">10</span>)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Cenário de descrições futuras por caráter — ritmo recente (refs/ano nos</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co"># últimos 10 anos, derivado dos dados):</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>recent_yrs <span class="ot">&lt;-</span> <span class="dv">2015</span><span class="sc">:</span><span class="dv">2026</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>ext_recent <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>oral_recent <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>cho_recent  <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (s <span class="cf">in</span> spp) {</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (ch <span class="cf">in</span> chars) {</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    yrs <span class="ot">&lt;-</span> <span class="fu">vapply</span>(s[[ch]]<span class="sc">$</span>refs,</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>                  <span class="cf">function</span>(r) <span class="fu">ifelse</span>(<span class="fu">is.null</span>(r<span class="sc">$</span>year), <span class="cn">NA_integer_</span>, r<span class="sc">$</span>year),</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>                  <span class="fu">integer</span>(<span class="dv">1</span>))</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    yrs <span class="ot">&lt;-</span> yrs[<span class="sc">!</span><span class="fu">is.na</span>(yrs)]</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">any</span>(yrs <span class="sc">&gt;=</span> <span class="fu">min</span>(recent_yrs))) {</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>      first_recent <span class="ot">&lt;-</span> <span class="fu">min</span>(yrs[yrs <span class="sc">&gt;=</span> <span class="fu">min</span>(recent_yrs)])</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (ch <span class="sc">==</span> <span class="st">"ext_morph"</span>)      ext_recent  <span class="ot">&lt;-</span> ext_recent  <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (ch <span class="sc">==</span> <span class="st">"internal_oral"</span>)  oral_recent <span class="ot">&lt;-</span> oral_recent <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (ch <span class="sc">==</span> <span class="st">"chondrocranium"</span>) cho_recent  <span class="ot">&lt;-</span> cho_recent  <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>n_recent_years <span class="ot">&lt;-</span> <span class="fu">length</span>(recent_yrs)</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>descr_rate <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">ext_morph      =</span> ext_recent  <span class="sc">/</span> n_recent_years,</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>                <span class="at">internal_oral  =</span> oral_recent <span class="sc">/</span> n_recent_years,</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>                <span class="at">chondrocranium =</span> cho_recent  <span class="sc">/</span> n_recent_years)</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>descr_rate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     ext_morph  internal_oral chondrocranium 
+     27.750000       5.333333       4.750000 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Atual número de spp descritas por caráter ----------------------------</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>described_now <span class="ot">&lt;-</span> <span class="fu">sapply</span>(chars, <span class="cf">function</span>(ch)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sum</span>(<span class="fu">sapply</span>(spp, <span class="cf">function</span>(s) s[[ch]]<span class="sc">$</span>status <span class="sc">==</span> <span class="st">"described"</span>)))</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>described_now</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     ext_morph  internal_oral chondrocranium 
+           638            197            140 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Projeção forward até 2150 -------------------------------------------</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>years_proj <span class="ot">&lt;-</span> year_now<span class="sc">:</span><span class="dv">2150</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>make_proj <span class="ot">&lt;-</span> <span class="cf">function</span>(N_rate_per_yr) {</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  N_t <span class="ot">&lt;-</span> N_now <span class="sc">+</span> N_rate_per_yr <span class="sc">*</span> (years_proj <span class="sc">-</span> year_now)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  out <span class="ot">&lt;-</span> <span class="fu">expand.grid</span>(<span class="at">year =</span> years_proj, <span class="at">character =</span> chars,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>                     <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  out<span class="sc">$</span>N_t <span class="ot">&lt;-</span> <span class="fu">rep</span>(N_t, <span class="at">times =</span> <span class="fu">length</span>(chars))</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>  out<span class="sc">$</span>described <span class="ot">&lt;-</span> <span class="fu">pmin</span>(out<span class="sc">$</span>N_t,</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>    described_now[out<span class="sc">$</span>character] <span class="sc">+</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    descr_rate[out<span class="sc">$</span>character] <span class="sc">*</span> (out<span class="sc">$</span>year <span class="sc">-</span> year_now))</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>  out<span class="sc">$</span>coverage_pct <span class="ot">&lt;-</span> <span class="dv">100</span> <span class="sc">*</span> out<span class="sc">$</span>described <span class="sc">/</span> out<span class="sc">$</span>N_t</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>  out</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>scen <span class="ot">&lt;-</span> <span class="fu">lapply</span>(new_spp_rates, make_proj)</span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>scen <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(scen, <span class="at">.id =</span> <span class="st">"scenario"</span>)</span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>scen<span class="sc">$</span>scenario <span class="ot">&lt;-</span> <span class="fu">factor</span>(scen<span class="sc">$</span>scenario, <span class="at">levels =</span> <span class="fu">names</span>(new_spp_rates))</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>scen<span class="sc">$</span>character <span class="ot">&lt;-</span> <span class="fu">factor</span>(scen<span class="sc">$</span>character, <span class="at">levels =</span> chars,</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>                         <span class="at">labels =</span> char_label[chars])</span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>p_dyn <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(scen, <span class="fu">aes</span>(year, coverage_pct,</span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>                           <span class="at">color =</span> character, <span class="at">linetype =</span> scenario,</span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a>                           <span class="at">linewidth =</span> scenario)) <span class="sc">+</span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">80</span>, <span class="at">color =</span> <span class="st">"grey60"</span>, <span class="at">linetype =</span> <span class="st">"dotted"</span>) <span class="sc">+</span></span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">95</span>, <span class="at">color =</span> <span class="st">"grey60"</span>, <span class="at">linetype =</span> <span class="st">"dotted"</span>) <span class="sc">+</span></span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>),</span>
+<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>                     <span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">75</span>, <span class="dv">80</span>, <span class="dv">95</span>, <span class="dv">100</span>),</span>
+<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>                     <span class="at">labels =</span> <span class="fu">paste0</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25</span>, <span class="dv">50</span>, <span class="dv">75</span>, <span class="dv">80</span>, <span class="dv">95</span>, <span class="dv">100</span>), <span class="st">"%"</span>)) <span class="sc">+</span></span>
+<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">External morphology</span><span class="st">`</span> <span class="ot">=</span> <span class="st">"#2e6b4f"</span>,</span>
+<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>                                <span class="st">`</span><span class="at">Internal oral</span><span class="st">`</span>       <span class="ot">=</span> <span class="st">"#7aa44a"</span>,</span>
+<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a>                                <span class="st">`</span><span class="at">Chondrocranium</span><span class="st">`</span>      <span class="ot">=</span> <span class="st">"#c9881e"</span>)) <span class="sc">+</span></span>
+<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_linetype_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Static N (1057)"</span>             <span class="ot">=</span> <span class="st">"solid"</span>,</span>
+<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">"Historical rate (~23/year)"</span>  <span class="ot">=</span> <span class="st">"longdash"</span>,</span>
+<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>                                   <span class="st">"Conservative (~10/year)"</span>     <span class="ot">=</span> <span class="st">"dotted"</span>)) <span class="sc">+</span></span>
+<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_linewidth_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Static N (1057)"</span>             <span class="ot">=</span> <span class="fl">1.2</span>,</span>
+<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a>                                    <span class="st">"Historical rate (~23/year)"</span>  <span class="ot">=</span> <span class="fl">0.9</span>,</span>
+<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a>                                    <span class="st">"Conservative (~10/year)"</span>     <span class="ot">=</span> <span class="fl">0.7</span>),</span>
+<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a>                         <span class="at">guide =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Year"</span>, <span class="at">y =</span> <span class="st">"Coverage (described / total spp)"</span>,</span>
+<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Character"</span>, <span class="at">linetype =</span> <span class="st">"Species pool scenario"</span>) <span class="sc">+</span></span>
+<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>, <span class="at">legend.box =</span> <span class="st">"vertical"</span>)</span>
+<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a>p_dyn</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="fig3_saturation_files/figure-html/dynamic-N-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="figura-combinada-para-o-paper" class="level2">
+<h2 class="anchored" data-anchor-id="figura-combinada-para-o-paper">4) Figura combinada para o paper</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>final <span class="ot">&lt;-</span> p_inext <span class="sc">/</span> p_dyn <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot_annotation</span>(<span class="at">tag_levels =</span> <span class="st">"A"</span>,</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">tag_suffix =</span> <span class="st">""</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>final</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="fig3_saturation_files/figure-html/combined-1.png" class="img-fluid figure-img" width="691"></p>
+</figure>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="fu">file.path</span>(PROJECT, <span class="st">"fig3_saturation.png"</span>),</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>       final, <span class="at">width =</span> <span class="fl">7.2</span>, <span class="at">height =</span> <span class="dv">8</span>, <span class="at">dpi =</span> <span class="dv">300</span>, <span class="at">bg =</span> <span class="st">"white"</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="fu">file.path</span>(PROJECT, <span class="st">"fig3_saturation.tif"</span>),</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>       final, <span class="at">width =</span> <span class="fl">7.2</span>, <span class="at">height =</span> <span class="dv">8</span>, <span class="at">dpi =</span> <span class="dv">300</span>, <span class="at">bg =</span> <span class="st">"white"</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">compression =</span> <span class="st">"lzw"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="marcos-numéricos-para-citar-no-texto" class="level2">
+<h2 class="anchored" data-anchor-id="marcos-numéricos-para-citar-no-texto">5) Marcos numéricos para citar no texto</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Para cada cenário × caráter: quando atinge 80% e 95%?</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>ms <span class="ot">&lt;-</span> scen <span class="sc">%&gt;%</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(scenario, character) <span class="sc">%&gt;%</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">yr_80 =</span> <span class="fu">ifelse</span>(<span class="fu">any</span>(coverage_pct <span class="sc">&gt;=</span> <span class="dv">80</span>),</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">min</span>(year[coverage_pct <span class="sc">&gt;=</span> <span class="dv">80</span>]), <span class="cn">NA_integer_</span>),</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">yr_95 =</span> <span class="fu">ifelse</span>(<span class="fu">any</span>(coverage_pct <span class="sc">&gt;=</span> <span class="dv">95</span>),</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>                   <span class="fu">min</span>(year[coverage_pct <span class="sc">&gt;=</span> <span class="dv">95</span>]), <span class="cn">NA_integer_</span>),</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">cov_2050 =</span> <span class="fu">approx</span>(year, coverage_pct, <span class="at">xout =</span> <span class="dv">2050</span>)<span class="sc">$</span>y,</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">cov_2100 =</span> <span class="fu">approx</span>(year, coverage_pct, <span class="at">xout =</span> <span class="dv">2100</span>)<span class="sc">$</span>y,</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ms, <span class="at">n =</span> <span class="cn">Inf</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 6
+  scenario                   character           yr_80 yr_95 cov_2050 cov_2100
+  &lt;fct&gt;                      &lt;fct&gt;               &lt;int&gt; &lt;int&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+1 Static N (1057)            External morphology  2034  2040    100      100  
+2 Static N (1057)            Internal oral        2148    NA     30.7     56.0
+3 Static N (1057)            Chondrocranium         NA    NA     24.0     46.5
+4 Historical rate (~23/year) External morphology  2048  2087     81.3     98.1
+5 Historical rate (~23/year) Internal oral          NA    NA     20.3     21.6
+6 Historical rate (~23/year) Chondrocranium         NA    NA     15.8     17.9
+7 Conservative (~10/year)    External morphology  2037  2047    100      100  
+8 Conservative (~10/year)    Internal oral          NA    NA     25.1     32.9
+9 Conservative (~10/year)    Chondrocranium         NA    NA     19.6     27.4</code></pre>
+</div>
+</div>
+</section>
+<section id="notas-metodológicas" class="level2">
+<h2 class="anchored" data-anchor-id="notas-metodológicas">Notas metodológicas</h2>
+<ul>
+<li><strong>iNEXT</strong>: Hsieh, Ma &amp; Chao (2016) doi:10.1111/2041-210X.12613. Aqui usei <code>q = 0</code> (richness, q-Hill número 0). Para diversidade taxonômica ponderada por abundância de descrições, pode-se rodar também <code>q = c(0,1,2)</code> e comparar perfis de Hill.</li>
+<li><strong>Bootstrap CI</strong>: padrão do iNEXT é 50 replicações; subi para 200 aqui. Para publicação, considere <code>nboot = 1000</code>.</li>
+<li><strong>Cenários de N(t)</strong>: a fórmula <code>N(t) = N_now + r·(t − t_now)</code> assume crescimento linear do pool. Mais sofisticado: ajustar logístico aos totais SBH 2010 / 2014 / 2018 / 2022 / 2026 (se a série estiver disponível).</li>
+<li><strong>Limitação</strong>: a taxa de descrições futuras <code>descr_rate</code> é estimada do período 2015–2026 e assumida constante. Variações realistas (mais autores entrando, programas de pós-grad, etc.) requerem modelo Bayesiano hierárquico — out of scope para a <em>short note</em>.</li>
+</ul>
+</section>
+<section id="bibliografia-mínima" class="level2">
+<h2 class="anchored" data-anchor-id="bibliografia-mínima">Bibliografia mínima</h2>
+<ul>
+<li>Hsieh T.C., Ma K.H. &amp; Chao A. 2016. iNEXT: an R package for rarefaction and extrapolation of species diversity (Hill numbers). <em>Methods in Ecology and Evolution</em> 7: 1451–1456. http://dx.doi.org/10.1111/2041-210X.12613</li>
+<li>Colwell R.K. et al.&nbsp;2012. Models and estimators linking individual-based and sample-based rarefaction, extrapolation and comparison of assemblages. <em>Journal of Plant Ecology</em> 5: 3–21.</li>
+<li>Chao A. 1987. Estimating the population size for capture-recapture data with unequal catchability. <em>Biometrics</em> 43: 783–791.</li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
