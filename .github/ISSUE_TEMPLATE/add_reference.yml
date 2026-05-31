@@ -1,0 +1,94 @@
+name: "📚 Adicionar referência (Add reference)"
+description: "Adicionar uma referência que descreveu o girino (morf. externa, oral ou condrocrânio) de uma espécie já no banco."
+title: "[ref] "
+labels: ["contribution", "add-reference"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir! Esta forma cria automaticamente um Pull Request no banco.
+        Quanto mais campos preencher, melhor. Tudo o que for opcional pode ficar em branco.
+
+        Para corrigir um typo ou outra coisa fora desta forma, use o template **"Outra sugestão"**.
+
+  - type: input
+    id: species
+    attributes:
+      label: "Espécie (binomial completo)"
+      description: "Ex.: `Boana faber`. Use exatamente como aparece no banco."
+      placeholder: "Genus epithet"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: character
+    attributes:
+      label: "Caráter descrito nesta referência"
+      description: "Marque todos os que a ref descreveu. Se for >1, pode rodar a forma de novo."
+      multiple: true
+      options:
+        - "External morphology (ext_morph)"
+        - "Internal oral cavity (internal_oral)"
+        - "Chondrocranium (chondrocranium)"
+    validations:
+      required: true
+
+  - type: input
+    id: ref_author
+    attributes:
+      label: "Autores da referência"
+      description: "Estilo livre, ex.: `Silva, F. R., Provete, D. B. and Garey, M. V.`"
+    validations:
+      required: true
+
+  - type: input
+    id: ref_year
+    attributes:
+      label: "Ano de publicação"
+      placeholder: "2024"
+    validations:
+      required: true
+
+  - type: input
+    id: ref_title
+    attributes:
+      label: "Título do artigo"
+    validations:
+      required: true
+
+  - type: input
+    id: ref_journal
+    attributes:
+      label: "Periódico"
+      placeholder: "Zootaxa"
+
+  - type: input
+    id: ref_doi
+    attributes:
+      label: "DOI"
+      description: "Sem o prefixo `https://doi.org/`. Ex.: `10.11646/zootaxa.5168.1.9`"
+      placeholder: "10.xxxx/yyyy"
+
+  - type: textarea
+    id: ref_raw
+    attributes:
+      label: "Citação completa (raw) — opcional"
+      description: "Cole a citação no formato que aparece no PDF. Será preservada como fallback."
+      render: text
+
+  - type: input
+    id: contributor
+    attributes:
+      label: "Seu nome (para crédito no commit)"
+      description: "Opcional. Use o formato `Nome Sobrenome <email>` se quiser ser citado nas atribuições do git."
+      placeholder: "Anna Silva <anna@email.com>"
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Confirmações"
+      options:
+        - label: "Conferi que esta referência ainda não está no banco para esta espécie+caráter."
+          required: true
+        - label: "Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0)."
+          required: true

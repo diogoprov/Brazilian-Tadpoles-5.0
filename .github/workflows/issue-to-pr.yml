@@ -1,0 +1,104 @@
+name: Issue → PR
+
+# Quando uma issue é aberta/editada e tem o label `add-reference`,
+# parsea o corpo da issue, modifica assets/data/species.json, e abre um
+# pull request com o diff. O mantenedor revisa e merge (ou pede ajuste).
+
+on:
+  issues:
+    types: [opened, labeled, edited]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  build-pr:
+    if: contains(github.event.issue.labels.*.name, 'add-reference')
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Save issue body
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          printf '%s' "$BODY" > issue_body.md
+          echo "Issue #${{ github.event.issue.number }} body saved (${#BODY} chars)"
+
+      - name: Collect labels
+        id: labels
+        run: |
+          labels='${{ toJson(github.event.issue.labels.*.name) }}'
+          echo "Labels: $labels"
+          # transforma JSON array em CSV
+          csv=$(echo "$labels" | python3 -c "import json,sys; print(','.join(json.load(sys.stdin)))")
+          echo "csv=$csv" >> "$GITHUB_OUTPUT"
+
+      - name: Apply patch to species.json
+        id: patch
+        run: |
+          set +e
+          out=$(python3 scripts/issue_to_pr.py \
+            --body-file issue_body.md \
+            --labels "${{ steps.labels.outputs.csv }}" \
+            --issue-number ${{ github.event.issue.number }} 2>&1)
+          rc=$?
+          echo "exit=$rc" >> "$GITHUB_OUTPUT"
+          echo "$out" > patch_summary.md
+          cat patch_summary.md
+          exit $rc
+
+      - name: Comment on issue if validation failed
+        if: failure() && steps.patch.outputs.exit != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const summary = fs.readFileSync('patch_summary.md', 'utf8');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              issue_number: context.issue.number,
+              body: `❌ Não consegui aplicar a mudança automaticamente:\n\n${summary}\n\nCorrija a issue e o bot tenta de novo (basta editar a issue).`
+            });
+
+      - name: Create Pull Request
+        if: success()
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "auto/issue-${{ github.event.issue.number }}"
+          base: main
+          commit-message: |
+            data(refs): add reference from #${{ github.event.issue.number }}
+
+            Closes #${{ github.event.issue.number }}
+          title: "data(refs): add reference from #${{ github.event.issue.number }}"
+          body-path: patch_summary.md
+          labels: |
+            automated
+            data
+          delete-branch: true
+
+      - name: Comment on issue with PR link
+        if: success() && steps.cpr.outputs.pull-request-number
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ Abri o PR #${{ steps.cpr.outputs.pull-request-number }} com a mudança. O mantenedor vai revisar.`
+            });

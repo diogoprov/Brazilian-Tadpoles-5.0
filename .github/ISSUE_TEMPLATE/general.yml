@@ -1,0 +1,45 @@
+name: "💬 Outra sugestão / correção / bug"
+description: "Qualquer coisa fora do escopo dos templates específicos (typo, nova espécie, novo gênero, bug do site, etc.)."
+title: "[outro] "
+labels: ["contribution", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este template para tudo que NÃO é simplesmente adicionar uma referência.
+        Exemplos: corrigir typo, mudança taxonômica, novo gênero ou família, bug no site.
+        Esta forma NÃO gera PR automático — o mantenedor revisa e implementa manualmente.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Tipo de contribuição"
+      options:
+        - "Correção de typo / dado errado"
+        - "Mudança taxonômica (gênero, família, sinonímia)"
+        - "Nova espécie no banco"
+        - "Bug do site"
+        - "Sugestão de melhoria"
+        - "Outro"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descrição"
+      description: "Seja específico — quanto mais detalhe, mais rápido conseguimos resolver."
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "Referências de apoio (opcional)"
+      description: "DOIs, citações ou links relevantes."
+
+  - type: input
+    id: contributor
+    attributes:
+      label: "Seu nome (para crédito)"
+      description: "Opcional."

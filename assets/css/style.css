@@ -166,8 +166,27 @@ thead th {
 thead th:hover { color: var(--accent); }
 tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
 tbody tr:hover { background: #fafaf7; }
-.sp-name { font-style: italic; font-weight: 600; }
+.sp-name { font-style: italic; font-weight: 600; position: relative; }
 .sp-family { color: var(--muted); font-size: .85rem; }
+
+/* Pequeno botão "+" ao lado do nome da spp pra abrir issue pré-preenchida */
+.row-suggest {
+  display: inline-block; margin-left: 6px;
+  color: var(--muted); text-decoration: none;
+  font-style: normal; font-weight: 400; font-size: .85em;
+  opacity: 0; transition: opacity .15s, color .15s;
+  padding: 0 4px; border-radius: 4px;
+}
+tr:hover .row-suggest { opacity: 0.6; }
+.row-suggest:hover { opacity: 1 !important; color: var(--accent); background: var(--accent-soft); }
+
+.contrib-link {
+  display: inline-block; padding: 4px 8px;
+  background: var(--accent-soft); color: var(--accent-dark);
+  text-decoration: none; font-weight: 600;
+  border-radius: 6px; margin: 2px 0;
+}
+.contrib-link:hover { background: #d3e5d9; color: var(--accent-dark); }
 
 /* Badges */
 .badge {

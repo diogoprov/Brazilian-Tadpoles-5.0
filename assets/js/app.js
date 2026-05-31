@@ -215,13 +215,22 @@ function render() {
     return;
   }
 
-  body.innerHTML = view.map((d, i) => `<tr>
-    <td class="sp-name">${esc(d.species)}</td>
-    <td class="sp-family">${esc(d.family)}</td>
-    ${charCell(d, 'ext_morph', i)}
-    ${charCell(d, 'internal_oral', i)}
-    ${charCell(d, 'chondrocranium', i)}
-  </tr>`).join('');
+  const ghBase = 'https://github.com/diogoprov/Brazilian-Tadpoles-5.0/issues/new';
+  body.innerHTML = view.map((d, i) => {
+    const prefill = encodeURIComponent(d.species);
+    const suggestUrl = `${ghBase}?template=add_reference.yml&species=${prefill}`;
+    return `<tr>
+      <td class="sp-name">
+        ${esc(d.species)}
+        <a class="row-suggest" href="${suggestUrl}" target="_blank" rel="noopener"
+           title="Sugerir referência para esta espécie no GitHub">＋</a>
+      </td>
+      <td class="sp-family">${esc(d.family)}</td>
+      ${charCell(d, 'ext_morph', i)}
+      ${charCell(d, 'internal_oral', i)}
+      ${charCell(d, 'chondrocranium', i)}
+    </tr>`;
+  }).join('');
 }
 
 function charCell(d, charKey, idx) {

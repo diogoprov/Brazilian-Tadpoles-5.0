@@ -1,17 +1,36 @@
 """
-Pipeline xlsx -> species.json para o site Brazilian Tadpoles 5.0.
+DEPRECATED desde 31 mai 2026 — mantido apenas para reprodutibilidade
+histórica.
 
-Le data-raw/Brazilian tadpoles database 4.1.0.xlsx e gera assets/data/species.json
-com o esquema expandido (ext_morph, internal_oral, chondrocranium).
+A fonte canônica do banco passou a ser `assets/data/species.json`
+diretamente (mantido via GitHub Issues/PRs, ver `.github/ISSUE_TEMPLATE/`).
+O Google Sheet foi privatizado e o xlsx em `data-raw/` é um snapshot
+congelado do estado em 27 mai 2026. NÃO regere o species.json a partir
+deste script — você perderia todas as contribuições feitas via PR.
 
-Aplica a regra de exclusao de familias do clade Brachycephaloidea
-(Brachycephalidae, Caligophrynidae, Ceuthomantidae, Craugastoridae,
-Eleutherodactylidae, Neblinaphrynidae) + Hemiphractidae, porque essas spp.
-nao tem girino livre-natante.
+Pipeline original (preservado por histórico):
+  Le data-raw/Brazilian tadpoles database 4.1.0.xlsx e gera
+  assets/data/species.json com o esquema expandido (ext_morph,
+  internal_oral, chondrocranium).
 
-Uso (a partir da raiz do projeto):
-    python3 scripts/build_species_json.py
+  Aplica a regra de exclusao de familias do clade Brachycephaloidea
+  (Brachycephalidae, Caligophrynidae, Ceuthomantidae, Craugastoridae,
+  Eleutherodactylidae, Neblinaphrynidae) + Hemiphractidae, porque essas
+  spp. nao tem girino livre-natante.
+
+Caso ABSOLUTAMENTE precise re-rodar (e perder contribuições):
+    python3 scripts/build_species_json.py --force
 """
+import sys
+if '--force' not in sys.argv:
+    print('=' * 70)
+    print('DEPRECATED: este script não deve mais ser executado.')
+    print('A fonte canônica agora é assets/data/species.json (mantido via PRs).')
+    print('Re-rodar perderia todas as contribuições feitas via GitHub Issues.')
+    print('Se você TEM CERTEZA, use --force.')
+    print('=' * 70)
+    sys.exit(1)
+
 import json
 import openpyxl
 import os

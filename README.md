@@ -60,18 +60,42 @@ python3 -m http.server 8000
 
 Depois abra <http://localhost:8000> (pare com `Ctrl + C`).
 
-## Regenerar os dados
+## Como contribuir
 
-Os JSONs servidos ao site são gerados a partir das fontes brutas em `data-raw/`. Os scripts são **idempotentes** — não dependem de estado externo, podem ser rodados a qualquer momento.
+A fonte canônica do banco é `assets/data/species.json` e a manutenção é feita via **GitHub Issues**. Há dois templates:
+
+- **📚 Adicionar referência** ([abrir](https://github.com/diogoprov/Brazilian-Tadpoles-5.0/issues/new?template=add_reference.yml)) — para registrar uma referência que descreveu morf. externa, oral ou condrocrânio de uma espécie já no banco. Uma GitHub Action lê o formulário, modifica o `species.json` e abre um Pull Request automaticamente para revisão.
+- **💬 Outra sugestão** ([abrir](https://github.com/diogoprov/Brazilian-Tadpoles-5.0/issues/new?template=general.yml)) — typos, mudanças taxonômicas, novas espécies, bugs do site. Mantenedor revisa e implementa manualmente.
+
+Fluxo do template "Adicionar referência":
+
+```
+Contribuidor preenche issue form
+        ↓
+GitHub Action (.github/workflows/issue-to-pr.yml)
+  → scripts/issue_to_pr.py parseia e valida
+  → modifica assets/data/species.json
+  → abre PR e comenta na issue com o link
+        ↓
+Mantenedor revisa e faz merge
+        ↓
+pages.yml redeploya o site automaticamente
+```
+
+Quem tem expertise técnica pode pular o formulário e abrir PR direto.
+
+## Regenerar os dados
 
 ### `species.json`
 
-```bash
-pip install openpyxl
-python3 scripts/build_species_json.py
-```
+> ⚠️ **DEPRECATED desde 31/mai/2026.** O `species.json` é mantido **diretamente** via GitHub Issues/PRs (ver "Como contribuir" acima). NÃO rode o script abaixo — você sobrescreveria todas as contribuições feitas via PR. Mantido apenas para reprodutibilidade histórica.
 
-Lê `data-raw/Brazilian tadpoles database 4.1.0.xlsx`, exclui automaticamente as famílias do clado **Brachycephaloidea** (Brachycephalidae, Caligophrynidae, Ceuthomantidae, Craugastoridae, Eleutherodactylidae, Neblinaphrynidae) e **Hemiphractidae** (rãs marsupiais), porque não têm girino livre-natante e ficam fora do escopo do banco.
+O Google Sheet original foi privatizado e o xlsx em `data-raw/Brazilian tadpoles database 4.1.0.xlsx` é um snapshot congelado do estado em 27 mai 2026.
+
+```bash
+# Não execute sem ter ABSOLUTA certeza de que quer perder contribuições recentes:
+# python3 scripts/build_species_json.py --force
+```
 
 ### `phylogeny.json`
 

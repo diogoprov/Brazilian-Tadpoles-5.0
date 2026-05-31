@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "🌐 Site Brazilian Tadpoles"
+    url: "https://diogoprov.github.io/Brazilian-Tadpoles-5.0/"
+    about: "Acessar a versão atual do banco antes de abrir um issue."
+  - name: "✉️ Contato direto"
+    url: "mailto:dbprovete@gmail.com"
+    about: "Para dúvidas privadas ou colaboração estendida."
