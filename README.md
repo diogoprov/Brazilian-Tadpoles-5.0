@@ -43,9 +43,14 @@ Cinco abas:
 │   ├── build_species_json.py          # xlsx → species.json
 │   ├── parse_refs.py                  # parser estruturado de referências
 │   └── prune_phylogeny.py             # megatree → phylogeny.json
-├── .github/workflows/
-│   ├── pages.yml                      # deploy automático no GitHub Pages
-│   └── regen-json.yml                 # regera species.json quando o xlsx muda
+├── .github/
+│   ├── ISSUE_TEMPLATE/                # formulários para contribuições
+│   │   ├── add_reference.yml          # adicionar referência (auto-PR)
+│   │   ├── general.yml                # outras sugestões (manual)
+│   │   └── config.yml                 # config dos templates
+│   └── workflows/
+│       ├── pages.yml                  # deploy automático no GitHub Pages
+│       └── issue-to-pr.yml            # converte issue add-reference em PR
 └── README.md
 ```
 
@@ -120,9 +125,9 @@ git push -u origin main
 
 Depois, no GitHub: **Settings → Pages → Source: GitHub Actions** (não "Deploy from branch"). O workflow `pages.yml` roda automaticamente em cada push pro `main`. O site fica em `https://<usuario>.github.io/<repo>/`.
 
-O workflow `regen-json.yml` regera o `species.json` automaticamente sempre que o xlsx em `data-raw/` é atualizado, e commita o resultado.
+O workflow `issue-to-pr.yml` converte issues abertas com o template "Adicionar referência" em pull requests automáticos para o `species.json` (ver "Como contribuir" acima).
 
-> Os dois workflows já estão fixos em Node 24 via `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"`, antecipando a deprecação obrigatória do Node 20 nas GitHub Actions (forçada em 02/06/2026, removido em 16/09/2026).
+> Os workflows estão fixos em Node 24 via `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"`, antecipando a deprecação obrigatória do Node 20 nas GitHub Actions (forçada em 02/06/2026, removido em 16/09/2026).
 
 ## Esquema dos JSONs
 
