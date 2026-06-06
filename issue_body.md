@@ -1,38 +1,30 @@
-### Espécie (binomial completo)
+### Espécie (binomial completo) 
 
-Ranitomeya ichapama
+Rhinella achavali 
 
-### Família
+### Caráter descrito nesta referência
 
-Dendrobatidae
+External morphology (ext_morph), Internal oral cavity (internal_oral), Chondrocranium (chondrocranium)
 
-### DOI da descrição original da espécie (opcional)
+### Autores da referência
 
-_No response_
-
-### Caracteres larvais JÁ descritos na literatura
-
-_No response_
-
-### Autores da referência (girino)
-
-_No response_
+Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.
 
 ### Ano de publicação
 
-_No response_
+2013
 
 ### Título do artigo
 
-_No response_
+The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae)
 
 ### Periódico
 
-_No response_
+Journal of Herpetology
 
 ### DOI
 
-_No response_
+10.1670/13-028
 
 ### Citação completa (raw) — opcional
 
@@ -42,10 +34,9 @@ _No response_
 
 ### Seu nome (para crédito no commit)
 
-Diogo B Provete
+Etielle Andrade Email: etlandrade@hotmail.com
 
 ### Confirmações
 
-- [x] Conferi que esta espécie ainda não está no banco (busquei pelo binomial).
-- [x] A espécie tem (ou se assume ter) girino livre-natante — NÃO é de família com desenvolvimento direto.
+- [x] Conferi que esta referência ainda não está no banco para esta espécie+caráter.
 - [x] Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0).
