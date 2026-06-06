@@ -12,7 +12,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1058,
+  "count": 1059,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -16731,6 +16731,26 @@
             "raw": "Mota PSD, Oliv MIRRD, Napoli MF, Weber LN. 2020. Comparative analysis of the chondrocranium and hyobranchial skeleton of bromeliad arboreal frog larvae of the genus Phyllodytes Wagler, 1830 (Anura, Hylidae). Zootaxa 4895:239–250. DOI: 10.11646/zootaxa.4895.2.4."
           }
         ]
+      }
+    },
+    {
+      "id": "phyllodytes_gravata",
+      "species": "Phyllodytes gravata",
+      "genus": "Phyllodytes",
+      "epithet": "gravata",
+      "tip_label": "Phyllodytes_gravata",
+      "family": "Hylidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
       }
     },
     {

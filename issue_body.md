@@ -1,30 +1,38 @@
-### Espécie (binomial completo) 
+### Espécie (binomial completo)
 
-Rhinella achavali 
+Phyllodytes gravata 
 
-### Caráter descrito nesta referência
+### Família
 
-External morphology (ext_morph), Internal oral cavity (internal_oral), Chondrocranium (chondrocranium)
+Hylidae
 
-### Autores da referência
+### DOI da descrição original da espécie (opcional)
 
-Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.
+_No response_
+
+### Caracteres larvais JÁ descritos na literatura
+
+_No response_
+
+### Autores da referência (girino)
+
+_No response_
 
 ### Ano de publicação
 
-2013
+_No response_
 
 ### Título do artigo
 
-The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae)
+_No response_
 
 ### Periódico
 
-Journal of Herpetology
+_No response_
 
 ### DOI
 
-10.1670/13-028
+_No response_
 
 ### Citação completa (raw) — opcional
 
@@ -34,9 +42,10 @@ Journal of Herpetology
 
 ### Seu nome (para crédito no commit)
 
-Etielle Andrade Email: etlandrade@hotmail.com
+Diogo Provete
 
 ### Confirmações
 
-- [x] Conferi que esta referência ainda não está no banco para esta espécie+caráter.
+- [x] Conferi que esta espécie ainda não está no banco (busquei pelo binomial).
+- [x] A espécie tem (ou se assume ter) girino livre-natante — NÃO é de família com desenvolvimento direto.
 - [x] Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0).
