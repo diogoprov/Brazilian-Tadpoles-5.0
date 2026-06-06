@@ -106,30 +106,60 @@ def find_species(data, query):
 
 
 def normalize_response(val):
-    """Issue Forms colocam 'No response' quando o usuário não preencheu campo opcional."""
+    """Issue Forms colocam 'No response' quando o usuário não preencheu campo opcional.
+
+    A renderização varia: `*No response*` (asterisco-italic, mais comum),
+    `_No response_` (underscore-italic) ou só `No response`. Também trata
+    blocos de código vazios (campo `render: text` deixado em branco).
+    """
     if not val: return None
     s = val.strip()
-    if s.lower() in {'_no response_', '_none_', 'n/a'}:
+    # placeholders comuns do Issue Forms (com ou sem marcação italic)
+    if re.match(r'^[*_]?\s*(no response|none|n/a|nenhuma resposta)\s*[*_]?$',
+                s, re.IGNORECASE):
+        return None
+    # bloco de código vazio: ```\n\n``` (campo `render: text` deixado em branco)
+    if re.match(r'^```[a-zA-Z]*\s*\n\s*\n*\s*```$', s):
         return None
     return s
 
 
 def parse_selected_characters(field_value):
-    """Lê o markdown gerado por um campo `dropdown multiple` (checkbox)
-    e retorna a lista de caracteres canônicos selecionados."""
+    """Lê o valor de um campo `dropdown multiple` ou checkboxes e retorna
+    a lista de caracteres canônicos selecionados.
+
+    O GitHub Issue Forms pode renderizar a seleção em vários formatos
+    dependendo do tipo de campo:
+      1. CSV em uma linha (dropdown multiple — formato mais comum):
+         `External morphology (ext_morph), Internal oral cavity (internal_oral)`
+      2. Checkbox markdown (campo `checkboxes`):
+         `- [x] External morphology (ext_morph)`
+      3. Linha solta (dropdown single):
+         `External morphology (ext_morph)`
+    Esta função aceita os três.
+    """
     if not field_value:
         return []
     out = []
     for line in field_value.splitlines():
         m = re.match(r'^\s*-\s*\[\s*[xX]\s*\]\s*(.+?)\s*$', line)
         if m:
-            label = m.group(1)
+            label = m.group(1).strip()
             if label in CHARACTER_MAP:
                 out.append(CHARACTER_MAP[label])
-        else:
-            s = line.strip()
-            if s in CHARACTER_MAP:
-                out.append(CHARACTER_MAP[s])
+            continue
+        # senão, tenta CSV (dropdown multiple) ou single token
+        s = line.strip().rstrip(',')
+        if not s:
+            continue
+        if s in CHARACTER_MAP:
+            out.append(CHARACTER_MAP[s])
+            continue
+        # split por vírgula para o formato CSV
+        for token in s.split(','):
+            t = token.strip()
+            if t in CHARACTER_MAP:
+                out.append(CHARACTER_MAP[t])
     return list(dict.fromkeys(out))   # dedup, preserva ordem
 
 
@@ -280,20 +310,7 @@ def handle_add_reference(body, issue_number):
     chars_field = normalize_response(sec.get('Caráter descrito nesta referência'))
     if not chars_field:
         fail('Campo "Caráter" vazio.')
-    # checkboxes/multi-select vêm como "- [x] OPÇÃO" no markdown
-    chars_selected = []
-    for line in chars_field.splitlines():
-        m = re.match(r'^\s*-\s*\[\s*[xX]\s*\]\s*(.+?)\s*$', line)
-        if m:
-            label = m.group(1)
-            if label in CHARACTER_MAP:
-                chars_selected.append(CHARACTER_MAP[label])
-        else:
-            # fallback: linha solta com o nome (dropdown single)
-            s = line.strip()
-            if s in CHARACTER_MAP:
-                chars_selected.append(CHARACTER_MAP[s])
-    chars_selected = list(dict.fromkeys(chars_selected))  # dedup, preserva ordem
+    chars_selected = parse_selected_characters(chars_field)
     if not chars_selected:
         fail(f'Não consegui identificar o(s) caráter(es). Resposta crua:\n```\n{chars_field}\n```')
 
