@@ -2902,16 +2902,43 @@
       "tip_label": "Rhinella_achavali",
       "family": "Bufonidae",
       "ext_morph": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.",
+            "year": 2013,
+            "title": "The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae)",
+            "journal": "Journal of Herpetology",
+            "doi": "10.1670/13-028",
+            "raw": "Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.. 2013. The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae). Journal of Herpetology."
+          }
+        ]
       },
       "internal_oral": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.",
+            "year": 2013,
+            "title": "The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae)",
+            "journal": "Journal of Herpetology",
+            "doi": "10.1670/13-028",
+            "raw": "Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.. 2013. The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae). Journal of Herpetology."
+          }
+        ]
       },
       "chondrocranium": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.",
+            "year": 2013,
+            "title": "The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae)",
+            "journal": "Journal of Herpetology",
+            "doi": "10.1670/13-028",
+            "raw": "Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.. 2013. The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae). Journal of Herpetology."
+          }
+        ]
       }
     },
     {

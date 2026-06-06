@@ -1,9 +1,11 @@
-## Mudança aplicada (issue #3)
+## Mudança aplicada (issue #1)
 
-- **Nova espécie:** *Ranitomeya ichapama* (Dendrobatidae)
-- **`id`:** `ranitomeya_ichapama`
-- **`tip_label`:** `Ranitomeya_ichapama`
-- **Posição no banco:** 238 de 1058 (ordenada por família × espécie)
-- **Estado larval:** os 3 caracteres entram como `not_described` (girino ainda não descrito).
+- **Espécie:** *Rhinella achavali* (Bufonidae)
+- **Caráter(es):** External morphology (ext_morph), Internal oral cavity (internal_oral), Chondrocranium (chondrocranium)
+- **Autores:** Kolenc, F., Borteiro, C., Cotichelli, L., Baldo, D.,  Debat, C. M., and Vera Candioti, F.
+- **Ano:** 2013
+- **Título:** The Tadpole and Karyotype of Rhinella achavali (Anura: Bufonidae)
+- **Periódico:** Journal of Herpetology
+- **DOI:** [10.1670/13-028](https://doi.org/10.1670/13-028)
 
-Contribuição: Diogo B Provete
+Contribuição: Etielle Andrade Email: etlandrade@hotmail.com
