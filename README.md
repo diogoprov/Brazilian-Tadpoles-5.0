@@ -46,6 +46,7 @@ Cinco abas:
 ├── .github/
 │   ├── ISSUE_TEMPLATE/                # formulários para contribuições
 │   │   ├── add_reference.yml          # adicionar referência (auto-PR)
+│   │   ├── add_species.yml            # adicionar nova espécie (auto-PR)
 │   │   ├── general.yml                # outras sugestões (manual)
 │   │   └── config.yml                 # config dos templates
 │   └── workflows/
@@ -67,12 +68,13 @@ Depois abra <http://localhost:8000> (pare com `Ctrl + C`).
 
 ## Como contribuir
 
-A fonte canônica do banco é `assets/data/species.json` e a manutenção é feita via **GitHub Issues**. Há dois templates:
+A fonte canônica do banco é `assets/data/species.json` e a manutenção é feita via **GitHub Issues**. Há três templates:
 
-- **📚 Adicionar referência** ([abrir](https://github.com/diogoprov/Brazilian-Tadpoles-5.0/issues/new?template=add_reference.yml)) — para registrar uma referência que descreveu morf. externa, oral ou condrocrânio de uma espécie já no banco. Uma GitHub Action lê o formulário, modifica o `species.json` e abre um Pull Request automaticamente para revisão.
-- **💬 Outra sugestão** ([abrir](https://github.com/diogoprov/Brazilian-Tadpoles-5.0/issues/new?template=general.yml)) — typos, mudanças taxonômicas, novas espécies, bugs do site. Mantenedor revisa e implementa manualmente.
+- **📚 Adicionar referência** ([abrir](https://github.com/diogoprov/Brazilian-Tadpoles-5.0/issues/new?template=add_reference.yml)) — para registrar uma referência que descreveu morf. externa, oral ou condrocrânio de uma espécie já no banco. Auto-PR.
+- **🆕 Adicionar nova espécie** ([abrir](https://github.com/diogoprov/Brazilian-Tadpoles-5.0/issues/new?template=add_species.yml)) — para inserir uma espécie BR que ainda não está no banco. Opcionalmente, já registra a descrição larval no mesmo PR. Auto-PR.
+- **💬 Outra sugestão** ([abrir](https://github.com/diogoprov/Brazilian-Tadpoles-5.0/issues/new?template=general.yml)) — typos, mudanças taxonômicas, bugs do site. Manual.
 
-Fluxo do template "Adicionar referência":
+Fluxo dos templates auto-PR:
 
 ```
 Contribuidor preenche issue form

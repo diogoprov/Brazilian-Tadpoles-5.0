@@ -1,0 +1,124 @@
+name: "🆕 Adicionar nova espécie (Add new species)"
+description: "Adicionar uma espécie BR com girino livre-natante que ainda NÃO está no banco. Opcionalmente, já registrar a descrição larval no mesmo PR."
+title: "[spp] "
+labels: ["contribution", "add-species"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use esta forma para adicionar uma espécie que **ainda não está no banco**. Se a espécie JÁ existe e você só quer registrar uma referência nova, use o template **"📚 Adicionar referência"**.
+
+        **Famílias excluídas** (sem girino livre-natante, fora do escopo do banco): Brachycephalidae, Caligophrynidae, Ceuthomantidae, Craugastoridae, Eleutherodactylidae, Hemiphractidae, Neblinaphrynidae. Espécies destas famílias NÃO devem ser adicionadas.
+
+        Caso comum em espécies recém-descritas: o adulto foi descrito mas o girino ainda não — **deixe os campos de descrição larval em branco** e marque "Nenhum" abaixo. A espécie entra no banco com `status: not_described` nos 3 caracteres.
+
+  - type: input
+    id: species
+    attributes:
+      label: "Espécie (binomial completo)"
+      description: "Apenas `Gênero epíteto`, sem autor. Ex.: `Ranitomeya ichapama`."
+      placeholder: "Genus epithet"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: family
+    attributes:
+      label: "Família"
+      description: "Use a família atualmente aceita (segundo SBH / ASW / AmphibiaWeb)."
+      options:
+        - Allophrynidae
+        - Alsodidae
+        - Aromobatidae
+        - Bufonidae
+        - Centrolenidae
+        - Ceratophryidae
+        - Cycloramphidae
+        - Dendrobatidae
+        - Hylidae
+        - Hylodidae
+        - Leptodactylidae
+        - Microhylidae
+        - Odontophrynidae
+        - Phyllomedusidae
+        - Pipidae
+        - Ranidae
+    validations:
+      required: true
+
+  - type: input
+    id: orig_description_doi
+    attributes:
+      label: "DOI da descrição original da espécie (opcional)"
+      description: "Só para rastreabilidade — não é armazenado no JSON, fica no histórico do PR. Ex.: `10.11646/zootaxa.5xxx.x.x`"
+      placeholder: "10.xxxx/yyyy"
+
+  - type: dropdown
+    id: described_chars
+    attributes:
+      label: "Caracteres larvais JÁ descritos na literatura"
+      description: "Marque apenas caracteres com descrição publicada. Se o girino ainda não foi descrito, deixe TUDO desmarcado."
+      multiple: true
+      options:
+        - "External morphology (ext_morph)"
+        - "Internal oral cavity (internal_oral)"
+        - "Chondrocranium (chondrocranium)"
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Campos abaixo SÓ se você marcou algum caráter acima.** Se marcou, a referência informada será adicionada a TODOS os caracteres selecionados (caso típico de descrição integrativa). Se houver refs DIFERENTES para caracteres diferentes, abra esta forma para adicionar a espécie + 1 ref e use o template "📚 Adicionar referência" para as outras.
+
+  - type: input
+    id: ref_author
+    attributes:
+      label: "Autores da referência (girino)"
+      description: "Estilo livre. Ex.: `Silva, F. R., Provete, D. B. and Garey, M. V.`"
+
+  - type: input
+    id: ref_year
+    attributes:
+      label: "Ano de publicação"
+      placeholder: "2024"
+
+  - type: input
+    id: ref_title
+    attributes:
+      label: "Título do artigo"
+
+  - type: input
+    id: ref_journal
+    attributes:
+      label: "Periódico"
+
+  - type: input
+    id: ref_doi
+    attributes:
+      label: "DOI"
+      description: "Sem o prefixo `https://doi.org/`. Ex.: `10.11646/zootaxa.5168.1.9`"
+      placeholder: "10.xxxx/yyyy"
+
+  - type: textarea
+    id: ref_raw
+    attributes:
+      label: "Citação completa (raw) — opcional"
+      render: text
+
+  - type: input
+    id: contributor
+    attributes:
+      label: "Seu nome (para crédito no commit)"
+      description: "Opcional. Formato `Nome Sobrenome <email>` se quiser ser citado nas atribuições do git."
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Confirmações"
+      options:
+        - label: "Conferi que esta espécie ainda não está no banco (busquei pelo binomial)."
+          required: true
+        - label: "A espécie tem (ou se assume ter) girino livre-natante — NÃO é de família com desenvolvimento direto."
+          required: true
+        - label: "Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0)."
+          required: true

@@ -15,7 +15,9 @@ permissions:
 
 jobs:
   build-pr:
-    if: contains(github.event.issue.labels.*.name, 'add-reference')
+    if: >
+      contains(github.event.issue.labels.*.name, 'add-reference') ||
+      contains(github.event.issue.labels.*.name, 'add-species')
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
