@@ -1,16 +1,16 @@
 {
  "schema_version": "5.0.0",
  "source": "filogenia_jessyca_newNames.tre podada para as spp do banco",
- "generated": "2026-05-29",
+ "generated": "2026-06-05",
  "tip_count": 727,
  "tree": {
   "name": "",
   "length": 184.826881,
   "counts": {
    "total": 727,
-   "ext": 496,
-   "oral": 165,
-   "cond": 118
+   "ext": 497,
+   "oral": 166,
+   "cond": 119
   },
   "families": [
    "Allophrynidae",
@@ -162,9 +162,9 @@
     "length": 51.211583,
     "counts": {
      "total": 722,
-     "ext": 493,
-     "oral": 164,
-     "cond": 116
+     "ext": 494,
+     "oral": 165,
+     "cond": 117
     },
     "families": [
      "Allophrynidae",
@@ -188,9 +188,9 @@
       "length": 51.306441,
       "counts": {
        "total": 679,
-       "ext": 470,
-       "oral": 157,
-       "cond": 110
+       "ext": 471,
+       "oral": 158,
+       "cond": 111
       },
       "families": [
        "Allophrynidae",
@@ -213,9 +213,9 @@
         "length": 1.108638,
         "counts": {
          "total": 612,
-         "ext": 422,
-         "oral": 140,
-         "cond": 99
+         "ext": 423,
+         "oral": 141,
+         "cond": 100
         },
         "families": [
          "Allophrynidae",
@@ -235,9 +235,9 @@
           "length": 1.0567760000000002,
           "counts": {
            "total": 311,
-           "ext": 209,
-           "oral": 72,
-           "cond": 58
+           "ext": 210,
+           "oral": 73,
+           "cond": 59
           },
           "families": [
            "Allophrynidae",
@@ -1649,9 +1649,9 @@
             "length": 0.499342,
             "counts": {
              "total": 261,
-             "ext": 176,
-             "oral": 70,
-             "cond": 56
+             "ext": 177,
+             "oral": 71,
+             "cond": 57
             },
             "families": [
              "Allophrynidae",
@@ -1666,9 +1666,9 @@
               "length": 0.788076,
               "counts": {
                "total": 97,
-               "ext": 57,
-               "oral": 21,
-               "cond": 21
+               "ext": 58,
+               "oral": 22,
+               "cond": 22
               },
               "families": [
                "Bufonidae",
@@ -2453,9 +2453,9 @@
                 "length": 4.199041,
                 "counts": {
                  "total": 69,
-                 "ext": 33,
-                 "oral": 5,
-                 "cond": 9
+                 "ext": 34,
+                 "oral": 6,
+                 "cond": 10
                 },
                 "mrca_family": "Bufonidae",
                 "families": [
@@ -2845,9 +2845,9 @@
                   "length": 10.767519,
                   "counts": {
                    "total": 55,
-                   "ext": 30,
-                   "oral": 5,
-                   "cond": 9
+                   "ext": 31,
+                   "oral": 6,
+                   "cond": 10
                   },
                   "families": [
                    "Bufonidae"
@@ -2858,9 +2858,9 @@
                     "length": 3.618758,
                     "counts": {
                      "total": 50,
-                     "ext": 29,
-                     "oral": 5,
-                     "cond": 9
+                     "ext": 30,
+                     "oral": 6,
+                     "cond": 10
                     },
                     "families": [
                      "Bufonidae"
@@ -2871,9 +2871,9 @@
                       "length": 11.852705,
                       "counts": {
                        "total": 34,
-                       "ext": 23,
-                       "oral": 5,
-                       "cond": 9
+                       "ext": 24,
+                       "oral": 6,
+                       "cond": 10
                       },
                       "families": [
                        "Bufonidae"
@@ -2884,9 +2884,9 @@
                         "length": 9.443111,
                         "counts": {
                          "total": 33,
-                         "ext": 22,
-                         "oral": 5,
-                         "cond": 9
+                         "ext": 23,
+                         "oral": 6,
+                         "cond": 10
                         },
                         "mrca_genus": "Rhinella",
                         "families": [
@@ -3191,9 +3191,9 @@
                           "length": 1.957334,
                           "counts": {
                            "total": 22,
-                           "ext": 16,
-                           "oral": 5,
-                           "cond": 8
+                           "ext": 17,
+                           "oral": 6,
+                           "cond": 9
                           },
                           "families": [
                            "Bufonidae"
@@ -3204,9 +3204,9 @@
                             "length": 9.453307,
                             "counts": {
                              "total": 14,
-                             "ext": 9,
-                             "oral": 4,
-                             "cond": 6
+                             "ext": 10,
+                             "oral": 5,
+                             "cond": 7
                             },
                             "families": [
                              "Bufonidae"
@@ -3217,9 +3217,9 @@
                               "length": 3.640668,
                               "counts": {
                                "total": 9,
-                               "ext": 6,
-                               "oral": 3,
-                               "cond": 3
+                               "ext": 7,
+                               "oral": 4,
+                               "cond": 4
                               },
                               "families": [
                                "Bufonidae"
@@ -3327,9 +3327,9 @@
                                 "length": 2.180552,
                                 "counts": {
                                  "total": 5,
-                                 "ext": 4,
-                                 "oral": 2,
-                                 "cond": 2
+                                 "ext": 5,
+                                 "oral": 3,
+                                 "cond": 3
                                 },
                                 "families": [
                                  "Bufonidae"
@@ -3353,9 +3353,9 @@
                                   "length": 1.706512,
                                   "counts": {
                                    "total": 4,
-                                   "ext": 3,
-                                   "oral": 1,
-                                   "cond": 1
+                                   "ext": 4,
+                                   "oral": 2,
+                                   "cond": 2
                                   },
                                   "families": [
                                    "Bufonidae"
@@ -3379,9 +3379,9 @@
                                     "length": 0.131233,
                                     "counts": {
                                      "total": 3,
-                                     "ext": 2,
-                                     "oral": 0,
-                                     "cond": 0
+                                     "ext": 3,
+                                     "oral": 1,
+                                     "cond": 1
                                     },
                                     "families": [
                                      "Bufonidae"
@@ -3433,9 +3433,9 @@
                                       "length": 1.249364,
                                       "counts": {
                                        "total": 1,
-                                       "ext": 0,
-                                       "oral": 0,
-                                       "cond": 0
+                                       "ext": 1,
+                                       "oral": 1,
+                                       "cond": 1
                                       },
                                       "family": "Bufonidae",
                                       "genus": "Rhinella",

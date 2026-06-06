@@ -74,6 +74,25 @@ jobs:
               body: `❌ Não consegui aplicar a mudança automaticamente:\n\n${summary}\n\nCorrija a issue e o bot tenta de novo (basta editar a issue).`
             });
 
+      - name: Regenerate phylogeny.json
+        if: success()
+        run: |
+          python3 scripts/prune_phylogeny.py
+          echo "phylogeny.json regenerada a partir do species.json atualizado."
+
+      - name: Determine PR title / commit prefix
+        id: meta
+        if: success()
+        run: |
+          csv='${{ steps.labels.outputs.csv }}'
+          if echo "$csv" | grep -q "add-species"; then
+            prefix="data(species): add species"
+          else
+            prefix="data(refs): add reference"
+          fi
+          echo "prefix=$prefix" >> "$GITHUB_OUTPUT"
+          echo "Prefix: $prefix"
+
       - name: Create Pull Request
         if: success()
         id: cpr
@@ -83,10 +102,10 @@ jobs:
           branch: "auto/issue-${{ github.event.issue.number }}"
           base: main
           commit-message: |
-            data(refs): add reference from #${{ github.event.issue.number }}
+            ${{ steps.meta.outputs.prefix }} from #${{ github.event.issue.number }}
 
             Closes #${{ github.event.issue.number }}
-          title: "data(refs): add reference from #${{ github.event.issue.number }}"
+          title: "${{ steps.meta.outputs.prefix }} from #${{ github.event.issue.number }}"
           body-path: patch_summary.md
           labels: |
             automated

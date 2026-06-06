@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-29",
-  "count": 331,
+  "generated": "2026-06-05",
+  "count": 332,
   "by_family": {
     "Allophrynidae": [
       "Allophryne resplendens"
@@ -66,7 +66,6 @@
       "Vitreorana parvula"
     ],
     "Cycloramphidae": [
-      "Cycloramphis faustoi",
       "Cycloramphus catarinensis",
       "Cycloramphus diringshofeni",
       "Cycloramphus duseni",
@@ -82,6 +81,7 @@
       "Ranitomeya aquamarina",
       "Ranitomeya cyanovittata",
       "Ranitomeya hwata",
+      "Ranitomeya ichapama",
       "Ranitomeya walkari"
     ],
     "Hylidae": [
@@ -183,6 +183,7 @@
       "Ololygon tupinamba",
       "Ololygon v-signata",
       "Osteocephalus camufatus",
+      "Phyllodytes gravata",
       "Phyllodytes iuna",
       "Pseudis boliviana",
       "Pseudis caraya",
@@ -840,12 +841,6 @@
       "tip_label": "Crossodactylus_lutzorum",
       "family": "Hylodidae",
       "genus": "Crossodactylus"
-    },
-    {
-      "species": "Cycloramphis faustoi",
-      "tip_label": "Cycloramphis_faustoi",
-      "family": "Cycloramphidae",
-      "genus": "Cycloramphis"
     },
     {
       "species": "Cycloramphus catarinensis",
@@ -1706,6 +1701,12 @@
       "genus": "Phrynomedusa"
     },
     {
+      "species": "Phyllodytes gravata",
+      "tip_label": "Phyllodytes_gravata",
+      "family": "Hylidae",
+      "genus": "Phyllodytes"
+    },
+    {
       "species": "Phyllodytes iuna",
       "tip_label": "Phyllodytes_iuna",
       "family": "Hylidae",
@@ -2038,6 +2039,12 @@
     {
       "species": "Ranitomeya hwata",
       "tip_label": "Ranitomeya_hwata",
+      "family": "Dendrobatidae",
+      "genus": "Ranitomeya"
+    },
+    {
+      "species": "Ranitomeya ichapama",
+      "tip_label": "Ranitomeya_ichapama",
       "family": "Dendrobatidae",
       "genus": "Ranitomeya"
     },
