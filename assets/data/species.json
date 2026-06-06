@@ -1,7 +1,7 @@
 {
   "schema_version": "5.1.0",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-05-31",
+  "generated": "2026-06-06",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -12,7 +12,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1057,
+  "count": 1058,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -7016,6 +7016,26 @@
             "raw": "Twomey, E. M., P. R. Melo-Sampaio, J. L. Brown, S. Castroviejo-Fisher, L. A. G. Gagliardi-Urrutia, J. M. Padial, R. C. Gutiérrez, and J. C. Chaparro Auza. 2025. A new species of bamboo-dwelling Ranitomeya (Anura: Dendrobatidae) from the Upper Purus River Basin of Brazil and Peru. Zootaxa 5701: 428–446 (DOI: 10.11646/zootaxa.5701.4.2)."
           }
         ]
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "ranitomeya_ichapama",
+      "species": "Ranitomeya ichapama",
+      "genus": "Ranitomeya",
+      "epithet": "ichapama",
+      "tip_label": "Ranitomeya_ichapama",
+      "family": "Dendrobatidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
       },
       "internal_oral": {
         "status": "not_described",
