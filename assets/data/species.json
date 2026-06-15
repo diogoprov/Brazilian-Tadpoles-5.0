@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-06-08",
+  "generated": "2026-06-15",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -27951,12 +27951,30 @@
       "tip_label": "Physalaemus_ephippifer",
       "family": "Leptodactylidae",
       "ext_morph": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Branco, A. C., Araújo, F. B., Reis, A. J. O., Braga, B. S., Souza-Ferreira, M. L. C. and Oliveira-Bahia, V. R. L.",
+            "year": 2026,
+            "title": "Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae",
+            "journal": "Zoomorphology",
+            "doi": "10.1007/s00435-026-00793-z",
+            "raw": "```text\nBranco, A.C., Araújo, F.B., Reis, A.J.O. et al. Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae. Zoomorphology 145, 34 (2026). https://doi.org/10.1007/s00435-026-00793-z\n```"
+          }
+        ]
       },
       "internal_oral": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Branco, A. C., Araújo, F. B., Reis, A. J. O., Braga, B. S., Souza-Ferreira, M. L. C. and Oliveira-Bahia, V. R. L.",
+            "year": 2026,
+            "title": "Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae",
+            "journal": "Zoomorphology",
+            "doi": "10.1007/s00435-026-00793-z",
+            "raw": "```text\nBranco, A.C., Araújo, F.B., Reis, A.J.O. et al. Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae. Zoomorphology 145, 34 (2026). https://doi.org/10.1007/s00435-026-00793-z\n```"
+          }
+        ]
       },
       "chondrocranium": {
         "status": "not_described",

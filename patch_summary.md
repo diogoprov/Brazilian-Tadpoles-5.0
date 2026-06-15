@@ -1,11 +1,11 @@
-## Mudança aplicada (issue #7)
+## Mudança aplicada (issue #9)
 
-- **Espécie:** *Physalaemus erikae* (Leptodactylidae)
-- **Caráter(es):** Internal oral cavity (internal_oral), External morphology (ext_morph), Chondrocranium (chondrocranium)
-- **Autores:** M. I. R. R. de Oliveira, M. F. Napoli, M. F. Vera Candioti, C. V. de Mira-Mendes, C. S. Batista, I. R. Dias, D. S. Ruas, R. M. de Oliveira, M. Solé, and L. N. Weber
+- **Espécie:** *Physalaemus ephippifer* (Leptodactylidae)
+- **Caráter(es):** External morphology (ext_morph), Internal oral cavity (internal_oral)
+- **Autores:** Branco, A. C., Araújo, F. B., Reis, A. J. O., Braga, B. S., Souza-Ferreira, M. L. C. and Oliveira-Bahia, V. R. L.
 - **Ano:** 2026
-- **Título:** The tadpole of Physalaemus erikae Cruz and Pimenta, 2004, with notes on embryonic development (Anura: Leptodactylidae)
-- **Periódico:** South American Journal of Herpetology
-- **DOI:** [10.2994/SAJH-D-24-00016.1](https://doi.org/10.2994/SAJH-D-24-00016.1)
+- **Título:** Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae
+- **Periódico:** Zoomorphology
+- **DOI:** [10.1007/s00435-026-00793-z](https://doi.org/10.1007/s00435-026-00793-z)
 
-Contribuição: Diogo B Provete
+Contribuição: Diogo Provete

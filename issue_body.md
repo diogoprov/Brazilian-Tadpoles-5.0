@@ -1,14 +1,14 @@
 ### Espécie (binomial completo)
 
-Physalaemus erikae
+Physalaemus ephippifer
 
 ### Caráter descrito nesta referência
 
-Internal oral cavity (internal_oral), External morphology (ext_morph), Chondrocranium (chondrocranium)
+External morphology (ext_morph), Internal oral cavity (internal_oral)
 
 ### Autores da referência
 
-M. I. R. R. de Oliveira, M. F. Napoli, M. F. Vera Candioti, C. V. de Mira-Mendes, C. S. Batista, I. R. Dias, D. S. Ruas, R. M. de Oliveira, M. Solé, and L. N. Weber
+Branco, A. C., Araújo, F. B., Reis, A. J. O., Braga, B. S., Souza-Ferreira, M. L. C. and Oliveira-Bahia, V. R. L. 
 
 ### Ano de publicação
 
@@ -16,25 +16,25 @@ M. I. R. R. de Oliveira, M. F. Napoli, M. F. Vera Candioti, C. V. de Mira-Mendes
 
 ### Título do artigo
 
-The tadpole of Physalaemus erikae Cruz and Pimenta, 2004, with notes on embryonic development (Anura: Leptodactylidae)
+Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae
 
 ### Periódico
 
-South American Journal of Herpetology
+Zoomorphology
 
 ### DOI
 
-10.2994/SAJH-D-24-00016.1
+10.1007/s00435-026-00793-z
 
 ### Citação completa (raw) — opcional
 
 ```text
-Oliveira, M. I. R. R. de, M. F. Napoli, M. F. Vera Candioti, C. V. de Mira-Mendes, C. S. Batista, I. R. Dias, D. S. Ruas, R. M. de Oliveira, M. Solé, and L. N. Weber. 2026. The tadpole of Physalaemus erikae Cruz and Pimenta, 2004, with notes on embryonic development (Anura: Leptodactylidae). South American Journal of Herpetology 38: 10-19 (https://doi.org/10.2994/SAJH-D-24-00016.1).
+Branco, A.C., Araújo, F.B., Reis, A.J.O. et al. Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae. Zoomorphology 145, 34 (2026). https://doi.org/10.1007/s00435-026-00793-z
 ```
 
 ### Seu nome (para crédito no commit)
 
-Diogo B Provete
+Diogo Provete
 
 ### Confirmações
 
