@@ -32558,22 +32558,6 @@
             "journal": "Arquivos do Museu Nacional",
             "doi": null,
             "raw": "Miranda-Ribeiro, A. 1923. Observações sobre algumas phases evolutivas de Ceratophrys e Stombus. Arquivos do Museu Nacional 24:201-205."
-          },
-          {
-            "author": "Santos, Danusy Lopes, et al",
-            "year": 2023,
-            "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica",
-            "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
-          },
-          {
-            "author": null,
-            "year": 2021,
-            "title": null,
-            "journal": null,
-            "doi": null,
-            "raw": "Tiago Leite Pezzuti, Felipe Sá Fortes Leite, Denise de C. Rossa-Feres, Paulo Christiano Anchietta Garcia The Tadpoles of the Iron Quadrangle, Southeastern Brazil: A Baseline for Larval Knowledge and Anuran Conservation in a Diverse and Threatened Region, South American Journal of Herpetology, 22(sp1), 1-107, (15 December 2021)"
           }
         ]
       },
@@ -32866,8 +32850,25 @@
       "tip_label": "Proceratophrys_fryi",
       "family": "Odontophrynidae",
       "ext_morph": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Santos, Danusy Lopes, et al",
+            "year": 2023,
+            "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
+            "journal": "Biota Neotropica",
+            "doi": "10.1590/1676-0611-bn-2023-1486",
+            "raw": "Santos, Danusy Lopes, et al. “Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado”. Biota Neotropica, vol. 23, no 3, 2023, p. e20231486. DOI.org (Crossref), https://doi.org/10.1590/1676-0611-bn-2023-1486."
+          },
+          {
+            "author": "Pezzuti, T. L., Leite, F. S., Rossa-Feres, D. C. and Garcia, P. C. A",
+            "year": 2021,
+            "title": "The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region",
+            "journal": "South American Journal of Herpetology",
+            "doi": "10.2994/SAJH-D-20-00042.1",
+            "raw": "Pezzuti, T. L., Leite, F. S., Rossa-Feres, D. C. and Garcia, P. C. A. 2021. The tadpoles of the Iron Quadrangle, Southeastern Brazil: a baseline for larval knowledge and anuran conservation in a diverse and threatened region. South American Journal of Herpetology 22: 1–107."
+          }
+        ]
       },
       "internal_oral": {
         "status": "not_described",
@@ -32971,8 +32972,17 @@
         "refs": []
       },
       "chondrocranium": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "DIAS, P.H.S., CARVALHO-E-SILVA, ANA M. P. T. & CARVALHO-E-SILVA, S.P",
+            "year": 2013,
+            "title": "Larval chondrocranium morphology of five species of Proceratophrys Miranda-Ribeiro (Amphibia; Anura; Odontophrynidae)",
+            "journal": "Zootaxa",
+            "doi": null,
+            "raw": "DIAS, P.H.S., CARVALHO-E-SILVA, ANA M. P. T. & CARVALHO-E-SILVA, S.P..  2013. Larval chondrocranium morphology of five species of Proceratophrys Miranda-Ribeiro (Amphibia; Anura; Odontophrynidae). Zootaxa 3683 (4): 427–438."
+          }
+        ]
       }
     },
     {
