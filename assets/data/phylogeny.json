@@ -1,15 +1,15 @@
 {
  "schema_version": "5.0.0",
  "source": "filogenia_jessyca_newNames.tre podada para as spp do banco",
- "generated": "2026-06-08",
+ "generated": "2026-06-15",
  "tip_count": 727,
  "tree": {
   "name": "",
   "length": 184.826881,
   "counts": {
    "total": 727,
-   "ext": 498,
-   "oral": 167,
+   "ext": 499,
+   "oral": 168,
    "cond": 120
   },
   "families": [
@@ -162,8 +162,8 @@
     "length": 51.211583,
     "counts": {
      "total": 722,
-     "ext": 495,
-     "oral": 166,
+     "ext": 496,
+     "oral": 167,
      "cond": 118
     },
     "families": [
@@ -188,8 +188,8 @@
       "length": 51.306441,
       "counts": {
        "total": 679,
-       "ext": 472,
-       "oral": 159,
+       "ext": 473,
+       "oral": 160,
        "cond": 112
       },
       "families": [
@@ -213,8 +213,8 @@
         "length": 1.108638,
         "counts": {
          "total": 612,
-         "ext": 424,
-         "oral": 142,
+         "ext": 425,
+         "oral": 143,
          "cond": 101
         },
         "families": [
@@ -235,8 +235,8 @@
           "length": 1.0567760000000002,
           "counts": {
            "total": 311,
-           "ext": 211,
-           "oral": 74,
+           "ext": 212,
+           "oral": 75,
            "cond": 60
           },
           "families": [
@@ -1649,8 +1649,8 @@
             "length": 0.499342,
             "counts": {
              "total": 261,
-             "ext": 178,
-             "oral": 72,
+             "ext": 179,
+             "oral": 73,
              "cond": 58
             },
             "families": [
@@ -4381,8 +4381,8 @@
               "length": 3.102721,
               "counts": {
                "total": 164,
-               "ext": 120,
-               "oral": 50,
+               "ext": 121,
+               "oral": 51,
                "cond": 36
               },
               "families": [
@@ -4837,8 +4837,8 @@
                 "length": 4.173352,
                 "counts": {
                  "total": 148,
-                 "ext": 109,
-                 "oral": 48,
+                 "ext": 110,
+                 "oral": 49,
                  "cond": 35
                 },
                 "mrca_family": "Leptodactylidae",
@@ -7196,8 +7196,8 @@
                   "length": 2.537913,
                   "counts": {
                    "total": 64,
-                   "ext": 48,
-                   "oral": 27,
+                   "ext": 49,
+                   "oral": 28,
                    "cond": 11
                   },
                   "families": [
@@ -7209,8 +7209,8 @@
                     "length": 11.683685,
                     "counts": {
                      "total": 46,
-                     "ext": 38,
-                     "oral": 26,
+                     "ext": 39,
+                     "oral": 27,
                      "cond": 10
                     },
                     "families": [
@@ -7320,8 +7320,8 @@
                       "length": 5.399532,
                       "counts": {
                        "total": 42,
-                       "ext": 35,
-                       "oral": 25,
+                       "ext": 36,
+                       "oral": 26,
                        "cond": 9
                       },
                       "families": [
@@ -7347,8 +7347,8 @@
                         "length": 3.861666,
                         "counts": {
                          "total": 41,
-                         "ext": 34,
-                         "oral": 24,
+                         "ext": 35,
+                         "oral": 25,
                          "cond": 8
                         },
                         "families": [
@@ -7402,8 +7402,8 @@
                           "length": 3.689427,
                           "counts": {
                            "total": 39,
-                           "ext": 33,
-                           "oral": 23,
+                           "ext": 34,
+                           "oral": 24,
                            "cond": 7
                           },
                           "mrca_genus": "Physalaemus",
@@ -7821,8 +7821,8 @@
                             "length": 2.135352,
                             "counts": {
                              "total": 24,
-                             "ext": 21,
-                             "oral": 17,
+                             "ext": 22,
+                             "oral": 18,
                              "cond": 6
                             },
                             "families": [
@@ -7834,8 +7834,8 @@
                               "length": 8.344427,
                               "counts": {
                                "total": 8,
-                               "ext": 5,
-                               "oral": 5,
+                               "ext": 6,
+                               "oral": 6,
                                "cond": 3
                               },
                               "families": [
@@ -7847,8 +7847,8 @@
                                 "length": 1.614687,
                                 "counts": {
                                  "total": 7,
-                                 "ext": 4,
-                                 "oral": 4,
+                                 "ext": 5,
+                                 "oral": 5,
                                  "cond": 3
                                 },
                                 "families": [
@@ -7957,8 +7957,8 @@
                                   "length": 1.768094,
                                   "counts": {
                                    "total": 3,
-                                   "ext": 2,
-                                   "oral": 2,
+                                   "ext": 3,
+                                   "oral": 3,
                                    "cond": 2
                                   },
                                   "families": [
@@ -7983,8 +7983,8 @@
                                     "length": 2.851905,
                                     "counts": {
                                      "total": 2,
-                                     "ext": 1,
-                                     "oral": 1,
+                                     "ext": 2,
+                                     "oral": 2,
                                      "cond": 1
                                     },
                                     "families": [
@@ -8009,8 +8009,8 @@
                                       "length": 9.825416,
                                       "counts": {
                                        "total": 1,
-                                       "ext": 0,
-                                       "oral": 0,
+                                       "ext": 1,
+                                       "oral": 1,
                                        "cond": 0
                                       },
                                       "family": "Leptodactylidae",
