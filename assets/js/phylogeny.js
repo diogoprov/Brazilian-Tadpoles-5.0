@@ -1,4 +1,4 @@
-/* Filogenia interativa — Brazilian Tadpoles 5.0
+/* Filogenia interativa — The Rossa-Feres Tadpole Database (Brazilian Tadpoles 5.0.1)
    Le assets/data/phylogeny.json (arvore podada com MRCAs e counts pre-calculados)
    e renderiza em D3:
      - Layout COMPACTO via nodeSize() (canvas cresce sob demanda).
