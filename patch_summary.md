@@ -1,11 +1,11 @@
-## Mudança aplicada (issue #9)
+## Mudança aplicada (issue #11)
 
-- **Espécie:** *Physalaemus ephippifer* (Leptodactylidae)
-- **Caráter(es):** External morphology (ext_morph), Internal oral cavity (internal_oral)
-- **Autores:** Branco, A. C., Araújo, F. B., Reis, A. J. O., Braga, B. S., Souza-Ferreira, M. L. C. and Oliveira-Bahia, V. R. L.
+- **Espécie:** *Boana guarinimirim* (Hylidae)
+- **Caráter(es):** External morphology (ext_morph)
+- **Autores:** MARIANA VAINI, PEDRO MARINHO, KATYUSCIA ARAUJO-VIEIRA, CÉLIO F. B. HADDAD
 - **Ano:** 2026
-- **Título:** Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae
-- **Periódico:** Zoomorphology
-- **DOI:** [10.1007/s00435-026-00793-z](https://doi.org/10.1007/s00435-026-00793-z)
+- **Título:** The tadpole of Boana guarinimirim Marinho, Bang, Vidigal, and Giaretta, 2022 (Hylidae, Cophomantini)
+- **Periódico:** Zootaxa
+- **DOI:** [10.11646/zootaxa.5837.1.12](https://doi.org/10.11646/zootaxa.5837.1.12)
 
-Contribuição: Diogo Provete
+Contribuição: Diogo
