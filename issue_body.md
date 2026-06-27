@@ -1,14 +1,14 @@
 ### Espécie (binomial completo)
 
-Physalaemus ephippifer
+Boana guarinimirim
 
 ### Caráter descrito nesta referência
 
-External morphology (ext_morph), Internal oral cavity (internal_oral)
+External morphology (ext_morph)
 
 ### Autores da referência
 
-Branco, A. C., Araújo, F. B., Reis, A. J. O., Braga, B. S., Souza-Ferreira, M. L. C. and Oliveira-Bahia, V. R. L. 
+MARIANA VAINI, PEDRO MARINHO, KATYUSCIA ARAUJO-VIEIRA, CÉLIO F. B. HADDAD
 
 ### Ano de publicação
 
@@ -16,25 +16,25 @@ Branco, A. C., Araújo, F. B., Reis, A. J. O., Braga, B. S., Souza-Ferreira, M. 
 
 ### Título do artigo
 
-Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae
+The tadpole of Boana guarinimirim Marinho, Bang, Vidigal, and Giaretta, 2022 (Hylidae, Cophomantini)
 
 ### Periódico
 
-Zoomorphology
+Zootaxa
 
 ### DOI
 
-10.1007/s00435-026-00793-z
+10.11646/zootaxa.5837.1.12.
 
 ### Citação completa (raw) — opcional
 
 ```text
-Branco, A.C., Araújo, F.B., Reis, A.J.O. et al. Morphological characterization of the buccopharyngeal region in tadpoles of Physalaemus ephippifer (Steindachner, 1864), Anura, Leptodactylidae. Zoomorphology 145, 34 (2026). https://doi.org/10.1007/s00435-026-00793-z
+Vaini, Mariana, et al. The tadpole of Boana guarinimirim Marinho, Bang, Vidigal, and Giaretta, 2022 (Hylidae, Cophomantini). Zootaxa, v. 5837, n. 1, junho de 2026, p. 195–200. DOI.org (Crossref), https://doi.org/10.11646/zootaxa.5837.1.12.
 ```
 
 ### Seu nome (para crédito no commit)
 
-Diogo Provete
+Diogo
 
 ### Confirmações
 

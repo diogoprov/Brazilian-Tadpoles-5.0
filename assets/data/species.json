@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-06-15",
+  "generated": "2026-06-27",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -9166,8 +9166,17 @@
       "tip_label": "Boana_guarinimirim",
       "family": "Hylidae",
       "ext_morph": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "MARIANA VAINI, PEDRO MARINHO, KATYUSCIA ARAUJO-VIEIRA, CÉLIO F. B. HADDAD",
+            "year": 2026,
+            "title": "The tadpole of Boana guarinimirim Marinho, Bang, Vidigal, and Giaretta, 2022 (Hylidae, Cophomantini)",
+            "journal": "Zootaxa",
+            "doi": "10.11646/zootaxa.5837.1.12",
+            "raw": "```text\nVaini, Mariana, et al. The tadpole of Boana guarinimirim Marinho, Bang, Vidigal, and Giaretta, 2022 (Hylidae, Cophomantini). Zootaxa, v. 5837, n. 1, junho de 2026, p. 195–200. DOI.org (Crossref), https://doi.org/10.11646/zootaxa.5837.1.12.\n```"
+          }
+        ]
       },
       "internal_oral": {
         "status": "not_described",
