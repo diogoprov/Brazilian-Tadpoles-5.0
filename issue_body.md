@@ -1,42 +1,51 @@
 ### Espécie (binomial completo)
 
-Boana guarinimirim
+Dendropsophus liliae
 
-### Caráter descrito nesta referência
+### Família
 
-External morphology (ext_morph)
+Hylidae
 
-### Autores da referência
+### DOI da descrição original da espécie (opcional)
 
-MARIANA VAINI, PEDRO MARINHO, KATYUSCIA ARAUJO-VIEIRA, CÉLIO F. B. HADDAD
+10.1371/journal.pone.0351087
+
+### Caracteres larvais JÁ descritos na literatura
+
+_No response_
+
+### Autores da referência (girino)
+
+_No response_
 
 ### Ano de publicação
 
-2026
+_No response_
 
 ### Título do artigo
 
-The tadpole of Boana guarinimirim Marinho, Bang, Vidigal, and Giaretta, 2022 (Hylidae, Cophomantini)
+_No response_
 
 ### Periódico
 
-Zootaxa
+_No response_
 
 ### DOI
 
-10.11646/zootaxa.5837.1.12.
+_No response_
 
 ### Citação completa (raw) — opcional
 
 ```text
-Vaini, Mariana, et al. The tadpole of Boana guarinimirim Marinho, Bang, Vidigal, and Giaretta, 2022 (Hylidae, Cophomantini). Zootaxa, v. 5837, n. 1, junho de 2026, p. 195–200. DOI.org (Crossref), https://doi.org/10.11646/zootaxa.5837.1.12.
+
 ```
 
 ### Seu nome (para crédito no commit)
 
-Diogo
+Diogo B. Provete <dbprovete@gmail.com>
 
 ### Confirmações
 
-- [x] Conferi que esta referência ainda não está no banco para esta espécie+caráter.
+- [x] Conferi que esta espécie ainda não está no banco (busquei pelo binomial).
+- [x] A espécie tem (ou se assume ter) girino livre-natante — NÃO é de família com desenvolvimento direto.
 - [x] Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0).
