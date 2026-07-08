@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-06-27",
+  "generated": "2026-07-08",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -13,7 +13,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1059,
+  "count": 1060,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -12514,6 +12514,26 @@
             "raw": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W. (2022). Tadpoles of Central Amazonia (Amphibia: Anura). Zootaxa, 5223(1), 1-149"
           }
         ]
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "dendropsophus_liliae",
+      "species": "Dendropsophus liliae",
+      "genus": "Dendropsophus",
+      "epithet": "liliae",
+      "tip_label": "Dendropsophus_liliae",
+      "family": "Hylidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
       },
       "internal_oral": {
         "status": "not_described",

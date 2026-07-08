@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-27",
-  "count": 332,
+  "generated": "2026-07-08",
+  "count": 333,
   "by_family": {
     "Allophrynidae": [
       "Allophryne resplendens"
@@ -114,6 +114,7 @@
       "Bokermannohyla vulcaniae",
       "Corythomantis botoque",
       "Dendropsophus bilobatus",
+      "Dendropsophus liliae",
       "Dendropsophus limai",
       "Dendropsophus minimus",
       "Dendropsophus tapacurensis",
@@ -935,6 +936,12 @@
     {
       "species": "Dendropsophus bilobatus",
       "tip_label": "Dendropsophus_bilobatus",
+      "family": "Hylidae",
+      "genus": "Dendropsophus"
+    },
+    {
+      "species": "Dendropsophus liliae",
+      "tip_label": "Dendropsophus_liliae",
       "family": "Hylidae",
       "genus": "Dendropsophus"
     },
