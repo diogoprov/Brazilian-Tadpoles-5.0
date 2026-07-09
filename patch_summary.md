@@ -1,11 +1,11 @@
-## Mudança aplicada (issue #13)
+## Mudança aplicada (issue #15)
 
-- **Nova espécie:** *Dendropsophus liliae* (Hylidae)
-- **`id`:** `dendropsophus_liliae`
-- **`tip_label`:** `Dendropsophus_liliae`
-- **Posição no banco:** 402 de 1060 (ordenada por família × espécie)
-- **Estado larval:** os 3 caracteres entram como `not_described` (girino ainda não descrito).
+- **Espécie:** *Pithecopus gonzagai* (Phyllomedusidae)
+- **Caráter(es):** Internal oral cavity (internal_oral), External morphology (ext_morph), Chondrocranium (chondrocranium)
+- **Autores:** Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.
+- **Ano:** 2025
+- **Título:** Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae)
+- **Periódico:** Herpetological Monographs
+- **DOI:** [10.1655/0733-1347-39.1.4](https://doi.org/10.1655/0733-1347-39.1.4)
 
-Contribuição: Diogo B. Provete <dbprovete@gmail.com>
-
-Descrição original da espécie (referência, não salva no JSON): https://doi.org/10.1371/journal.pone.0351087
+Contribuição: Luiz Antunes <luizgustavo4563@gmail.com>

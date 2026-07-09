@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-07-08",
+  "generated": "2026-07-09",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -35125,16 +35125,42 @@
             "journal": "Biota Neotropica",
             "doi": "10.1590/1676-0611-BN-2018-0718",
             "raw": "Dubeux  M.J.M,  Nascimento  F.A.C.,  Lima  L.R.,  Magalhães  F.M.,  Silva  I.R., Gonçalves  U., Almeida  J.P.F., Correia  L.L.,  Garda  A.A.,  Mesquita  D.O.,  Rossa-Feres  D.C.  & Mott  T.  2020.  Morphological  characterization  and  taxonomic  key  of  tadpoles (Amphibia:  Anura)  from  the  northern  region  of  the  Atlantic Forest. Biota Neotropica 20 (2): e20180718. https://doi.org/10.1590/1676-0611-BN-2018-0718"
+          },
+          {
+            "author": "Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.",
+            "year": 2025,
+            "title": "Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae)",
+            "journal": "Herpetological Monographs",
+            "doi": "10.1655/0733-1347-39.1.4",
+            "raw": "Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.. 2025. Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae). Herpetological Monographs."
           }
         ]
       },
       "internal_oral": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.",
+            "year": 2025,
+            "title": "Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae)",
+            "journal": "Herpetological Monographs",
+            "doi": "10.1655/0733-1347-39.1.4",
+            "raw": "Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.. 2025. Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae). Herpetological Monographs."
+          }
+        ]
       },
       "chondrocranium": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.",
+            "year": 2025,
+            "title": "Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae)",
+            "journal": "Herpetological Monographs",
+            "doi": "10.1655/0733-1347-39.1.4",
+            "raw": "Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.. 2025. Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae). Herpetological Monographs."
+          }
+        ]
       }
     },
     {
