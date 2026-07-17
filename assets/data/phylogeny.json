@@ -1,7 +1,7 @@
 {
  "schema_version": "5.0.0",
  "source": "filogenia_jessyca_newNames.tre podada para as spp do banco",
- "generated": "2026-07-08",
+ "generated": "2026-07-09",
  "tip_count": 727,
  "tree": {
   "name": "",
@@ -9,8 +9,8 @@
   "counts": {
    "total": 727,
    "ext": 499,
-   "oral": 168,
-   "cond": 120
+   "oral": 169,
+   "cond": 121
   },
   "families": [
    "Allophrynidae",
@@ -163,8 +163,8 @@
     "counts": {
      "total": 722,
      "ext": 496,
-     "oral": 167,
-     "cond": 118
+     "oral": 168,
+     "cond": 119
     },
     "families": [
      "Allophrynidae",
@@ -189,8 +189,8 @@
       "counts": {
        "total": 679,
        "ext": 473,
-       "oral": 160,
-       "cond": 112
+       "oral": 161,
+       "cond": 113
       },
       "families": [
        "Allophrynidae",
@@ -214,8 +214,8 @@
         "counts": {
          "total": 612,
          "ext": 425,
-         "oral": 143,
-         "cond": 101
+         "oral": 144,
+         "cond": 102
         },
         "families": [
          "Allophrynidae",
@@ -8987,8 +8987,8 @@
           "counts": {
            "total": 301,
            "ext": 213,
-           "oral": 68,
-           "cond": 41
+           "oral": 69,
+           "cond": 42
           },
           "families": [
            "Ceratophryidae",
@@ -9002,8 +9002,8 @@
             "counts": {
              "total": 295,
              "ext": 209,
-             "oral": 66,
-             "cond": 40
+             "oral": 67,
+             "cond": 41
             },
             "families": [
              "Hylidae",
@@ -9016,8 +9016,8 @@
               "counts": {
                "total": 24,
                "ext": 23,
-               "oral": 4,
-               "cond": 3
+               "oral": 5,
+               "cond": 4
               },
               "mrca_family": "Phyllomedusidae",
               "families": [
@@ -9030,8 +9030,8 @@
                 "counts": {
                  "total": 23,
                  "ext": 22,
-                 "oral": 4,
-                 "cond": 3
+                 "oral": 5,
+                 "cond": 4
                 },
                 "families": [
                  "Phyllomedusidae"
@@ -9057,8 +9057,8 @@
                   "counts": {
                    "total": 22,
                    "ext": 21,
-                   "oral": 4,
-                   "cond": 3
+                   "oral": 5,
+                   "cond": 4
                   },
                   "families": [
                    "Phyllomedusidae"
@@ -9112,8 +9112,8 @@
                     "counts": {
                      "total": 20,
                      "ext": 19,
-                     "oral": 4,
-                     "cond": 3
+                     "oral": 5,
+                     "cond": 4
                     },
                     "families": [
                      "Phyllomedusidae"
@@ -9125,8 +9125,8 @@
                       "counts": {
                        "total": 13,
                        "ext": 12,
-                       "oral": 1,
-                       "cond": 3
+                       "oral": 2,
+                       "cond": 4
                       },
                       "families": [
                        "Phyllomedusidae"
@@ -9138,8 +9138,8 @@
                         "counts": {
                          "total": 2,
                          "ext": 1,
-                         "oral": 0,
-                         "cond": 0
+                         "oral": 1,
+                         "cond": 1
                         },
                         "mrca_genus": "Pithecopus",
                         "families": [
@@ -9152,8 +9152,8 @@
                           "counts": {
                            "total": 1,
                            "ext": 1,
-                           "oral": 0,
-                           "cond": 0
+                           "oral": 1,
+                           "cond": 1
                           },
                           "family": "Phyllomedusidae",
                           "genus": "Pithecopus",

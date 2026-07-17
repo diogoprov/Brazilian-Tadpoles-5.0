@@ -1,38 +1,30 @@
 ### Espécie (binomial completo)
 
-Dendropsophus liliae
+Pithecopus gonzagai
 
-### Família
+### Caráter descrito nesta referência
 
-Hylidae
+Internal oral cavity (internal_oral), External morphology (ext_morph), Chondrocranium (chondrocranium)
 
-### DOI da descrição original da espécie (opcional)
+### Autores da referência
 
-10.1371/journal.pone.0351087
-
-### Caracteres larvais JÁ descritos na literatura
-
-_No response_
-
-### Autores da referência (girino)
-
-_No response_
+Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.
 
 ### Ano de publicação
 
-_No response_
+2025
 
 ### Título do artigo
 
-_No response_
+Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae)
 
 ### Periódico
 
-_No response_
+Herpetological Monographs
 
 ### DOI
 
-_No response_
+10.1655/0733-1347-39.1.4
 
 ### Citação completa (raw) — opcional
 
@@ -42,10 +34,9 @@ _No response_
 
 ### Seu nome (para crédito no commit)
 
-Diogo B. Provete <dbprovete@gmail.com>
+Luiz Antunes <luizgustavo4563@gmail.com>
 
 ### Confirmações
 
-- [x] Conferi que esta espécie ainda não está no banco (busquei pelo binomial).
-- [x] A espécie tem (ou se assume ter) girino livre-natante — NÃO é de família com desenvolvimento direto.
+- [x] Conferi que esta referência ainda não está no banco para esta espécie+caráter.
 - [x] Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0).
