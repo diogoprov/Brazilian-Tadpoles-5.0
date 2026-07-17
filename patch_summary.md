@@ -1,11 +1,11 @@
-## Mudança aplicada (issue #13)
+## Mudança aplicada (issue #17)
 
-- **Nova espécie:** *Dendropsophus liliae* (Hylidae)
-- **`id`:** `dendropsophus_liliae`
-- **`tip_label`:** `Dendropsophus_liliae`
-- **Posição no banco:** 402 de 1060 (ordenada por família × espécie)
-- **Estado larval:** os 3 caracteres entram como `not_described` (girino ainda não descrito).
+- **Espécie:** *Physalaemus claptoni* (Leptodactylidae)
+- **Caráter(es):** External morphology (ext_morph)
+- **Autores:** Raíla Brena Araújo, Iasodhara Rodrigues Freire, Filipe Augusto Cavalcanti do Nascimento, Tiago Leite Pezzuti
+- **Ano:** 2025
+- **Título:** The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae)
+- **Periódico:** Zoologischer Anzeiger
+- **DOI:** [10.1016/j.jcz.2025.08.011](https://doi.org/10.1016/j.jcz.2025.08.011)
 
-Contribuição: Diogo B. Provete <dbprovete@gmail.com>
-
-Descrição original da espécie (referência, não salva no JSON): https://doi.org/10.1371/journal.pone.0351087
+Contribuição: Diogo

@@ -1,51 +1,42 @@
 ### Espécie (binomial completo)
 
-Dendropsophus liliae
+Physalaemus claptoni
 
-### Família
+### Caráter descrito nesta referência
 
-Hylidae
+External morphology (ext_morph)
 
-### DOI da descrição original da espécie (opcional)
+### Autores da referência
 
-10.1371/journal.pone.0351087
-
-### Caracteres larvais JÁ descritos na literatura
-
-_No response_
-
-### Autores da referência (girino)
-
-_No response_
+Raíla Brena Araújo, Iasodhara Rodrigues Freire, Filipe Augusto Cavalcanti do Nascimento, Tiago Leite Pezzuti
 
 ### Ano de publicação
 
-_No response_
+2025
 
 ### Título do artigo
 
-_No response_
+The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae)
 
 ### Periódico
 
-_No response_
+Zoologischer Anzeiger
 
 ### DOI
 
-_No response_
+10.1016/j.jcz.2025.08.011
 
 ### Citação completa (raw) — opcional
 
 ```text
-
+Araújo, R. B., Freire, I. R., do Nascimento, F. A. C., & Pezzuti, T. L. (2025). The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae). Zoologischer Anzeiger 319: 78-89
 ```
 
 ### Seu nome (para crédito no commit)
 
-Diogo B. Provete <dbprovete@gmail.com>
+Diogo
 
 ### Confirmações
 
-- [x] Conferi que esta espécie ainda não está no banco (busquei pelo binomial).
-- [x] A espécie tem (ou se assume ter) girino livre-natante — NÃO é de família com desenvolvimento direto.
+- [x] Conferi que esta referência ainda não está no banco para esta espécie+caráter.
 - [x] Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0).
