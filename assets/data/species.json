@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-07-08",
+  "generated": "2026-07-17",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -27799,8 +27799,17 @@
       "tip_label": "Physalaemus_claptoni",
       "family": "Leptodactylidae",
       "ext_morph": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Raíla Brena Araújo, Iasodhara Rodrigues Freire, Filipe Augusto Cavalcanti do Nascimento, Tiago Leite Pezzuti",
+            "year": 2025,
+            "title": "The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae)",
+            "journal": "Zoologischer Anzeiger",
+            "doi": "10.1016/j.jcz.2025.08.011",
+            "raw": "```text\nAraújo, R. B., Freire, I. R., do Nascimento, F. A. C., & Pezzuti, T. L. (2025). The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae). Zoologischer Anzeiger 319: 78-89\n```"
+          }
+        ]
       },
       "internal_oral": {
         "status": "not_described",

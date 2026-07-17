@@ -1,14 +1,14 @@
 {
  "schema_version": "5.0.0",
  "source": "filogenia_jessyca_newNames.tre podada para as spp do banco",
- "generated": "2026-07-08",
+ "generated": "2026-07-17",
  "tip_count": 727,
  "tree": {
   "name": "",
   "length": 184.826881,
   "counts": {
    "total": 727,
-   "ext": 499,
+   "ext": 500,
    "oral": 168,
    "cond": 120
   },
@@ -162,7 +162,7 @@
     "length": 51.211583,
     "counts": {
      "total": 722,
-     "ext": 496,
+     "ext": 497,
      "oral": 167,
      "cond": 118
     },
@@ -188,7 +188,7 @@
       "length": 51.306441,
       "counts": {
        "total": 679,
-       "ext": 473,
+       "ext": 474,
        "oral": 160,
        "cond": 112
       },
@@ -213,7 +213,7 @@
         "length": 1.108638,
         "counts": {
          "total": 612,
-         "ext": 425,
+         "ext": 426,
          "oral": 143,
          "cond": 101
         },
@@ -235,7 +235,7 @@
           "length": 1.0567760000000002,
           "counts": {
            "total": 311,
-           "ext": 212,
+           "ext": 213,
            "oral": 75,
            "cond": 60
           },
@@ -1649,7 +1649,7 @@
             "length": 0.499342,
             "counts": {
              "total": 261,
-             "ext": 179,
+             "ext": 180,
              "oral": 73,
              "cond": 58
             },
@@ -4381,7 +4381,7 @@
               "length": 3.102721,
               "counts": {
                "total": 164,
-               "ext": 121,
+               "ext": 122,
                "oral": 51,
                "cond": 36
               },
@@ -4837,7 +4837,7 @@
                 "length": 4.173352,
                 "counts": {
                  "total": 148,
-                 "ext": 110,
+                 "ext": 111,
                  "oral": 49,
                  "cond": 35
                 },
@@ -7196,7 +7196,7 @@
                   "length": 2.537913,
                   "counts": {
                    "total": 64,
-                   "ext": 49,
+                   "ext": 50,
                    "oral": 28,
                    "cond": 11
                   },
@@ -7209,7 +7209,7 @@
                     "length": 11.683685,
                     "counts": {
                      "total": 46,
-                     "ext": 39,
+                     "ext": 40,
                      "oral": 27,
                      "cond": 10
                     },
@@ -7320,7 +7320,7 @@
                       "length": 5.399532,
                       "counts": {
                        "total": 42,
-                       "ext": 36,
+                       "ext": 37,
                        "oral": 26,
                        "cond": 9
                       },
@@ -7347,7 +7347,7 @@
                         "length": 3.861666,
                         "counts": {
                          "total": 41,
-                         "ext": 35,
+                         "ext": 36,
                          "oral": 25,
                          "cond": 8
                         },
@@ -7402,7 +7402,7 @@
                           "length": 3.689427,
                           "counts": {
                            "total": 39,
-                           "ext": 34,
+                           "ext": 35,
                            "oral": 24,
                            "cond": 7
                           },
@@ -7416,7 +7416,7 @@
                             "length": 7.111864,
                             "counts": {
                              "total": 15,
-                             "ext": 12,
+                             "ext": 13,
                              "oral": 6,
                              "cond": 1
                             },
@@ -7442,7 +7442,7 @@
                               "length": 4.191466,
                               "counts": {
                                "total": 14,
-                               "ext": 11,
+                               "ext": 12,
                                "oral": 5,
                                "cond": 0
                               },
@@ -7468,7 +7468,7 @@
                                 "length": 1.221422,
                                 "counts": {
                                  "total": 13,
-                                 "ext": 10,
+                                 "ext": 11,
                                  "oral": 5,
                                  "cond": 0
                                 },
@@ -7718,7 +7718,7 @@
                                   "length": 5.824336,
                                   "counts": {
                                    "total": 4,
-                                   "ext": 2,
+                                   "ext": 3,
                                    "oral": 1,
                                    "cond": 0
                                   },
@@ -7731,7 +7731,7 @@
                                     "length": 1.385924,
                                     "counts": {
                                      "total": 2,
-                                     "ext": 1,
+                                     "ext": 2,
                                      "oral": 1,
                                      "cond": 0
                                     },
@@ -7757,7 +7757,7 @@
                                       "length": 6.80487,
                                       "counts": {
                                        "total": 1,
-                                       "ext": 0,
+                                       "ext": 1,
                                        "oral": 0,
                                        "cond": 0
                                       },
