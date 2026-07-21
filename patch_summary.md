@@ -1,11 +1,11 @@
-## Mudança aplicada (issue #15)
+## Mudança aplicada (issue #19)
 
-- **Espécie:** *Pithecopus gonzagai* (Phyllomedusidae)
-- **Caráter(es):** Internal oral cavity (internal_oral), External morphology (ext_morph), Chondrocranium (chondrocranium)
-- **Autores:** Araújo, R. B., Magalhães, R. F., Santos, D. F., Dubeux, M. J., Strüssmann, C., Lima, A. P., Lucas, E. M., Orrico, V. G., Baêta. D. P., Costa, C. A. e Pezzuti, T. L.
-- **Ano:** 2025
-- **Título:** Tadpole Morphology of Pithecopus Cope 1866 and a Review of Larval Characters in Phyllomedusinae G€unther 1858 (Anura: Hylidae)
-- **Periódico:** Herpetological Monographs
-- **DOI:** [10.1655/0733-1347-39.1.4](https://doi.org/10.1655/0733-1347-39.1.4)
+- **Espécie:** *Dendrophryniscus lauroi* (Bufonidae)
+- **Caráter(es):** External morphology (ext_morph), Internal oral cavity (internal_oral), Chondrocranium (chondrocranium)
+- **Autores:** Daniel Barreto de Góes, Sergio Potsch de Carvalho-e-Silva, Jorge Kelvin Torres Lopez, Pedro Henrique dos Santos Dias, Leandro Sabagh, Florencia Vera Candioti, Ana Maria Paulino Telles de Carvalho-e-Silva
+- **Ano:** 2026
+- **Título:** Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae)
+- **Periódico:** Journal of Morphology
+- **DOI:** [10.1002/jmor.70146](https://doi.org/10.1002/jmor.70146)
 
-Contribuição: Luiz Antunes <luizgustavo4563@gmail.com>
+Contribuição: Diogo B Provete

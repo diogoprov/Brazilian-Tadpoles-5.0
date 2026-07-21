@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-07-09",
+  "generated": "2026-07-21",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -2032,16 +2032,43 @@
       "tip_label": "Dendrophryniscus_lauroi",
       "family": "Bufonidae",
       "ext_morph": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Daniel Barreto de Góes, Sergio Potsch de Carvalho-e-Silva, Jorge Kelvin Torres Lopez, Pedro Henrique dos Santos Dias, Leandro Sabagh, Florencia Vera Candioti, Ana Maria Paulino Telles de Carvalho-e-Silva",
+            "year": 2026,
+            "title": "Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae)",
+            "journal": "Journal of Morphology",
+            "doi": "10.1002/jmor.70146",
+            "raw": "```text\nGóes, D. B. d., S. P. d. Carvalho-e-Silva, J. K. Torres Lopez, et al. 2026. Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae). Journal of Morphology 287: e70146. https://doi.org/10.1002/jmor.70146.\n```"
+          }
+        ]
       },
       "internal_oral": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Daniel Barreto de Góes, Sergio Potsch de Carvalho-e-Silva, Jorge Kelvin Torres Lopez, Pedro Henrique dos Santos Dias, Leandro Sabagh, Florencia Vera Candioti, Ana Maria Paulino Telles de Carvalho-e-Silva",
+            "year": 2026,
+            "title": "Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae)",
+            "journal": "Journal of Morphology",
+            "doi": "10.1002/jmor.70146",
+            "raw": "```text\nGóes, D. B. d., S. P. d. Carvalho-e-Silva, J. K. Torres Lopez, et al. 2026. Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae). Journal of Morphology 287: e70146. https://doi.org/10.1002/jmor.70146.\n```"
+          }
+        ]
       },
       "chondrocranium": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Daniel Barreto de Góes, Sergio Potsch de Carvalho-e-Silva, Jorge Kelvin Torres Lopez, Pedro Henrique dos Santos Dias, Leandro Sabagh, Florencia Vera Candioti, Ana Maria Paulino Telles de Carvalho-e-Silva",
+            "year": 2026,
+            "title": "Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae)",
+            "journal": "Journal of Morphology",
+            "doi": "10.1002/jmor.70146",
+            "raw": "```text\nGóes, D. B. d., S. P. d. Carvalho-e-Silva, J. K. Torres Lopez, et al. 2026. Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae). Journal of Morphology 287: e70146. https://doi.org/10.1002/jmor.70146.\n```"
+          }
+        ]
       }
     },
     {
