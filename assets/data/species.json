@@ -13,7 +13,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1060,
+  "count": 1061,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -1293,6 +1293,26 @@
       "genus": "Dryadobates",
       "epithet": "bokermanni",
       "tip_label": "Dryadobates_bokermanni",
+      "family": "Aromobatidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "dryadobates_caissara",
+      "species": "Dryadobates caissara",
+      "genus": "Dryadobates",
+      "epithet": "caissara",
+      "tip_label": "Dryadobates_caissara",
       "family": "Aromobatidae",
       "ext_morph": {
         "status": "not_described",
