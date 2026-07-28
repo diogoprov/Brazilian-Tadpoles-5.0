@@ -15,6 +15,7 @@
       "Allobates pacaas",
       "Allobates paleci",
       "Allobates ripicolus",
+      "Allobates tanaru",
       "Allobates vanzolinius",
       "Allobates velocicantus",
       "Anomaloglossus tepequem",
@@ -493,6 +494,12 @@
     {
       "species": "Allobates ripicolus",
       "tip_label": "Allobates_ripicolus",
+      "family": "Aromobatidae",
+      "genus": "Allobates"
+    },
+    {
+      "species": "Allobates tanaru",
+      "tip_label": "Allobates_tanaru",
       "family": "Aromobatidae",
       "genus": "Allobates"
     },

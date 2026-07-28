@@ -1,6 +1,6 @@
 ### Espécie (binomial completo)
 
-Dryadobates caissara
+Allobates tanaru
 
 ### Família
 

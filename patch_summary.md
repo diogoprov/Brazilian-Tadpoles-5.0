@@ -1,9 +1,9 @@
-## Mudança aplicada (issue #23)
+## Mudança aplicada (issue #21)
 
-- **Nova espécie:** *Dryadobates caissara* (Aromobatidae)
-- **`id`:** `dryadobates_caissara`
-- **`tip_label`:** `Dryadobates_caissara`
-- **Posição no banco:** 48 de 1061 (ordenada por família × espécie)
+- **Nova espécie:** *Allobates tanaru* (Aromobatidae)
+- **`id`:** `allobates_tanaru`
+- **`tip_label`:** `Allobates_tanaru`
+- **Posição no banco:** 35 de 1061 (ordenada por família × espécie)
 - **Estado larval:** os 3 caracteres entram como `not_described` (girino ainda não descrito).
 
 Contribuição: Diogo B Provete

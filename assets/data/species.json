@@ -978,6 +978,26 @@
       }
     },
     {
+      "id": "allobates_tanaru",
+      "species": "Allobates tanaru",
+      "genus": "Allobates",
+      "epithet": "tanaru",
+      "tip_label": "Allobates_tanaru",
+      "family": "Aromobatidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
       "id": "allobates_tapajos",
       "species": "Allobates tapajos",
       "genus": "Allobates",
