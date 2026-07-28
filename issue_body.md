@@ -1,35 +1,35 @@
 ### Espécie (binomial completo)
 
-Dendrophryniscus lauroi
+Physalaemus claptoni
 
 ### Caráter descrito nesta referência
 
-External morphology (ext_morph), Internal oral cavity (internal_oral), Chondrocranium (chondrocranium)
+External morphology (ext_morph)
 
 ### Autores da referência
 
-Daniel Barreto de Góes, Sergio Potsch de Carvalho-e-Silva, Jorge Kelvin Torres Lopez, Pedro Henrique dos Santos Dias, Leandro Sabagh, Florencia Vera Candioti, Ana Maria Paulino Telles de Carvalho-e-Silva
+Raíla Brena Araújo, Iasodhara Rodrigues Freire, Filipe Augusto Cavalcanti do Nascimento, Tiago Leite Pezzuti
 
 ### Ano de publicação
 
-2026
+2025
 
 ### Título do artigo
 
-Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae)
+The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae)
 
 ### Periódico
 
-Journal of Morphology
+Zoologischer Anzeiger
 
 ### DOI
 
-10.1002/jmor.70146.
+10.1016/j.jcz.2025.08.011
 
 ### Citação completa (raw) — opcional
 
 ```text
-Góes, D. B. d., S. P. d. Carvalho-e-Silva, J. K. Torres Lopez, et al. 2026. Premetamorphic Development of the Phytotelm-Dwelling Toad Dendrophryniscus lauroi (Anura: Bufonidae). Journal of Morphology 287: e70146. https://doi.org/10.1002/jmor.70146.
+Araújo, R. B., Freire, I. R., do Nascimento, F. A. C., & Pezzuti, T. L. (2025). The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae). Zoologischer Anzeiger 319: 78-89
 ```
 
 ### Seu nome (para crédito no commit)
