@@ -21,6 +21,7 @@
       "Anomaloglossus tepequem",
       "Dryadobates alagoanus",
       "Dryadobates bokermanni",
+      "Dryadobates caissara",
       "Dryadobates capixaba",
       "Dryadobates carioca",
       "Dryadobates erythropus",
@@ -985,6 +986,12 @@
     {
       "species": "Dryadobates bokermanni",
       "tip_label": "Dryadobates_bokermanni",
+      "family": "Aromobatidae",
+      "genus": "Dryadobates"
+    },
+    {
+      "species": "Dryadobates caissara",
+      "tip_label": "Dryadobates_caissara",
       "family": "Aromobatidae",
       "genus": "Dryadobates"
     },
