@@ -1,35 +1,43 @@
 ### Espécie (binomial completo)
 
-Physalaemus claptoni
+Allobates tanaru
 
-### Caráter descrito nesta referência
+### Família
 
-External morphology (ext_morph)
+Aromobatidae
 
-### Autores da referência
+### DOI da descrição original da espécie (opcional)
 
-Raíla Brena Araújo, Iasodhara Rodrigues Freire, Filipe Augusto Cavalcanti do Nascimento, Tiago Leite Pezzuti
+_No response_
+
+### Caracteres larvais JÁ descritos na literatura
+
+_No response_
+
+### Autores da referência (girino)
+
+_No response_
 
 ### Ano de publicação
 
-2025
+_No response_
 
 ### Título do artigo
 
-The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae)
+_No response_
 
 ### Periódico
 
-Zoologischer Anzeiger
+_No response_
 
 ### DOI
 
-10.1016/j.jcz.2025.08.011
+_No response_
 
 ### Citação completa (raw) — opcional
 
 ```text
-Araújo, R. B., Freire, I. R., do Nascimento, F. A. C., & Pezzuti, T. L. (2025). The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae). Zoologischer Anzeiger 319: 78-89
+
 ```
 
 ### Seu nome (para crédito no commit)
@@ -38,5 +46,6 @@ Diogo B Provete
 
 ### Confirmações
 
-- [x] Conferi que esta referência ainda não está no banco para esta espécie+caráter.
+- [x] Conferi que esta espécie ainda não está no banco (busquei pelo binomial).
+- [x] A espécie tem (ou se assume ter) girino livre-natante — NÃO é de família com desenvolvimento direto.
 - [x] Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0).
