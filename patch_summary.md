@@ -1,11 +1,9 @@
-## Mudança aplicada (issue #17)
+## Mudança aplicada (issue #23)
 
-- **Espécie:** *Physalaemus claptoni* (Leptodactylidae)
-- **Caráter(es):** External morphology (ext_morph)
-- **Autores:** Raíla Brena Araújo, Iasodhara Rodrigues Freire, Filipe Augusto Cavalcanti do Nascimento, Tiago Leite Pezzuti
-- **Ano:** 2025
-- **Título:** The evolution of tadpole shape: first insights into larval diversity of the Physalaemus deimaticus group with the description of two new forms (Anura, Leptodactylidae, Leiuperinae)
-- **Periódico:** Zoologischer Anzeiger
-- **DOI:** [10.1016/j.jcz.2025.08.011](https://doi.org/10.1016/j.jcz.2025.08.011)
+- **Nova espécie:** *Dryadobates caissara* (Aromobatidae)
+- **`id`:** `dryadobates_caissara`
+- **`tip_label`:** `Dryadobates_caissara`
+- **Posição no banco:** 48 de 1061 (ordenada por família × espécie)
+- **Estado larval:** os 3 caracteres entram como `not_described` (girino ainda não descrito).
 
 Contribuição: Diogo B Provete
