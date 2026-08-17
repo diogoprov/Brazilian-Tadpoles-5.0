@@ -13,7 +13,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1061,
+  "count": 1063,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -19367,6 +19367,26 @@
       "genus": "Scinax",
       "epithet": "proboscideus",
       "tip_label": "Scinax_proboscideus",
+      "family": "Hylidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "scinax_pyroinguinis",
+      "species": "Scinax pyroinguinis",
+      "genus": "Scinax",
+      "epithet": "pyroinguinis",
+      "tip_label": "Scinax_pyroinguinis",
       "family": "Hylidae",
       "ext_morph": {
         "status": "not_described",
