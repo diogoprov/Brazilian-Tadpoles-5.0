@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-28",
-  "count": 334,
+  "generated": "2026-08-17",
+  "count": 336,
   "by_family": {
     "Allophrynidae": [
       "Allophryne resplendens"
@@ -209,6 +209,7 @@
       "Scinax maracaya",
       "Scinax montivagus",
       "Scinax onca",
+      "Scinax pyroinguinis",
       "Scinax ritaleeae",
       "Scinax rogerioi",
       "Scinax rossaferesae",
@@ -2234,6 +2235,12 @@
     {
       "species": "Scinax onca",
       "tip_label": "Scinax_onca",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax pyroinguinis",
+      "tip_label": "Scinax_pyroinguinis",
       "family": "Hylidae",
       "genus": "Scinax"
     },

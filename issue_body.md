@@ -1,10 +1,10 @@
 ### Espécie (binomial completo)
 
-Allobates tanaru
+Scinax pyroinguinis
 
 ### Família
 
-Aromobatidae
+Hylidae
 
 ### DOI da descrição original da espécie (opcional)
 
@@ -42,7 +42,7 @@ _No response_
 
 ### Seu nome (para crédito no commit)
 
-Diogo B Provete
+Diogo Provete
 
 ### Confirmações
 
