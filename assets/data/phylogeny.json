@@ -8,7 +8,7 @@
   "length": 184.826881,
   "counts": {
    "total": 727,
-   "ext": 500,
+   "ext": 501,
    "oral": 169,
    "cond": 121
   },
@@ -162,7 +162,7 @@
     "length": 51.211583,
     "counts": {
      "total": 722,
-     "ext": 497,
+     "ext": 498,
      "oral": 168,
      "cond": 119
     },
@@ -188,7 +188,7 @@
       "length": 51.306441,
       "counts": {
        "total": 679,
-       "ext": 474,
+       "ext": 475,
        "oral": 161,
        "cond": 113
       },
@@ -213,7 +213,7 @@
         "length": 1.108638,
         "counts": {
          "total": 612,
-         "ext": 426,
+         "ext": 427,
          "oral": 144,
          "cond": 102
         },
@@ -235,7 +235,7 @@
           "length": 1.0567760000000002,
           "counts": {
            "total": 311,
-           "ext": 213,
+           "ext": 214,
            "oral": 75,
            "cond": 60
           },
@@ -1649,7 +1649,7 @@
             "length": 0.499342,
             "counts": {
              "total": 261,
-             "ext": 180,
+             "ext": 181,
              "oral": 73,
              "cond": 58
             },
@@ -4381,7 +4381,7 @@
               "length": 3.102721,
               "counts": {
                "total": 164,
-               "ext": 122,
+               "ext": 123,
                "oral": 51,
                "cond": 36
               },
@@ -4396,7 +4396,7 @@
                 "length": 19.456627,
                 "counts": {
                  "total": 16,
-                 "ext": 11,
+                 "ext": 12,
                  "oral": 2,
                  "cond": 1
                 },
@@ -4453,7 +4453,7 @@
                   "length": 16.163066,
                   "counts": {
                    "total": 14,
-                   "ext": 10,
+                   "ext": 11,
                    "oral": 1,
                    "cond": 0
                   },
@@ -4649,7 +4649,7 @@
                     "length": 5.15396,
                     "counts": {
                      "total": 7,
-                     "ext": 4,
+                     "ext": 5,
                      "oral": 1,
                      "cond": 0
                     },
@@ -4662,7 +4662,7 @@
                       "length": 2.996454,
                       "counts": {
                        "total": 4,
-                       "ext": 2,
+                       "ext": 3,
                        "oral": 1,
                        "cond": 0
                       },
@@ -4676,7 +4676,7 @@
                         "length": 2.99724,
                         "counts": {
                          "total": 3,
-                         "ext": 1,
+                         "ext": 2,
                          "oral": 1,
                          "cond": 0
                         },
@@ -4702,7 +4702,7 @@
                           "length": 0.00557,
                           "counts": {
                            "total": 2,
-                           "ext": 0,
+                           "ext": 1,
                            "oral": 0,
                            "cond": 0
                           },
@@ -4715,7 +4715,7 @@
                             "length": 11.112541,
                             "counts": {
                              "total": 1,
-                             "ext": 0,
+                             "ext": 1,
                              "oral": 0,
                              "cond": 0
                             },
