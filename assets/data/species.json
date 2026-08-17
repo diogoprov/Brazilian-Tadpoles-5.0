@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-07-28",
+  "generated": "2026-08-17",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -4929,8 +4929,17 @@
       "tip_label": "Vitreorana_franciscana",
       "family": "Centrolenidae",
       "ext_morph": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Castro, G. F. L., Cuervo-Santos, C., Marcondes, B. C., Araújo, R. B., Oswald, C. B., Rossa-Feres, D. C., Magalhães, R. F., Pezzuti, T. L.",
+            "year": 2026,
+            "title": "Tadpole morphology and ontogeny of Vitreorana franciscana Santana, Barros, Pontes & Feio, 2015 (Anura: Centrolenidae) with taxonomic implications for the V. parvula (Boulenger, 1895) species complex",
+            "journal": "Studies on Neotropical Fauna and Environment",
+            "doi": "10.1080/01650521.2026.2708744",
+            "raw": "```text\nCastro Franco de Lima, Guilherme, Caroline Cuervo-Santos, Barbara Caroline Marcondes, Raíla Brena Araújo, Caroline Batistim Oswald, Denise de Cerqueira Rossa-Feres, Rafael Félix de Magalhães, and Tiago Leite Pezzuti. 2026. Tadpole Morphology and Ontogeny of Vitreorana Franciscana Santana, Barros, Pontes & Feio, 2015 (Anura: Centrolenidae) with Taxonomic Implications for the V. Parvula (Boulenger, 1895) Species Complex. Studies on Neotropical Fauna and Environment, August, 1–13. doi:10.1080/01650521.2026.2708744.\n```"
+          }
+        ]
       },
       "internal_oral": {
         "status": "not_described",

@@ -1,51 +1,42 @@
 ### Espécie (binomial completo)
 
-Allobates tanaru
+Vitreorana franciscana 
 
-### Família
+### Caráter descrito nesta referência
 
-Aromobatidae
+External morphology (ext_morph)
 
-### DOI da descrição original da espécie (opcional)
+### Autores da referência
 
-_No response_
-
-### Caracteres larvais JÁ descritos na literatura
-
-_No response_
-
-### Autores da referência (girino)
-
-_No response_
+Castro, G. F. L., Cuervo-Santos, C., Marcondes, B. C., Araújo, R. B., Oswald, C. B., Rossa-Feres, D. C., Magalhães, R. F., Pezzuti, T. L. 
 
 ### Ano de publicação
 
-_No response_
+2026
 
 ### Título do artigo
 
-_No response_
+Tadpole morphology and ontogeny of Vitreorana franciscana Santana, Barros, Pontes & Feio, 2015 (Anura: Centrolenidae) with taxonomic implications for the V. parvula (Boulenger, 1895) species complex
 
 ### Periódico
 
-_No response_
+Studies on Neotropical Fauna and Environment
 
 ### DOI
 
-_No response_
+10.1080/01650521.2026.2708744
 
 ### Citação completa (raw) — opcional
 
 ```text
-
+Castro Franco de Lima, Guilherme, Caroline Cuervo-Santos, Barbara Caroline Marcondes, Raíla Brena Araújo, Caroline Batistim Oswald, Denise de Cerqueira Rossa-Feres, Rafael Félix de Magalhães, and Tiago Leite Pezzuti. 2026. Tadpole Morphology and Ontogeny of Vitreorana Franciscana Santana, Barros, Pontes & Feio, 2015 (Anura: Centrolenidae) with Taxonomic Implications for the V. Parvula (Boulenger, 1895) Species Complex. Studies on Neotropical Fauna and Environment, August, 1–13. doi:10.1080/01650521.2026.2708744.
 ```
 
 ### Seu nome (para crédito no commit)
 
-Diogo B Provete
+Diogo Provete
 
 ### Confirmações
 
-- [x] Conferi que esta espécie ainda não está no banco (busquei pelo binomial).
-- [x] A espécie tem (ou se assume ter) girino livre-natante — NÃO é de família com desenvolvimento direto.
+- [x] Conferi que esta referência ainda não está no banco para esta espécie+caráter.
 - [x] Concordo que minha contribuição seja licenciada sob os mesmos termos do projeto (CC-BY 4.0).
