@@ -1,12 +1,18 @@
 name: Issue → PR
 
-# Quando uma issue é aberta/editada e tem o label `add-reference`,
-# parsea o corpo da issue, modifica assets/data/species.json, e abre um
-# pull request com o diff. O mantenedor revisa e merge (ou pede ajuste).
+# Quando uma issue recebe o label `add-reference`/`add-species` (aplicado pelo
+# template já na abertura) ou é editada, parsea o corpo da issue, modifica
+# assets/data/species.json, e abre um pull request com o diff. O mantenedor
+# revisa e merge (ou pede ajuste).
+#
+# NOTA: `opened` foi removido de propósito. Como os templates aplicam o label na
+# abertura, o evento `labeled` sempre dispara — usar também `opened` fazia dois
+# runs concorrentes tentarem criar o mesmo branch `auto/issue-N`, e um falhava
+# com git exit code 1.
 
 on:
   issues:
-    types: [opened, labeled, edited]
+    types: [labeled, edited]
 
 permissions:
   contents: write
