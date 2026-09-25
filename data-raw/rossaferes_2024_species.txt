@@ -1,0 +1,417 @@
+# Rossa-Feres, D. C. (Ed.) 2024. Girinos do Brasil. São Paulo: Anolis Books, 828 p.
+# ISBN 978-65-992458-3-1
+# Sumário transcrito das 4 fotos das páginas iniciais.
+# Cada linha = uma espécie tratada no livro (uma prancha).
+# Grafias corrigidas quando o livro tem typo tipográfico óbvio (marcadas com # note).
+# Formato: Genus epithet[TAB]# opcional: nota
+
+# ---- ALSODIDAE ----
+Limnomedusa macroglossa
+
+# ---- AROMOBATIDAE ----
+Allobates femoralis
+Allobates olfersioides
+Allobates sumtuosus
+Anomaloglossus stepheni
+
+# ---- BUFONIDAE ----
+Amazophrynella manaos
+Atelopus manauensis
+Dendrophryniscus leucomystax
+Frostius pernambucensis
+Melanophryniscus atroluteus
+Melanophryniscus cambaraensis
+Melanophryniscus devincenzii
+Melanophryniscus dorsalis
+Melanophryniscus montevidensis
+Melanophryniscus pachyrhynus
+Melanophryniscus sanmartini
+Melanophryniscus vilavelhensis
+Rhinella cerradensis
+Rhinella crucifer
+Rhinella diptycha
+Rhinella dorbignyi
+Rhinella granulosa
+Rhinella henseli
+Rhinella hoogmoedi
+Rhinella icterica
+Rhinella marina
+Rhinella merianae
+Rhinella ornata
+Rhinella proboscidea
+Rhinella rubescens
+
+# ---- CENTROLENIDAE ----
+Hyalinobatrachium tricolor
+Vitreorana eurygnatha
+Vitreorana parvula
+Vitreorana ritae
+
+# ---- CERATOPHRYIDAE ----
+Ceratophrys aurita
+Ceratophrys cornuta
+Ceratophrys cranwelli
+
+# ---- CYCLORAMPHIDAE ----
+Cycloramphus boraceiensis
+Cycloramphus lutzorum      # livro grafa "Cycloramphys lutzorum" (typo tipográfico)
+Thoropa megatympanum
+Thoropa miliaris
+Thoropa taophora
+
+# ---- DENDROBATIDAE ----
+Adelphobates galactonotus
+Ameerega flavopicta
+Ameerega hahneli
+Ameerega pulchripecta
+
+# ---- HEMIPHRACTIDAE ----
+# (No livro consta Fritziana ohausi; NÃO adicionar ao banco — família excluída
+#  do escopo (girino direct-developer), ver feedback-brachycephaloidea-exclusion.)
+# Fritziana ohausi        # SKIP
+
+# ---- HYLIDAE (Hylinae, Cophomantini) ----
+Aplastodiscus albosignatus
+Aplastodiscus arildae
+Aplastodiscus cavicola
+Aplastodiscus ehrhardti
+Aplastodiscus eugenioi
+Aplastodiscus ibirapitanga
+Aplastodiscus leucopygius
+Aplastodiscus perviridis
+Aplastodiscus sibilatus
+Boana albomarginata
+Boana albopunctata
+Boana atlantica
+Boana bischoffi
+Boana boans
+Boana caingua
+Boana calcarata
+Boana cinerascens
+Boana crepitans
+Boana curupi
+Boana faber
+Boana fasciata
+Boana freicanecae
+Boana geographica
+Boana jaguariaivensis
+Boana lanciformis
+Boana latistriata
+Boana leptolineata
+Boana lundii
+Boana multifasciata
+Boana pardalis
+Boana polytaenia
+Boana pombali
+Boana prasina
+Boana pulchella
+Boana punctata
+Boana raniceps
+Boana semiguttata
+Boana semilineata
+Boana wavrini
+Bokermannohyla ahenea
+Bokermannohyla alvarengai
+Bokermannohyla astartea
+Bokermannohyla capra
+Bokermannohyla caramaschii
+Bokermannohyla circumdata
+Bokermannohyla diamantina
+Bokermannohyla feioi
+Bokermannohyla hylax
+Bokermannohyla ibitiguara
+Bokermannohyla itapoty
+Bokermannohyla izechsohni
+Bokermannohyla luctuosa
+Bokermannohyla martinsi
+Bokermannohyla nanuzae
+Bokermannohyla oxente
+Bokermannohyla pseudopseudis
+Bokermannohyla sapiranga
+Bokermannohyla saxicola
+Bokermannohyla vulcaniae
+
+# ---- HYLIDAE (Hylinae, Dendropsophini) ----
+Dendropsophus anceps
+Dendropsophus berthalutzae
+Dendropsophus bipunctatus
+Dendropsophus branneri
+Dendropsophus decipiens
+Dendropsophus elegans       # livro grafa "Dendrosophus elegans" (typo tipográfico)
+Dendropsophus elianeae
+Dendropsophus giesleri
+Dendropsophus haddadi
+Dendropsophus haraldschultzi
+Dendropsophus leucophyllatus
+Dendropsophus marmoratus
+Dendropsophus microps
+Dendropsophus minusculus
+Dendropsophus minutus
+Dendropsophus nahdereri
+Dendropsophus nanus
+Dendropsophus nekronastes
+Dendropsophus novaisi
+Dendropsophus oliveirai
+Dendropsophus rossalleni
+Dendropsophus rubicundulus
+Dendropsophus sanborni
+Dendropsophus seniculus
+Dendropsophus soaresi
+Dendropsophus studerae
+Dendropsophus walfordi
+Dendropsophus werneri
+
+# ---- HYLIDAE (Hylinae, Lophyohylini) ----
+Corythomantis greeningi
+Itapotihyla langsdorffii
+Nyctimantis arapapa
+Nyctimantis brunoi
+Nyctimantis galeata
+Osteocephalus oophagus
+Osteocephalus taurinus
+Phyllodytes edelmoi
+Phyllodytes gyrinaethes
+Phyllodytes luteolus
+Phyllodytes praeceptor
+Trachycephalus coriaceus
+Trachycephalus dibernardoi   # livro grafa "T. dibernadoi" — grafia oficial ASW é dibernardoi
+Trachycephalus imitatrix
+Trachycephalus mesophaeus
+Trachycephalus nigromaculatus
+Trachycephalus resinifictrix
+Trachycephalus typhonius
+
+# ---- HYLIDAE (Hylinae, Pseudini) ----
+Lysapsus bolivianus
+Lysapsus limellum
+Pseudis bolbodactyla
+Pseudis cardosoi
+Pseudis fusca
+Pseudis minuta
+Pseudis paradoxa
+Pseudis platensis
+Scarthyla goinorum
+
+# ---- HYLIDAE (Hylinae, Scinaxini) ----
+Julianus camposseabrai
+Julianus fontanarrosai
+Julianus pinima
+Julianus uruguayus
+Ololygon argyreornata
+Ololygon ariadne
+Ololygon aromothyella
+Ololygon berthae
+Ololygon brieni
+Ololygon canastrensis
+Ololygon carnevallii
+Ololygon catharinae
+Ololygon goya
+Ololygon hiemalis
+Ololygon littoralis
+Ololygon longilinea
+Ololygon luizotavioi
+Ololygon machadoi
+Ololygon obtriangulata
+Ololygon pombali
+Ololygon rizibilis
+Ololygon skuki
+Ololygon strigilata
+Ololygon trapicheiroi
+Ololygon tripui             # livro grafa "tripul" — nome oficial ASW é tripui
+Scinax acuminatus
+Scinax alter
+Scinax auratus
+Scinax boesemani
+Scinax caldarum
+Scinax constrictus
+Scinax cretatus
+Scinax crospedospilus
+Scinax cruentomma
+Scinax curicica
+Scinax fuscomarginatus
+Scinax fuscovarius
+Scinax garbei
+Scinax granulatus
+Scinax hayii
+Scinax juncae
+Scinax maracaya
+Scinax nasicus
+Scinax nebulosus
+Scinax pachycrus
+Scinax perereca
+Scinax rogerioi
+Scinax ruber
+Scinax rupestris
+Scinax similis
+Scinax squalirostris
+Scinax tymbamirim
+Scinax x-signatus
+
+# ---- HYLIDAE (Hylinae, Sphaenorhynchini) ----
+Sphaenorhynchus canga        # livro grafa "Sphaenorhyncus" (falta o "h") — typo tipográfico
+Sphaenorhynchus carneus
+Sphaenorhynchus dorisae
+Sphaenorhynchus palustris
+Sphaenorhynchus pauloalvini
+Sphaenorhynchus prasinus
+Sphaenorhynchus surdus
+
+# ---- HYLIDAE (Phyllomedusinae) ----
+Callimedusa tomopterna
+Hylomantis aspera
+Hylomantis granulosa
+Phasmahyla cochranae
+Phasmahyla guttata
+Phasmahyla jandaia
+Phasmahyla spectabilis
+Phasmahyla timbo
+Phyllomedusa bahiana
+Phyllomedusa bicolor
+Phyllomedusa burmeisteri
+Phyllomedusa distincta
+Phyllomedusa iheringii
+Phyllomedusa sauvagii
+Phyllomedusa tarsius
+Phyllomedusa tetraploidea
+Phyllomedusa vaillantii
+Pithecopus ayeaye
+Pithecopus azureus
+Pithecopus gonzagai
+Pithecopus hypochondrialis
+Pithecopus megacephalus
+Pithecopus nordestinus
+Pithecopus oreades
+Pithecopus rohdei
+Pithecopus rusticus
+
+# ---- HYLODIDAE ----
+Crossodactylus caramaschii
+Crossodactylus trachystomus
+Hylodes asper
+Hylodes babax
+Hylodes heyeri
+Hylodes magalhaesi
+Hylodes phyllodes
+Hylodes sazimai
+Hylodes uai
+Phantasmarana apuana
+Phantasmarana boticariana
+
+# ---- LEPTODACTYLIDAE ----
+Adenomera andreae
+Adenomera hylaedactyla
+Adenomera thomei
+Crossodactylodes itambe
+Leptodactylus bufonius
+Leptodactylus caatingae
+Leptodactylus cunicularius
+Leptodactylus flavipictus
+Leptodactylus furnarius
+Leptodactylus fuscus
+Leptodactylus gracilis
+Leptodactylus jolyi
+Leptodactylus knudseni
+Leptodactylus labyrinthicus
+Leptodactylus latinasus
+Leptodactylus latrans
+Leptodactylus longirostris
+Leptodactylus luctator
+Leptodactylus macrosternum
+Leptodactylus mystaceus
+Leptodactylus mystacinus
+Leptodactylus natalensis
+Leptodactylus notoaktites
+Leptodactylus pentadactylus
+Leptodactylus petersii
+Leptodactylus plaumanni
+Leptodactylus podicipinus
+Leptodactylus pustulatus
+Leptodactylus rhodomystax
+Leptodactylus riveroi
+Leptodactylus troglodytes
+Leptodactylus vastus
+Paratelmatobius cardosoi
+Physalaemus albifrons
+Physalaemus albonotatus
+Physalaemus atlanticus
+Physalaemus barrioi
+Physalaemus biligonigerus
+Physalaemus camacan
+Physalaemus carrizorum
+Physalaemus centralis
+Physalaemus cicada
+Physalaemus crombiei
+Physalaemus cuvieri
+Physalaemus erikae
+Physalaemus erythros
+Physalaemus gracilis
+Physalaemus henselii
+Physalaemus jordanensis
+Physalaemus lateristriga
+Physalaemus marmoratus
+Physalaemus maximus
+Physalaemus moreirae
+Physalaemus nattereri
+Physalaemus olfersii
+Physalaemus orophilus
+Physalaemus riograndensis
+Physalaemus signifer
+Pleurodema diplolister
+Pseudopaludicola falcipes
+Pseudopaludicola mystacalis
+Pseudopaludicola pocoto
+Pseudopaludicola ternetzi
+Rupirana cardosoi
+
+# ---- MICROHYLIDAE ----
+Chiasmocleis alagoana
+Chiasmocleis albopunctata
+Chiasmocleis altomontana
+Chiasmocleis carvalhoi
+Chiasmocleis crucis
+Chiasmocleis gnoma
+Chiasmocleis hudsoni
+Chiasmocleis leucosticta
+Chiasmocleis schubarti
+Chiasmocleis shudikarensis
+Chiasmocleis veracruz
+Ctenophryne geayi
+Dasypops schirchi
+Dermatonotus muelleri
+Elachistocleis bicolor
+Elachistocleis cesarii
+Elachistocleis helianneae
+Elachistocleis magna
+Elachistocleis piauiensis
+Stereocyclops histrio
+Stereocyclops incrassatus
+Synapturanus ajuricaba
+Synapturanus mirandaribeiroi
+
+# ---- ODONTOPHRYNIDAE ----
+Macrogenioglottus alipioi
+Odontophrynus asper
+Odontophrynus carvalhoi
+Odontophrynus cultripes
+Odontophrynus juquinha
+Odontophrynus maisuma
+Odontophrynus monachus
+Odontophrynus reigi
+Odontophrynus toledoi
+Proceratophrys avelinoi
+Proceratophrys boiei
+Proceratophrys brauni
+Proceratophrys cristiceps
+Proceratophrys cururu
+Proceratophrys dibernardoi
+Proceratophrys goyana
+Proceratophrys melanopogon
+Proceratophrys renalis
+Proceratophrys salvatori
+Proceratophrys schirchi
+
+# ---- PIPIDAE ----
+Pipa carvalhoi
+
+# ---- RANIDAE ----
+Lithobates palmipes
