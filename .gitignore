@@ -78,3 +78,11 @@ package-lock.json
 *.old
 *.orig
 *.rej
+
+# ---- Relatórios do monitoramento semanal (locais, não versionados) ----
+monitoramento_*.md
+monitoring-report_*.md
+monitoramento_anuros_*.md
+RELATORIO_NOITE_*.md
+monitoring/
+patches/
