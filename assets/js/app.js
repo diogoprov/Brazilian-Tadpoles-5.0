@@ -263,6 +263,11 @@ function formatRef(r) {
     const doi = esc(r.doi);
     line += ` <a href="https://doi.org/${doi}" target="_blank" rel="noopener">doi:${doi}</a>`;
   }
+  // url (opcional, desde 10/2026): texto completo fora do DOI (BHL, repositório
+  // institucional); aparece também quando há DOI, que pode ser só de depósito
+  if (r.url && /^https?:\/\//.test(r.url)) {
+    line += ` <a href="${esc(r.url)}" target="_blank" rel="noopener">texto completo</a>`;
+  }
   return `<li>${line}</li>`;
 }
 
@@ -334,6 +339,7 @@ function refToBibtex(ref, key) {
   if (ref.title)   fields.push(`  title   = {${bibEscape(ref.title)}}`);
   if (ref.journal) fields.push(`  journal = {${bibEscape(ref.journal)}}`);
   if (ref.doi)     fields.push(`  doi     = {${bibEscape(ref.doi)}}`);
+  if (ref.url)     fields.push(`  url     = {${bibEscape(ref.url)}}`);
   // sempre inclui o `raw` como nota — permite curadoria manual
   if (ref.raw) fields.push(`  note    = {${bibEscape(ref.raw)}}`);
   const type = ref.journal ? 'article' : 'misc';

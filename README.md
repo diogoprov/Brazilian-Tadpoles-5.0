@@ -144,7 +144,7 @@ O workflow `issue-to-pr.yml` converte issues abertas com o template "Adicionar r
   "excluded_count": 1,
   "count": 1058,
   "characters": ["ext_morph", "internal_oral", "chondrocranium"],
-  "ref_schema": ["author", "year", "title", "journal", "doi", "raw"],
+  "ref_schema": ["author", "year", "title", "journal", "doi", "url", "raw"],
   "species": [
     {
       "id": "boana_faber",
@@ -174,6 +174,8 @@ O workflow `issue-to-pr.yml` converte issues abertas com o template "Adicionar r
 ```
 
 **Sobre o schema de refs** (v5.1.0): cada referência agora é um objeto. `year` e `doi` são extraídos com alta confiança (regex específica); `author`, `title` e `journal` são *best-effort* (~94%, ~94%, ~88% de cobertura respectivamente) — quando o parser não consegue isolar com segurança, deixa o campo `null` e preserva tudo em `raw`. Versões antigas que liam refs como strings ainda funcionam: o JS faz fallback para `raw` quando os campos estruturados são `null`.
+
+**Campo `url`** (opcional, out/2026): link para o texto completo quando não há DOI da editora: página ou parte no BHL, repositório institucional, handle. Só as referências que têm link levam o campo; o site mostra "texto completo" ao lado do DOI.
 
 `tip_label` é a chave usada pra casar a espécie com o tip da megatree.
 
