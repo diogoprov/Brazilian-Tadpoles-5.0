@@ -1,0 +1,41 @@
+{
+  "title": "The Rossa-Feres Tadpole Database",
+  "upload_type": "dataset",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "description": "A bibliographical survey of the larval (free-swimming tadpole) morphology of Brazilian anurans, with a companion static web application. For each species, three larval character sets — external morphology, internal oral morphology, and chondrocranium — are scored as described or not described, each with its supporting references (author, year, journal, DOI). Companion to Provete & da Silva (2026, Biota Neotropica). Data under CC-BY 4.0; code under MIT.",
+  "creators": [
+    {
+      "name": "Provete, Diogo B.",
+      "affiliation": "Universidade Federal de Mato Grosso do Sul; Gothenburg Global Biodiversity Centre"
+    },
+    {
+      "name": "da Silva, Fernando R.",
+      "affiliation": "Universidade Federal de São Carlos (UFSCar), Sorocaba"
+    }
+  ],
+  "keywords": [
+    "Anura",
+    "tadpole",
+    "larval morphology",
+    "chondrocranium",
+    "internal oral morphology",
+    "knowledge gaps",
+    "Neotropics",
+    "Brazil",
+    "biodiversity database"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22885422",
+      "relation": "isSupplementedBy",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://diogoprov.github.io/Brazilian-Tadpoles-5.0/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}
