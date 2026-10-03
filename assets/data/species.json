@@ -25,6 +25,7 @@
     "title",
     "journal",
     "doi",
+    "url",
     "raw"
   ],
   "species": [
@@ -535,6 +536,7 @@
             "title": "Uma nova espécie de Colostethus do Brasil Central (Anura, Dendrobatidae)",
             "journal": "Iheringia. Série Zoologia",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/106278",
             "raw": "Bokermann, W. C. A. 1975. Uma nova espécie de Colostethus do Brasil Central (Anura, Dendrobatidae). Iheringia. Série Zoologia 46: 13–18."
           }
         ]
@@ -1277,6 +1279,7 @@
             "title": "A tepui herpetofauna on a granitic mountain (Tamacuari) in borderland between Venezuela and Brazil: report from the Phipps Tapirapecó expedition",
             "journal": "American Museum Novitates",
             "doi": null,
+            "url": "http://hdl.handle.net/2246/3610",
             "raw": "Myers, C. W. and Donnelly, M. A. 1997. A tepui herpetofauna on a granitic mountain (Tamacuari) in borderland between Venezuela and Brazil: report from the Phipps Tapirapecó expedition. American Museum Novitates 3213:1-71."
           }
         ]
@@ -1809,6 +1812,7 @@
             "title": "Is there a chance for conservation breeding? Ex situ management, reproduction, and early life stages of the Harlequin toad Atelopus flavescens Duméril & Bibron, 1841 (Amphibia: Anura: Bufonidae)",
             "journal": "Amphib Reptil Cons",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/part/178791",
             "raw": "Gawor A, Rauhaus A, Karbe D, der Straeten V, Lötters S, Ziegler T (2012) Is there a chance for conservation breeding? Ex situ management, reproduction, and early life stages of the Harlequin toad Atelopus flavescens Duméril & Bibron, 1841 (Amphibia: Anura: Bufonidae). Amphib Reptil Cons 5:29–44"
           }
         ]
@@ -3209,6 +3213,7 @@
             "title": "Variaciones locales de caracteres específicos em larvas de anfibios",
             "journal": "Anales de la Sociedad Cientifica Argentina",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/97814",
             "raw": "Scott-Birabén, M. T. and Fernandez-Marcinowski, K. 1921. Variaciones locales de caracteres específicos em larvas de anfibios. Anales de la Sociedad Cientifica Argentina 92: 129-144."
           }
         ]
@@ -3627,6 +3632,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -3664,6 +3670,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -6681,6 +6688,7 @@
             "title": "Notes on the frog genus Thoropa (Amphibia: Leptodactylidae) with a description of a new species (Thoropa saxatilis)",
             "journal": "Proceedings of the Biological Society of Washington",
             "doi": "10.5281/zenodo.13663557",
+            "url": "https://www.biodiversitylibrary.org/page/34645890#page/227/mode/1up",
             "raw": "Cocroft, R. B. & Heyer, W. R. 1988. Notes on the frog genus Thoropa (Amphibia: Leptodactylidae) with a description of a new species (Thoropa saxatilis). Proceedings of the Biological Society of Washington, 101, 209–220."
           }
         ]
@@ -6805,6 +6813,7 @@
             "title": "A new poison frog from Amazonian Brazil, with further revision of the quinquevittatus group of Dendrobates",
             "journal": "American Museum Novitates",
             "doi": null,
+            "url": "http://hdl.handle.net/2246/5075",
             "raw": "Caldwell, J. P. and Myers, C. W. 1990.A new poison frog from Amazonian Brazil, with further revision of the quinquevittatus group of Dendrobates. American Museum Novitates 2988:1–21."
           }
         ]
@@ -6879,6 +6888,7 @@
             "title": "A new poison frog from Amazonian Brazil, with further revision of the quinquevittatus group of Dendrobates",
             "journal": "American Museum Novitates",
             "doi": null,
+            "url": "http://hdl.handle.net/2246/5075",
             "raw": "Caldwell, J. P. and Myers, C. W. 1990.A new poison frog from Amazonian Brazil, with further revision of the quinquevittatus group of Dendrobates. American Museum Novitates 2988:1–21."
           }
         ]
@@ -7088,6 +7098,7 @@
             "title": "A new poison frog from Manu National Park, Southeastern Peru (Dendrobatidae, Epipedobates)",
             "journal": "American Museu of the Natural History",
             "doi": null,
+            "url": "http://hdl.handle.net/2246/4965",
             "raw": "Rodríguez, L. & Myers, C. H. 1993. A new poison frog from Manu National Park, Southeastern Peru (Dendrobatidae, Epipedobates). American Museu of the Natural History 3068:1-15."
           }
         ]
@@ -7849,6 +7860,7 @@
             "title": "Descrição do girino de Aplastodiscus arildae (Cruz and Peixoto, 1985) (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos do Museu Nacional",
             "doi": "10.5281/zenodo.13448791",
+            "url": "https://www.biodiversitylibrary.org/page/57304941#page/77/mode/1up",
             "raw": "Leite, F. S. F. 2007. Descrição do girino de Aplastodiscus arildae (Cruz and Peixoto, 1985) (Amphibia, Anura, Hylidae). Arquivos do Museu Nacional 65:211-216."
           },
           {
@@ -8496,6 +8508,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -8517,6 +8530,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           }
         ]
@@ -10861,6 +10875,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -10890,6 +10905,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           }
         ]
@@ -11148,6 +11164,7 @@
             "title": "The nest and the tadpole of Hyla wavrini, Parker (Amphibia, Anura)",
             "journal": "Memorias do Instituto Butantan",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/246691#page/56/mode/1up",
             "raw": "Martins, M. and Moreira, G. 1991. The nest and the tadpole of Hyla wavrini, Parker (Amphibia, Anura). Memorias do Instituto Butantan 53:197–204."
           },
           {
@@ -12855,6 +12872,7 @@
             "title": "Speciation in frogs of the Hyla parviceps group in the upper Amazon Basin",
             "journal": "Occasional Papers of the Museum of Natural History The University of Kansas",
             "doi": "10.5281/zenodo.13489836",
+            "url": "https://www.biodiversitylibrary.org/page/4393451#page/3/mode/1up",
             "raw": "Duellman, W. E. and Crump, M. L. 1974. Speciation in frogs of the Hyla parviceps group in the upper Amazon Basin. Occasional Papers of the Museum of Natural History The University of Kansas 23:1-40."
           },
           {
@@ -13997,6 +14015,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -14018,6 +14037,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           }
         ]
@@ -14165,6 +14185,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -14218,6 +14239,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           }
         ]
@@ -14394,6 +14416,7 @@
             "title": "Speciation in frogs of the Hyla parviceps group in the upper Amazon Basin",
             "journal": "Occasional Papers of the Museum of Natural History The University of Kansas",
             "doi": "10.5281/zenodo.13489836",
+            "url": "https://www.biodiversitylibrary.org/page/4393451#page/3/mode/1up",
             "raw": "Duellman, W. E. and Crump, M. L. 1974. Speciation in frogs of the Hyla parviceps group in the upper Amazon Basin. Occasional Papers of the Museum of Natural History The University of Kansas 23:1-40."
           },
           {
@@ -15341,6 +15364,7 @@
             "title": "A reassessment of the taxonomic status of some neotropical hylid frogs",
             "journal": "Occasional Papers of the Museum of Natural History, University of Kansas",
             "doi": "10.5281/zenodo.13414606",
+            "url": "https://www.biodiversitylibrary.org/page/4395534#page/3/mode/1up",
             "raw": "Duellman, W. E. 1974. A reassessment of the taxonomic status of some neotropical hylid frogs. Occasional Papers of the Museum of Natural History, University of Kansas 27: 1–27."
           },
           {
@@ -17900,6 +17924,7 @@
             "title": "Life history and ecology of the hylid frog Osteocephalus taurinus with observations on larval behavior",
             "journal": "Occasional papers of the museum of natural history university of Kansas",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/24653",
             "raw": "Duellman, W. E. and Lescure, J. 1973. Life history and ecology of the hylid frog Osteocephalus taurinus with observations on larval behavior. Occasional papers of the museum of natural history university of Kansas 13:1-12."
           },
           {
@@ -20095,6 +20120,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           }
         ]
@@ -20108,6 +20134,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           }
         ]
@@ -20198,6 +20225,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -20235,6 +20263,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           }
         ]
@@ -20453,6 +20482,7 @@
             "title": "Hylid frogs of the genus Scinax Wagler, 1830, in Amazonian Ecuador and Peru",
             "journal": "Occasional Papers of the Museum of Natural History, University of Kansas (153) 1-57",
             "doi": "10.5281/zenodo.13469914",
+            "url": "https://www.biodiversitylibrary.org/page/4468136#page/5/mode/1up",
             "raw": "Duellman WE, JJ Wiens. 1993. Hylid frogs of the genus Scinax Wagler, 1830, in Amazonian Ecuador and Peru. Occasional Papers of the Museum of Natural History, University of Kansas (153) 1-57"
           }
         ]
@@ -21384,6 +21414,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -21405,6 +21436,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           }
         ]
@@ -22831,6 +22863,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
           },
           {
@@ -22852,6 +22885,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -22996,6 +23030,7 @@
             "title": "Elosia Tsch. e os gêneros correlatos",
             "journal": "Revista do Museu Paulista",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/part/291339",
             "raw": "Miranda-Ribeiro, A. 1923. Elosia Tsch. e os gêneros correlatos. Revista do Museu Paulista 8:813-822."
           },
           {
@@ -23221,6 +23256,7 @@
             "title": "Descrição do girino de Crossodactylus gaudichaudii Duméril and Bibron, 1841 (Anura, Leptodactylidae)",
             "journal": "Memórias do Instituto Butantan",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/243620",
             "raw": "Francioni, E. and Carcerelli, L. C. 1993. Descrição do girino de Crossodactylus gaudichaudii Duméril and Bibron, 1841 (Anura, Leptodactylidae). Memórias do Instituto Butantan 55:63-67."
           },
           {
@@ -23258,6 +23294,7 @@
             "title": "Descrição da morfologia oral interna de larvas do gênero Crossodactylus Duméril & Bibron, 1841 (Amphibia, Anura, Leptodactylidae)",
             "journal": "Arquivos do Museu Nacional, Rio de Janeiro",
             "doi": "10.5281/zenodo.13438037",
+            "url": "https://www.biodiversitylibrary.org/page/57425255#page/51/mode/1up",
             "raw": "Weber, L.N., Caramaschi, U. 2006. Descrição da morfologia oral interna de larvas do gênero Crossodactylus Duméril & Bibron, 1841 (Amphibia, Anura, Leptodactylidae). Arquivos do Museu Nacional, Rio de Janeiro, 64: 141-149."
           },
           {
@@ -23452,6 +23489,7 @@
             "title": "Descrição da morfologia oral interna de larvas do gênero Crossodactylus Duméril & Bibron, 1841 (Amphibia, Anura, Leptodactylidae)",
             "journal": "Arquivos do Museu Nacional, Rio de Janeiro",
             "doi": "10.5281/zenodo.13438037",
+            "url": "https://www.biodiversitylibrary.org/page/57425255#page/51/mode/1up",
             "raw": "Weber, L.N., Caramaschi, U. 2006. Descrição da morfologia oral interna de larvas do gênero Crossodactylus Duméril & Bibron, 1841 (Amphibia, Anura, Leptodactylidae). Arquivos do Museu Nacional, Rio de Janeiro, 64: 141-149."
           }
         ]
@@ -24155,6 +24193,7 @@
             "title": "Redescrição de Hylodes perplicatus (Miranda-Ribeiro, 1926) (Amphibia, Anura, Leptodactylidae)",
             "journal": "Arquivos do Museu Nacional",
             "doi": "10.5281/zenodo.13652603",
+            "url": "https://www.biodiversitylibrary.org/page/57266807#page/35/mode/1up",
             "raw": "Haddad, C. F. B., Garcia, P. C. A. and Pombal Jr., J. P. 2003. Redescrição de Hylodes perplicatus (Miranda-Ribeiro, 1926) (Amphibia, Anura, Leptodactylidae). Arquivos do Museu Nacional 61:245-254."
           }
         ]
@@ -25090,6 +25129,7 @@
             "title": "The larva of Leptodactylus hylaedactylus (Amphibia, Leptodactylidae)",
             "journal": "Fieldiana: Zoology",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/21019",
             "raw": "Heyer, W. R., & P. A. Silverstone. 1969. The larva of Leptodactylus hylaedactylus (Amphibia, Leptodactylidae). Fieldiana: Zoology, 51:141-145"
           },
           {
@@ -26644,6 +26684,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           },
           {
@@ -26665,6 +26706,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           },
           {
@@ -27066,6 +27108,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -27087,6 +27130,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -27421,6 +27465,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -27434,6 +27479,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -28407,6 +28453,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -28428,6 +28475,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -28721,6 +28769,7 @@
             "title": "Vocalizações e girino de Leptodactylus spixi Heyer, 1983 (Amphibia, Anura, Leptodactylidae)",
             "journal": "Arquivos do Museu Nacional",
             "doi": "10.5281/zenodo.13671974",
+            "url": "https://www.biodiversitylibrary.org/page/57289653#page/37/mode/1up",
             "raw": "Bilate, M., Wogel, H., Weber, L. N. and Abrunhosa, P. A. 2006. Vocalizações e girino de Leptodactylus spixi Heyer, 1983 (Amphibia, Anura, Leptodactylidae). Arquivos do Museu Nacional 64:235-245."
           }
         ]
@@ -29133,6 +29182,7 @@
             "title": "The tadpole of Lithodytes lineatus – with note on the frogs resistance to leaf-cutting ants (Amphibia: Leptodactylidae)",
             "journal": "Stuttgarter Beitrage zur Naturkunde",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/104210",
             "raw": "Schlüter, A. and Regos-Stuttgart, J. 1996. The tadpole of Lithodytes lineatus – with note on the frogs resistance to leaf-cutting ants (Amphibia: Leptodactylidae). Stuttgarter Beitrage zur Naturkunde 536:2-4."
           }
         ]
@@ -29397,6 +29447,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -29646,6 +29697,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -29948,6 +30000,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -30063,6 +30116,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -30076,6 +30130,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -30118,6 +30173,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -30201,6 +30257,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           }
         ]
@@ -30303,6 +30360,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -30316,6 +30374,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -30566,6 +30625,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -30693,6 +30753,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -30747,6 +30808,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           }
         ]
@@ -30950,6 +31012,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -30963,6 +31026,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -30984,6 +31048,7 @@
             "title": "The tadpole, advertisement call, and geographic distribution of Physalaemus maximus Feio, Pombal and Caramaschi, 1999 (Amphibia, Anura, Leiuperidae)",
             "journal": "Arquivos do Museu Nacional",
             "doi": "10.5281/zenodo.13651622",
+            "url": "https://www.biodiversitylibrary.org/page/57382622#page/29/mode/1up",
             "raw": "Baêta, D., Lourenço, A. C. C., Pezzuti, T. L. and Pires, M. R. S.  2007. The tadpole, advertisement call, and geographic distribution of Physalaemus maximus Feio, Pombal and Caramaschi, 1999 (Amphibia, Anura, Leiuperidae). Arquivos do Museu Nacional 65:27-32."
           },
           {
@@ -31005,6 +31070,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -31157,6 +31223,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -31170,6 +31237,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -31352,6 +31420,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -31422,6 +31491,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -31468,6 +31538,7 @@
             "title": "Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae)",
             "journal": "Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia",
             "doi": null,
+            "url": "https://www.rcaap.pt/detail.jsp?id=oai:agregador.ibict.br.RI_UFBA:oai:192.168.11:11:ri/12818",
             "raw": "Gomes, J. R. 2010. Descrição e análise comparativa de larvas do gênero Physalaemus Fitzinger, 1826 (Amphibia, Anura, Leiuperidae). Dissertação de Mestrado. Universidade Federal da Bahia, Salvador, Bahia."
           },
           {
@@ -31587,6 +31658,7 @@
             "title": "Phylogeny of Pleurodema (Anura: Leptodactylidae): A biogeographic model",
             "journal": "Occasional Papers of the Museum of Natural History, University of Kansas",
             "doi": "10.5281/zenodo.13663172",
+            "url": "https://www.biodiversitylibrary.org/page/3660733#page/7/mode/1up",
             "raw": "Duellman, W. E. and Veloso A. 1977. Phylogeny of Pleurodema (Anura: Leptodactylidae): A biogeographic model. Occasional Papers of the Museum of Natural History, University of Kansas 64:1-46."
           }
         ]
@@ -31728,6 +31800,7 @@
             "title": "Description of the tadpole of Pseudopaludicola boliviana (Anura: Leptodactylidae)",
             "journal": "Herpetological Review",
             "doi": null,
+            "url": "http://hdl.handle.net/11336/57256",
             "raw": "Kher, A. I. and Schaefer, E. F. 2005. Description of the tadpole of Pseudopaludicola boliviana (Anura: Leptodactylidae). Herpetological Review 36:250-251."
           }
         ]
@@ -33896,6 +33969,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -33917,6 +33991,7 @@
             "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
             "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
             "doi": null,
+            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
             "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
           }
         ]
@@ -34673,6 +34748,7 @@
             "title": "Variaciones locales de caracteres específicos em larvas de anfibios",
             "journal": "Anales de la Sociedad Cientifica Argentina",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/97814",
             "raw": "Scott-Birabén, M. T. and Fernandez-Marcinowski, K. 1921. Variaciones locales de caracteres específicos em larvas de anfibios. Anales de la Sociedad Cientifica Argentina 92:129-144"
           }
         ]
@@ -36796,6 +36872,7 @@
             "title": "Natural history and distribution of Agalychnis craspedopus (Funkhouser, 1957) (Amphibia: Anura: Hylidae)",
             "journal": "Zoologische Medelingen",
             "doi": null,
+            "url": "https://repository.naturalis.nl/pub/318246",
             "raw": "Hoogmoed, M. S. and Cadle, J. E. 1990. Natural history and distribution of Agalychnis craspedopus (Funkhouser, 1957) (Amphibia: Anura: Hylidae). Zoologische Medelingen 65 :129-142"
           }
         ]
@@ -36915,6 +36992,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -37007,6 +37085,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           }
         ]
@@ -37044,6 +37123,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -37106,6 +37186,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -37323,6 +37404,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           }
         ]
@@ -37352,6 +37434,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           }
         ]
@@ -37516,6 +37599,7 @@
             "title": "Synonymy and distribution of Phyllomedusa boliviana Boulenger (Anura: Hylidae)",
             "journal": "Proceedings of the Biological Society of Washington",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/part/45302",
             "raw": "Cannatella, D. C. 1983. Synonymy and distribution of Phyllomedusa boliviana Boulenger (Anura: Hylidae). Proceedings of the Biological Society of Washington 96:59–66."
           },
           {
@@ -37578,6 +37662,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -37652,6 +37737,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -38036,6 +38122,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -38431,6 +38518,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -38494,6 +38582,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -38689,6 +38778,7 @@
             "title": "Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae)",
             "journal": "Arquivos da Universidade Federal Rural do Rio de Janeiro",
             "doi": null,
+            "url": "https://www.semanticscholar.org/paper/Conceituação-de-grupos-de-espécies-de-brasileiras-Cruz/8ecf68f0a50619b599bf9966c3b6e00cfd3ae247",
             "raw": "Cruz, C. A. G. 1982. Conceituação de grupos de espécies de Phyllomedusinae brasileiras com base em caracteres larvários (Amphibia, Anura, Hylidae). Arquivos da Universidade Federal Rural do Rio de Janeiro 5:147-171."
           },
           {
@@ -38901,6 +38991,7 @@
             "title": "On the breeding of Pipa americana",
             "journal": "Proceedings of the Zoological Society of London 1896 595",
             "doi": null,
+            "url": "https://www.biodiversitylibrary.org/item/97256#page/11/mode/1up",
             "raw": "Bartlett AD. 1896. On the breeding of Pipa americana. Proceedings of the Zoological Society of London  1896  595"
           },
           {
