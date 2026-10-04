@@ -13,7 +13,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1066,
+  "count": 1070,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -20875,6 +20875,26 @@
       "tip_label": "Scinax_nebulosus",
       "family": "Hylidae",
       "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "scinax_divae",
+      "species": "Scinax divae",
+      "genus": "Scinax",
+      "epithet": "divae",
+      "tip_label": "Scinax_divae",
+      "family": "Hylidae",
+      "ext_morph": {
         "status": "described",
         "refs": [
           {
@@ -20892,16 +20912,68 @@
             "journal": "Biota Neotropica",
             "doi": "10.1590/1676-0611-BN-2018-0718",
             "raw": "Dubeux, Marcos Jorge Matias, et al. “Morphological Characterization and Taxonomic Key of Tadpoles (Amphibia: Anura) from the Northern Region of the Atlantic Forest”. Biota Neotropica, vol. 20, julho de 2020, p. e20180718. SciELO, https://doi.org/10.1590/1676-0611-BN-2018-0718."
-          },
-          {
-            "author": "Rossa-Feres, D. C. (Ed.)",
-            "year": 2024,
-            "title": "Girinos do Brasil",
-            "journal": null,
-            "doi": null,
-            "raw": "Rossa-Feres, D. C. (Ed.). 2024. Girinos do Brasil. São Paulo: Anolis Books, 828 p. ISBN 978-65-992458-3-1."
           }
         ]
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "scinax_cynocephalus",
+      "species": "Scinax cynocephalus",
+      "genus": "Scinax",
+      "epithet": "cynocephalus",
+      "tip_label": "Scinax_cynocephalus",
+      "family": "Hylidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "scinax_galacticus",
+      "species": "Scinax galacticus",
+      "genus": "Scinax",
+      "epithet": "galacticus",
+      "tip_label": "Scinax_galacticus",
+      "family": "Hylidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "scinax_guapore",
+      "species": "Scinax guapore",
+      "genus": "Scinax",
+      "epithet": "guapore",
+      "tip_label": "Scinax_guapore",
+      "family": "Hylidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
       },
       "internal_oral": {
         "status": "not_described",
@@ -22350,14 +22422,6 @@
             "journal": "Buccopharyngeal and external morphology of a tree hole dwelling larva (Anura, Hylidae). Herpetozoa",
             "doi": null,
             "raw": "Grillitsch, B. 1992. Notes on the tadpole of Phrynohyas resinifictrix (Goeldi, 1907). Buccopharyngeal and external morphology of a tree hole dwelling larva (Anura, Hylidae). Herpetozoa 5:51-66."
-          },
-          {
-            "author": "Schiesari, L. S., Grillitsch, B. and Vogl, C",
-            "year": 1996,
-            "title": "Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa)",
-            "journal": "Alytes",
-            "doi": null,
-            "raw": "Schiesari, L. S., Grillitsch, B. and Vogl, C. 1996. Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa). Alytes 13(4):109-139"
           }
         ]
       },
@@ -22371,14 +22435,6 @@
             "journal": "Buccopharyngeal and external morphology of a tree hole dwelling larva (Anura, Hylidae). Herpetozoa",
             "doi": null,
             "raw": "Grillitsch, B. 1992. Notes on the tadpole of Phrynohyas resinifictrix (Goeldi, 1907). Buccopharyngeal and external morphology of a tree hole dwelling larva (Anura, Hylidae). Herpetozoa 5:51-66."
-          },
-          {
-            "author": "Schiesari, L. S., Grillitsch, B. and Vogl, C",
-            "year": 1996,
-            "title": "Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa)",
-            "journal": "Alytes",
-            "doi": null,
-            "raw": "Schiesari, L. S., Grillitsch, B. and Vogl, C. 1996. Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa). Alytes 13(4):109-139"
           }
         ]
       },
@@ -22718,12 +22774,29 @@
             "journal": null,
             "doi": null,
             "raw": "Rossa-Feres, D. C. (Ed.). 2024. Girinos do Brasil. São Paulo: Anolis Books, 828 p. ISBN 978-65-992458-3-1."
+          },
+          {
+            "author": "Schiesari, L. S., Grillitsch, B. and Vogl, C",
+            "year": 1996,
+            "title": "Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa)",
+            "journal": "Alytes",
+            "doi": null,
+            "raw": "Schiesari, L. S., Grillitsch, B. and Vogl, C. 1996. Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa). Alytes 13(4):109-139"
           }
         ]
       },
       "internal_oral": {
-        "status": "not_described",
-        "refs": []
+        "status": "described",
+        "refs": [
+          {
+            "author": "Schiesari, L. S., Grillitsch, B. and Vogl, C",
+            "year": 1996,
+            "title": "Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa)",
+            "journal": "Alytes",
+            "doi": null,
+            "raw": "Schiesari, L. S., Grillitsch, B. and Vogl, C. 1996. Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa). Alytes 13(4):109-139"
+          }
+        ]
       },
       "chondrocranium": {
         "status": "not_described",
@@ -22781,22 +22854,6 @@
             "raw": "Rada de Martínez, D. 1990. Contribución al conocimiento de las larvas de anfibios de Venezuela. Memoria de la Sociedad de Ciencias Naturales La Salle 49:391-403."
           },
           {
-            "author": "Rossa-Feres, D. C. and Nomura, F",
-            "year": 2006,
-            "title": "Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil",
-            "journal": "Biota Neotropica",
-            "doi": "10.1590/s1676-06032006000100014",
-            "raw": "Rossa-Feres, D. C. and Nomura, F. 2006. Characterization and taxonomic key for tadpoles (Amphibia: Anura) from the northwestern region of São Paulo State, Brazil. Biota Neotropica 6:1-26"
-          },
-          {
-            "author": "Schiesari, L. S., Grillitsch, B. and Vogl, C",
-            "year": 1996,
-            "title": "Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa)",
-            "journal": "Alytes",
-            "doi": null,
-            "raw": "Schiesari, L. S., Grillitsch, B. and Vogl, C. 1996. Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa). Alytes 13(4):109-139."
-          },
-          {
             "author": "Zweifel, R. G",
             "year": 1964,
             "title": "Life history of Phrynohyas venulosa (Salientia: Hylidae) in Panamá",
@@ -22811,38 +22868,6 @@
             "journal": "ZOOTAXA",
             "doi": "10.11646/zootaxa.4016.1.1",
             "raw": "Schulze, A., M. Jansen, and G. Köhler. 2015. Tadpole diversity of Bolivia's lowland anuran communities: molecular identification, morphological characterisation, and ecological assignment. ZOOTAXA 4016:1."
-          },
-          {
-            "author": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W",
-            "year": 2022,
-            "title": "Tadpoles of Central Amazonia (Amphibia: Anura)",
-            "journal": "Zootaxa",
-            "doi": "10.11646/zootaxa.5223.1.1",
-            "raw": "Schiesari, L., Rossa-Feres, D. D. C., Menin, M., & Hödl, W. (2022). Tadpoles of Central Amazonia (Amphibia: Anura). Zootaxa, 5223(1), 1-149"
-          },
-          {
-            "author": "Santos, Danusy Lopes, et al",
-            "year": 2023,
-            "title": "Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado",
-            "journal": "Biota Neotropica, vol",
-            "doi": "10.1590/1676-0611-bn-2023-1486",
-            "raw": "Santos, Danusy Lopes, et al. 2023. Morphological characterization and taxonomic key for tadpoles of Brazilian Cerrado. Biota Neotropica, vol. 23, p. e20231486.  https://doi.org/10.1590/1676-0611-bn-2023-1486."
-          },
-          {
-            "author": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB",
-            "year": 2023,
-            "title": "Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat",
-            "journal": "PeerJ",
-            "doi": "10.7717/peerj.16640",
-            "raw": "Sousa PdS, Azevedo CAS, Barros MC, Fraga EC, Guedes TB. 2023. Discovering the diversity of tadpoles in the mid-north Brazil: morphological and molecular identification, and characterization of the habitat. PeerJ 11:e16640 https://doi.org/10.7717/peerj.16640"
-          },
-          {
-            "author": "Rossa-Feres, D. C. (Ed.)",
-            "year": 2024,
-            "title": "Girinos do Brasil",
-            "journal": null,
-            "doi": null,
-            "raw": "Rossa-Feres, D. C. (Ed.). 2024. Girinos do Brasil. São Paulo: Anolis Books, 828 p. ISBN 978-65-992458-3-1."
           }
         ]
       },
@@ -22856,39 +22881,12 @@
             "journal": "Cuadernos de Herpetología",
             "doi": null,
             "raw": "Fabrezi, M. and Vera, R. 1997. Caracterización morfológica de larvas de anuros del Noroeste Argentino. Cuadernos de Herpetología 11:37-49."
-          },
-          {
-            "author": "Prado, V. H. M",
-            "year": 2006,
-            "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
-            "journal": "Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista",
-            "doi": null,
-            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
-            "raw": "Prado, V. H. M. 2006. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). Dissertação de Mestrado, Instituto de Biociências, Letras e Ciências Extas, Universidade Estadual Paulista."
-          },
-          {
-            "author": "Schiesari, L. S., Grillitsch, B. and Vogl, C",
-            "year": 1996,
-            "title": "Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa)",
-            "journal": "Alytes",
-            "doi": null,
-            "raw": "Schiesari, L. S., Grillitsch, B. and Vogl, C. 1996. Comparative morphology of phytotelmonous and pond-dwelling larvae of four neotropical treefrog species (Anura, Hylidae, Osteocephalus oophagus, Osteocephalus taurinus, Phrynohyas resinifictrix, Phrynohyas venulosa). Alytes 13(4):109-139."
           }
         ]
       },
       "chondrocranium": {
-        "status": "described",
-        "refs": [
-          {
-            "author": "Prado, V. H. M",
-            "year": 2006,
-            "title": "Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos)",
-            "journal": "Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas",
-            "doi": null,
-            "url": "https://repositorio.unesp.br/entities/publication/778185e0-5bbd-4ccb-a997-665370055119",
-            "raw": "PRADO, V. H. M. do. Similaridade ecológica em comunidades de girinos: o papel de componentes históricos (filogenéticos) e contemporâneos (ecológicos). 2006. 151 f. Dissertação (mestrado) - Universidade Estadual Paulista, Instituto de Biociências, Letras e Ciências Exatas, 2006."
-          }
-        ]
+        "status": "not_described",
+        "refs": []
       }
     },
     {

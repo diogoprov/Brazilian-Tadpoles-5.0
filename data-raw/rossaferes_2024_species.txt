@@ -179,7 +179,7 @@ Trachycephalus imitatrix
 Trachycephalus mesophaeus
 Trachycephalus nigromaculatus
 Trachycephalus resinifictrix
-Trachycephalus typhonius
+# Trachycephalus typhonius  -- REMOVIDO: so refs de fora do Brasil (Mendoza-Henao et al. 2026 / ASW)
 
 # ---- HYLIDAE (Hylinae, Pseudini) ----
 Lysapsus bolivianus
@@ -236,7 +236,7 @@ Scinax hayii
 Scinax juncae
 Scinax maracaya
 Scinax nasicus
-Scinax nebulosus
+# Scinax nebulosus  -- REMOVIDO: Ramos et al. 2026 (J. Vertebr. Biol. 75:26059) mostram que o girino de Lago Catalão (Manaus) não pertence ao grupo S. rostratus
 Scinax pachycrus
 Scinax perereca
 Scinax rogerioi
