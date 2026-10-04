@@ -1,4 +1,4 @@
-/* The Rossa-Feres Tadpole Database (Brazilian Tadpoles 5.0.1) — Aba Colaborações.
+/* The Rossa-Feres Tadpole Database (Brazilian Tadpoles 5.1.2) — Aba Colaborações.
    Carrega assets/data/coauthor_network.json (gerado por
    scripts/build_coauthor_network.py) e renderiza a rede com Cytoscape.js.
    Painel lateral mostra top-N por métrica + detalhes do nó selecionado. */

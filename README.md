@@ -4,7 +4,7 @@
 
 Banco de dados das descrições de girinos de anuros do Brasil. Site **estático** (HTML/CSS/JS puro) que consome dados em JSON e roda inteiramente no navegador — hospedado no **GitHub Pages**.
 
-A versão 5.0 cobre **1.058 espécies** de anuros brasileiros com girino livre-natante, distribuídas em **16 famílias**, e rastreia, para cada espécie, três conjuntos de caracteres do girino:
+A versão 5.1.2 cobre **1.066 espécies** de anuros brasileiros com girino livre-natante, distribuídas em **16 famílias**, e rastreia, para cada espécie, três conjuntos de caracteres do girino:
 
 - **Morfologia externa**
 - **Morfologia oral interna**

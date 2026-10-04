@@ -1,4 +1,4 @@
-/* The Rossa-Feres Tadpole Database (Brazilian Tadpoles 5.0.1)
+/* The Rossa-Feres Tadpole Database (Brazilian Tadpoles 5.1.2)
    Carrega species.json, monta UI clean (search central + tabela sob demanda)
    e dashboard de completude para os 3 caracteres (ext_morph, internal_oral, chondrocranium). */
 
@@ -359,7 +359,7 @@ function buildBibtexString(refs) {
     const key = n === 0 ? base : (base + String.fromCharCode(97 + n));   // a, b, c...
     entries.push(refToBibtex(r, key));
   }
-  const header = `% The Rossa-Feres Tadpole Database (Brazilian Tadpoles 5.0.1) — references export
+  const header = `% The Rossa-Feres Tadpole Database (Brazilian Tadpoles 5.1.2) — references export
 % Exported on: ${new Date().toISOString()}
 % Filtered species: ${view.length} of ${DATA.length}
 % Unique references: ${refs.length}
