@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-17",
-  "count": 336,
+  "generated": "2026-10-13",
+  "count": 343,
   "by_family": {
     "Allophrynidae": [
       "Allophryne resplendens"
@@ -147,6 +147,7 @@
       "Ololygon canastrensis",
       "Ololygon cardosoi",
       "Ololygon carnevallii",
+      "Ololygon cataguas",
       "Ololygon catharinae",
       "Ololygon centralis",
       "Ololygon cosenzai",
@@ -189,6 +190,7 @@
       "Phyllodytes gravata",
       "Phyllodytes iuna",
       "Pseudis boliviana",
+      "Pseudis bolivianus",
       "Pseudis caraya",
       "Pseudis laevis",
       "Pseudis limellum",
@@ -198,9 +200,14 @@
       "Scinax caldarum",
       "Scinax coeruleus",
       "Scinax cretatus",
+      "Scinax cruentomma",
       "Scinax cuspidatus",
+      "Scinax cynocephalus",
+      "Scinax divae",
       "Scinax dolloi",
       "Scinax exiguus",
+      "Scinax galacticus",
+      "Scinax guapore",
       "Scinax haddadorum",
       "Scinax juruena",
       "Scinax kennedyi",
@@ -1429,6 +1436,12 @@
       "genus": "Ololygon"
     },
     {
+      "species": "Ololygon cataguas",
+      "tip_label": "Ololygon_cataguas",
+      "family": "Hylidae",
+      "genus": "Ololygon"
+    },
+    {
       "species": "Ololygon catharinae",
       "tip_label": "Ololygon_catharinae",
       "family": "Hylidae",
@@ -1975,6 +1988,12 @@
       "genus": "Pseudis"
     },
     {
+      "species": "Pseudis bolivianus",
+      "tip_label": "Pseudis_bolivianus",
+      "family": "Hylidae",
+      "genus": "Pseudis"
+    },
+    {
       "species": "Pseudis caraya",
       "tip_label": "Pseudis_caraya",
       "family": "Hylidae",
@@ -2173,8 +2192,26 @@
       "genus": "Scinax"
     },
     {
+      "species": "Scinax cruentomma",
+      "tip_label": "Scinax_cruentomma",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
       "species": "Scinax cuspidatus",
       "tip_label": "Scinax_cuspidatus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax cynocephalus",
+      "tip_label": "Scinax_cynocephalus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax divae",
+      "tip_label": "Scinax_divae",
       "family": "Hylidae",
       "genus": "Scinax"
     },
@@ -2187,6 +2224,18 @@
     {
       "species": "Scinax exiguus",
       "tip_label": "Scinax_exiguus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax galacticus",
+      "tip_label": "Scinax_galacticus",
+      "family": "Hylidae",
+      "genus": "Scinax"
+    },
+    {
+      "species": "Scinax guapore",
+      "tip_label": "Scinax_guapore",
       "family": "Hylidae",
       "genus": "Scinax"
     },
