@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-09-25",
+  "generated": "2026-10-13",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -13,7 +13,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1070,
+  "count": 1071,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -16310,6 +16310,26 @@
             "raw": "Rossa-Feres, D. C. (Ed.). 2024. Girinos do Brasil. São Paulo: Anolis Books, 828 p. ISBN 978-65-992458-3-1."
           }
         ]
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "ololygon_cataguas",
+      "species": "Ololygon cataguas",
+      "genus": "Ololygon",
+      "epithet": "cataguas",
+      "tip_label": "Ololygon_cataguas",
+      "family": "Hylidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
       },
       "internal_oral": {
         "status": "not_described",
