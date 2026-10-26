@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-10-13",
+  "generated": "2026-10-26",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -13,7 +13,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1071,
+  "count": 1072,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -5208,6 +5208,26 @@
             "raw": "```text\nCastro Franco de Lima, Guilherme, Caroline Cuervo-Santos, Barbara Caroline Marcondes, Raíla Brena Araújo, Caroline Batistim Oswald, Denise de Cerqueira Rossa-Feres, Rafael Félix de Magalhães, and Tiago Leite Pezzuti. 2026. Tadpole Morphology and Ontogeny of Vitreorana Franciscana Santana, Barros, Pontes & Feio, 2015 (Anura: Centrolenidae) with Taxonomic Implications for the V. Parvula (Boulenger, 1895) Species Complex. Studies on Neotropical Fauna and Environment, August, 1–13. doi:10.1080/01650521.2026.2708744.\n```"
           }
         ]
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "vitreorana_micaelae",
+      "species": "Vitreorana micaelae",
+      "genus": "Vitreorana",
+      "epithet": "micaelae",
+      "tip_label": "Vitreorana_micaelae",
+      "family": "Centrolenidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
       },
       "internal_oral": {
         "status": "not_described",
