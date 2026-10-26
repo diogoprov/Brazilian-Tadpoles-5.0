@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-13",
-  "count": 343,
+  "generated": "2026-10-26",
+  "count": 344,
   "by_family": {
     "Allophrynidae": [
       "Allophryne resplendens"
@@ -65,6 +65,7 @@
     "Centrolenidae": [
       "Hyalinobatrachium muiraquitan",
       "Vitreorana assuh",
+      "Vitreorana micaelae",
       "Vitreorana parvula"
     ],
     "Cycloramphidae": [
@@ -2416,6 +2417,12 @@
     {
       "species": "Vitreorana assuh",
       "tip_label": "Vitreorana_assuh",
+      "family": "Centrolenidae",
+      "genus": "Vitreorana"
+    },
+    {
+      "species": "Vitreorana micaelae",
+      "tip_label": "Vitreorana_micaelae",
       "family": "Centrolenidae",
       "genus": "Vitreorana"
     },

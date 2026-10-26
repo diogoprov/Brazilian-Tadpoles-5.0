@@ -1,14 +1,14 @@
 ### Espécie (binomial completo)
 
-Ololygon cataguas
+Vitreorana micaelae
 
 ### Família
 
-Hylidae
+Centrolenidae
 
 ### DOI da descrição original da espécie (opcional)
 
-doi.org/10.1655/Herpetologica-D-24-00007
+10.3897/zookeys.1291.193210
 
 ### Caracteres larvais JÁ descritos na literatura
 
@@ -42,7 +42,7 @@ _No response_
 
 ### Seu nome (para crédito no commit)
 
-_No response_
+Diogo B Provete
 
 ### Confirmações
 

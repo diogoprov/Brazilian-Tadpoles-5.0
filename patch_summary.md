@@ -1,9 +1,11 @@
-## Mudança aplicada (issue #32)
+## Mudança aplicada (issue #34)
 
-- **Nova espécie:** *Ololygon cataguas* (Hylidae)
-- **`id`:** `ololygon_cataguas`
-- **`tip_label`:** `Ololygon_cataguas`
-- **Posição no banco:** 478 de 1071 (ordenada por família × espécie)
+- **Nova espécie:** *Vitreorana micaelae* (Centrolenidae)
+- **`id`:** `vitreorana_micaelae`
+- **`tip_label`:** `Vitreorana_micaelae`
+- **Posição no banco:** 171 de 1072 (ordenada por família × espécie)
 - **Estado larval:** os 3 caracteres entram como `not_described` (girino ainda não descrito).
 
-Descrição original da espécie (referência, não salva no JSON): https://doi.org/doi.org/10.1655/Herpetologica-D-24-00007
+Contribuição: Diogo B Provete
+
+Descrição original da espécie (referência, não salva no JSON): https://doi.org/10.3897/zookeys.1291.193210
