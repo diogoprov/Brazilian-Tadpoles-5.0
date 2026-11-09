@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-09",
-  "count": 345,
+  "count": 346,
   "by_family": {
     "Allophrynidae": [
       "Allophryne resplendens"
@@ -55,6 +55,7 @@
       "Rhaebo ecuadoriensis",
       "Rhinella ceratophrys",
       "Rhinella fernandezae",
+      "Rhinella guianensis",
       "Rhinella latebrosa",
       "Rhinella martyi",
       "Rhinella nattereri",
@@ -2112,6 +2113,12 @@
     {
       "species": "Rhinella fernandezae",
       "tip_label": "Rhinella_fernandezae",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella guianensis",
+      "tip_label": "Rhinella_guianensis",
       "family": "Bufonidae",
       "genus": "Rhinella"
     },
