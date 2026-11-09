@@ -13,7 +13,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1072,
+  "count": 1073,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -1881,6 +1881,26 @@
             "raw": "Rossa-Feres, D. C. (Ed.). 2024. Girinos do Brasil. São Paulo: Anolis Books, 828 p. ISBN 978-65-992458-3-1."
           }
         ]
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
+      "id": "atelopus_franciscus",
+      "species": "Atelopus franciscus",
+      "genus": "Atelopus",
+      "epithet": "franciscus",
+      "tip_label": "Atelopus_franciscus",
+      "family": "Bufonidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
       },
       "internal_oral": {
         "status": "not_described",
