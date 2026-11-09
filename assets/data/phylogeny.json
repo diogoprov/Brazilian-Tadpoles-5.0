@@ -1,13 +1,13 @@
 {
  "schema_version": "5.0.0",
  "source": "filogenia_jessyca_newNames.tre podada para as spp do banco",
- "generated": "2026-10-26",
- "tip_count": 728,
+ "generated": "2026-11-09",
+ "tip_count": 729,
  "tree": {
   "name": "",
   "length": 184.826881,
   "counts": {
-   "total": 728,
+   "total": 729,
    "ext": 515,
    "oral": 171,
    "cond": 121
@@ -161,7 +161,7 @@
     "name": "",
     "length": 51.211583,
     "counts": {
-     "total": 723,
+     "total": 724,
      "ext": 512,
      "oral": 170,
      "cond": 119
@@ -187,7 +187,7 @@
       "name": "",
       "length": 51.306441,
       "counts": {
-       "total": 679,
+       "total": 680,
        "ext": 485,
        "oral": 163,
        "cond": 113
@@ -212,7 +212,7 @@
         "name": "",
         "length": 1.108638,
         "counts": {
-         "total": 612,
+         "total": 613,
          "ext": 437,
          "oral": 146,
          "cond": 102
@@ -234,7 +234,7 @@
           "name": "",
           "length": 1.0567760000000002,
           "counts": {
-           "total": 311,
+           "total": 312,
            "ext": 219,
            "oral": 75,
            "cond": 60
@@ -1648,7 +1648,7 @@
             "name": "",
             "length": 0.499342,
             "counts": {
-             "total": 261,
+             "total": 262,
              "ext": 186,
              "oral": 73,
              "cond": 58
@@ -1665,7 +1665,7 @@
               "name": "",
               "length": 0.788076,
               "counts": {
-               "total": 97,
+               "total": 98,
                "ext": 62,
                "oral": 22,
                "cond": 22
@@ -2452,7 +2452,7 @@
                 "name": "",
                 "length": 4.199041,
                 "counts": {
-                 "total": 69,
+                 "total": 70,
                  "ext": 38,
                  "oral": 6,
                  "cond": 10
@@ -2844,7 +2844,7 @@
                   "name": "",
                   "length": 10.767519,
                   "counts": {
-                   "total": 55,
+                   "total": 56,
                    "ext": 32,
                    "oral": 6,
                    "cond": 10
@@ -4246,7 +4246,7 @@
                     "name": "",
                     "length": 1.895032,
                     "counts": {
-                     "total": 5,
+                     "total": 6,
                      "ext": 1,
                      "oral": 0,
                      "cond": 0
@@ -4330,7 +4330,7 @@
                       "name": "",
                       "length": 41.213392,
                       "counts": {
-                       "total": 2,
+                       "total": 3,
                        "ext": 1,
                        "oral": 0,
                        "cond": 0
@@ -4341,17 +4341,45 @@
                       ],
                       "children": [
                        {
-                        "name": "Atelopus_flavescens",
-                        "length": 2.125119,
+                        "name": "",
+                        "length": 1.1837369999999998,
                         "counts": {
-                         "total": 1,
+                         "total": 2,
                          "ext": 1,
                          "oral": 0,
                          "cond": 0
                         },
-                        "family": "Bufonidae",
-                        "genus": "Atelopus",
-                        "epithet": "flavescens"
+                        "families": [
+                         "Bufonidae"
+                        ],
+                        "children": [
+                         {
+                          "name": "Atelopus_flavescens",
+                          "length": 0.941382,
+                          "counts": {
+                           "total": 1,
+                           "ext": 1,
+                           "oral": 0,
+                           "cond": 0
+                          },
+                          "family": "Bufonidae",
+                          "genus": "Atelopus",
+                          "epithet": "flavescens"
+                         },
+                         {
+                          "name": "Atelopus_franciscus",
+                          "length": 0.941382,
+                          "counts": {
+                           "total": 1,
+                           "ext": 0,
+                           "oral": 0,
+                           "cond": 0
+                          },
+                          "family": "Bufonidae",
+                          "genus": "Atelopus",
+                          "epithet": "franciscus"
+                         }
+                        ]
                        },
                        {
                         "name": "Atelopus_hoogmoedi",

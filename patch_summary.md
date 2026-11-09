@@ -1,11 +1,11 @@
-## Mudança aplicada (issue #34)
+## Mudança aplicada (issue #37)
 
-- **Nova espécie:** *Vitreorana micaelae* (Centrolenidae)
-- **`id`:** `vitreorana_micaelae`
-- **`tip_label`:** `Vitreorana_micaelae`
-- **Posição no banco:** 171 de 1072 (ordenada por família × espécie)
+- **Nova espécie:** *Rhinella latebrosa* (Bufonidae)
+- **`id`:** `rhinella_latebrosa`
+- **`tip_label`:** `Rhinella_latebrosa`
+- **Posição no banco:** 136 de 1074 (ordenada por família × espécie)
 - **Estado larval:** os 3 caracteres entram como `not_described` (girino ainda não descrito).
 
-Contribuição: Diogo B Provete
+Contribuição: Diogo Provete
 
-Descrição original da espécie (referência, não salva no JSON): https://doi.org/10.3897/zookeys.1291.193210
+Descrição original da espécie (referência, não salva no JSON): https://doi.org/10.5852/ejt.2026.1118.3353
