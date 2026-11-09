@@ -1,9 +1,9 @@
-## Mudança aplicada (issue #39)
+## Mudança aplicada (issue #37)
 
-- **Nova espécie:** *Rhinella guianensis* (Bufonidae)
-- **`id`:** `rhinella_guianensis`
-- **`tip_label`:** `Rhinella_guianensis`
-- **Posição no banco:** 132 de 1074 (ordenada por família × espécie)
+- **Nova espécie:** *Rhinella latebrosa* (Bufonidae)
+- **`id`:** `rhinella_latebrosa`
+- **`tip_label`:** `Rhinella_latebrosa`
+- **Posição no banco:** 136 de 1074 (ordenada por família × espécie)
 - **Estado larval:** os 3 caracteres entram como `not_described` (girino ainda não descrito).
 
 Contribuição: Diogo Provete

@@ -4082,6 +4082,26 @@
       }
     },
     {
+      "id": "rhinella_latebrosa",
+      "species": "Rhinella latebrosa",
+      "genus": "Rhinella",
+      "epithet": "latebrosa",
+      "tip_label": "Rhinella_latebrosa",
+      "family": "Bufonidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
+      }
+    },
+    {
       "id": "rhinella_lescurei",
       "species": "Rhinella lescurei",
       "genus": "Rhinella",

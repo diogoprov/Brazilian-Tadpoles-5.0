@@ -1,6 +1,6 @@
 ### Espécie (binomial completo)
 
-Rhinella guianensis
+Rhinella latebrosa
 
 ### Família
 

@@ -1,6 +1,6 @@
 {
   "generated": "2026-11-09",
-  "count": 345,
+  "count": 346,
   "by_family": {
     "Allophrynidae": [
       "Allophryne resplendens"
@@ -56,6 +56,7 @@
       "Rhinella ceratophrys",
       "Rhinella fernandezae",
       "Rhinella guianensis",
+      "Rhinella latebrosa",
       "Rhinella martyi",
       "Rhinella nattereri",
       "Rhinella parecis",
@@ -2118,6 +2119,12 @@
     {
       "species": "Rhinella guianensis",
       "tip_label": "Rhinella_guianensis",
+      "family": "Bufonidae",
+      "genus": "Rhinella"
+    },
+    {
+      "species": "Rhinella latebrosa",
+      "tip_label": "Rhinella_latebrosa",
       "family": "Bufonidae",
       "genus": "Rhinella"
     },
