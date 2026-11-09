@@ -2,7 +2,7 @@
   "schema_version": "5.1.1",
   "database_name": "The Rossa-Feres Tadpole Database",
   "source": "Brazilian tadpoles database v4.1.0 (Google Sheet, 30 mai 2026)",
-  "generated": "2026-10-26",
+  "generated": "2026-11-09",
   "excluded_families": [
     "Brachycephalidae",
     "Caligophrynidae",
@@ -13,7 +13,7 @@
     "Neblinaphrynidae"
   ],
   "excluded_count": 1,
-  "count": 1073,
+  "count": 1074,
   "characters": [
     "ext_morph",
     "internal_oral",
@@ -3876,6 +3876,26 @@
             "raw": "Rodrigues de Oliveira MIR, Weber LN, Napoli MF. 2014. Chondrocranial and hyobranchial morphology in larvae of the genus  Rhinella Fitzinger, 1826 (Amphibia, Anura, Bufonidae). The Herpetological Journal 24:229–237."
           }
         ]
+      }
+    },
+    {
+      "id": "rhinella_guianensis",
+      "species": "Rhinella guianensis",
+      "genus": "Rhinella",
+      "epithet": "guianensis",
+      "tip_label": "Rhinella_guianensis",
+      "family": "Bufonidae",
+      "ext_morph": {
+        "status": "not_described",
+        "refs": []
+      },
+      "internal_oral": {
+        "status": "not_described",
+        "refs": []
+      },
+      "chondrocranium": {
+        "status": "not_described",
+        "refs": []
       }
     },
     {

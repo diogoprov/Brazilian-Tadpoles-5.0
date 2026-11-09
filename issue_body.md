@@ -1,14 +1,14 @@
 ### Espécie (binomial completo)
 
-Vitreorana micaelae
+Rhinella guianensis
 
 ### Família
 
-Centrolenidae
+Bufonidae
 
 ### DOI da descrição original da espécie (opcional)
 
-10.3897/zookeys.1291.193210
+10.5852/ejt.2026.1118.3353
 
 ### Caracteres larvais JÁ descritos na literatura
 
@@ -42,7 +42,7 @@ _No response_
 
 ### Seu nome (para crédito no commit)
 
-Diogo B Provete
+Diogo Provete
 
 ### Confirmações
 
